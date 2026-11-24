@@ -1,0 +1,49 @@
+{
+  "converted_pairs": 7,
+  "ct_objects": 1101,
+  "ct_series": 10,
+  "ct_studies": 10,
+  "disk_current_free_bytes": 47575986176,
+  "full_corpus_status": "BLOCKED_STORAGE_NOT_VALIDATED",
+  "full_idc_without_zip_planning_bytes": 99214789971,
+  "full_zip_raw_conversion_plan_bytes": 126753222241,
+  "manifest_sha256": "7362d1755b9e1273b69360c4d1b8e9e1a68afe066f47da0d36e1e0d4a7f8903f",
+  "physical_ram_snapshot": {
+    "available_physical_bytes": 573333504,
+    "method": "Win32_ComputerSystem / Win32_OperatingSystem CIM during sample validation; timestamp not independently recorded",
+    "total_bytes": 8215101440
+  },
+  "quarantined_cases": 3,
+  "real_data": true,
+  "roi_name_counts": {
+    "Esophagus": 8,
+    "GTV-1": 9,
+    "Heart": 7,
+    "Lung-Left": 9,
+    "Lung-Right": 9,
+    "Spinal-Cord": 9,
+    "gtv-2": 3,
+    "gtv-3": 2,
+    "gtv-pre-op": 1,
+    "gtv-pre-operat": 1
+  },
+  "rtstruct_objects": 10,
+  "rtstruct_series": 10,
+  "sample_patients": 10,
+  "status": "SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS",
+  "storage_bytes": {
+    "converted": {
+      "bytes": 269526838,
+      "files": 21
+    },
+    "qa": {
+      "bytes": 2912774,
+      "files": 8
+    },
+    "raw": {
+      "bytes": 593390653,
+      "files": 1131
+    }
+  },
+  "timestamp_utc": "2026-11-24T05:08:40.437842+00:00"
+}

@@ -1,0 +1,55 @@
+{
+  "api_url": "https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=NSCLC-Radiomics&format=json",
+  "catalog_patients": 422,
+  "catalog_series": 1265,
+  "catalog_studies": 422,
+  "collection": "NSCLC-Radiomics",
+  "config_sha256": "fd8e3ff13d089f26fa53e0e566f3573b3538f0e3b2cc6fe78b573d39c3ae150e",
+  "conversion_estimate": "planning allowance 2.5x CT DICOM bytes, not measured gzip size or a guarantee for other transfer syntaxes",
+  "converted_disk_free_bytes": 47578386432,
+  "full_capacity_pass": false,
+  "full_ct_rtstruct_raw_bytes": 27538432270,
+  "full_download_status": "BLOCKED_STORAGE",
+  "full_idc_without_zip_planning_bytes": 99214789971,
+  "full_planning_bytes": 126753222241,
+  "license": "CC-BY-NC-3.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+  "modalities": {
+    "CT": {
+      "bytes": 26952556162,
+      "objects": 51230,
+      "series": 422
+    },
+    "RTSTRUCT": {
+      "bytes": 585876108,
+      "objects": 422,
+      "series": 422
+    },
+    "SEG": {
+      "bytes": 8237157616,
+      "objects": 421,
+      "series": 421
+    }
+  },
+  "raw_disk_free_bytes": 47578386432,
+  "same_volume": true,
+  "sample_capacity_pass": true,
+  "sample_patient_ids": [
+    "LUNG1-001",
+    "LUNG1-002",
+    "LUNG1-003",
+    "LUNG1-004",
+    "LUNG1-005",
+    "LUNG1-006",
+    "LUNG1-007",
+    "LUNG1-008",
+    "LUNG1-014",
+    "LUNG1-128"
+  ],
+  "sample_planning_bytes": 6928571729,
+  "sample_raw_bytes": 592987154,
+  "sample_series": 20,
+  "scope": "sample only; full collection metadata is not full corpus validation",
+  "source": "https://www.cancerimagingarchive.net/collection/nsclc-radiomics/",
+  "timestamp_utc": "2026-11-24T05:02:59.346553+00:00"
+}

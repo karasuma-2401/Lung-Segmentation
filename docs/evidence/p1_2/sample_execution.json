@@ -1,0 +1,73 @@
+{
+  "commands": [
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "acquire-nsclc",
+        "--config",
+        "configs\\nsclc.yaml",
+        "--catalog",
+        "data\\manifests\\nsclc\\public_catalog.json"
+      ],
+      "exit_code": 0,
+      "log": "sample_00_acquire-nsclc.txt",
+      "timestamp_utc": "2026-11-24T05:02:58.007166+00:00"
+    },
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "survey-nsclc",
+        "--config",
+        "configs\\nsclc.yaml"
+      ],
+      "exit_code": 0,
+      "log": "sample_01_survey-nsclc.txt",
+      "timestamp_utc": "2026-11-24T05:02:59.517037+00:00"
+    },
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "convert-nsclc",
+        "--config",
+        "configs\\nsclc.yaml"
+      ],
+      "exit_code": 2,
+      "log": "sample_02_convert-nsclc.txt",
+      "timestamp_utc": "2026-11-24T05:03:12.318797+00:00"
+    },
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "convert-nsclc",
+        "--config",
+        "configs\\nsclc.yaml"
+      ],
+      "exit_code": 2,
+      "log": "sample_03_convert-nsclc.txt",
+      "timestamp_utc": "2026-11-24T05:03:59.438223+00:00"
+    },
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "qa-nsclc",
+        "--config",
+        "configs\\nsclc.yaml"
+      ],
+      "exit_code": 0,
+      "log": "sample_04_qa-nsclc.txt",
+      "timestamp_utc": "2026-11-24T05:04:53.251288+00:00"
+    }
+  ],
+  "status": "checks_passed_with_quarantine_findings",
+  "visual_qa_acceptance": "separate human/agent review required"
+}

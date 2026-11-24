@@ -1,0 +1,41 @@
+{
+  "commands": [
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "survey-nsclc",
+        "--config",
+        "configs/nsclc.yaml"
+      ],
+      "exit_code": 0,
+      "log": "final_survey-nsclc.txt",
+      "timestamp_utc": "2026-11-24T05:15:54.660730+00:00"
+    },
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "convert-nsclc",
+        "--config",
+        "configs/nsclc.yaml"
+      ],
+      "exit_code": 2,
+      "log": "final_convert-nsclc.txt",
+      "timestamp_utc": "2026-11-24T05:16:18.691223+00:00"
+    }
+  ],
+  "converted_pairs": 7,
+  "manifest_matches_conversion_QA_review_repeat_reports": true,
+  "manifest_sha256": "7362d1755b9e1273b69360c4d1b8e9e1a68afe066f47da0d36e1e0d4a7f8903f",
+  "manifest_unchanged": true,
+  "package_source_matches_final_environment": true,
+  "package_source_sha256": "f5afa32e94e7434dd788f815e03645b0cdb0ad00164eea944c847962b66574e0",
+  "png_hashes_match_visual_review": true,
+  "quarantined_cases": 3,
+  "real_data_origin_checked": true,
+  "timestamp_utc": "2026-11-24T05:16:55.627885+00:00",
+  "verified_source_patients": 10
+}

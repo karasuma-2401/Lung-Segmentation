@@ -1,0 +1,79 @@
+{
+  "cases": [
+    {
+      "case_id": "LUNG1-001",
+      "file": "LUNG1-001_qa.png",
+      "finding": "Large central mass overlay; no gross displacement/mirroring seen on selected planes.",
+      "image_sha256": "1ef3013d3e9d07e59bfda27e12961bee3de55451035a66e3841add08628ce013",
+      "mask_sha256": "2d6a0f1f96859dcc2741ac98f1ad16607de596f811bdde6da9e05c7bd929bcfc",
+      "png_sha256": "def750fcae287a122af0e13562f59b0e398b7e3cb784068295371a534a8d4f7f",
+      "status": "NO_GROSS_COORDINATE_MISMATCH_ON_MONTAGE"
+    },
+    {
+      "case_id": "LUNG1-002",
+      "file": "LUNG1-002_qa.png",
+      "finding": "REVIEW_REQUIRED: inferior mask extent ends abruptly/flat on coronal and sagittal selected planes. Review full volume and original contours; do not infer annotation error or repair automatically.",
+      "image_sha256": "f7b6d721dfd6f7aa656e01ea6b69fdad517974eb5492d4c02d627abbc2e201cb",
+      "mask_sha256": "5ee396b4c5ad716c97477ef03af7113f16577baee236313a7583fa83efd14b4e",
+      "png_sha256": "d100139a57e4f0feffdd99d4914d3075a602a8c548b345895e6e9e9e86e8d5a2",
+      "status": "REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "LUNG1-003",
+      "file": "LUNG1-003_qa.png",
+      "finding": "Complex location near mediastinal/posterior lung boundary; no gross coordinate mismatch seen; other gtv ROIs remain separate.",
+      "image_sha256": "2ecf04b65472ba12ee3284be975c5bffdb89e581174511d706e0214df893e421",
+      "mask_sha256": "9ea3a6a1f95530597ad5a3749760b445e9122c0511353b6a492285898eae424a",
+      "png_sha256": "bca74d4f2127b99a9342f5eee292f2f2ff7ea17291057959e4dbe96daa0800c4",
+      "status": "NO_GROSS_COORDINATE_MISMATCH_ON_MONTAGE"
+    },
+    {
+      "case_id": "LUNG1-004",
+      "file": "LUNG1-004_qa.png",
+      "finding": "Near posterior pleural/mediastinal boundary; only documented GTV-1 selected; gtv-2/3 not merged. Full anatomy review remains open.",
+      "image_sha256": "c2152afd95538da914f3ede4164576ae062e4208448fa990af765c1a4da49258",
+      "mask_sha256": "df6e8896616e030685363a14a7fded3aa1bd957b2a4b763ac25e139187fba49b",
+      "png_sha256": "f42160ef664dd8df53d19a3fd75bb7bb60e74d0fa8d32e1a465777292518ba1f",
+      "status": "NO_GROSS_COORDINATE_MISMATCH_ON_MONTAGE"
+    },
+    {
+      "case_id": "LUNG1-005",
+      "file": "LUNG1-005_qa.png",
+      "finding": "Central irregular primary ROI; no gross coordinate mismatch seen on selected planes.",
+      "image_sha256": "775c9e32e2a8466ed162b5d0a41469e75058710ad50429af946578172a12e82c",
+      "mask_sha256": "a98a770c2b5866b130c9817d7cdf42a37c49b133d64d6cfaa150d5444c8545fd",
+      "png_sha256": "12fa6342c7797d48797cd102f8c5083328aa476fb0015645a4b599455c89638d",
+      "status": "NO_GROSS_COORDINATE_MISMATCH_ON_MONTAGE"
+    },
+    {
+      "case_id": "LUNG1-007",
+      "file": "LUNG1-007_qa.png",
+      "finding": "Smallest converted sample (12.494 cm3); compact overlay without gross displacement on selected planes.",
+      "image_sha256": "4a78da571c1403a5d79a64a5dba0afb7d38d9ef38a8253b3a09168456323ad4c",
+      "mask_sha256": "d22103da4aff06ec61c30e8e8ce7f22d268a015710275818d37df05e0c7d45ad",
+      "png_sha256": "6ff450a0deea4053ecf67f9013bfa0b7078af4c845f4179ed5f4356f6d19c75c",
+      "status": "NO_GROSS_COORDINATE_MISMATCH_ON_MONTAGE"
+    },
+    {
+      "case_id": "LUNG1-008",
+      "file": "LUNG1-008_qa.png",
+      "finding": "Peripheral upper lung/pleural-near ROI; no gross coordinate mismatch seen on selected planes.",
+      "image_sha256": "72ff5dae2e014256270a8c3f9e6b78684cba1dfeb4bdc1c0eca8cc0ef26de1a1",
+      "mask_sha256": "1991de542e7e024c19fefe6b3bfe2d8f685bc5a79071b39730d2037b8fd9a3bd",
+      "png_sha256": "6efc608f9b90423cedc033ab9b6fd60b1226576d91a1000542348445ba72dc47",
+      "status": "NO_GROSS_COORDINATE_MISMATCH_ON_MONTAGE"
+    }
+  ],
+  "dataset": "NSCLC-Radiomics",
+  "expert_anatomical_adjudication": false,
+  "full_corpus_status": "BLOCKED_STORAGE_NOT_VALIDATED",
+  "manifest_sha256": "7362d1755b9e1273b69360c4d1b8e9e1a68afe066f47da0d36e1e0d4a7f8903f",
+  "qa_index_sha256": "651e33e8039df0c3b84d5abbb570619bb27adf52ec196ae7ccefdbdd82e9e30f",
+  "real_data": true,
+  "reviewer": "Codex visual inspection of all 7 three-plane PNGs",
+  "sample_status": "SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS",
+  "scope": "Technical conversion workflow on acquired sample; no blanket acceptance of all expert boundaries or full corpus",
+  "source_annotation_changed": false,
+  "timestamp_utc": "2026-11-24T05:08:39.640454+00:00",
+  "training_clearance": false
+}

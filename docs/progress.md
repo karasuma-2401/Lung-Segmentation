@@ -1,4 +1,25 @@
-# Tiến độ hiện tại — P1.1 / T04 — 24/11/2026
+# Tiến độ hiện tại — P1.2 / T05 — 24/11/2026
+
+**T05 PARTIAL — SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS; FULL_CORPUS_NOT_VALIDATED / BLOCKED_STORAGE.** Người dùng đã duyệt T05 sau P1.1 tại commit `fef32f1932df3e6e0644b937fdd775f953cd3cae`. Người dùng xác nhận chỉ có khoảng45GiB trên C và không có ổ khác; không tải full corpus, không xóa MSD/archive. Giữ3dataset, không T06–T08/splits/preprocessing production/training. Dừng sau P1.2 để review.
+
+| Hạng mục P1.2 | Trạng thái / evidence |
+|---|---|
+| Official source/license/catalog |PASS — TCIA v4, CC BY-NC3.0,422patients/studies,422CT+422RTSTRUCT+421SEG catalog; chỉ sample CT/RT được tải |
+| Capacity |BLOCKED full — CT+RT27.54GB; ZIP/raw/conversion planning126.75GB hoặc IDC không ZIP99.21GB, vượt khoảng45GiB free. RAM7.65GiB |
+| Real sample |10public patients/10CTseries/1,101slice headers và10RTSTRUCT;592,987,154bytes, official IDC exact UID/DOI/license matching TCIA, ETag MD5/SHA256/header verification |
+| ROI và conversion |Survey thật trước policy;9/10GTV-1, varied ROI numbers, generic ORGAN tags explicit warning.7converted pairs aligned native geometry, labels0/1;3quarantine006/014/128 |
+| Real QA |7three-plane montage đã xem, LUNG1-002 inferior extent REVIEW_REQUIRED; không tự chỉnh annotation. [Visual review](evidence/p1_2/qa_visual_review.json) |
+| Determinism/preservation |PASS — manifest byte-identical hai lần, raw tree1,131files hash trước/sau giống nhau. [Evidence](evidence/p1_2/repeat_and_preservation.json) |
+| Regression |**111passed** =68P0/P1.1+43T05 synthetic tests; CPU smoke/env/pip check PASS. [Logs](evidence/p1_2/verification/verification.json). GPU/Kaggle NOT RUN |
+| Scope và Git |Không raw/converted medical images/montage vào Git, không commit/push, không training hoặc splits |
+
+[Báo cáo P1.2](nsclc_qa_report.md), [manifest](../data/manifests/nsclc/manifest_nsclc.csv), [quarantine](../data/manifests/nsclc/quarantine.csv), [acquisition guide](nsclc_acquisition.md), [data card](nsclc_data_card.md), [schema](nsclc_manifest_schema.md). Converted/QA sample khoảng272MB; C sau sample khoảng44.3GiB free. NBIA ZIP download timeout, adapter chưa real-ZIP validated; actual sample qua IDC chính thức. Code/CLI hỗ trợ external roots nhưng chưa có storage ngoài C.
+
+OPEN: review NSCLC002/006/014/128 và phương án lưu trữ trước full T05; primary policy chưa được khảo sát toàn422ca. Giữ MSD patient mapping unknown, lung_022 annotation review và lung_018 intensity finding nguyên vẹn. Đề xuất P1.3 chỉ khảo sát source/license/annotation sample Lung-PET-CT-Dx và capacity sau review; chưa triển khai.
+
+---
+
+# P1.1 / T04 — snapshot đã được review/chấp thuận
 
 **T04 hoàn tất trong phạm vi acquisition/inventory/QA; dừng để người dùng review.** Có annotation finding OPEN ở lung_022, không tự sửa/loại mask. P0 CPU đã được người dùng chấp thuận trước lượt này. Phần P0 bên dưới là snapshot lịch sử, không mô tả trạng thái dataset hiện tại.
 

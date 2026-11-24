@@ -76,3 +76,7 @@ Giữ paper hyperparameters trong `configs/references/paper.yaml`, repo sample t
 3. T08: transform/crop round-trip, lungmask failure policy không dùng GT test; mask/pseudo coverage phải hợp lệ trước training.
 4. T09/T10/T12: model contracts, activation/loss defaults, sampler và object metrics; training loop/resume mới có tests. Giữ câu hỏi OPEN nếu source không đủ.
 5. T14+: pseudo generation có provenance và QA thật. Tài liệu audit hoàn thành không đồng nghĩa pipeline nghiên cứu đã hoàn thành.
+
+## Cập nhật T05 — 24/11/2026
+
+Upstream loader chọn GTV-1 nhưng thiếu referenced-series/FoR validation. Implementation riêng tại `src/lungseg/data/dicom_geometry.py`, `rtstruct.py`, `nsclc.py` kiểm exact study/series/frame/image UIDs, physical slice positions, LUT/rescale và contour semantics trước conversion. Đây là inventory/conversion đã kiểm sample thực, không copy loader upstream hoặc coi đã tái hiện training pipeline paper. Survey10RT:9GTV-1 với varied numbers/generic ORGAN tags;7pairs converted,3quarantine,002 review. Xem [QA report](nsclc_qa_report.md). O06 chỉ resolve trên sample; full corpus BLOCKED_STORAGE, chưa T06–T08/model research.

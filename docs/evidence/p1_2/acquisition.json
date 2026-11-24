@@ -1,0 +1,221 @@
+{
+  "api_url": "https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=NSCLC-Radiomics&format=json",
+  "catalog_input_sha256": "337477bb8d2597568b927867086666e18c0323f116c4db0ecc449a3dee06dc8c",
+  "catalog_is_cached": true,
+  "catalog_patients": 422,
+  "catalog_series": 1265,
+  "catalog_studies": 422,
+  "collection": "NSCLC-Radiomics",
+  "config_sha256": "f985a8371a5fc2096bb4a28e01e85c557fb66b2e9567e322ff5a18b65a32abef",
+  "conversion_estimate": "planning allowance 2.5x CT DICOM bytes, not measured gzip size or a guarantee for other transfer syntaxes",
+  "converted_disk_free_bytes": 48093315072,
+  "downloaded": [
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 70514186,
+      "downloaded_zip_bytes": null,
+      "modality": "CT",
+      "public_patient_id": "LUNG1-001",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.298991776521342375010861296712563382046"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 1508418,
+      "downloaded_zip_bytes": null,
+      "modality": "RTSTRUCT",
+      "public_patient_id": "LUNG1-001",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.227938121586608072508444156170535578236"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 58354396,
+      "downloaded_zip_bytes": null,
+      "modality": "CT",
+      "public_patient_id": "LUNG1-002",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.232988001551799080335895423941323261228"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 1837924,
+      "downloaded_zip_bytes": null,
+      "modality": "RTSTRUCT",
+      "public_patient_id": "LUNG1-002",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.243267551266911245830259417117543245931"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 56251978,
+      "downloaded_zip_bytes": null,
+      "modality": "CT",
+      "public_patient_id": "LUNG1-003",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.238922279929619243990469813419868528595"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 1580768,
+      "downloaded_zip_bytes": null,
+      "modality": "RTSTRUCT",
+      "public_patient_id": "LUNG1-003",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.217589447746111741056421838759223122712"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 59986934,
+      "downloaded_zip_bytes": null,
+      "modality": "CT",
+      "public_patient_id": "LUNG1-004",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.280981614462592634652021339314828620785"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 1546920,
+      "downloaded_zip_bytes": null,
+      "modality": "RTSTRUCT",
+      "public_patient_id": "LUNG1-004",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.198924344973910195748084198126286450163"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 47839958,
+      "downloaded_zip_bytes": null,
+      "modality": "CT",
+      "public_patient_id": "LUNG1-005",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.34905847539837720676301269477428468747"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 1664344,
+      "downloaded_zip_bytes": null,
+      "modality": "RTSTRUCT",
+      "public_patient_id": "LUNG1-005",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.118616268141861850124496343670968199068"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 59931846,
+      "downloaded_zip_bytes": null,
+      "modality": "CT",
+      "public_patient_id": "LUNG1-006",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.302297148691268021564490651886932758122"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 1705466,
+      "downloaded_zip_bytes": null,
+      "modality": "RTSTRUCT",
+      "public_patient_id": "LUNG1-006",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.162828071277366022594778639206915927681"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 67882062,
+      "downloaded_zip_bytes": null,
+      "modality": "CT",
+      "public_patient_id": "LUNG1-007",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.234266984120913576066174046169649067872"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 1642610,
+      "downloaded_zip_bytes": null,
+      "modality": "RTSTRUCT",
+      "public_patient_id": "LUNG1-007",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.308499776475237758781599767226383467358"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 59931406,
+      "downloaded_zip_bytes": null,
+      "modality": "CT",
+      "public_patient_id": "LUNG1-008",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.12747108866907265023948393821781944475"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 1132084,
+      "downloaded_zip_bytes": null,
+      "modality": "RTSTRUCT",
+      "public_patient_id": "LUNG1-008",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.305113343545091133620858778081884399262"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 45737018,
+      "downloaded_zip_bytes": null,
+      "modality": "CT",
+      "public_patient_id": "LUNG1-014",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.151132666864141312865605446917159630199"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 1229300,
+      "downloaded_zip_bytes": null,
+      "modality": "RTSTRUCT",
+      "public_patient_id": "LUNG1-014",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.311516559503921520457816309754441052998"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 52622266,
+      "downloaded_zip_bytes": null,
+      "modality": "CT",
+      "public_patient_id": "LUNG1-128",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.54517396233590182423916576566089006742"
+    },
+    {
+      "archive_sha256": null,
+      "downloaded_object_bytes": 87270,
+      "downloaded_zip_bytes": null,
+      "modality": "RTSTRUCT",
+      "public_patient_id": "LUNG1-128",
+      "series_uid": "1.3.6.1.4.1.32722.99.99.211990716524818295963589469854426742029"
+    }
+  ],
+  "full_capacity_pass": false,
+  "full_ct_rtstruct_raw_bytes": 27538432270,
+  "full_download_status": "BLOCKED_STORAGE",
+  "full_planning_bytes": 126753222241,
+  "idc_catalog_sha256": "6c3707858eda7a75c0ff435921a23db958a086bf22bb62554016418b362dea71",
+  "license": "CC-BY-NC-3.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+  "modalities": {
+    "CT": {
+      "bytes": 26952556162,
+      "objects": 51230,
+      "series": 422
+    },
+    "RTSTRUCT": {
+      "bytes": 585876108,
+      "objects": 422,
+      "series": 422
+    },
+    "SEG": {
+      "bytes": 8237157616,
+      "objects": 421,
+      "series": 421
+    }
+  },
+  "raw_disk_free_bytes": 48093315072,
+  "same_volume": true,
+  "sample_capacity_pass": true,
+  "sample_patient_ids": [
+    "LUNG1-001",
+    "LUNG1-002",
+    "LUNG1-003",
+    "LUNG1-004",
+    "LUNG1-005",
+    "LUNG1-006",
+    "LUNG1-007",
+    "LUNG1-008",
+    "LUNG1-014",
+    "LUNG1-128"
+  ],
+  "sample_planning_bytes": 6928571729,
+  "sample_raw_bytes": 592987154,
+  "sample_series": 20,
+  "scope": "sample_CT_RTSTRUCT",
+  "source": "https://www.cancerimagingarchive.net/collection/nsclc-radiomics/",
+  "status": "sample_acquired_not_converted",
+  "timestamp_utc": "2026-11-24T04:49:52.510523+00:00",
+  "transport": "official_IDC_S3_UID_matched_to_TCIA"
+}

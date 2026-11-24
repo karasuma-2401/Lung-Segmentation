@@ -1,0 +1,113 @@
+timestamp_utc: 2026-11-24T05:04:53.251288+00:00
+command_argv: ["C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe", "-m", "lungseg.cli", "qa-nsclc", "--config", "configs\\nsclc.yaml"]
+exit_code: 0
+{
+  "dataset": "NSCLC-Radiomics",
+  "real_data": true,
+  "cases": [
+    {
+      "case_id": "LUNG1-001",
+      "tumor_volume_mm3": 156323.4329223633,
+      "canonical_slices_xyz": [
+        184,
+        253,
+        74
+      ],
+      "file": "LUNG1-001_qa.png",
+      "image_sha256": "1ef3013d3e9d07e59bfda27e12961bee3de55451035a66e3841add08628ce013",
+      "mask_sha256": "2d6a0f1f96859dcc2741ac98f1ad16607de596f811bdde6da9e05c7bd929bcfc",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "LUNG1-002",
+      "tumor_volume_mm3": 359468.93969699997,
+      "canonical_slices_xyz": [
+        328,
+        247,
+        34
+      ],
+      "file": "LUNG1-002_qa.png",
+      "image_sha256": "f7b6d721dfd6f7aa656e01ea6b69fdad517974eb5492d4c02d627abbc2e201cb",
+      "mask_sha256": "5ee396b4c5ad716c97477ef03af7113f16577baee236313a7583fa83efd14b4e",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "LUNG1-003",
+      "tumor_volume_mm3": 34818.354332999996,
+      "canonical_slices_xyz": [
+        205,
+        268,
+        63
+      ],
+      "file": "LUNG1-003_qa.png",
+      "image_sha256": "2ecf04b65472ba12ee3284be975c5bffdb89e581174511d706e0214df893e421",
+      "mask_sha256": "9ea3a6a1f95530597ad5a3749760b445e9122c0511353b6a492285898eae424a",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "LUNG1-004",
+      "tumor_volume_mm3": 84460.25848388673,
+      "canonical_slices_xyz": [
+        192,
+        171,
+        34
+      ],
+      "file": "LUNG1-004_qa.png",
+      "image_sha256": "c2152afd95538da914f3ede4164576ae062e4208448fa990af765c1a4da49258",
+      "mask_sha256": "df6e8896616e030685363a14a7fded3aa1bd957b2a4b763ac25e139187fba49b",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "LUNG1-005",
+      "tumor_volume_mm3": 83548.014312,
+      "canonical_slices_xyz": [
+        315,
+        247,
+        58
+      ],
+      "file": "LUNG1-005_qa.png",
+      "image_sha256": "775c9e32e2a8466ed162b5d0a41469e75058710ad50429af946578172a12e82c",
+      "mask_sha256": "a98a770c2b5866b130c9817d7cdf42a37c49b133d64d6cfaa150d5444c8545fd",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "LUNG1-007",
+      "tumor_volume_mm3": 12494.087219238283,
+      "canonical_slices_xyz": [
+        311,
+        294,
+        56
+      ],
+      "file": "LUNG1-007_qa.png",
+      "image_sha256": "4a78da571c1403a5d79a64a5dba0afb7d38d9ef38a8253b3a09168456323ad4c",
+      "mask_sha256": "d22103da4aff06ec61c30e8e8ce7f22d268a015710275818d37df05e0c7d45ad",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "LUNG1-008",
+      "tumor_volume_mm3": 40869.113664,
+      "canonical_slices_xyz": [
+        297,
+        216,
+        68
+      ],
+      "file": "LUNG1-008_qa.png",
+      "image_sha256": "72ff5dae2e014256270a8c3f9e6b78684cba1dfeb4bdc1c0eca8cc0ef26de1a1",
+      "mask_sha256": "1991de542e7e024c19fefe6b3bfe2d8f685bc5a79071b39730d2037b8fd9a3bd",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    }
+  ],
+  "n_cases": 7,
+  "manifest_sha256": "7362d1755b9e1273b69360c4d1b8e9e1a68afe066f47da0d36e1e0d4a7f8903f",
+  "config_sha256": "fd8e3ff13d089f26fa53e0e566f3573b3538f0e3b2cc6fe78b573d39c3ae150e",
+  "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+  "manual_review": "pending; rendering is not visual acceptance",
+  "timestamp_utc": "2026-11-24T05:05:38.540477+00:00"
+}

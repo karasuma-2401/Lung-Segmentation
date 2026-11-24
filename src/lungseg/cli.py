@@ -1,4 +1,4 @@
-"""Implemented P0 and MSD T04 entry points; no research training commands."""
+"""Implemented P0/T04/T05 tooling; no research training commands."""
 
 import argparse
 from dataclasses import replace
@@ -32,9 +32,31 @@ def main(argv: list[str] | None = None) -> int:
     qa = commands.add_parser("qa-msd", help="Render three-plane CT/mask QA from a validated manifest")
     qa.add_argument("--config", type=Path, required=True)
     qa.add_argument("--case-ids", nargs="+")
+    for name in ("acquire-nsclc", "survey-nsclc", "convert-nsclc", "qa-nsclc"):
+        command = commands.add_parser(name, help="Bounded NSCLC sample acquisition / native geometry QA")
+        command.add_argument("--config", type=Path, required=True)
+        command.add_argument("--raw-root")
+        command.add_argument("--converted-root")
+        if name == "acquire-nsclc":
+            command.add_argument("--download", action="store_true")
+            command.add_argument("--rt-only", action="store_true")
+            command.add_argument("--catalog", type=Path)
+            command.add_argument("--idc-catalog", type=Path)
     args = parser.parse_args(argv)
     record = None
     try:
+        if args.command.endswith("-nsclc"):
+            from lungseg.data.nsclc_config import load_nsclc_config
+            config = load_nsclc_config(args.config, raw_root=args.raw_root, converted_root=args.converted_root)
+            if args.command == "acquire-nsclc":
+                from lungseg.data.nsclc_acquire import acquire_sample
+                result = acquire_sample(config, download=args.download, rt_only=args.rt_only,
+                                        catalog_path=args.catalog, idc_catalog_path=args.idc_catalog)
+            else:
+                from lungseg.data.nsclc import survey, convert_sample, generate_qa
+                result = {"survey-nsclc": survey, "convert-nsclc": convert_sample, "qa-nsclc": generate_qa}[args.command](config)
+            print(json.dumps(result, indent=2))
+            return 2 if result.get("quarantined_cases") else 0
         if args.command in {"audit-msd", "qa-msd"}:
             from lungseg.data.msd_config import load_msd_config
 

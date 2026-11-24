@@ -66,7 +66,8 @@ def read_canonical_planes(image, transform: np.ndarray, slices: list[int], slab_
 
 
 def render_case(root: Path, row: dict, destination: Path, *, synthetic: bool = False,
-                affine_atol_mm: float = 0.001, slab_slices: int = 16) -> dict:
+                affine_atol_mm: float = 0.001, slab_slices: int = 16,
+                source_label: str | None = None) -> dict:
     import matplotlib
 
     matplotlib.use("Agg")
@@ -126,7 +127,9 @@ def render_case(root: Path, row: dict, destination: Path, *, synthetic: bool = F
                             min(ct_slice.shape[1], xx.max() + margin + 1) * spacing[h_axis])
                 ax.set_ylim(max(0, yy.min() - margin) * spacing[v_axis],
                             min(ct_slice.shape[0], yy.max() + margin + 1) * spacing[v_axis])
-    attribution = "SYNTHETIC NIfTI FIXTURE — NOT MSD DATA" if synthetic else "MSD / Simpson et al. | CC BY-SA 4.0"
+    attribution = ("SYNTHETIC FIXTURE — NOT CLINICAL DATA" if source_label and synthetic else
+                   source_label if source_label else
+                   "SYNTHETIC NIfTI FIXTURE — NOT MSD DATA" if synthetic else "MSD / Simpson et al. | CC BY-SA 4.0")
     fig.suptitle(f"{row['case_id']} | tumor {row['tumor_volume_mm3']/1000:.3f} cm³ | "
                  f"native grid, axis permutation only\n{attribution} | "
                  "CT window [-1000,400], red=expert mask; display modifications only", fontsize=12)

@@ -2,7 +2,7 @@
 
 Dự án nghiên cứu mixed supervision Teacher–Student trên CT 3D. Phương án chính dùng MSD-Lung và NSCLC-Radiomics có mask, cùng Lung-PET-CT-Dx có axial bbox. Chạy Scarce trước Vast; Student cuối cùng nhận CT và xuất mask, không cần bbox.
 
-Hiện có công cụ **P0** (env/synthetic smoke/audit paper–code) và **P1.1/T04** (MSD acquisition/native NIfTI inventory/QA). Trạng thái dữ liệu thật và bằng chứng nằm trong [tiến độ](docs/progress.md); chưa có experiment splits, model nghiên cứu, pseudo masks hay kết quả training. Xem thêm [quyết định](docs/decisions.md) và [bảng paper–code](docs/paper_to_code_matrix.md).
+Hiện có công cụ **P0**, **P1.1/T04** (MSD acquisition/native NIfTI inventory/QA) và **P1.2/T05** (NSCLC DICOM/RTSTRUCT acquisition, conversion và QA tập mẫu). Full NSCLC bị chặn do storage; xem [báo cáo P1.2](docs/nsclc_qa_report.md). Chưa có experiment splits, model nghiên cứu, pseudo masks hay kết quả training. Xem [tiến độ](docs/progress.md), [quyết định](docs/decisions.md) và [bảng paper–code](docs/paper_to_code_matrix.md).
 
 ## Cài đặt CPU trên Windows
 
@@ -66,7 +66,25 @@ Mỗi lần tạo `experiments/P0_smoke_<timestamp>_<id>/` với `config.json`, 
 .\scripts\verify.ps1 -EvidenceDirectory docs/evidence/p1_1/verification
 ```
 
-Manifest/summary/run metadata: `data/manifests/msd/`. Montage/index: `data/qa/msd/` (gitignored medical slices). Official test CT không có mask; `patient_id` để null nếu không có mapping nguồn, không suy luận từ case ID. Không chia experiment splits hoặc sửa expert annotations ở T04. Lượt này dừng sau P1.1, chưa triển khai NSCLC-Radiomics/T05.
+Manifest/summary/run metadata: `data/manifests/msd/`. Montage/index: `data/qa/msd/` (gitignored medical slices). Official test CT không có mask; `patient_id` để null nếu không có mapping nguồn, không suy luận từ case ID. Các findings MSD giữ nguyên khi triển khai T05.
+
+## NSCLC-Radiomics — P1.2/T05, sample only
+
+Xem [acquisition guide](docs/nsclc_acquisition.md), [data card](docs/nsclc_data_card.md), [schema](docs/nsclc_manifest_schema.md) và [QA report](docs/nsclc_qa_report.md). Nguồn TCIA/IDC chính thức, **CC BY-NC 3.0**. Chỉ 10 ca mẫu; không gọi là full corpus validated. Không tự tạo mask cho ca thiếu/ambiguous primary ROI.
+
+```powershell
+# Kiểm metadata/capacity; chưa tải DICOM:
+.\.venv\Scripts\python.exe -m lungseg.cli acquire-nsclc --config configs/nsclc.yaml
+# Pipeline offline sau verified acquisition:
+.\.venv\Scripts\python.exe -m lungseg.cli survey-nsclc --config configs/nsclc.yaml
+.\.venv\Scripts\python.exe -m lungseg.cli convert-nsclc --config configs/nsclc.yaml
+.\.venv\Scripts\python.exe -m lungseg.cli qa-nsclc --config configs/nsclc.yaml
+# Kiểm repeat manifest/raw hashes và regression, evidence riêng:
+.\.venv\Scripts\python.exe scripts/verify_nsclc_sample.py --config configs/nsclc.yaml --check-repeat
+.\scripts\verify.ps1 -EvidenceDirectory docs/evidence/p1_2/verification
+```
+
+`convert-nsclc` exit2 khi có quarantine findings, exit1 khi thao tác không chạy được; đọc report trước khi tiếp tục. Config cho phép absolute/external raw/converted roots; CLI có `--raw-root` và `--converted-root`. Dùng cùng cấu hình cho các bước để manifest/provenance khớp. Full download/conversion không được CLI này hỗ trợ; sample giới hạn1–20 public IDs. Raw, converted CT/masks và montage đều gitignored. Dừng sau P1.2 để review.
 
 ## Tái tạo audit tham chiếu
 
@@ -108,4 +126,4 @@ Trước bước trên cần cài dependency còn thiếu từ `pyproject.toml` 
 
 ## Nguồn và quyền sử dụng
 
-[Fredriksen et al. (2022), PLOS ONE](https://doi.org/10.1371/journal.pone.0266147), CC BY; bảng đối chiếu và bảng số liệu tham chiếu có attribution, không phải số của nhóm. Source upstream giữ nguyên cùng LICENSE trong clone; P0 dùng MONAI API và code tooling viết mới, không copy thân model upstream. Chưa chọn license cho code mới của nhóm. MSD được xác minh qua AWS Registry và metadata với CC-BY-SA4.0; xem acquisition guide. License/quyền truy cập hai nguồn còn lại và weights vẫn cần xác minh riêng. Không push/publish hoặc train nghiên cứu trong T04.
+[Fredriksen et al. (2022), PLOS ONE](https://doi.org/10.1371/journal.pone.0266147), CC BY; bảng đối chiếu và bảng số liệu tham chiếu có attribution, không phải số của nhóm. Source upstream giữ nguyên cùng LICENSE trong clone; P0 dùng MONAI API và code tooling viết mới, không copy thân model upstream. Chưa chọn license cho code mới của nhóm. MSD: CC BY-SA4.0; NSCLC-Radiomics: CC BY-NC3.0 qua TCIA/IDC, xem các acquisition guides. License/quyền truy cập Lung-PET-CT-Dx và weights vẫn cần xác minh riêng. Chưa push/publish hoặc train nghiên cứu.

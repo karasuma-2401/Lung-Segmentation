@@ -1,0 +1,99 @@
+{
+  "anatomical_annotation_correctness": "not established by geometry or montage alone",
+  "config": {
+    "accepted_roi_interpreted_types": [
+      "GTV",
+      "ORGAN"
+    ],
+    "accepted_roi_names": [
+      "GTV-1"
+    ],
+    "affine_atol_mm": 0.001,
+    "contour_plane_tolerance_mm": 0.1,
+    "converted_root": "data/converted/nsclc",
+    "evidence_dir": "docs/evidence/p1_2",
+    "geometry_tolerance_mm": 0.05,
+    "kind": "nsclc_rtstruct_inventory",
+    "orientation_atol": 1e-05,
+    "output_dir": "data/manifests/nsclc",
+    "qa_dir": "data/qa/nsclc",
+    "raw_root": "data/raw/NSCLC-Radiomics",
+    "reserve_bytes": 4294967296,
+    "roi_number_overrides": {},
+    "rtstruct_sop_overrides": {},
+    "sample_patient_ids": [
+      "LUNG1-001",
+      "LUNG1-002",
+      "LUNG1-003",
+      "LUNG1-004",
+      "LUNG1-005",
+      "LUNG1-006",
+      "LUNG1-007",
+      "LUNG1-008",
+      "LUNG1-014",
+      "LUNG1-128"
+    ],
+    "schema_version": 1,
+    "slab_slices": 16,
+    "spacing_atol_mm": 0.01
+  },
+  "config_sha256": "fd8e3ff13d089f26fa53e0e566f3573b3538f0e3b2cc6fe78b573d39c3ae150e",
+  "converted_cases": 7,
+  "dataset": "NSCLC-Radiomics",
+  "full_corpus_status": "NOT_VALIDATED",
+  "git": {
+    "revision": "fef32f1932df3e6e0644b937fdd775f953cd3cae",
+    "status": "dirty"
+  },
+  "label_values_union": [
+    0.0,
+    1.0
+  ],
+  "manifest_sha256": "7362d1755b9e1273b69360c4d1b8e9e1a68afe066f47da0d36e1e0d4a7f8903f",
+  "quarantine": [
+    {
+      "case_id": "LUNG1-006",
+      "reasons": [
+        "contour_has_no_voxel_centers: contour_index=16; slice_index=65; "
+      ]
+    },
+    {
+      "case_id": "LUNG1-014",
+      "reasons": [
+        "missing_slices_or_nonuniform_spacing: gaps_mm=[6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0]"
+      ]
+    },
+    {
+      "case_id": "LUNG1-128",
+      "reasons": [
+        "primary_tumor_roi_not_identified: Keep annotation; do not create an empty mask"
+      ]
+    }
+  ],
+  "quarantined_cases": 3,
+  "real_data": true,
+  "sample_patients": 10,
+  "shape_counts": {
+    "[512, 512, 107]": 1,
+    "[512, 512, 111]": 1,
+    "[512, 512, 114]": 2,
+    "[512, 512, 129]": 1,
+    "[512, 512, 134]": 1,
+    "[512, 512, 91]": 1
+  },
+  "spacing_counts": {
+    "[0.9765625, 0.9765625, 3.0]": 3,
+    "[0.9769999980926514, 0.9769999980926514, 3.0]": 4
+  },
+  "status": "SAMPLE_CONVERTED_QA_PENDING",
+  "timestamp_utc": "2026-11-24T05:16:54.692872+00:00",
+  "tumor_volume_mm3": {
+    "max": 359468.93969699997,
+    "median": 83548.014312,
+    "min": 12494.087219238283,
+    "n": 7,
+    "q25": 37843.7339985,
+    "q75": 120391.84570312503
+  },
+  "verified_source_patients": 10
+}

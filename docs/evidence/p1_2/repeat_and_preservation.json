@@ -1,0 +1,20 @@
+{
+  "config_sha256": "fd8e3ff13d089f26fa53e0e566f3573b3538f0e3b2cc6fe78b573d39c3ae150e",
+  "manifest_repeat_identical": true,
+  "manifest_sha256_first": "7362d1755b9e1273b69360c4d1b8e9e1a68afe066f47da0d36e1e0d4a7f8903f",
+  "manifest_sha256_second": "7362d1755b9e1273b69360c4d1b8e9e1a68afe066f47da0d36e1e0d4a7f8903f",
+  "raw_after": {
+    "bytes": 593390653,
+    "files": 1131,
+    "tree_sha256": "34b25b726fba8660d44463f54c9a118b24409a00ee1c90c0f8e77a7f9d0281ba"
+  },
+  "raw_before": {
+    "bytes": 593390653,
+    "files": 1131,
+    "tree_sha256": "34b25b726fba8660d44463f54c9a118b24409a00ee1c90c0f8e77a7f9d0281ba"
+  },
+  "raw_preserved": true,
+  "real_data": true,
+  "repeat_requested": true,
+  "timestamp_utc": "2026-11-24T05:04:53.238478+00:00"
+}

@@ -284,11 +284,11 @@ def summarize(rows: list[dict], metadata: dict, findings: list[str]) -> dict:
             "scope": "native-grid inventory, not a train/validation/test assignment or preprocessing"}
 
 
-def write_manifest(path: Path, rows: list[dict]) -> None:
+def write_manifest(path: Path, rows: list[dict], *, fields=FIELDS) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(path.suffix + ".tmp")
     with temporary.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=FIELDS, lineterminator="\n")
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow({key: json.dumps(value, separators=(",", ":"), allow_nan=False)
