@@ -1,0 +1,30 @@
+{
+  "cloud_execution": "NOT_RUN",
+  "files": {
+    "configs/hybrid_storage_budget.json": {
+      "bytes": 539,
+      "sha256": "4d584af02c10608a1a9571266280a686e3efe082a11cb51a08fa4d4a5271b2a0"
+    },
+    "requirements-r2-pilot.txt": {
+      "bytes": 149,
+      "sha256": "8ee9fcded2f9a3c19226a8a45e327ccefb62fcfa400d510f6d9afce2a721ffba"
+    },
+    "scripts/bootstrap_cloud_pilot.sh": {
+      "bytes": 1370,
+      "sha256": "1bcb18ce3c2085945ae1d7a588e60f9f02fcefaf4329cbe95d40f215e4a574e9"
+    },
+    "scripts/cloud_pilot.py": {
+      "bytes": 21450,
+      "sha256": "7e017276b086afeb646c6c7e17aceed797cd93a12086868a0308cfd1e59be8d0"
+    },
+    "scripts/r2_synthetic_pilot.py": {
+      "bytes": 12387,
+      "sha256": "b0efd221bc0b2d7abbe7b63efc70ff352065bac9cbc7ac41711dbbd2488ee111"
+    }
+  },
+  "input_root_sha256": "c97683893715b34fbb7cdf7193134220625169021acb39aae00f6243ce9c4f6f",
+  "kit_commit_status": "working_tree_not_committed_or_pushed",
+  "production_revision": "dc6e179087737621b69d538ef200436c644a7687",
+  "r2_execution": "NOT_RUN",
+  "timestamp_utc": "2026-11-24T09:34:42.734898+00:00"
+}

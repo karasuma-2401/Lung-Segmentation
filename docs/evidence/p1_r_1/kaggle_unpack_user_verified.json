@@ -1,0 +1,16 @@
+{
+  "ingested_at_utc": "2026-11-24T10:14:47.577145+00:00",
+  "measurement_origin": "user-provided Kaggle notebook screenshot",
+  "status": "USER_EXECUTED_EXTRACT_AND_INPUT_VERIFY_PASS",
+  "verified_input_files": 177,
+  "stage_logical_path": "/kaggle/working/se374_pilot_stage_v1",
+  "observed_output": [
+    "EXTRACT_AND_INPUT_VERIFY_PASS",
+    "Verified input files: 177",
+    "Conversion has not started"
+  ],
+  "agent_direct_cloud_execution": false,
+  "linux_bootstrap": "NOT_RUN",
+  "native_conversion": "NOT_RUN",
+  "session_restore": "NOT_RUN"
+}

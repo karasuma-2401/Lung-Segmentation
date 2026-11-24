@@ -1,0 +1,23 @@
+{
+  "account_limits_verified": false,
+  "application_hard_limit_bytes": 10000000000,
+  "credentials_present": {
+    "R2_ACCESS_KEY_ID": false,
+    "R2_ACCOUNT_ID": false,
+    "R2_BUCKET": false,
+    "R2_SECRET_ACCESS_KEY": false
+  },
+  "pilot_script_sha256": "b0efd221bc0b2d7abbe7b63efc70ff352065bac9cbc7ac41711dbbd2488ee111",
+  "real_r2_status": "NOT_RUN",
+  "runtime": {
+    "platform": "Windows",
+    "python": "3.13.15"
+  },
+  "sdk_available": false,
+  "sdk_versions": {
+    "status": "NOT_INSTALLED"
+  },
+  "status": "READY_FOR_USER_EXECUTION",
+  "storage_target_bytes": 8000000000,
+  "synthetic_default_bytes": 1048576
+}

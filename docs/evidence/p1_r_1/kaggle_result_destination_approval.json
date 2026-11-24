@@ -1,0 +1,14 @@
+{
+  "evidence_source": "explicit_user_reply_in_conversation",
+  "approval": "Đồng ý đích Private này",
+  "destination": "Kaggle Dataset: SE374 LungSeg Pilot Result v1",
+  "visibility": "Private",
+  "access": "personal owner only, no additional collaborators",
+  "approved_content": "Exact reviewed native pilot result: 27 artifacts plus RESULT_ROOT.json, no additional data",
+  "result_root_sha256": "8da1ebd95caac4551160cfcdfc9e8e749fec7f82d13a3bb6f1a836d6c670687a",
+  "purpose": "Bounded cross-session persistence/restore verification",
+  "upload_performed": false,
+  "cross_session_persistence": "NOT_RUN",
+  "scope_excludes": ["public sharing", "other collaborators", "full corpus", "R2 medical upload", "paid resources", "cleanup", "training"],
+  "note": "No repeat approval is required for this exact result and destination. Packaging and actual upload/restore still need user execution."
+}

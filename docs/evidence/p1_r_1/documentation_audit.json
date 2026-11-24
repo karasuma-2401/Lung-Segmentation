@@ -1,0 +1,11 @@
+{
+  "new_report_local_links_valid": true,
+  "broken_links": [],
+  "new_reports_user_directory_paths": [],
+  "kit_manifest_matches_current_files": true,
+  "changed_kit_files": [],
+  "current_architecture": "Hybrid_B",
+  "cloud_pilot": "NOT_RUN",
+  "real_R2_pilot": "NOT_RUN",
+  "session_restore": "NOT_RUN"
+}

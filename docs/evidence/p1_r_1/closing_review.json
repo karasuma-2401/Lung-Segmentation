@@ -1,0 +1,17 @@
+{
+  "status": "CLOSING_DIFF_AND_METADATA_REVIEW",
+  "changed_or_untracked_files_reviewed": 106,
+  "json_files_parsed": 43,
+  "protected_production_changes": [],
+  "raw_medical_containers_or_model_artifacts_in_changed_git_candidates": [],
+  "strong_credential_signature_matches": [],
+  "absolute_user_directory_path_files": [
+    "tests/test_cloud_pilot.py"
+  ],
+  "absolute_user_directory_findings_review": "The sole match is the synthetic path-traversal rejection fixture C:/Users/private; it is not an actual machine user directory. No newly reviewed report matched the user-directory pattern.",
+  "scope_note": "Pattern scan is a bounded check, not a guarantee that every possible secret or identifier was detected. No source/raw data edits, commit, push, cleanup or new remote execution performed.",
+  "latest_executed_regression": "263 passed; CPU smoke/env/pip check pass in verification_restore_cell, not rerun for documentation-only closure",
+  "kaggle_restore_evidence": "PASS_BOUNDED_RESTORE_WITH_USER_ATTESTATION",
+  "r2_remote_pilot": "NOT_RUN",
+  "account_quota_privacy_version": "NOT_INDEPENDENTLY_VERIFIED"
+}

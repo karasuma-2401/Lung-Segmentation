@@ -1,5 +1,7 @@
 # P1.3/T06 — Lung-PET-CT-Dx report — 24/11/2026
 
+**Current-status update sau review XML:** access RESOLVED; original ZIP đã parse/CRC-check,75XML boxes match75/77SRboxes của10sample. A0003difference và full XML–SR equivalence REVIEW_REQUIRED; SR production/XML immutable reference. [XML report](weak_xml_comparison.md), [resource assessment](resource_feasibility_report.md). Phần T06 bên dưới là snapshot lịch sử trước follow-up; timeout và counts/tests cũ được giữ, không là current access status.
+
 **SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS cho official expert-SR representation. Full corpus NOT_VALIDATED/BLOCKED_STORAGE; XML gốc access/equivalence còn OPEN.** Baseline P1.2.1 được người dùng nghiệm thu tại dev commit `a3712db3ecea5607b878c76f40de967004d3eee8`. Chỉ T06, giữ cả3datasets; không full NSCLC download/cloud provisioning/cleanup, splitting/T08/Teacher/pseudo/Student/training.
 
 ## Implementation và file changes
@@ -104,7 +106,7 @@ Preflight disk khoảng53GBfree, RAM8.215GBinstalled/freephysical khoảng0.70Gi
 |Manifest/QA/source hashes/negative controls |PASS actual sample + synthetic failures; no real invalid-case count invented |
 |Regression/baseline preservation |PASS177tests, raw/old artifacts intact, NSCLC cache identity unchanged |
 |Training eligibility/expert clearance |REVIEW_REQUIRED, không được cấp |
-|XML original local validation |BLOCKED_SOURCE_TIMEOUT /OPEN equivalence |
+|XML original local validation |T06 snapshot: timeout; follow-up ACCESS_RESOLVED, full equivalence REVIEW_REQUIRED, xem update đầu tài liệu |
 |Full weak/NSCLC corpus |BLOCKED_STORAGE, NOT_VALIDATED |
 |Scope |PASS, ba datasets giữ nguyên; dừng sau P1.3 |
 

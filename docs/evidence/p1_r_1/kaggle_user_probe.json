@@ -1,0 +1,23 @@
+{
+  "actual_account_dataset_quota": "NOT_VERIFIED",
+  "cgroup_memory_current_bytes": 823054336,
+  "cgroup_memory_max_bytes": 32212254720,
+  "ingested_at_utc": "2026-11-24T09:48:20.442339+00:00",
+  "logical_cpus": 4,
+  "measurement_origin": "user executed notebook, screenshot supplied in conversation",
+  "notebook_measurement_timestamp": "not supplied",
+  "os_visible_mem_available_gib_rounded": 30.13,
+  "os_visible_mem_total_gib_rounded": 31.35,
+  "scope": "resource/connectivity probe only, not native conversion or persistence verification",
+  "source_connectivity": {
+    "IDC": {
+      "HTTP": 200,
+      "bytes_read": 729
+    },
+    "TCIA": {
+      "HTTP": 200,
+      "bytes_read": 1024
+    }
+  },
+  "working_free_gib_rounded": 19.5
+}

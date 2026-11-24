@@ -1,0 +1,22 @@
+Private bounded CPU pilot output của dự án SE374 LungSeg, chỉ phục vụ kiểm định persistence/restore. Không phải dataset đã được cleared để training.
+
+Nội dung: native CT/mask của một ca NSCLC-Radiomics (LUNG1-001), native CT/bbox và annotation/coverage của một ca Lung-PET-CT-Dx (Lung_Dx-A0003), cùng manifests, provenance, runtime measurements, logs và environment freeze. Tổng27artifacts + RESULT_ROOT.json. Không chứa toàn bộ corpus hoặc bản sao raw/XML ZIP từ input.
+
+File .bin là uncompressed tar container. Verify outer transfer SHA256/bytes từ receipt cell04 trước controlled extraction, sau đó verify toàn bộ artifacts bằng RESULT_ROOT SHA256 dưới đây. Không đổi tên thành .zip hoặc sửa receipt để bỏ lỗi.
+
+License giữ riêng theo nguồn, chọn Other (specified in description), không blanket relicensing:
+- NSCLC-Radiomics: Aerts et al., TCIA, DOI 10.7937/K9/TCIA.2015.PF0M9REI; CC BY-NC 3.0: https://creativecommons.org/licenses/by-nc/3.0/
+- Lung-PET-CT-Dx: Li et al. (2020), TCIA, DOI 10.7937/TCIA.2020.NNC2-0461; CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+- Expert XML-to-SR harmonization: Krishnaswamy, Clunie và Fedorov, Zenodo v1 (2025), DOI 10.5281/zenodo.16989820; CC BY 4.0.
+- TCIA citation: Clark et al. (2013), DOI 10.1007/s10278-013-9622-7.
+
+Derived native representations phục vụ validation; source annotations giữ nguyên, không resample/downsample. Bbox không là segmentation ground truth, unknown không là negative, XML–SR full equivalence REVIEW_REQUIRED. Kết quả pilot so sánh arrays/geometry/selected provenance với local references PASS, không manual/expert approval mới; training_clearance=false.
+
+Production revision: dc6e179087737621b69d538ef200436c644a7687
+Input receipt SHA256: c97683893715b34fbb7cdf7193134220625169021acb39aae00f6243ce9c4f6f
+Result receipt SHA256: 8da1ebd95caac4551160cfcdfc9e8e749fec7f82d13a3bb6f1a836d6c670687a
+Transfer bytes: 57477120
+Transfer SHA256: a7285babe7d1c0fa5a24fef48f064b2fc558113ba75aa1b2e948d493c1b4f3dc
+Outer transfer digest và inner result receipt digest khác nhau, đều phải được kiểm.
+
+Private/personal owner-only. Không public hoặc thêm collaborators. Upload/file visibility chưa là bằng chứng persistence: cần kết thúc session thật, mount lại trong session mới và read-back toàn bộ hashes/arrays/geometry/annotation/provenance.

@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-11-24T10:08:00.193544+00:00",
+  "status": "LOCAL_EXTRACTION_AND_INPUT_INTEGRITY_PASS",
+  "scope": "notebook cell executed locally with explicit input/stage path substitutions",
+  "output": [
+    "EXTRACT_AND_INPUT_VERIFY_PASS",
+    "Verified input files: 177",
+    "Stage: data\\cache\\cloud_pilot\\extraction_check_01",
+    "Conversion has not started"
+  ],
+  "cloud_extraction": "NOT_RUN",
+  "native_conversion": "NOT_RUN",
+  "session_restore": "NOT_RUN"
+}

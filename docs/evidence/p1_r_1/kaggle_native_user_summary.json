@@ -1,0 +1,466 @@
+{
+  "status": "KAGGLE_CPU_PILOT_PASS",
+  "result_path": "/kaggle/working/pilot_cpu_20261124T103900Z_a9054907/result_20261124T104648Z_39a1c42c",
+  "result_root_sha256": "8da1ebd95caac4551160cfcdfc9e8e749fec7f82d13a3bb6f1a836d6c670687a",
+  "result_files_verified": 27,
+  "runtime": {
+    "cpu_count": 4,
+    "disk": {
+      "free_bytes": 20492337152,
+      "total_bytes": 20957446144
+    },
+    "kaggle_runtime_detected": true,
+    "platform": "Linux",
+    "python": "3.13.18",
+    "ram": {
+      "available_bytes": 32245391360,
+      "total_bytes": 33658159104
+    }
+  },
+  "checks": {
+    "nsclc": {
+      "annotation_records_coverage_equal": true,
+      "metrics": {
+        "annotation_review": "not newly approved",
+        "converted_cases": 1,
+        "cpu_only": true,
+        "input_raw_bytes": 72071380,
+        "output_data_bytes_before_metric": 45506541,
+        "peak_rss_bytes": 358244352,
+        "quarantined_cases": 0,
+        "reference_bytes": 45444759,
+        "wall_seconds": 9.635043564999933
+      },
+      "nifti_arrays_geometry_equal": true,
+      "runtime_fingerprint_equal_to_local": false,
+      "signatures": {
+        "LUNG1-001/ct.nii.gz": {
+          "affine": [
+            [
+              -0.9765625,
+              0.0,
+              0.0,
+              249.51171875
+            ],
+            [
+              0.0,
+              -0.9765625,
+              0.0,
+              460.51171875
+            ],
+            [
+              0.0,
+              0.0,
+              3.0,
+              -681.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "dtype": "float32",
+          "qform": [
+            [
+              -0.9765625,
+              0.0,
+              0.0,
+              249.51171875
+            ],
+            [
+              0.0,
+              -0.9765625,
+              0.0,
+              460.51171875
+            ],
+            [
+              0.0,
+              0.0,
+              3.0,
+              -681.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "qform_code": 1,
+          "sform": [
+            [
+              -0.9765625,
+              0.0,
+              0.0,
+              249.51171875
+            ],
+            [
+              0.0,
+              -0.9765625,
+              0.0,
+              460.51171875
+            ],
+            [
+              0.0,
+              0.0,
+              3.0,
+              -681.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "sform_code": 1,
+          "shape": [
+            512,
+            512,
+            134
+          ],
+          "spacing": [
+            0.9765625,
+            0.9765625,
+            3.0
+          ],
+          "units": [
+            "mm",
+            "unknown"
+          ],
+          "voxel_sha256_slab16": "089e5d31ddf0b16f7b56f27468e00df003574e443a743d1b5b5cdd809a94e26e"
+        },
+        "LUNG1-001/mask.nii.gz": {
+          "affine": [
+            [
+              -0.9765625,
+              0.0,
+              0.0,
+              249.51171875
+            ],
+            [
+              0.0,
+              -0.9765625,
+              0.0,
+              460.51171875
+            ],
+            [
+              0.0,
+              0.0,
+              3.0,
+              -681.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "dtype": "uint8",
+          "qform": [
+            [
+              -0.9765625,
+              0.0,
+              0.0,
+              249.51171875
+            ],
+            [
+              0.0,
+              -0.9765625,
+              0.0,
+              460.51171875
+            ],
+            [
+              0.0,
+              0.0,
+              3.0,
+              -681.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "qform_code": 1,
+          "sform": [
+            [
+              -0.9765625,
+              0.0,
+              0.0,
+              249.51171875
+            ],
+            [
+              0.0,
+              -0.9765625,
+              0.0,
+              460.51171875
+            ],
+            [
+              0.0,
+              0.0,
+              3.0,
+              -681.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "sform_code": 1,
+          "shape": [
+            512,
+            512,
+            134
+          ],
+          "spacing": [
+            0.9765625,
+            0.9765625,
+            3.0
+          ],
+          "units": [
+            "mm",
+            "unknown"
+          ],
+          "voxel_sha256_slab16": "141c1b7ad8ddba143c1dd63e6b7545e3f9311f20158e52a8f773a7c7cedb8aac"
+        }
+      },
+      "source_geometry_annotation_provenance_equal": true
+    },
+    "weak": {
+      "annotation_records_coverage_equal": true,
+      "metrics": {
+        "annotation_review": "not newly approved",
+        "converted_cases": 1,
+        "cpu_only": true,
+        "input_raw_bytes": 14257379,
+        "output_data_bytes_before_metric": 11896103,
+        "peak_rss_bytes": 191258624,
+        "quarantined_cases": 0,
+        "reference_bytes": 11851781,
+        "wall_seconds": 2.171479088000069
+      },
+      "nifti_arrays_geometry_equal": true,
+      "runtime_fingerprint_equal_to_local": false,
+      "signatures": {
+        "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728/bbox.nii.gz": {
+          "affine": [
+            [
+              -0.62109375,
+              0.0,
+              0.0,
+              184.689453125
+            ],
+            [
+              0.0,
+              -0.62109375,
+              0.0,
+              320.689453125
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -336.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "dtype": "uint8",
+          "qform": [
+            [
+              -0.62109375,
+              0.0,
+              0.0,
+              184.689453125
+            ],
+            [
+              0.0,
+              -0.62109375,
+              0.0,
+              320.689453125
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -336.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "qform_code": 1,
+          "sform": [
+            [
+              -0.62109375,
+              0.0,
+              0.0,
+              184.689453125
+            ],
+            [
+              0.0,
+              -0.62109375,
+              0.0,
+              320.689453125
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -336.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "sform_code": 1,
+          "shape": [
+            512,
+            512,
+            27
+          ],
+          "spacing": [
+            0.62109375,
+            0.62109375,
+            10.0
+          ],
+          "units": [
+            "mm",
+            "unknown"
+          ],
+          "voxel_sha256_slab16": "02d8195e019f9ce3be9b15364f4bc764a2ff69d02e359ddb1d91e89c382f52f0"
+        },
+        "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728/ct.nii.gz": {
+          "affine": [
+            [
+              -0.62109375,
+              0.0,
+              0.0,
+              184.689453125
+            ],
+            [
+              0.0,
+              -0.62109375,
+              0.0,
+              320.689453125
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -336.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "dtype": "float32",
+          "qform": [
+            [
+              -0.62109375,
+              0.0,
+              0.0,
+              184.689453125
+            ],
+            [
+              0.0,
+              -0.62109375,
+              0.0,
+              320.689453125
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -336.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "qform_code": 1,
+          "sform": [
+            [
+              -0.62109375,
+              0.0,
+              0.0,
+              184.689453125
+            ],
+            [
+              0.0,
+              -0.62109375,
+              0.0,
+              320.689453125
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -336.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "sform_code": 1,
+          "shape": [
+            512,
+            512,
+            27
+          ],
+          "spacing": [
+            0.62109375,
+            0.62109375,
+            10.0
+          ],
+          "units": [
+            "mm",
+            "unknown"
+          ],
+          "voxel_sha256_slab16": "57494a37d55f0b60d7669720319ae1ca61896bf57b1f20f0683731167c922645"
+        }
+      },
+      "source_geometry_annotation_provenance_equal": true
+    }
+  },
+  "source_connectivity": {
+    "IDC": {
+      "reachable": true,
+      "read_bytes": 729,
+      "status": 200
+    },
+    "TCIA": {
+      "reachable": true,
+      "read_bytes": 1024,
+      "status": 200
+    }
+  },
+  "persistence_restore": "NOT_RUN",
+  "training_clearance": false
+}

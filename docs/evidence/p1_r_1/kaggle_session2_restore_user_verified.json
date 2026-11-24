@@ -1,0 +1,51 @@
+{
+  "evidence_source": "user_pasted_cell06_output",
+  "capture_timestamp": null,
+  "agent_direct_cloud_access": false,
+  "notebook_url_provided_by_user": "https://www.kaggle.com/code/winpear/notebooka1b5088c00/edit",
+  "previous_notebook_identifier": "notebook1923ef4210",
+  "new_notebook_identifier": "notebooka1b5088c00",
+  "restore": {
+    "status": "RESTORE_CONTENT_VERIFIED",
+    "files_verified": 27,
+    "arrays_geometry_verified": true,
+    "annotation_provenance_hashes_verified": true,
+    "previous_session_id": "a0492d9112114e029f3c1590599b0d5a",
+    "fresh_session_attested": true,
+    "actual_kaggle_runtime": true,
+    "session_restore_status": "USER_ATTESTED_FRESH_SESSION_CONTENT_PASS",
+    "source_receipt_sha256": "8da1ebd95caac4551160cfcdfc9e8e749fec7f82d13a3bb6f1a836d6c670687a",
+    "training_clearance": false,
+    "restore_implementation_equal_to_producer": true,
+    "old_work_directory_absent": true,
+    "input_bundle_readback_verified": true,
+    "session_evidence_review": "REQUIRED_FROM_USER_NOTEBOOK_URL_AND_ATTESTATION"
+  },
+  "report_path": "/kaggle/working/pilot_cpu_20261124T224719Z_15436550/restore_4b5aace0c374.json",
+  "original_session_work_absent": true,
+  "new_setup_work": "/kaggle/working/pilot_cpu_20261124T224719Z_15436550",
+  "result_dataset_mount": "/kaggle/input/datasets/winpear/se374-lungseg-pilot-result-v1/se374-pilot-result-8da1ebd95caa.bin",
+  "review": {
+    "status": "PASS_BOUNDED_RESTORE_WITH_USER_ATTESTATION",
+    "basis": [
+      "User supplied a different new notebook URL and setup log matching producer source/packages/runtime fingerprints.",
+      "Cell06 reports original work directory absent, fresh-session user attestation true and actual Kaggle runtime.",
+      "Externally pinned result receipt digest equals the reviewed session1 digest.",
+      "All 27 artifact hashes, decoded NIfTI arrays/geometry and annotation/provenance content hashes verified.",
+      "Original input bundle read-back verified; source XML reference remains included in that sealed bundle."
+    ],
+    "limitations": [
+      "Evidence was run and provided by the user, not by agent access to the Kaggle account.",
+      "Session termination is user-attested; the agent did not independently observe the host lifecycle.",
+      "Dataset privacy/collaborators/version and full account quota were not independently inspected.",
+      "Two selected cases do not validate full-corpus capacity, throughput or annotation clearance."
+    ]
+  },
+  "warning": {
+    "message": "Error in sitecustomize; ModuleNotFoundError: No module named 'wrapt'",
+    "observed_impact": "Restore completed successfully despite startup warning.",
+    "root_cause": "NOT_INVESTIGATED"
+  },
+  "r2_remote_pilot": "NOT_RUN",
+  "training_clearance": false
+}

@@ -1,6 +1,6 @@
 # Annotation format và coverage survey — T06
 
-**Đã đọc thực:**10DICOM SR objects thuộc official IDC expert annotation collection, trước implementation parser;10referenced CT series. **Chưa đọc:** XML archive gốc vì timeout. Không suy ra XML zero/one-based từ tên PASCAL VOC. Synthetic VOC math helpers chỉ kiểm explicit coordinate conversion, không là XML production parser đã verified.
+**Đã đọc thực:**10DICOM SR objects thuộc official IDC expert annotation collection trước implementation parser,10referenced CT series; follow-up đọc31,561XML trong original ZIP,1binary/unparseable member. XML access RESOLVED;75XML boxes khớp75/77SRboxes trong sample, A0003có2SR-only boxes. XML convention/full equivalence REVIEW_REQUIRED, không suy ra zero/one-based từ tên PASCAL VOC. SR tiếp tục production; XML immutable reference. [Chi tiết XML](weak_xml_comparison.md), [readiness design](xml_full_corpus_readiness.md). Synthetic VOC math helpers không phải production XML parser.
 
 SR thực là Comprehensive3DSRStorage, TID1500; CONTAINER Measurement Group(DCM125007), Finding(DCM121071), Tracking UID(DCM112040), Image Region SCOORD/POLYLINE, IMAGE child SELECTED FROM. Closed rectangle có5(column,row)pairs, điểm cuối lặp điểm đầu. CurrentRequestedProcedureEvidenceSequence cho StudyUID→SeriesUID→SOPUIDs. Parser kiểm exact patient/study/series và mọi region SOP, không match substring/InstanceNumber/filename.
 

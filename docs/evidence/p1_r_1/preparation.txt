@@ -1,0 +1,9 @@
+{
+  "cloud_pilot": "NOT_RUN",
+  "input_files": 176,
+  "input_root_sha256": "c97683893715b34fbb7cdf7193134220625169021acb39aae00f6243ce9c4f6f",
+  "payload_bytes": 160929353,
+  "persistence": "NOT_RUN",
+  "status": "PREPARED_LOCAL_ONLY",
+  "upload_performed": false
+}

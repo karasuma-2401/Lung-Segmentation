@@ -1,0 +1,3 @@
+# Optional synthetic R2 pilot only. Resolve/freeze in its own Linux venv.
+# Not installed into the verified P0 environment by P1-R.1.
+boto3>=1.36,<2

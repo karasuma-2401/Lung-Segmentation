@@ -1,0 +1,11 @@
+{
+  "timestamp_utc": "2026-11-24T10:33:16.870112+00:00",
+  "status": "STANDALONE_CELL_REAL_CONTAINER_AND_LOCAL_PROBE_PASS",
+  "scope": "actual transfer extraction/receipt check plus exact probe in existing local venv; not Linux bootstrap",
+  "verified_input_files": 177,
+  "local_probe_platform": "Windows",
+  "source_hashes_match": true,
+  "linux_setup": "NOT_RUN",
+  "native_conversion": "NOT_RUN",
+  "session_restore": "NOT_RUN"
+}

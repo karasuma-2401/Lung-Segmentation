@@ -1,0 +1,15 @@
+{
+  "account_limits_verified": false,
+  "application_hard_limit_bytes": 10000000000,
+  "credentials_present": {
+    "R2_ACCESS_KEY_ID": false,
+    "R2_ACCOUNT_ID": false,
+    "R2_BUCKET": false,
+    "R2_SECRET_ACCESS_KEY": false
+  },
+  "real_r2_status": "NOT_RUN",
+  "sdk_available": false,
+  "status": "READY_FOR_USER_EXECUTION",
+  "storage_target_bytes": 8000000000,
+  "synthetic_default_bytes": 1048576
+}

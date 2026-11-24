@@ -1,0 +1,47 @@
+{
+  "evidence_source": "user_pasted_setup_log_and_explicit_new_notebook_url",
+  "agent_direct_cloud_access": false,
+  "status": "NEW_NOTEBOOK_SETUP_PASS_RESTORE_PENDING",
+  "notebook_url": "https://www.kaggle.com/code/winpear/notebooka1b5088c00/edit",
+  "previous_notebook_identifier": "notebook1923ef4210",
+  "new_notebook_identifier": "notebooka1b5088c00",
+  "user_describes_notebook_as_new": true,
+  "original_session_termination": "AWAITING_EXPLICIT_USER_ATTESTATION",
+  "probe": {
+    "timestamp_utc": "2026-11-24T22:47:37.105119+00:00",
+    "status": "PACKAGE_SOURCE_IMPORT_CHECK_PASS",
+    "platform": "Linux",
+    "python": "3.13.18",
+    "production_revision": "dc6e179087737621b69d538ef200436c644a7687",
+    "packages": {
+      "pip": "26.3",
+      "numpy": "2.5.5",
+      "nibabel": "5.5.0",
+      "pydicom": "3.0.2",
+      "PyYAML": "6.0.4"
+    },
+    "production_source_hashes_match": true,
+    "isolated_target_venv": true,
+    "weak_runtime_fingerprint": "700e3f14b56efab3a1c914c940a510aa65b08a4b7a5c3e0bcf234438100ea7b8",
+    "nsclc_runtime_fingerprint": "2d7bd5626e428adc6a486244ed08c8a699d0661e1a4aec569dc1a56add773498",
+    "runtime_identity_equals_local": {
+      "weak": false,
+      "nsclc": false
+    },
+    "native_conversion": "NOT_RUN",
+    "persistence_restore": "NOT_RUN"
+  },
+  "probe_time_asia_saigon": "2026-11-25T05:47:37.105119+07:00",
+  "matches_producer_setup_fields": [
+    "production_revision",
+    "python",
+    "weak_runtime_fingerprint",
+    "nsclc_runtime_fingerprint"
+  ],
+  "packages_match_producer_setup": true,
+  "runtime_context": "/kaggle/working/pilot_cpu_20261124T224719Z_15436550/runtime_context.json",
+  "warning": "sitecustomize ModuleNotFoundError wrapt persists; pip/import/source checks passed, root cause not investigated",
+  "result_dataset_mount_in_new_notebook": "NOT_YET_VERIFIED",
+  "persistence_restore": "NOT_RUN",
+  "training_clearance": false
+}

@@ -50,7 +50,7 @@ Report tách selected raw, existing verified cache, network payload và từng a
 
 Real offline cache verification (network/listing bị khóa): **20series,221,804,220verified cache bytes,0network payload bytes**, cap2,147,483,648bytes. Synthetic tests chứng minh actual>estimate chỉ được tải nếu vừa cap; không gọi payload khi remaining thiếu ở cả SR/CT; short transfer giữ stage, không publish; partial failure report exit2.
 
-## Task E — Original XML: BLOCKED_SOURCE
+## Task E — Original XML: historical BLOCKED_SOURCE, access nay RESOLVED
 
 Đã thử [official alternate page](https://www.cancerimagingarchive.net/tcia-downloads/lung-pet-ct-dx-da-other/lung-pet-ct-dx-annotations-xml-files-rev12222020/), [collection page](https://www.cancerimagingarchive.net/collection/lung-pet-ct-dx/) và official uploads directory. Web fetch trả HTTP500; ba direct urllib GET timeout20s/request. Chi tiết actual attempts trong [xml_source_investigation.json](evidence/p1_3_1/xml_source_investigation.json).
 
@@ -118,4 +118,4 @@ Targeted **91passed**. Full suite **217passed in23.42s =177prior+40new synthetic
 |F — Real revalidation / regressions / preservation|PASS —10pairs exact,217tests,570baseline files preserved|
 |Protocol và scope|PASS —3datasets, Scarce/Vast unchanged; không full download/cloud/splits/preprocessing/training/cleanup|
 
-Cần source XML chính thức truy cập được hoặc archive có provenance đáng tin cậy để mở tiếp equivalence investigation; không yêu cầu giải quyết blocker này để review hardening. Cần annotation/coverage review và acquisition semantics evidence trước clearance; persistent storage vẫn thiếu cho full corpus cả3nguồn. MSD patient mapping/lung_022/lung_018 và NSCLC002/006/014/128 giữ nguyên. **Chờ người dùng review P1.3.1; chưa triển khai P1-R/T07/T08 hoặc giai đoạn nghiên cứu tiếp theo.**
+Current update: P1.3.1 và XML investigation đã được người dùng nghiệm thu; source XML access RESOLVED, equivalence REVIEW_REQUIRED do record/coordinate/mapping findings. [P1-R.1 assessment](resource_feasibility_report.md) giữ SR production/XML immutable reference, storage/coverage/acquisition review chưa cleared. MSD patient mapping/lung_022/lung_018 và NSCLC002/006/014/128 giữ nguyên. Historical timeout evidence ở trên không sửa; không tự T07/T08/training.

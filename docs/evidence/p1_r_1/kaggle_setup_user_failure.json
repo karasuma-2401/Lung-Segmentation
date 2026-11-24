@@ -1,0 +1,17 @@
+{
+  "ingested_at_utc": "2026-11-24T10:25:30.655175+00:00",
+  "measurement_origin": "user-provided Kaggle setup screenshot",
+  "status": "USER_EXECUTED_BOOTSTRAP_FAILED_ENSUREPIP",
+  "repo_clone": "PASS",
+  "checkout_revision": "dc6e179087737621b69d538ef200436c644a7687",
+  "failed_step": "python -m venv invokes child python -m ensurepip --upgrade --default-pip",
+  "observed_child_exit_code": 1,
+  "inner_ensurepip_stderr_available": false,
+  "root_cause_detail": "not established from outer venv error; do not assume missing OS package",
+  "failed_venv_preserved": true,
+  "old_setup_log": "/kaggle/working/pilot_session_01.setup.log",
+  "recovery_method_proposed": "fresh venv --without-pip plus base pip --python target; install pip/data dependencies only into target",
+  "recovery_execution": "NOT_RUN",
+  "native_conversion": "NOT_RUN",
+  "session_restore": "NOT_RUN"
+}

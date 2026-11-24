@@ -1,0 +1,31 @@
+{
+  "evidence_source": "user_provided_pasted_kaggle_log",
+  "agent_direct_cloud_access": false,
+  "timestamp_utc_from_probe": "2026-11-24T10:39:18.405776+00:00",
+  "cell": "02c_setup_from_attached_dataset.py",
+  "status": "LINUX_ENVIRONMENT_READY_NO_CONVERSION",
+  "input_verification": "PASS",
+  "production_revision": "dc6e179087737621b69d538ef200436c644a7687",
+  "platform": "Linux",
+  "python": "3.13.18",
+  "packages": {
+    "pip": "26.3", "numpy": "2.5.5", "nibabel": "5.5.0",
+    "pydicom": "3.0.2", "PyYAML": "6.0.4", "packaging": "26.4"
+  },
+  "pip_check": "No broken requirements found.",
+  "isolated_target_venv": true,
+  "production_source_hashes_match": true,
+  "weak_runtime_fingerprint": "700e3f14b56efab3a1c914c940a510aa65b08a4b7a5c3e0bcf234438100ea7b8",
+  "nsclc_runtime_fingerprint": "2d7bd5626e428adc6a486244ed08c8a699d0661e1a4aec569dc1a56add773498",
+  "runtime_identity_equals_local": {"weak": false, "nsclc": false},
+  "warning": {
+    "message": "Error in sitecustomize; set PYTHONVERBOSE for traceback: ModuleNotFoundError: No module named 'wrapt'",
+    "observed_impact": "Install, pip check/freeze, imports and source/venv probes completed successfully despite startup warning.",
+    "root_cause": "NOT_INVESTIGATED",
+    "policy": "Retain warning; no global install, suppression or production change. Native conversion still needs verification."
+  },
+  "context_path": "/kaggle/working/pilot_cpu_20261124T103900Z_a9054907/runtime_context.json",
+  "native_conversion": "NOT_RUN",
+  "persistence_restore": "NOT_RUN",
+  "training_clearance": false
+}

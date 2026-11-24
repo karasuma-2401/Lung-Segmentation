@@ -4,7 +4,7 @@
 
 ## Archive thực đã đọc
 
-File: `C:\Users\lemin\Downloads\Lung-PET-CT-Dx-Annotations-XML-Files-rev12222020.zip`.
+Archive basename: `Lung-PET-CT-Dx-Annotations-XML-Files-rev12222020.zip`; local location cấu hình riêng bằng `LUNGSEG_XML_ARCHIVE`, không đưa user directory vào shared reports. Historical comparison/execution evidence giữ nguyên.
 
 - Dung lượng **17,304,054bytes**, khoảng16.50MiB, phù hợp số16.5MB trên download UI.
 - SHA256 `74578564508a2c52c6046ef8065708c068b884711dd924d4eaf3db298914d377`.
@@ -58,7 +58,7 @@ Hai SR-only boxes ở **A0003**:
 ## Evidence và preservation
 
 ```powershell
-.venv\Scripts\python.exe scripts/compare_weak_xml_sample.py --archive 'C:\Users\lemin\Downloads\Lung-PET-CT-Dx-Annotations-XML-Files-rev12222020.zip'
+.venv\Scripts\python.exe scripts/compare_weak_xml_sample.py --archive $env:LUNGSEG_XML_ARCHIVE
 ```
 
 [Comparison JSON](evidence/p1_3_1/xml_followup/comparison.json) giữ archive hash, source-member hashes, parse failure, per-case differences và class associations. [Execution log](evidence/p1_3_1/xml_followup/execution.txt) ghi command/timestamp/exit0. Exit0 nghĩa investigation chạy được; report vẫn REVIEW_REQUIRED, không success equivalence.

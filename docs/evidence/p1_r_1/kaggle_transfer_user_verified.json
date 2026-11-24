@@ -1,0 +1,17 @@
+{
+  "ingested_at_utc": "2026-11-24T10:08:42.881841+00:00",
+  "measurement_origin": "user-provided Kaggle screenshots and completion message",
+  "dataset_title": "SE374 LungSeg Pilot Input v1",
+  "dataset_url": null,
+  "dataset_visibility": "Private observed in screenshot",
+  "license_ui": "Other (specified in description) observed",
+  "upload_performed_by": "user",
+  "transfer_status": "USER_EXECUTED_TRANSFER_SHA256_PASS",
+  "bytes": 161341440,
+  "expected_sha256": "f70a2120cb28ce2712e86953669838115c41b658a374ed749645585e6e6454b9",
+  "evidence": "Notebook screenshot shows expected SHA256 comparison, TRANSFER_SHA256_PASS and Bytes: 161341440",
+  "agent_direct_cloud_file_read": false,
+  "cloud_extraction": "NOT_RUN",
+  "native_conversion": "NOT_RUN",
+  "session_restore": "NOT_RUN"
+}

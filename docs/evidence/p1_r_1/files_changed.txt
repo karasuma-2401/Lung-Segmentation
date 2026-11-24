@@ -1,0 +1,25 @@
+ M AGENTS.md
+ M README.md
+ M docs/decisions.md
+ M docs/full_corpus_execution_plan.md
+ M docs/paper_to_code_matrix.md
+ M docs/progress.md
+ M docs/weak_acquisition.md
+ M docs/weak_annotation_survey.md
+ M docs/weak_data_card.md
+ M docs/weak_hardening_report.md
+ M docs/weak_qa_report.md
+ M docs/weak_xml_comparison.md
+?? configs/hybrid_storage_budget.json
+?? docs/cloud_pilot_guide.md
+?? docs/evidence/p1_r_1/
+?? docs/hybrid_storage_architecture.md
+?? docs/resource_feasibility_report.md
+?? docs/storage_optimization_plan.md
+?? docs/xml_full_corpus_readiness.md
+?? requirements-r2-pilot.txt
+?? scripts/bootstrap_cloud_pilot.sh
+?? scripts/cloud_pilot.py
+?? scripts/r2_synthetic_pilot.py
+?? tests/test_cloud_pilot.py
+?? tests/test_r2_synthetic_pilot.py

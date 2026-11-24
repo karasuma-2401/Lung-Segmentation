@@ -1,0 +1,17 @@
+{
+  "actual_cloud_pilot": "NOT_RUN",
+  "actual_r2_pilot": "NOT_RUN",
+  "actual_session_restore": "NOT_RUN",
+  "input_receipt_verified": true,
+  "medical_upload_performed": false,
+  "nsclc_fingerprint": "87bac7926b4ab377dbbd978ecdbac5bfa0e4497319f8ae9ed097abc1dd2847bb",
+  "paid_resources_created": false,
+  "production_fingerprints_unchanged": true,
+  "protected_tracked_changes": [],
+  "scope": "copied pilot source/reference/XML originals only; not a rehash of all raw corpus files",
+  "source_reference_bytes_checked": 160929353,
+  "source_reference_changes": [],
+  "source_reference_files_checked": 176,
+  "timestamp_utc": "2026-11-24T09:34:42.741564+00:00",
+  "weak_fingerprint": "9ab8f20775370cbbddcb86d38002c93d6c260f1fff56f7b36c946bc7735adb35"
+}

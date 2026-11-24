@@ -1,0 +1,18 @@
+{
+  "evidence_source": "user_provided_kaggle_screenshot",
+  "capture_timestamp": null,
+  "agent_direct_cloud_access": false,
+  "status": "RESULT_TRANSFER_PREPARED_AND_READBACK_VERIFIED",
+  "transfer_file_name": "se374-pilot-result-8da1ebd95caa.bin",
+  "transfer_bytes": 57477120,
+  "transfer_sha256": "a7285babe7d1c0fa5a24fef48f064b2fc558113ba75aa1b2e948d493c1b4f3dc",
+  "result_root_sha256": "8da1ebd95caac4551160cfcdfc9e8e749fec7f82d13a3bb6f1a836d6c670687a",
+  "result_files": 27,
+  "archive_files_including_receipt": 28,
+  "payload_bytes": 57421134,
+  "upload_performed": false,
+  "cross_session_persistence": "NOT_RUN",
+  "training_clearance": false,
+  "approved_destination": "Kaggle Dataset: SE374 LungSeg Pilot Result v1; Private; personal owner-only",
+  "next_step": "User downloads only this opaque container, uploads to the approved Dataset, mounts it and verifies pinned transfer size/SHA before ending the current session."
+}

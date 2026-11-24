@@ -1,0 +1,11 @@
+{
+  "status": "LOCAL_READONLY_CELL_SYNTAX_AND_SYNTHETIC_CHECKS_PASS",
+  "valid_synthetic_transfer": "PASS",
+  "rejected_mismatches": [
+    "size",
+    "sha256"
+  ],
+  "actual_kaggle_uploaded_result_readback": "NOT_RUN",
+  "cross_session_restore": "NOT_RUN",
+  "production_source_changed": false
+}

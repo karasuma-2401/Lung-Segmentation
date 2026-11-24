@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2026-11-24T10:14:01.993631+00:00",
+  "status": "CELL_SYNTAX_AND_LOCAL_IMPORT_PROBE_PASS",
+  "probe_status": "PACKAGE_SOURCE_IMPORT_CHECK_PASS",
+  "probe_platform": "Windows",
+  "source_hashes_match": true,
+  "linux_setup_execution": "NOT_RUN",
+  "cloud_native_conversion": "NOT_RUN",
+  "scope": "cell/probe syntax checked; exact package/source probe executed in existing local venv, not Linux bootstrap"
+}

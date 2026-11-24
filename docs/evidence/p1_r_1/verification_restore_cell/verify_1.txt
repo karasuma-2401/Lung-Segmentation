@@ -1,0 +1,35 @@
+timestamp_utc: 2026-11-24T11:08:48.5374441Z
+command: .venv\Scripts\python.exe -m lungseg.cli smoke-test --config configs/smoke.yaml
+exit_code: 0
+{
+  "run_directory": "experiments\\P0_smoke_20261124T110848Z_b8b9d784",
+  "status": "pass",
+  "fixture": "monai_unet_small_not_reproduction_architecture",
+  "research_result": false,
+  "device_requested": "cpu",
+  "device_used": "cpu",
+  "seed": 42,
+  "tensor_shape": [
+    1,
+    1,
+    16,
+    16,
+    16
+  ],
+  "foreground_voxels": 512,
+  "optimizer_steps": 2,
+  "losses": [
+    0.8021993637084961,
+    0.797690212726593
+  ],
+  "finite_gradients": true,
+  "max_parameter_delta": 0.002001352608203888,
+  "loss": {
+    "name": "DiceLoss",
+    "sigmoid": true,
+    "reduction": "mean",
+    "smooth_nr": 1e-05,
+    "smooth_dr": 1e-05
+  },
+  "peak_cuda_allocated_bytes": null
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2026-11-24T10:24:23.338067+00:00",
+  "status": "RECOVERY_CELL_SYNTAX_AND_EXACT_LOCAL_PROBE_PASS",
+  "scope": "recovery cell and nested probe syntax; probe executed in existing verified local venv, not Kaggle",
+  "local_probe_platform": "Windows",
+  "source_hashes_match": true,
+  "isolated_target_venv": true,
+  "linux_recovery_execution": "NOT_RUN",
+  "cloud_native_conversion": "NOT_RUN"
+}

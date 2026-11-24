@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "architecture": "hybrid_cost_optimized_B",
+  "unit": "decimal_bytes",
+  "kaggle_target_bytes": 180000000000,
+  "r2_target_bytes": 8000000000,
+  "r2_application_hard_limit_bytes": 10000000000,
+  "preferred_monthly_cost_vnd": 0,
+  "contingency_target_vnd": 50000,
+  "paid_spend_authorized": false,
+  "medical_upload_authorized": false,
+  "r2_storage_class": "STANDARD",
+  "r2_pilot_max_synthetic_bytes": 4194304,
+  "r2_pilot_attempt_budget_per_class": 100,
+  "full_corpus_feasibility": "UNVERIFIED_CAPACITY_GAP"
+}

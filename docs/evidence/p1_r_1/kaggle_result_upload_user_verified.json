@@ -1,0 +1,19 @@
+{
+  "evidence_source": "user_provided_kaggle_screenshot",
+  "capture_timestamp": null,
+  "agent_direct_cloud_access": false,
+  "status": "RESULT_DATASET_TRANSFER_SHA256_PASS",
+  "dataset_display_name": "SE374 LungSeg Pilot Result v1",
+  "observed_mount": "/kaggle/input/datasets/winpear/se374-lungseg-pilot-result-v1/se374-pilot-result-8da1ebd95caa.bin",
+  "dataset_version": "NOT_REPORTED",
+  "approved_visibility": "Private, personal owner-only",
+  "visibility_independently_checked": false,
+  "transfer_bytes": 57477120,
+  "transfer_sha256": "a7285babe7d1c0fa5a24fef48f064b2fc558113ba75aa1b2e948d493c1b4f3dc",
+  "result_root_sha256": "8da1ebd95caac4551160cfcdfc9e8e749fec7f82d13a3bb6f1a836d6c670687a",
+  "user_notebook_session_indicator": "Draft Session (27m)",
+  "upload_and_mounted_outer_hash_readback": "PASS_USER_EVIDENCE",
+  "cross_session_restore": "NOT_RUN",
+  "training_clearance": false,
+  "next_step": "End the original session, create a separate Private CPU notebook, attach approved input and result Datasets, run only cell02c, then verify restoration using the pinned result receipt."
+}

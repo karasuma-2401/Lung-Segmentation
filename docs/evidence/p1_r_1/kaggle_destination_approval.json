@@ -1,0 +1,25 @@
+{
+  "recorded_at_utc": "2026-11-24T09:53:46.348468+00:00",
+  "source": "explicit user reply in conversation: Đồng ý đích Private này",
+  "status": "APPROVED_DESTINATION_UPLOAD_NOT_PERFORMED",
+  "destination_service": "Kaggle Private Dataset",
+  "title": "SE374 LungSeg Pilot Input v1",
+  "visibility": "Private",
+  "owner": "user personal Kaggle account",
+  "collaborators": "owner only",
+  "approved_file_project_relative": "data/cache/cloud_pilot/se374-pilot-transfer-v1.bin",
+  "bytes": 161341440,
+  "sha256": "f70a2120cb28ce2712e86953669838115c41b658a374ed749645585e6e6454b9",
+  "scope": [
+    "one NSCLC case and reference",
+    "one weak case and reference",
+    "original XML archive",
+    "reviewed pilot code kit"
+  ],
+  "paid_spend_authorized": false,
+  "full_corpus_upload_authorized": false,
+  "R2_medical_upload_authorized": false,
+  "upload_performed": false,
+  "browser_automation_blocker": "browser access host unavailable; native pipe unavailable",
+  "next_action": "user performs approved private upload, then byte integrity verification in notebook"
+}

@@ -2,7 +2,9 @@
 
 Dự án nghiên cứu mixed supervision Teacher–Student trên CT 3D. Phương án chính dùng MSD-Lung và NSCLC-Radiomics có mask, cùng Lung-PET-CT-Dx có axial bbox. Chạy Scarce trước Vast; Student cuối cùng nhận CT và xuất mask, không cần bbox.
 
-Hiện có tooling P0, MSD T04, NSCLC T05/P1.2.1 và **Lung-PET-CT-Dx T06/P1.3**. Hai nguồn sau mới validated sample, full corpus bị chặn storage. T06 dùng expert bbox SR chính thức IDC; XML gốc chưa local-verified. Chưa có splits, production preprocessing hoặc research training. Xem [tiến độ](docs/progress.md), [quyết định](docs/decisions.md), [paper–code matrix](docs/paper_to_code_matrix.md).
+Hiện có tooling P0, MSD T04, NSCLC T05/P1.2.1 và Lung-PET-CT-Dx P1.3.1 đã nghiệm thu; P1-R.1 bàn giao để review với bounded Kaggle CPU conversion2ca và cross-session restore27artifacts PASS theo user-run evidence/attestation. Hai nguồn sau mới validated sample, full corpus bị chặn storage. SR chính thức IDC tiếp tục production; original XML access RESOLVED, immutable reference đã khảo sát nhưng XML–SR equivalence REVIEW_REQUIRED. Chưa có splits, production preprocessing hoặc research training. Xem [resource assessment](docs/resource_feasibility_report.md), [cloud pilot guide](docs/cloud_pilot_guide.md), [tiến độ](docs/progress.md), [quyết định](docs/decisions.md).
+
+Kiến trúc đã chọn: [Hybrid B](docs/hybrid_storage_architecture.md) — Kaggle Private Datasets primary180GBtarget, R2 Standard8GBtarget/10GBappcap cho checkpoints/approved overflow, boto3/Secrets;0VNDưu tiên,50,000VNDcontingency chưa authorize spend. Kaggle native pilot/restore đã có user evidence; R2 synthetic kit READY_FOR_USER_EXECUTION nhưng real R2 pilot NOT_RUN. Actual account quota/private visibility/version và full target capacity chưa independently verified.
 
 ## Cài đặt CPU trên Windows
 

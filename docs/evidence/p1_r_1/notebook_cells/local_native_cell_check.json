@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-11-24T10:43:53.101786+00:00",
+  "status": "LOCAL_CELL_SYNTAX_AND_CONTEXT_GUARDS_PASS",
+  "verified_actual_input_files": 177,
+  "context_and_linux_report": "SYNTHETIC_FIXTURE_ONLY",
+  "rejected_fields": [
+    "production_revision",
+    "production_source_hashes_match",
+    "isolated_target_venv"
+  ],
+  "local_platform": "Windows",
+  "kaggle_native_conversion": "NOT_RUN",
+  "new_cloud_session_restore": "NOT_RUN",
+  "sealed_input_and_kit_changed": false
+}

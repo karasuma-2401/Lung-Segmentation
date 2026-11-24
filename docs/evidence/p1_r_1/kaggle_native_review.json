@@ -1,0 +1,23 @@
+{
+  "evidence_source": "user_pasted_kaggle_summary",
+  "agent_direct_cloud_access": false,
+  "status": "BOUNDED_CPU_NATIVE_PILOT_PASS_USER_EVIDENCE",
+  "scope": "1 NSCLC LUNG1-001 plus 1 weak Lung_Dx-A0003, not full corpus",
+  "reported_signature_comparison_against_local_pinned_reference": {
+    "nsclc": {
+      "LUNG1-001/ct.nii.gz": true,
+      "LUNG1-001/mask.nii.gz": true
+    },
+    "weak": {
+      "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728/bbox.nii.gz": true,
+      "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728/ct.nii.gz": true
+    }
+  },
+  "comparison_note": "Agent independently compared all four reported array/geometry signatures with the pinned local input spec. Remote artifact bytes have not been independently fetched. Annotation/provenance equality is user-run kit evidence.",
+  "result_root_sha256": "8da1ebd95caac4551160cfcdfc9e8e749fec7f82d13a3bb6f1a836d6c670687a",
+  "reported_files_verified": 27,
+  "worker_wall_seconds_total": 11.806522653000002,
+  "worker_output_bytes_before_metrics_total": 57402644,
+  "persistence_restore": "NOT_RUN",
+  "training_clearance": false
+}

@@ -1,6 +1,10 @@
 # Full-corpus execution plan — NSCLC-Radiomics
 
-**DESIGN_ONLY — 24/11/2026. Chưa được duyệt full download, chưa có cloud pilot hoặc persistent storage của nhóm.** P1.2.1 chỉ sửa và revalidate sample. Kế hoạch này không mở T06–T08, không tạo experiment splits, không thay primary ROI/quarantine policy, không train và không giảm scope MSD-Lung + NSCLC-Radiomics + Lung-PET-CT-Dx.
+**Cập nhật addendum P1-R.1:** XML original access đã RESOLVED; giữ DICOM SR production và XML ZIP immutable reference. [Thiết kế XML readiness](xml_full_corpus_readiness.md) bổ sung storage/provenance,7reconciliation/review gates và policy trước training. Whole XML archive thêm17,304,054bytes một lần vào persistent weak-source budget: weak full plan436,053,238,232bytes, combined known planning3nguồn≈553.60GB trước margin. Full capacity/account limits vẫn blocked/chưa verified; bounded Kaggle2sample result restore đã PASS theo user evidence/attestation, không full-corpus persistence proof. Các giới hạn/quota/RAM cũ bên dưới là snapshot DESIGN_ONLY, không authorization full execution.
+
+**Architecture B đã duyệt:** Kaggle CPU processing/GPU future training, Private Datasets primary180GBtarget, R2 Standard/boto3 checkpoints+approved overflow8GBtarget/10GBappcap;0VNDưu tiên,50,000VNDcontingency không authorize spend. [Hybrid design](hybrid_storage_architecture.md) là current routing/guard/lifecycle reference. Conservative553.60GBplan chưa vừa188GBtarget; giữ BLOCKED_CAPACITY đến khi measured optimized retention/restore feasibility được review. Không tự full acquisition, đổi provider, giảm dataset hoặc cleanup.
+
+**FULL-CORPUS DESIGN_ONLY — cập nhật25/11/2026. Chưa được duyệt full download.** P1-R.1 user-run bounded Kaggle CPU2sample conversion/27artifact new-session restore PASS với user attestation; full capacity/account storage vẫn chưa verified. P1.2.1 chỉ sửa/revalidate sample; phase tiếp theo được duyệt riêng trong decisions/progress. Kế hoạch full corpus này không tự mở T07–T08, experiment splits, thay primary ROI/quarantine policy hoặc training và không giảm scope MSD-Lung + NSCLC-Radiomics + Lung-PET-CT-Dx.
 
 ## Phương án và điều kiện khả thi
 
@@ -29,7 +33,7 @@ Local hiện có khoảng44GiB free,8.2GB RAM installed; một snapshot khi hard
 
 Persistent storage cho một version NSCLC: raw27.54GB + conversion allowance2.5×CT≈67.38GB +4GiBreserve≈**99.21GB (~92.40GiB)**. Đề xuất namespace/quota ít nhất120GiB, theo dõi dung lượng thực và dừng trước hết quota. Nếu giữ ZIP toàn corpus cần126.75GB (~118.05GiB) **chưa có headroom thích hợp** trong120GiB; IDC object download tránh ZIP. Version conversion thứ hai cần budget thêm tới khoảng62.75GiB theo allowance; không tự overwrite version cũ.
 
-Đây chỉ là budget NSCLC. Tổng dự án còn MSD raw+archive≈18.33GB đang giữ, Lung-PET-CT-Dx **chưa xác minh size ở T06**, cùng preprocessing/checkpoints sau này chưa budget. Không tuyên bố120GiB đủ cho ba dataset. Không giảm số nguồn khi chưa có chỗ; giữ blocker và tách kế hoạch storage của từng nguồn.
+Đây chỉ là budget NSCLC. Tổng dự án còn MSD raw+archive≈18.33GB đang giữ; weak CT+SR planning và measured XML ZIP đã được bổ sung ở addendum đầu tài liệu. Preprocessing/checkpoints sau này chưa budget. Không tuyên bố120GiB đủ cho ba dataset. Không giảm số nguồn khi chưa có chỗ; giữ blocker và tách kế hoạch storage của từng nguồn.
 
 ## Cloud/Kaggle — bằng chứng tài liệu và gates chưa chạy
 
@@ -75,7 +79,7 @@ Sau khi read-back đủ raw+derived+provenance+quarantine+QA và hash tất cả
 
 ## License, distribution và cleanup policy
 
-NSCLC gốc và các dẫn xuất giữ [CC BY-NC3.0](https://creativecommons.org/licenses/by-nc/3.0/): attribution, noncommercial, link license và chỉ rõ conversion/overlay modifications; không đổi thành CC BY4.0 chỉ vì mirror/analysis khác có license đó. License cho phép chia sẻ theo điều kiện, không yêu cầu public upload. Project mặc định private destination và collaborators được duyệt; trước redistribution phải kiểm điều kiện nguồn/platform và attribution, không áp thêm điều kiện trái license. Không gửi raw/medical overlays vào Git. MSD có license riêng; Lung-PET-CT-Dx chưa xác minh ở T06. Không áp một license chung thay tất cả nguồn.
+NSCLC gốc và các dẫn xuất giữ [CC BY-NC3.0](https://creativecommons.org/licenses/by-nc/3.0/): attribution, noncommercial, link license và chỉ rõ conversion/overlay modifications; không đổi thành CC BY4.0 chỉ vì mirror/analysis khác có license đó. License cho phép chia sẻ theo điều kiện, không yêu cầu public upload. Project mặc định private destination và collaborators được duyệt; trước redistribution phải kiểm điều kiện nguồn/platform và attribution, không áp thêm điều kiện trái license. Không gửi raw/medical overlays vào Git. MSD giữ CC BY-SA4.0; Lung-PET-CT-Dx original CT/XML và expert SR giữ CC BY4.0 đã khảo sát ở T06. Archive XML receipt cần source DOI/release/attribution và mô tả adaptation riêng. Không áp một license chung thay tất cả nguồn.
 
 Không dọn dữ liệu trong P1.2.1. Cleaner tương lai chỉ được bật sau pilot persistence pass và người dùng duyệt policy cụ thể. Chỉ xóa scratch do batch đó sở hữu sau `PERSISTED_VERIFIED/BATCH_COMMITTED`, có remote read-back hashes, exact generation IDs và restore test. Raw sample, P1.2 baseline, source annotations chưa có persistent copy, artifacts review chưa lưu đủ và corrupt/conflicting stage cần điều tra không được tự dọn.
 
@@ -88,3 +92,37 @@ Hiện đã có sample acquisition/config giới hạn1–20IDs, conversion cach
 ## Cập nhật metadata sau T06/P1.3
 
 Weak dataset nay đã khảo sát official catalog và10CT/SR sample: fullCT+expertSR+conversion allowance/reserve≈436.04GB, combined known planning3nguồn≈553.58GB trước margin/versions/checkpoints. Xem [T06 storage assessment](weak_qa_report.md). Phần NSCLC ở trên vẫn là snapshot DESIGN_ONLY, không là bằng chứng cloud/persistence đã triển khai; không tự mở rộng full corpus hoặc dọn data.
+
+## P1-R.1 — Full-corpus readiness design cho NSCLC và weak
+
+Design update, **không full scheduler**. [Assessment](resource_feasibility_report.md), [storage plan](storage_optimization_plan.md), [pilot guide](cloud_pilot_guide.md) và [XML addendum](xml_full_corpus_readiness.md) là current references. Combined known plan gồm XML≈553.60GB; data-stage0.75–1TiB là provisional quota đề xuất, chưa cấp. Local RAM guard chặn bounded attempt; Kaggle CPU2sample conversion/result upload/27artifact new-session restore PASS theo user evidence/attestation ([restore](evidence/p1_r_1/kaggle_session2_restore_user_verified.json)). Sample measurements không đủ chứng minh full-corpus memory/disk feasibility hoặc actual private account quota.
+
+### Expected catalog coverage
+
+NSCLC: frozen catalog422patients/studies,422CT/51,230slice objects và422RTSTRUCT;421SEG analysis metadata không tự thay contour gốc. Full inventory phải account mọi requested entity, kể cả source-missing/quarantined/no-ROI cases; preserve006/014/128 và002review.
+
+Weak: original catalog355patients/436studies/1,295series (1,162CT/205,459CTobjects và133PTmetadata exclusions), expert SR catalog1,091series/objects trên354patients. Đây là expected **catalog denominators**, không verified valid/eligible counts hoặc one-to-one CT/SR mapping. Full mode enumerate **tất cả expected SR sources**, không reuse sample policy “chọn một SR/patient”. Survey evidence refs từng SR trước chọn processing units; toàn bộ CT catalog có outcome pending/eligible/excluded/unannotated/unresolved, không chỉ CTs của một chosen SR.
+
+Missing expected SR là expected catalog SR SOP/series không acquisition/parse được, phải failure record; CT không có expected SR theo catalog/evidence được ghi annotation unavailable/unresolved, không tự fake missing filename hoặc negative. Duplicate SR/source hashes vẫn giữ origin, không collapse review findings. Patient không có annotation vẫn có catalog-backed requested/outcome record. XML member/object ledger reconcile riêng;357folders không overwrite355catalog patient set.
+
+### Multiple SR ambiguity và annotation policy
+
+Group validated SR evidence theo dataset/patient/study/CTSeries/FoR/SOP refs. Một CT được nhiều SR tham chiếu: giữ mọi SR+record source identity; flag `MULTIPLE_SR_REVIEW_REQUIRED`, không auto-select earliest/largest hoặc union/drop boxes. Current production requires unambiguous single report; full ledger có thể quarantine ambiguity với all linked annotations. Chỉ sau source/version/adjudication evidence và review mới có canonical precedence policy version mới; không thay converter/ROI/quarantine policy trong P1-R.1.
+
+XML/SR diff giữ exact source keys, multiplicity, class/coordinates và explicit coverage. A0003SR-only2boxes giữ nguyên. Missing/unknown không biến thành negative; XML coordinate convention/full equivalence REVIEW_REQUIRED. Full-corpus technical completion không là training clearance; trước training cần canonical supervision/coverage quyết định theo XML addendum.
+
+### Batch acceptance và memory admission
+
+Batch spec pin all catalogs/source requests (Patient/Study/Series/SOP/annotation relationships), code source+runtime identity, config/policy, expected counts/bytes và digest-based batch ID. Processing batches không phải experiment splits; eventual T07 vẫn group all scans theo patient. Với weak nhiều scans/patient, budget theo series/source objects, giữ patient linkage xuyên batch.
+
+Admit chỉ sau actual listing/count/bytes vừa remaining sample/batch cap, available disk đủ source+stage+retry+converted+QA+reserve và header-based Nvoxels/annotation bytes vừa memory estimate +margin. Một CPU worker; pilot measured peak RSS cần calibrate công thức trước full execution. Outlier không vừa budget: giữ record và replan worker/batch, không downsample/drop case. Không coi local installed8GB hoặc Kaggle published30GB là available RAM.
+
+Gates theo batch: (1) spec/catalog identities verified; (2) expected source objects verified hoặc explicit failure outcome, missing acquisition giữ PARTIAL; (3) converted/excluded/quarantined/unresolved counts reconcile, all annotation errors visible; (4) array/geometry/source/provenance/QA hashes recorded, review state riêng; (5) persist full raw+derived+failures/ledgers/QA và read-back bytes; (6) independent fresh-session restore; (7) immutable completion receipt `_SUCCESS` cuối. Known quarantine có thể là complete *accounting with findings*; pending/missing source không được đổi thành fully validated corpus.
+
+### Merge/dedup, resume và failure recovery
+
+Merge all batch ledgers (CT cases, annotation sources/objects, acquisition failures, expected entities, XML differences). Dùng source-level identity+digest và full version namespace; unique case count riêng annotation/source counts. Same key+same bytes idempotent, giữ contributing batches; same key+different bytes/config/policy là conflict, không last-writer-wins hoặc silently overwrite. Manifest deterministic sort/schema/hash; verify receipt provenance trước merge. Full coverage checker so với full requested catalog, không chỉ concat converted rows.
+
+Future resume kiểm exact spec/source/config/implementation +integrity, acquire exclusive ownership, không publish partial stages. Retry bounded, giữ failed bytes/diagnostics và budget thực; unverified interrupted artifacts không là cache hit. Không tự xóa failed stages. Cloud runtime khác local phải fresh output; physically identical content có thể backend dedup nhưng không bỏ cache version/config checks. Immutable raw/XML có thể referenced nhiều batches, verify full digest thay vì copy vào mỗi output version.
+
+Persistence receipt full mode cần remote object versions/generations, full file bytes/SHA256 và raw/derived source lineage; read-back remote full bytes rồi verify, tiếp theo session2 arrays/geometry/records/provenance. Pilot kit có content verification; user đã upload approved bounded result và restore trong notebook mới, **không có remote uploader/leases/full merge/scheduler/cleaner**. Actual quota/version/private access và full-corpus persistence chưa verified; không dùng kit như full download loop. P1-R.2 cần review/approval riêng; không mở T07/T08/research training.

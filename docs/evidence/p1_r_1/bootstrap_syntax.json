@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "command": "bash -n scripts/bootstrap_cloud_pilot.sh",
+  "scope": "syntax only on Git Bash Windows; Linux environment installation NOT_RUN"
+}

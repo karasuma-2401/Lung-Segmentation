@@ -1,0 +1,8 @@
+{
+  "status": "LOCAL_RESTORE_CELL_AND_CHILD_SYNTAX_PASS",
+  "synthetic_guard_tests": 7,
+  "actual_cloud_restore": "NOT_RUN",
+  "full_regression_tests_passed": 263,
+  "cpu_smoke_env_pip_check": "PASS",
+  "fresh_session_attestation_default": false
+}

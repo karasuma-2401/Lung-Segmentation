@@ -1,0 +1,15 @@
+Private CPU pilot cho dự án SE374 LungSeg; không phải dataset nghiên cứu đã được cleared để training.
+
+Nội dung: một ca NSCLC-Radiomics (LUNG1-001), một ca Lung-PET-CT-Dx (Lung_Dx-A0003), raw sources và local converted references, original XML reference ZIP cùng code kit. File .bin là tar container; cần kiểm SHA256 trước giải nén có kiểm soát. Không đổi đuôi hoặc tự sửa nội dung.
+
+License giữ riêng theo nguồn, không blanket relicensing:
+- NSCLC-Radiomics: Aerts et al., TCIA, DOI 10.7937/K9/TCIA.2015.PF0M9REI; CC BY-NC 3.0: https://creativecommons.org/licenses/by-nc/3.0/
+- Lung-PET-CT-Dx CT/XML: Li et al. (2020), TCIA, DOI 10.7937/TCIA.2020.NNC2-0461; CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+- Expert XML-to-SR harmonization: Krishnaswamy, Clunie và Fedorov, Zenodo v1 (2025), DOI 10.5281/zenodo.16989820; CC BY 4.0.
+- TCIA citation: Clark et al. (2013), DOI 10.1007/s10278-013-9622-7.
+
+Derived references gồm native NIfTI conversion và RTSTRUCT rasterization/bbox representation phục vụ kiểm định. Raw source annotations giữ nguyên. Bbox không là segmentation ground truth; unknown không là negative. XML–SR equivalence REVIEW_REQUIRED, training clearance=false. Code kit chỉ phục vụ reproducibility pilot của dự án, không thay license datasets.
+
+Transfer SHA256: f70a2120cb28ce2712e86953669838115c41b658a374ed749645585e6e6454b9
+Transfer bytes: 161341440
+Input receipt SHA256: c97683893715b34fbb7cdf7193134220625169021acb39aae00f6243ce9c4f6f
