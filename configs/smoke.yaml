@@ -1,0 +1,10 @@
+schema_version: 1
+kind: synthetic_smoke
+seed: 42
+device: cpu
+spatial_shape: [16, 16, 16]
+channels: [4, 8, 16]
+steps: 2
+learning_rate: 0.001
+num_threads: 2
+output_dir: experiments

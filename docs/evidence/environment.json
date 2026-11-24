@@ -1,0 +1,67 @@
+{
+  "cuda": {
+    "available": false,
+    "compiled_cuda": null,
+    "devices": [],
+    "status": "checked"
+  },
+  "disk": {
+    "free_bytes": 65792086016,
+    "total_bytes": 500865953792
+  },
+  "executable": "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+  "git": {
+    "reason": "fatal: Needed a single revision",
+    "revision": null,
+    "status": "unavailable"
+  },
+  "package_source_sha256": "e7fa1952e683166fc3dc62e439c7bb5a4d9b62409c03ed4454e3cf7fdfe0c574",
+  "packages": {
+    "PyYAML": {
+      "import": "pass",
+      "version": "6.0.4"
+    },
+    "SimpleITK": {
+      "import": "pass",
+      "version": "2.5.8"
+    },
+    "matplotlib": {
+      "import": "pass",
+      "version": "3.11.2"
+    },
+    "monai": {
+      "import": "pass",
+      "version": "1.6.2"
+    },
+    "nibabel": {
+      "import": "pass",
+      "version": "5.5.0"
+    },
+    "numpy": {
+      "import": "pass",
+      "version": "2.5.5"
+    },
+    "pydicom": {
+      "import": "pass",
+      "version": "3.0.2"
+    },
+    "pytest": {
+      "import": "pass",
+      "version": "9.2.0"
+    },
+    "torch": {
+      "import": "pass",
+      "version": "2.15.0+cpu"
+    }
+  },
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "ram": {
+    "available_bytes": 379523072,
+    "status": "checked",
+    "total_bytes": 8215101440
+  },
+  "required_imports_pass": true,
+  "scope": "P0 environment; CUDA availability is not a GPU smoke pass",
+  "timestamp_utc": "2026-11-24T02:35:01.670472+00:00"
+}

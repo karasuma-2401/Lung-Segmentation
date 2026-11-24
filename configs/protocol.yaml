@@ -1,0 +1,23 @@
+kind: approved_protocol_intent
+version: adapted_v1_pending_data_audit
+datasets:
+  strong: [MSD-Lung, NSCLC-Radiomics]
+  weak: [Lung-PET-CT-Dx]
+scarce:
+  strong_train_target_cases: 40
+  strong_validation_target_cases: 20
+  development_mask_budget_target_cases: 60
+  distinct_patients_preferred: true
+  unused_strong_train: exclude_from_scarce_training
+test:
+  fraction_target_per_strong_source: 0.15
+  grouping: patient
+  locked_before_training: true
+  label_budget_reported_separately: true
+comparison:
+  shared_validation_and_test_across_scenarios: true
+  scarce_train_subset_of_vast_train: true
+  shared_weak_train_pool_across_scenarios: true
+  baseline_student_same_strong_ids: true
+  primary_budget: optimizer_updates
+status: design_approved_not_split_generated

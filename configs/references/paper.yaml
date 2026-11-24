@@ -1,0 +1,31 @@
+kind: paper_reference
+doi: 10.1371/journal.pone.0266147
+url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266147
+source_format_inspected: JATS_XML_and_Fig2_PNG
+clip_hu: [-1024, 1000]
+normalization: z_score
+normalization_scope: unresolved_verify_legacy_monai_defaults
+spacing_xyz_mm: [1.0, 1.0, 1.5]
+teacher_crop_voxels: [128, 128, 128]
+teacher_downsamplings: 3
+student_downsamplings: 4
+student_channels_fig2: [64, 128, 256, 512]
+downsampling: stride_2_convolution
+activation: PReLU
+normalization_layer_fig2: instance_norm
+output_activation_fig2: sigmoid
+optimizer: Adam
+learning_rate: 0.0001
+micro_batch_size: 1
+gradient_accumulation_steps: 8
+loss: DiceLoss
+max_epochs: 350
+selection: lowest_validation_loss
+test_fraction: 0.15
+exact_split_ids: null
+exact_validation_budget: null
+exact_scarce_weak_pool: null
+notes:
+  - Reference only; not a resolved training configuration.
+  - Smooth/reduction, bbox conditioning, and precise split construction remain open.
+  - Fig2 has four stride-2 stages for Student; four channels imply three strides in this upstream MONAI class.

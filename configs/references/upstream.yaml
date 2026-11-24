@@ -1,0 +1,19 @@
+kind: repo_reference
+repository: https://github.com/VemundFredriksen/LungTumorMask
+commit: d1bca4b8dec8f3fe623b58d35be78055b954428c
+local_path: .reference/LungTumorMask
+license: MIT
+student_config:
+  path: training/Resources/Student_Train/train.yaml
+  architecture: UNet4
+  scale_dim: [256, 256, 128]
+  filter_base: 32
+  filter_expansion: 2
+  learning_rate: 0.000025
+  max_epochs: 500
+  output_threshold: 0.5
+  exact_paper_run: false
+notes:
+  - Reference only; not accepted by the smoke CLI.
+  - UNet4 uses MaxPool and LeakyReLU, unlike the paper diagram.
+  - The current loader/configs are incompatible; see paper_to_code_matrix.md.

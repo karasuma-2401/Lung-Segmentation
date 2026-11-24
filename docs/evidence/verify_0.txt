@@ -1,0 +1,70 @@
+timestamp_utc: 2026-11-24T02:33:03.4288816Z
+command: .venv\Scripts\python.exe -m lungseg.cli env-check --output docs/evidence/environment.json
+exit_code: 0
+{
+  "timestamp_utc": "2026-11-24T02:33:13.555976+00:00",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "packages": {
+    "torch": {
+      "version": "2.15.0+cpu",
+      "import": "pass"
+    },
+    "monai": {
+      "version": "1.6.2",
+      "import": "pass"
+    },
+    "numpy": {
+      "version": "2.5.5",
+      "import": "pass"
+    },
+    "PyYAML": {
+      "version": "6.0.4",
+      "import": "pass"
+    },
+    "pytest": {
+      "version": "9.2.0",
+      "import": "pass"
+    },
+    "SimpleITK": {
+      "version": "2.5.8",
+      "import": "pass"
+    },
+    "nibabel": {
+      "version": "5.5.0",
+      "import": "pass"
+    },
+    "matplotlib": {
+      "version": "3.11.2",
+      "import": "pass"
+    },
+    "pydicom": {
+      "version": "3.0.2",
+      "import": "pass"
+    }
+  },
+  "required_imports_pass": true,
+  "cuda": {
+    "available": false,
+    "devices": [],
+    "status": "checked",
+    "compiled_cuda": null
+  },
+  "ram": {
+    "total_bytes": 8215101440,
+    "available_bytes": 647225344,
+    "status": "checked"
+  },
+  "disk": {
+    "total_bytes": 500865953792,
+    "free_bytes": 65790427136
+  },
+  "git": {
+    "revision": null,
+    "status": "unavailable",
+    "reason": "fatal: detected dubious ownership in repository at 'C:/Projects/Lung-Segementation'\n'C:/Projects/Lung-Segementation/.git' is owned by:\n\tLAPTOP-KBPKJ5JM/CodexSandboxOffline (S-1-5-21-3982550285-3564367684-3890351002-1016)\nbut the current user is:\n\tLAPTOP-KBPKJ5JM/lemin (S-1-5-21-3982550285-3564367684-3890351002-1003)\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory C:/Projects/Lung-Segementation"
+  },
+  "package_source_sha256": "e7fa1952e683166fc3dc62e439c7bb5a4d9b62409c03ed4454e3cf7fdfe0c574",
+  "scope": "P0 environment; CUDA availability is not a GPU smoke pass"
+}

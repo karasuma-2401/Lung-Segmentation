@@ -1,0 +1,690 @@
+{
+  "timestamp_utc": "2026-11-24T02:28:36.880079+00:00",
+  "upstream_commit": "d1bca4b8dec8f3fe623b58d35be78055b954428c",
+  "upstream_worktree": "clean",
+  "scope": "static inspection, not an upstream execution test",
+  "python_files": {
+    "training/Engine/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0
+    },
+    "training/Engine/evaluate.py": {
+      "sha256": "d09c3d8b40b72ed6cd5520ceb3ecde73afa5a781bbcd7317d00ff181f062625e",
+      "lines": 105
+    },
+    "training/Engine/inference.py": {
+      "sha256": "594e2124f601cd9e9c3b297ea126233f6323227ddcbfe3dffb688e5b02c0237c",
+      "lines": 72
+    },
+    "training/Engine/seg_test.py": {
+      "sha256": "6377cbc0431705f1043989c924e2edfa783a40862d46c854a603a014507e60e2",
+      "lines": 112
+    },
+    "training/Engine/train.py": {
+      "sha256": "28ca9faccbf9422006343187c35d9de6d7d450e78231d09e0363330c5481dd35",
+      "lines": 201
+    },
+    "training/Engine/utils.py": {
+      "sha256": "e1c5db8d652f25272d4b6ca6b8dc86f58b91daf9c318feb217d941780c01ddb2",
+      "lines": 79
+    },
+    "training/interface.py": {
+      "sha256": "677fb674b4b434f336045c3f6060c78d8961eb31094b5f5f9c3e01fecb2ec8f1",
+      "lines": 93
+    },
+    "training/Networks/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0
+    },
+    "training/Networks/monai_student.py": {
+      "sha256": "92606a908704d8a2e3d9fb87eafb75f918db4b17e7755808145b0b597835cd8c",
+      "lines": 162
+    },
+    "training/Networks/monai_unet.py": {
+      "sha256": "6a1eae4f4e74e215b89c69b1d3ffdf0a31b46aba738835e4facb57659bc01c3a",
+      "lines": 160
+    },
+    "training/Networks/network.py": {
+      "sha256": "b50bb92ee2f44cce439a8e3a931c71b801369d98b74e4a2a1bdf1595a21d80f8",
+      "lines": 11
+    },
+    "training/Networks/UNet4.py": {
+      "sha256": "9bac88387a7077ac2c9aeb6ea50ea2da92d802cc4d529f5b20ebfa63013ce437",
+      "lines": 115
+    },
+    "training/Networks/UNet5_decoder_teacher.py": {
+      "sha256": "af37d9fc01bcd9539de7e8736776bd2069ac38305b4a2af24672f2d9b36e9562",
+      "lines": 180
+    },
+    "training/Networks/UNet5_filter_teacher.py": {
+      "sha256": "3511b21147248c4634e1958c4420902beea8e9b086710924a8d446861e8f0674",
+      "lines": 137
+    },
+    "training/Networks/UNet5_Teacher.py": {
+      "sha256": "c30ac19b66b94477d2aff358a51c7c8e0bcbabe672e3f292fec06fb0c5b64bf9",
+      "lines": 121
+    },
+    "training/Networks/UNet_concat_double_student.py": {
+      "sha256": "f622c0e6d19a9dd81fd1f42c4fd2a8b8aa4a215aa392eceb082ca82434a123e8",
+      "lines": 198
+    },
+    "training/Networks/UNet_test.py": {
+      "sha256": "9a641d6241ee894948788dff581860e539559c2d7f6607e84911260ae8bbbe7a",
+      "lines": 205
+    },
+    "training/Runable/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0
+    },
+    "training/Runable/Evaluate/eval.py": {
+      "sha256": "d0ac0d86c79450d818f9d397f3eb5147992eeb9292b557bb6c0ddbef86ac7a2d",
+      "lines": 4
+    },
+    "training/Runable/Evaluate/eval_malvik.py": {
+      "sha256": "35139515fdbe6a5975e20b85b0fad72da45a0b140af10704f3a4f886a2e8bf35",
+      "lines": 4
+    },
+    "training/Runable/Inference/inference.py": {
+      "sha256": "263ae4ae8078da7e1bb51d439f623728e24378703fb1bd01168fc480772274c7",
+      "lines": 4
+    },
+    "training/Runable/Test/inf_test.py": {
+      "sha256": "e1cd6cac5f75ce2ec44f81e8d5f4b0bd2c3a5b57fb438a94c3a57854c120c50f",
+      "lines": 4
+    },
+    "training/Runable/Test/test_sevlus.py": {
+      "sha256": "264de4f943ae7ab63cacc3d6e83fe72148880840d79a3d209b5ae13c2260dead",
+      "lines": 4
+    },
+    "training/Runable/Train/train_16.py": {
+      "sha256": "734529b9a2a93f7e7a3731f139ab04017902b38f73dc87d2c39e207e3d27f856",
+      "lines": 4
+    },
+    "training/Runable/Train/train_25.py": {
+      "sha256": "96f778cc58b1fafd58256635893280d51f51cfa86afdfbb850f093b716f57d5b",
+      "lines": 4
+    },
+    "training/Runable/Train/train_32.py": {
+      "sha256": "cb56a2187d4d3e0664c1d49159829e25c888fe9752701b9bfb50d639dff22c31",
+      "lines": 4
+    },
+    "training/Runable/Train/train_48.py": {
+      "sha256": "ff1488758be883558cb0d6eec99ea6c9c58372d22725d30710911bac7cccedb9",
+      "lines": 4
+    },
+    "training/Runable/Train/train_50.py": {
+      "sha256": "41bf10489db48afc46c8ab37b59c91f575ca3f78d365c748bdf80f32d076ddac",
+      "lines": 4
+    },
+    "training/Runable/Train/train_64.py": {
+      "sha256": "565d7685c3869337a1ae8be26a6cdce9cf89c7c15572d97d8f369c7d97ed37a2",
+      "lines": 4
+    },
+    "training/Runable/Train/train_75.py": {
+      "sha256": "9a28e8c9ceae5fce0723f6bcc6cb53c524f11cb868688ccab55277908009ba62",
+      "lines": 4
+    },
+    "training/Runable/Train/train_focal.py": {
+      "sha256": "68593d8ada25b1e76c83de392128b5c4399415c6a10cd198b766adbbed5ce5ef",
+      "lines": 4
+    },
+    "training/Runable/Train/train_full_images.py": {
+      "sha256": "b73ccbd86e82490d2aa36cd9344e3cac8d807704a04eacaecab819f72c442950",
+      "lines": 4
+    },
+    "training/Runable/Train/train_half_filter.py": {
+      "sha256": "3da756e3f36526cc4f40525761f9e85a06ce685555958b7cbdfd399146069be2",
+      "lines": 4
+    },
+    "training/Runable/Train/train_student.py": {
+      "sha256": "2cf6a29db0fd9e2cdda5530354c341690976785c8d62f4519e3b6c6fa7af1788",
+      "lines": 4
+    },
+    "training/Runable/Train/train_tver.py": {
+      "sha256": "4bd6525efe2103117a72082682761a8032843472f80c395830df37ca58cc0c1e",
+      "lines": 4
+    },
+    "training/Runable/Train/train_ud.py": {
+      "sha256": "ad47ee85a27adddcc722c167528b52f9268c22bc15f83b67d3f645181eae5f6d",
+      "lines": 4
+    },
+    "training/Runable/Train/train_us.py": {
+      "sha256": "5a6de96fb0e4cfa9b966afbd43414b4f91428463ea5908c727fdce6892fa63e1",
+      "lines": 4
+    },
+    "training/setup.py": {
+      "sha256": "9e9e11d214449131d5b3eaa64b2918ec470de157705c58ebbe343650f9a6e29f",
+      "lines": 11
+    },
+    "training/Utils/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0
+    },
+    "training/Utils/conv_to_win.py": {
+      "sha256": "aa92c32ad6b91301aa353f723f2e6f9220a2f541f622d2078ae54d1754bbf099",
+      "lines": 35
+    },
+    "training/Utils/crop.py": {
+      "sha256": "b36366c100d9831394a8772ad8234641b7d0796146db4d2180f81519dabd389c",
+      "lines": 211
+    },
+    "training/Utils/crop_lungs.py": {
+      "sha256": "cb55d75e9fae52a6d661916fd3490bd01ea28f4783edab38efc96755287eddf8",
+      "lines": 196
+    },
+    "training/Utils/fileconverter.py": {
+      "sha256": "2ceef8d13c2e6b82cc7d44767b6be54f0ab4409bae4b588db0917d470af1fac9",
+      "lines": 33
+    },
+    "training/Utils/MSD_utilities.py": {
+      "sha256": "f1fc2aef777f2398411e8486d33b8fe29187a14b5318eb94705c81bc788327d2",
+      "lines": 28
+    },
+    "training/Utils/PETCT_LungDx_utilities.py": {
+      "sha256": "ba245fb2e6263e0e4624fbfb33a7c6db81be56666737d3b24fdff2906e27023b",
+      "lines": 147
+    },
+    "training/Utils/plot.py": {
+      "sha256": "6520a0c8fda303ff1eef18dc56fefa32f10aa132935850aa869fcce8341ba6e2",
+      "lines": 61
+    },
+    "training/Utils/radiomics_formatting.py": {
+      "sha256": "0217f0cc8ae69e11c5ed146692648e93d573869d81cf9ff7c6784a4f2593b05c",
+      "lines": 52
+    },
+    "training/Utils/segment_to_segmentbox.py": {
+      "sha256": "de18a6f029cc6e4cdd642b047c72b4be1d64537e6c5de1a07c992b7798cb73e6",
+      "lines": 46
+    },
+    "training/Utils/volume_histogram.py": {
+      "sha256": "f13e999262d3c6fa52910eb4883d6d5e70dc4916548940d6d268acf425a24f9f",
+      "lines": 88
+    }
+  },
+  "yaml_summaries_no_patient_ids": {
+    "training/Resources/Evaluate/malvik.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_1/cropped.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 55,
+        "val": 7
+      }
+    },
+    "training/Resources/Idun_Train_1/full_size.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 55,
+        "val": 7
+      }
+    },
+    "training/Resources/Idun_Train_1/train_25.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_1/train_50.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_1/train_75.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_1/train_full_filter_cropped.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_1/train_full_filter_full_image.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_1/train_half_filter_cropped.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_2/data.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 49,
+        "train2": 541,
+        "val": 5,
+        "val2": 26
+      }
+    },
+    "training/Resources/Idun_Train_2/lungdx_data.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 589,
+        "val": 23,
+        "test": 27
+      }
+    },
+    "training/Resources/Idun_Train_2/msd_data.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 53,
+        "val": 5
+      }
+    },
+    "training/Resources/Idun_Train_2/train_16.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_2/train_32.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_2/train_48.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_2/train_64.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_2/train_focal.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_2/train_tversky.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_2/train_ud.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Idun_Train_2/train_us.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Inference/inference.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Inference/malvik.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Inference/malvik_inference_data.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "data": 593
+      }
+    },
+    "training/Resources/Inference/malvik_inference_data2.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "data": 7
+      }
+    },
+    "training/Resources/Inference/teacher_inference_data.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "data": 593
+      }
+    },
+    "training/Resources/Malvik/inference.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Malvik/inference_data.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "test": 632
+      }
+    },
+    "training/Resources/Malvik/lungdx_dataset.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 589,
+        "val": 23,
+        "test": 27
+      }
+    },
+    "training/Resources/Malvik/msd_dataset.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 53,
+        "val": 5,
+        "test": 7
+      }
+    },
+    "training/Resources/Malvik/student.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Malvik/teacher.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Malvik/teacher_data.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 50,
+        "val": 5,
+        "test": 7
+      }
+    },
+    "training/Resources/Malvik_train_1/config_fullfeature_cropped.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Malvik_train_1/cropped.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 55,
+        "val": 7
+      }
+    },
+    "training/Resources/Malvik_train_1/standard.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 55,
+        "val": 7
+      }
+    },
+    "training/Resources/Malvik_train_1/test.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Malvik_train_1/test_data.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 8,
+        "val": 3
+      }
+    },
+    "training/Resources/Student_Train/data.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 49,
+        "train2": 541,
+        "val": 5,
+        "val2": 26
+      }
+    },
+    "training/Resources/Student_Train/data_test.yaml": {
+      "parsed": false,
+      "error": "ParserError",
+      "line": 7,
+      "column": 7
+    },
+    "training/Resources/Student_Train/train.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Test/data_inference.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "data": 2
+      }
+    },
+    "training/Resources/Test/data_test_train.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "train": 8,
+        "val": 2
+      }
+    },
+    "training/Resources/Test/test_inference.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Test/test_train.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    },
+    "training/Resources/Windows_Files/evaluate_data.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "data": 7
+      }
+    },
+    "training/Resources/Windows_Files/evaluate_data_msd.yaml": {
+      "parsed": true,
+      "list_lengths": {
+        "data": 7
+      }
+    },
+    "training/Resources/Windows_Files/win_eval.yaml": {
+      "parsed": true,
+      "list_lengths": {}
+    }
+  },
+  "paper_xml_sha256": "4fd7e33504e4933d74e9503818d12908934c9a505b71f0295710fba8bbb368fd",
+  "paper_tables": {
+    "pone.0266147.t001": [
+      [
+        "MSD-Lung",
+        "21.98 ± 51.66",
+        "37.63 ± 20.08"
+      ],
+      [
+        "NSCLC-Radiomics",
+        "75.37 ± 96.30",
+        "63.63 ± 29.62"
+      ],
+      [
+        "Lung-PET-CT-Dx",
+        "63.67 ± 86.26",
+        "48.66 ± 19.85"
+      ]
+    ],
+    "pone.0266147.t002": [
+      [
+        "MSD-Lung",
+        "Point Guided",
+        "74.78 ± 11.83"
+      ],
+      [
+        "Box Guided",
+        "84.91 ± 06.09"
+      ],
+      [
+        "NSCLC-Radiomics",
+        "Point Guided",
+        "59.57 ± 23.90"
+      ],
+      [
+        "Box Guided",
+        "86.65 ± 08.77"
+      ],
+      [
+        "Both",
+        "Point Guided",
+        "61.48 ± 23.29"
+      ],
+      [
+        "Box Guided",
+        "86.44 ± 08.50"
+      ]
+    ],
+    "pone.0266147.t003": [
+      [
+        "MSD-Lung",
+        "Baseline",
+        "67.31 ± 21.17",
+        "73.12 ± 15.16",
+        "81.48 ± 31.86",
+        "88.89 ± 31.43",
+        "77.78 ± 34.25"
+      ],
+      [
+        "SO Student",
+        "64.27±16.05",
+        "71.32±8.06",
+        "81.48 ± 31.86",
+        "88.89 ± 31.43",
+        "77.78 ± 34.25"
+      ],
+      [
+        "DO Student",
+        "55.37 ± 29.03",
+        "70.49 ± 8.82",
+        "74.07 ± 40.91",
+        "77.78 ± 41.57",
+        "72.22 ± 41.57"
+      ],
+      [
+        "NSCLC-Radiomics",
+        "Baseline",
+        "51.06 ± 28.22",
+        "68.81 ± 18.27",
+        "63.56 ± 36.36",
+        "83.82 ± 36.82",
+        "56.68 ± 38.65"
+      ],
+      [
+        "SO Student",
+        "52.92 ± 31.13",
+        "69.39 ± 19.21",
+        "64.18 ± 37.37",
+        "79.90 ± 39.66",
+        "58.76 ± 39.28"
+      ],
+      [
+        "DO Student",
+        "52.25 ± 30.18",
+        "68.69 ± 19.47",
+        "68.43 ± 38.71",
+        "79.17 ± 39.75",
+        "64.95 ± 40.81"
+      ],
+      [
+        "Both",
+        "Baseline",
+        "52.96 ± 27.98",
+        "69.34 ± 17.97",
+        "65.66 ± 36.32",
+        "84.41 ± 36.27",
+        "59.14 ± 38.76"
+      ],
+      [
+        "SO Student",
+        "54.25 ± 29.99",
+        "69.63 ± 18.19",
+        "66.20 ± 37.19",
+        "80.95 ± 38.90",
+        "60.98 ± 39.21"
+      ],
+      [
+        "DO Student",
+        "52.61 ± 30.06",
+        "68.90 ± 18.59",
+        "69.09 ± 39.02",
+        "79.00 ± 39.97",
+        "65.80 ± 40.97"
+      ]
+    ],
+    "pone.0266147.t004": [
+      [
+        "MSD-Lung",
+        "Scarce Point Guided",
+        "48.52 ± 31.18"
+      ],
+      [
+        "Scarce Box Guided",
+        "81.65 ± 07.40"
+      ],
+      [
+        "NSCLC-Radiomics",
+        "Scarce Point Guided",
+        "43.83 ± 25.65"
+      ],
+      [
+        "Scarce Box Guided",
+        "84.69 ± 06.59"
+      ],
+      [
+        "Both",
+        "Scarce Point Guided",
+        "44.42 ± 26.45"
+      ],
+      [
+        "Scarce Box Guided",
+        "84.31 ± 06.77"
+      ]
+    ],
+    "pone.0266147.t005": [
+      [
+        "MSD-Lung",
+        "Baseline",
+        "26.45 ± 26.56",
+        "75.24 ± 15.90",
+        "09.10 ± 13.26",
+        "33.33 ± 47.14",
+        "05.31 ± 07.80"
+      ],
+      [
+        "SO Student",
+        "64.74 ± 11.82",
+        "71.56 ± 10.40",
+        "61.85 ± 16.49",
+        "100.0 ± 0.00",
+        "47.22 ± 20.79"
+      ],
+      [
+        "DO Student",
+        "71.00 ± 16.01",
+        "76.67 ± 07.08",
+        "85.18 ± 31.86",
+        "88.89 ± 31.43",
+        "83.33 ± 33.33"
+      ],
+      [
+        "NSCLC-Radiomics",
+        "Baseline",
+        "28.23 ± 28.05",
+        "55.39 ± 22.80",
+        "32.13 ± 36.99",
+        "51.47 ± 49.24",
+        "26.99 ± 35.68"
+      ],
+      [
+        "SO Student",
+        "51.06 ± 30.75",
+        "68.56 ± 20.69",
+        "62.65 ± 36.73",
+        "79.41 ± 39.51",
+        "56.67 ± 38.79"
+      ],
+      [
+        "DO Student",
+        "53.89 ± 29.75",
+        "67.44 ± 21.70",
+        "66.96 ± 35.57",
+        "84.56 ± 35.62",
+        "60.44 ± 38.24"
+      ],
+      [
+        "Both",
+        "Baseline",
+        "28.02 ± 27.89",
+        "56.91 ± 22.96",
+        "29.44 ± 35.82",
+        "49.35 ± 49.34",
+        "24.45 ± 34.35"
+      ],
+      [
+        "SO Student",
+        "52.66 ± 29.51",
+        "68.98 ± 19.60",
+        "62.55 ± 34.98",
+        "81.82 ± 37.72",
+        "55.56 ± 37.26"
+      ],
+      [
+        "DO Student",
+        "55.89 ± 29.01",
+        "68.56 ± 20.71",
+        "69.09 ± 35.64",
+        "85.06 ± 35.18",
+        "63.12 ± 38.41"
+      ]
+    ]
+  },
+  "paper_attribution": "Fredriksen et al. (2022), PLOS ONE, doi:10.1371/journal.pone.0266147, CC BY"
+}

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lungseg"
+version = "0.1.0"
+description = "Mixed-supervision lung tumor segmentation research (P0 tooling)"
+requires-python = ">=3.11,<3.14"
+dependencies = ["torch>=2.7,<3", "monai>=1.5,<2", "numpy>=2,<3", "PyYAML>=6,<7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+data = ["SimpleITK>=2.5,<3", "nibabel>=5,<6", "matplotlib>=3.10,<4", "pydicom>=3,<4"]
+
+[project.scripts]
+lungseg = "lungseg.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"

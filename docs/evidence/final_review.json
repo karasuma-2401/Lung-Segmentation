@@ -1,0 +1,30 @@
+{
+  "timestamp_utc": "2026-11-24T02:38:49.148618+00:00",
+  "new_files_reviewed": 34,
+  "code_whitespace_check": "pass",
+  "checked_files": [
+    ".gitignore",
+    "configs/protocol.yaml",
+    "configs/references/paper.yaml",
+    "configs/references/upstream.yaml",
+    "configs/smoke.yaml",
+    "pyproject.toml",
+    "requirements-cpu.lock.txt",
+    "scripts/audit_reference.py",
+    "scripts/verify.ps1",
+    "src/lungseg/__init__.py",
+    "src/lungseg/cli.py",
+    "src/lungseg/config.py",
+    "src/lungseg/environment.py",
+    "src/lungseg/runs.py",
+    "src/lungseg/smoke.py",
+    "tests/test_config.py",
+    "tests/test_runs_cli.py",
+    "tests/test_smoke.py"
+  ],
+  "handoff_preserved": true,
+  "remote_configured": false,
+  "commit_created": false,
+  "data_downloaded": false,
+  "phase": "P0 only"
+}
