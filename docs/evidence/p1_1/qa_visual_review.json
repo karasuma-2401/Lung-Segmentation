@@ -1,0 +1,113 @@
+{
+  "automatic_exclusions": [],
+  "cases": [
+    {
+      "case_id": "lung_096",
+      "figure_path": "data/qa/msd/lung_096_qa.png",
+      "figure_sha256": "4375b0c8712e0b2f735f48660ab288edd0d7e945d4df981c749dc5eecb5b8f5f",
+      "image_sha256": "2c41a68352dc3e73c8c28dd52f7b36fa5b0c2a110359e57cda71dc69c202f8ae",
+      "mask_sha256": "953e79d3b17d413f57c10c95ca040ff625e12fd146220c7634d43c0b54ba5a90",
+      "note": "Viewed axial/coronal/sagittal full-plane and zoom; no gross axis flip/translation observed in these slices. This is not expert boundary validation.",
+      "visual_review": "no_gross_spatial_issue_observed",
+      "volume_cm3": 0.7377379337916485
+    },
+    {
+      "case_id": "lung_083",
+      "figure_path": "data/qa/msd/lung_083_qa.png",
+      "figure_sha256": "9f3772183e58b460381cba47b676bfa475dc515f360a43b73f13995d7f2b1de9",
+      "image_sha256": "b342c1c20d966a873dabbe223ede68d02432a0aa25eb0ddfd84cf803d283165b",
+      "mask_sha256": "b40aa505b85be1a3136c4c8372c3cd64898b59d65c21ba9329453ca806496fa3",
+      "note": "Viewed axial/coronal/sagittal full-plane and zoom; no gross axis flip/translation observed in these slices. This is not expert boundary validation.",
+      "visual_review": "no_gross_spatial_issue_observed",
+      "volume_cm3": 1.394525170326233
+    },
+    {
+      "case_id": "lung_043",
+      "figure_path": "data/qa/msd/lung_043_qa.png",
+      "figure_sha256": "1ad1494a3361eaec82aa4378d2001a71266e0ad837bb305ca847dea63b12d531",
+      "image_sha256": "08b7aa88ee9946b0bf0a5fcd08af1d9b7720c4295e4f900a3e2f13d5c3b6b694",
+      "mask_sha256": "cc593eb359bc530642386b8fa1760fc2c2e8c45fe2a8faae62ff321f3dd8d689",
+      "note": "Viewed axial/coronal/sagittal full-plane and zoom; no gross axis flip/translation observed in these slices. This is not expert boundary validation.",
+      "visual_review": "no_gross_spatial_issue_observed",
+      "volume_cm3": 2.8306107338148094
+    },
+    {
+      "case_id": "lung_049",
+      "figure_path": "data/qa/msd/lung_049_qa.png",
+      "figure_sha256": "5612be38cd4c201e2515c62e2a454650cea9586566278ea4681605a55c56be0e",
+      "image_sha256": "d40c7dabda8fc7561830e137dd0a591d76dacc5b3f323d6d6b78ce400eb0e424",
+      "mask_sha256": "73f747f050f01a7b3f9566002fa271fa44bebd4b968796a049dee99d5a3af80a",
+      "note": "Viewed axial/coronal/sagittal full-plane and zoom; no gross axis flip/translation observed in these slices. This is not expert boundary validation.",
+      "visual_review": "no_gross_spatial_issue_observed",
+      "volume_cm3": 4.852386474609375
+    },
+    {
+      "case_id": "lung_054",
+      "figure_path": "data/qa/msd/lung_054_qa.png",
+      "figure_sha256": "02ea37e6423c79e953fec73a644308d7f7e4b77a6681e0d259a8234fcb0fd461",
+      "image_sha256": "30e7b0120f6bf7e5141548d9f25ef84db189390f42bbb52c04dc5ad4d6359726",
+      "mask_sha256": "5e82835c333fd43a442f229c984961b96bd01a36061fc4c49bf40dafeb662ea3",
+      "note": "Viewed axial/coronal/sagittal full-plane and zoom; no gross axis flip/translation observed in these slices. This is not expert boundary validation.",
+      "visual_review": "no_gross_spatial_issue_observed",
+      "volume_cm3": 6.577520968471427
+    },
+    {
+      "case_id": "lung_010",
+      "figure_path": "data/qa/msd/lung_010_qa.png",
+      "figure_sha256": "b566d7a7769d2cdf70e4e9343d9eca3d8f18ac12ec384b9d981d4f3132820f07",
+      "image_sha256": "d9bda1a25fe743889f85c6a9897fdd9d1993263bc32b11d2109ad3903cc754b5",
+      "mask_sha256": "7b92d71e6f25c7478aa97816b085b487a012ab171bad5387f4c9e8bdfc7135a6",
+      "note": "Viewed axial/coronal/sagittal full-plane and zoom; no gross axis flip/translation observed in these slices. This is not expert boundary validation.",
+      "visual_review": "no_gross_spatial_issue_observed",
+      "volume_cm3": 12.194112566359886
+    },
+    {
+      "case_id": "lung_086",
+      "figure_path": "data/qa/msd/lung_086_qa.png",
+      "figure_sha256": "5f77287b9c9dc6a4351d9df67b7e4c52a24c406aaea3f644e76486b038a247aa",
+      "image_sha256": "ed55e337e504c8e5a3a2b48ecd5d639ac2a0d6018aeaf5e1c138a5908ce43660",
+      "mask_sha256": "82130a2313b90e295f1f148f425f333b9d47906043634e4cba32ec97f1cf7070",
+      "note": "Viewed axial/coronal/sagittal full-plane and zoom; no gross axis flip/translation observed in these slices. This is not expert boundary validation.",
+      "visual_review": "no_gross_spatial_issue_observed",
+      "volume_cm3": 31.27205233911809
+    },
+    {
+      "case_id": "lung_053",
+      "figure_path": "data/qa/msd/lung_053_qa.png",
+      "figure_sha256": "05d93691cffb25412cec462ca028a46451890b8240ab76146e04e14fa9e22b45",
+      "image_sha256": "8991889909c940538d5bccb062d74ff8b50e8a748f9711aae0560acb624c69dc",
+      "mask_sha256": "df250b6bd0f9ad131fda70c3ff6047ba74af2c1346de2adec9959bb92a13f160",
+      "note": "Viewed axial/coronal/sagittal full-plane and zoom; no gross axis flip/translation observed in these slices. This is not expert boundary validation.",
+      "visual_review": "no_gross_spatial_issue_observed",
+      "volume_cm3": 370.3841129463399
+    },
+    {
+      "case_id": "lung_022",
+      "figure_path": "data/qa/msd_diagnostic/lung_022_qa.png",
+      "figure_sha256": "f6aa937d3e44f637ce12e7e11f22ecafc66ac85748e48fe4d9dab19e5d1409a1",
+      "image_sha256": "49de20e4aab49b0baea293c07f843fb4816b02028e8472587631b6edbe3f3e0e",
+      "mask_sha256": "a6df7b2137f61196336c7e65091e2d64d3152cfe31fcbe5fd3bd5621e8c0e664",
+      "note": "Irregular mask extent into neighboring lower-density regions on selected slices; review full volume/source before annotation adjudication. No correction or exclusion.",
+      "visual_review": "review_required",
+      "volume_cm3": 59.10573309987931
+    },
+    {
+      "case_id": "lung_018",
+      "figure_path": "data/qa/msd_intensity/lung_018_qa.png",
+      "figure_sha256": "3a09d1b07fa441c9ce25eabc82c74a20edd363c4b9669cf4f2f54bcee32f6018",
+      "image_sha256": "e13322a8d0f5ee0ee42c95d4be1400848efecda264b2cdf3be152fc30898db01",
+      "intensity_finding": "ct_max=20349; cause not verified; raw unchanged",
+      "mask_sha256": "2d0688e2c024b4554dd1b0ed7d791e9ef2d0e95db7e4d40337a9ef67658cab50",
+      "note": "Viewed three-plane full-plane/zoom. Very bright regions visible on full-plane, no gross mask grid shift in selected slices. Display window does not represent full intensity range.",
+      "visual_review": "no_gross_spatial_issue_observed",
+      "volume_cm3": 8.529045104980469
+    }
+  ],
+  "human_expert_adjudication": false,
+  "limitation": "Selected slices only; not every voxel or expert validation. Generated index manual_review remains pending for human review.",
+  "n_cases": 10,
+  "original_masks_changed": false,
+  "real_data": true,
+  "reviewer": "Codex_assisted_visual_QA",
+  "timestamp_utc": "2026-11-24T03:52:39.741306+00:00"
+}

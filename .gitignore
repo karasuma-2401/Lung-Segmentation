@@ -13,6 +13,7 @@ data/raw/
 data/processed/
 data/pseudo/
 data/cache/
+data/qa/
 experiments/
 *.ckpt
 *.pth

@@ -1,0 +1,38 @@
+{
+  "acquisition": {
+    "archive_sha256": "f782cd09da9cf7a3128475d4a53650d371db10f0427aa76e166fccfcb2654161",
+    "free_bytes_before_extract": 55880437760,
+    "members": 162,
+    "payload_bytes": 9163406370,
+    "timestamp_utc": "2026-11-24T03:35:31.257326+00:00"
+  },
+  "annotation_changed": false,
+  "config": {
+    "acquisition": {
+      "archive_path": "data/raw/archives/Task06_Lung.tar",
+      "report_path": "docs/evidence/p1_1/acquisition.json",
+      "reserve_bytes": 2147483648,
+      "url": "https://msd-for-monai.s3.us-west-2.amazonaws.com/Task06_Lung.tar"
+    },
+    "affine_atol_mm": 0.001,
+    "dataset_root": "data/raw/Task06_Lung",
+    "kind": "msd_inventory",
+    "output_dir": "data/manifests/msd",
+    "qa_count": 8,
+    "qa_dir": "data/qa/msd",
+    "schema_version": 1,
+    "slab_slices": 16,
+    "spacing_atol_mm": 0.001
+  },
+  "config_sha256": "8daa8fa2ebabe8923dc63750ef6f0813b656f2d2e31e4f8bbba04f228d6cc58d",
+  "dataset_json_sha256": "931339c241e22fe43c9daa48b046670fe47c5ac6b50c6826bfc0c5be249e89cd",
+  "git": {
+    "revision": "756416c445905f5111251b7fe32c307e21f127be",
+    "status": "dirty"
+  },
+  "manifest_sha256": "ecdb0c960d197a9ba4b4595209beaff199f669eba4912cdea1f8f95d3e84de5b",
+  "real_data": true,
+  "schema_version": 1,
+  "source_partition_is_experiment_split": false,
+  "timestamp_utc": "2026-11-24T03:44:22.521115+00:00"
+}

@@ -1,0 +1,14 @@
+schema_version: 1
+kind: msd_inventory
+dataset_root: data/raw/Task06_Lung
+output_dir: data/manifests/msd
+qa_dir: data/qa/msd
+qa_count: 8
+affine_atol_mm: 0.001
+spacing_atol_mm: 0.001
+slab_slices: 16
+acquisition:
+  url: https://msd-for-monai.s3.us-west-2.amazonaws.com/Task06_Lung.tar
+  archive_path: data/raw/archives/Task06_Lung.tar
+  report_path: docs/evidence/p1_1/acquisition.json
+  reserve_bytes: 2147483648

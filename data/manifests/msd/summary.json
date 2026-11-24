@@ -1,0 +1,77 @@
+{
+  "ct_volumes_readable": 95,
+  "data_origin": "acquired_MSD_archive",
+  "dataset": "MSD-Task06_Lung",
+  "dataset_findings": [],
+  "declared_test": 32,
+  "declared_training": 63,
+  "error_counts": {},
+  "foreground_voxels": {
+    "max": 338475.0,
+    "median": 7050.0,
+    "min": 756.0,
+    "n": 63,
+    "q25": 3080.0,
+    "q75": 25818.0
+  },
+  "ground_truth_available": 63,
+  "label_values_union": [
+    0.0,
+    1.0
+  ],
+  "mask_volumes_readable": 63,
+  "orientation_counts": {
+    "LAS": 95
+  },
+  "patient_id_policy": "null: no patient mapping in distributed dataset.json; case IDs are not patient IDs",
+  "patient_identity_verified": false,
+  "publisher_metadata": {
+    "description": "Lung and cancer segmentation",
+    "licence": "CC-BY-SA 4.0",
+    "name": "Lung",
+    "reference": "The Cancer Imaging Archive",
+    "relase": "1.0 04/05/2018"
+  },
+  "qc_status_counts": {
+    "pass": 95
+  },
+  "real_data": true,
+  "rows": 95,
+  "schema_version": 1,
+  "scope": "native-grid inventory, not a train/validation/test assignment or preprocessing",
+  "shape_max_xyz": [
+    512,
+    512,
+    636
+  ],
+  "shape_min_xyz": [
+    512,
+    512,
+    112
+  ],
+  "source_partitions": {
+    "official_test": 32,
+    "official_training": 63
+  },
+  "spacing_max_xyz_mm": [
+    0.9765620231628418,
+    0.9765620231628418,
+    2.5
+  ],
+  "spacing_min_xyz_mm": [
+    0.5976560115814209,
+    0.5976560115814209,
+    0.625
+  ],
+  "strong_eligible_count": 63,
+  "tumor_volume_mm3": {
+    "max": 370384.1129463399,
+    "median": 5220.03173828125,
+    "min": 737.7379337916485,
+    "n": 63,
+    "q25": 2725.717029571533,
+    "q75": 15874.925112338302
+  },
+  "unique_case_ids": 95,
+  "warning_counts": {}
+}

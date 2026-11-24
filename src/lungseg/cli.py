@@ -1,4 +1,4 @@
-"""P0 entry points only. Unimplemented research commands are not exposed."""
+"""Implemented P0 and MSD T04 entry points; no research training commands."""
 
 import argparse
 from dataclasses import replace
@@ -14,7 +14,7 @@ from lungseg.runs import RunRecord, write_json
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Lung segmentation P0 tooling")
+    parser = argparse.ArgumentParser(description="Lung segmentation research tooling")
     commands = parser.add_subparsers(dest="command", required=True)
     env = commands.add_parser("env-check", help="Report real package imports and CPU/CUDA capability")
     env.add_argument("--output", type=Path)
@@ -23,9 +23,38 @@ def main(argv: list[str] | None = None) -> int:
     smoke.add_argument("--device", choices=("cpu", "cuda", "auto"))
     smoke.add_argument("--output-dir")
     smoke.add_argument("--run-id")
+    acquisition = commands.add_parser("acquire-msd", help="Probe public MSD source; download/extract only with flags")
+    acquisition.add_argument("--config", type=Path, required=True)
+    acquisition.add_argument("--download", action="store_true")
+    acquisition.add_argument("--extract", action="store_true")
+    audit = commands.add_parser("audit-msd", help="Inventory native CT/masks; no split or preprocessing")
+    audit.add_argument("--config", type=Path, required=True)
+    qa = commands.add_parser("qa-msd", help="Render three-plane CT/mask QA from a validated manifest")
+    qa.add_argument("--config", type=Path, required=True)
+    qa.add_argument("--case-ids", nargs="+")
     args = parser.parse_args(argv)
     record = None
     try:
+        if args.command in {"audit-msd", "qa-msd"}:
+            from lungseg.data.msd_config import load_msd_config
+
+            config = load_msd_config(args.config)
+            if args.command == "audit-msd":
+                from lungseg.data.msd import inventory
+
+                result = inventory(config)
+                print(json.dumps(result, indent=2))
+                return 2 if result["error_counts"] or result["dataset_findings"] else 0
+            from lungseg.data.msd_qa import generate_qa
+
+            print(json.dumps(generate_qa(config, args.case_ids), indent=2))
+            return 0
+        if args.command == "acquire-msd":
+            from lungseg.data.msd_acquire import acquire
+            from lungseg.data.msd_config import load_msd_config
+
+            print(json.dumps(acquire(load_msd_config(args.config), download=args.download, extract=args.extract), indent=2))
+            return 0
         if args.command == "env-check":
             report = collect_environment()
             if args.output:

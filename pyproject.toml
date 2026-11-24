@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "lungseg"
 version = "0.1.0"
-description = "Mixed-supervision lung tumor segmentation research (P0 tooling)"
+description = "Mixed-supervision lung tumor segmentation research tooling and MSD inventory"
 requires-python = ">=3.11,<3.14"
 dependencies = ["torch>=2.7,<3", "monai>=1.5,<2", "numpy>=2,<3", "PyYAML>=6,<7"]
 

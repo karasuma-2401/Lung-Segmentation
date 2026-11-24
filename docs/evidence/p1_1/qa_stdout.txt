@@ -1,0 +1,131 @@
+{
+  "timestamp_utc": "2026-11-24T03:45:47.136260+00:00",
+  "dataset": "MSD-Task06_Lung",
+  "config_sha256": "8daa8fa2ebabe8923dc63750ef6f0813b656f2d2e31e4f8bbba04f228d6cc58d",
+  "manifest_sha256": "ecdb0c960d197a9ba4b4595209beaff199f669eba4912cdea1f8f95d3e84de5b",
+  "real_data": true,
+  "n_cases": 8,
+  "selection": "evenly_spaced_ranks_by_tumor_volume_including_extremes",
+  "source_labeled_cases": 63,
+  "cases": [
+    {
+      "case_id": "lung_096",
+      "tumor_volume_mm3": 737.7379337916485,
+      "canonical_slices_xyz": [
+        397,
+        241,
+        99
+      ],
+      "file": "lung_096_qa.png",
+      "image_sha256": "2c41a68352dc3e73c8c28dd52f7b36fa5b0c2a110359e57cda71dc69c202f8ae",
+      "mask_sha256": "953e79d3b17d413f57c10c95ca040ff625e12fd146220c7634d43c0b54ba5a90",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "lung_083",
+      "tumor_volume_mm3": 1394.525170326233,
+      "canonical_slices_xyz": [
+        401,
+        308,
+        113
+      ],
+      "file": "lung_083_qa.png",
+      "image_sha256": "b342c1c20d966a873dabbe223ede68d02432a0aa25eb0ddfd84cf803d283165b",
+      "mask_sha256": "b40aa505b85be1a3136c4c8372c3cd64898b59d65c21ba9329453ca806496fa3",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "lung_043",
+      "tumor_volume_mm3": 2830.6107338148095,
+      "canonical_slices_xyz": [
+        357,
+        234,
+        98
+      ],
+      "file": "lung_043_qa.png",
+      "image_sha256": "08b7aa88ee9946b0bf0a5fcd08af1d9b7720c4295e4f900a3e2f13d5c3b6b694",
+      "mask_sha256": "cc593eb359bc530642386b8fa1760fc2c2e8c45fe2a8faae62ff321f3dd8d689",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "lung_049",
+      "tumor_volume_mm3": 4852.386474609375,
+      "canonical_slices_xyz": [
+        335,
+        198,
+        209
+      ],
+      "file": "lung_049_qa.png",
+      "image_sha256": "d40c7dabda8fc7561830e137dd0a591d76dacc5b3f323d6d6b78ce400eb0e424",
+      "mask_sha256": "73f747f050f01a7b3f9566002fa271fa44bebd4b968796a049dee99d5a3af80a",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "lung_054",
+      "tumor_volume_mm3": 6577.520968471427,
+      "canonical_slices_xyz": [
+        330,
+        290,
+        169
+      ],
+      "file": "lung_054_qa.png",
+      "image_sha256": "30e7b0120f6bf7e5141548d9f25ef84db189390f42bbb52c04dc5ad4d6359726",
+      "mask_sha256": "5e82835c333fd43a442f229c984961b96bd01a36061fc4c49bf40dafeb662ea3",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "lung_010",
+      "tumor_volume_mm3": 12194.112566359885,
+      "canonical_slices_xyz": [
+        187,
+        137,
+        102
+      ],
+      "file": "lung_010_qa.png",
+      "image_sha256": "d9bda1a25fe743889f85c6a9897fdd9d1993263bc32b11d2109ad3903cc754b5",
+      "mask_sha256": "7b92d71e6f25c7478aa97816b085b487a012ab171bad5387f4c9e8bdfc7135a6",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "lung_086",
+      "tumor_volume_mm3": 31272.05233911809,
+      "canonical_slices_xyz": [
+        373,
+        222,
+        192
+      ],
+      "file": "lung_086_qa.png",
+      "image_sha256": "ed55e337e504c8e5a3a2b48ecd5d639ac2a0d6018aeaf5e1c138a5908ce43660",
+      "mask_sha256": "82130a2313b90e295f1f148f425f333b9d47906043634e4cba32ec97f1cf7070",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "lung_053",
+      "tumor_volume_mm3": 370384.1129463399,
+      "canonical_slices_xyz": [
+        310,
+        234,
+        181
+      ],
+      "file": "lung_053_qa.png",
+      "image_sha256": "8991889909c940538d5bccb062d74ff8b50e8a748f9711aae0560acb624c69dc",
+      "mask_sha256": "df250b6bd0f9ad131fda70c3ff6047ba74af2c1346de2adec9959bb92a13f160",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "attribution": "Medical Segmentation Decathlon / Simpson et al., https://medicaldecathlon.com/",
+  "modifications": "CT window, orthogonal slices, RAS axis permutation, red overlay and display-only zoom",
+  "spatial_resampling": false,
+  "original_data_modified": false,
+  "limitation": "Same NIfTI grid does not prove anatomical correctness. Oblique scans shown on closest canonical voxel planes."
+}

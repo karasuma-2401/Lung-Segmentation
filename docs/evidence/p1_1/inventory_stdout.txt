@@ -1,0 +1,86 @@
+MSD inventory: 10/95 CT cases checked
+MSD inventory: 20/95 CT cases checked
+MSD inventory: 30/95 CT cases checked
+MSD inventory: 40/95 CT cases checked
+MSD inventory: 50/95 CT cases checked
+MSD inventory: 60/95 CT cases checked
+MSD inventory: 70/95 CT cases checked
+MSD inventory: 80/95 CT cases checked
+MSD inventory: 90/95 CT cases checked
+{
+  "schema_version": 1,
+  "dataset": "MSD-Task06_Lung",
+  "real_data": true,
+  "rows": 95,
+  "unique_case_ids": 95,
+  "source_partitions": {
+    "official_training": 63,
+    "official_test": 32
+  },
+  "declared_training": 63,
+  "declared_test": 32,
+  "ct_volumes_readable": 95,
+  "mask_volumes_readable": 63,
+  "ground_truth_available": 63,
+  "strong_eligible_count": 63,
+  "qc_status_counts": {
+    "pass": 95
+  },
+  "error_counts": {},
+  "warning_counts": {},
+  "dataset_findings": [],
+  "patient_identity_verified": false,
+  "patient_id_policy": "null: no patient mapping in distributed dataset.json; case IDs are not patient IDs",
+  "shape_min_xyz": [
+    512,
+    512,
+    112
+  ],
+  "shape_max_xyz": [
+    512,
+    512,
+    636
+  ],
+  "spacing_min_xyz_mm": [
+    0.5976560115814209,
+    0.5976560115814209,
+    0.625
+  ],
+  "spacing_max_xyz_mm": [
+    0.9765620231628418,
+    0.9765620231628418,
+    2.5
+  ],
+  "orientation_counts": {
+    "LAS": 95
+  },
+  "label_values_union": [
+    0.0,
+    1.0
+  ],
+  "foreground_voxels": {
+    "n": 63,
+    "min": 756.0,
+    "median": 7050.0,
+    "max": 338475.0,
+    "q25": 3080.0,
+    "q75": 25818.0
+  },
+  "tumor_volume_mm3": {
+    "n": 63,
+    "min": 737.7379337916485,
+    "median": 5220.03173828125,
+    "max": 370384.1129463399,
+    "q25": 2725.717029571533,
+    "q75": 15874.925112338302
+  },
+  "scope": "native-grid inventory, not a train/validation/test assignment or preprocessing",
+  "data_origin": "acquired_MSD_archive",
+  "publisher_metadata": {
+    "name": "Lung",
+    "description": "Lung and cancer segmentation",
+    "reference": "The Cancer Imaging Archive",
+    "licence": "CC-BY-SA 4.0",
+    "relase": "1.0 04/05/2018"
+  }
+}

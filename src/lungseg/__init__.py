@@ -1,3 +1,3 @@
-"""P0 environment and synthetic smoke tooling; no research training yet."""
+"""Environment, synthetic smoke and native MSD inventory/QA; no research training."""
 
 __version__ = "0.1.0"

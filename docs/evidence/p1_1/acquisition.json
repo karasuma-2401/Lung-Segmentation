@@ -1,0 +1,28 @@
+{
+  "archive_path": "data\\raw\\archives\\Task06_Lung.tar",
+  "archive_sha256": "f782cd09da9cf7a3128475d4a53650d371db10f0427aa76e166fccfcb2654161",
+  "conservative_download_and_extract_bytes": 20474876928,
+  "content_length_bytes": 9163696640,
+  "dataset_root": "data/raw/Task06_Lung",
+  "etag": "\"2300833f4f186bb04eb81014f857eeea-1093\"",
+  "extraction": {
+    "archive_sha256": "f782cd09da9cf7a3128475d4a53650d371db10f0427aa76e166fccfcb2654161",
+    "free_bytes_before_extract": 55880437760,
+    "members": 162,
+    "payload_bytes": 9163406370,
+    "status": "extracted",
+    "timestamp_utc": "2026-11-24T03:35:31.257326+00:00"
+  },
+  "free_bytes": 64301944832,
+  "http_status": 200,
+  "last_modified": "Fri, 14 Aug 2020 09:11:22 GMT",
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "no_aws_account_required": true,
+  "reserve_bytes": 2147483648,
+  "source_registry": "https://registry.opendata.aws/msd/",
+  "status": "acquired_not_yet_validated",
+  "timestamp_utc": "2026-11-24T03:14:48.900372+00:00",
+  "url": "https://msd-for-monai.s3.us-west-2.amazonaws.com/Task06_Lung.tar",
+  "version_id": "sPj6vnq7pgN1UEeh9nb8vGP0_2ZufMcA"
+}

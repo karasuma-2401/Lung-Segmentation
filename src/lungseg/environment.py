@@ -74,8 +74,9 @@ def collect_environment() -> dict:
         except (OSError, ValueError):
             pass
     source_hash = hashlib.sha256()
-    for source in sorted(Path(__file__).parent.glob("*.py")):
-        source_hash.update(source.name.encode("utf-8") + b"\0" + source.read_bytes())
+    source_root = Path(__file__).parent
+    for source in sorted(source_root.rglob("*.py")):
+        source_hash.update(source.relative_to(source_root).as_posix().encode("utf-8") + b"\0" + source.read_bytes())
     return {"timestamp_utc": datetime.now(timezone.utc).isoformat(), "python": sys.version,
             "executable": sys.executable, "platform": platform.platform(), "packages": packages,
             "required_imports_pass": all(packages[p]["import"] == "pass" for p in required),

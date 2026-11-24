@@ -1,0 +1,27 @@
+{
+  "automatic_exclusions": [],
+  "criteria": {
+    "geometry_and_error_detection_tests": "PASS",
+    "gt_vs_no_gt": "PASS",
+    "manifest_reproducibility_fixture_test": "PASS",
+    "p0_regression_and_t04_tests": "PASS",
+    "raw_preservation_and_t04_scope": "PASS",
+    "read_valid_ct_masks": "PASS",
+    "real_data_evidence": "PASS"
+  },
+  "manifest_sha256": "ecdb0c960d197a9ba4b4595209beaff199f669eba4912cdea1f8f95d3e84de5b",
+  "open_items": [
+    "lung_022 annotation requires human/source adjudication",
+    "MSD patient mapping unverified before T07"
+  ],
+  "package_source_sha256": "78b8089f62d934bf767aed26486bdffe3f31682050b33937fdade16fe39c9ce3",
+  "phase": "P1.1/T04",
+  "raw_modified": false,
+  "real_ct_cases": 95,
+  "real_gt_masks": 63,
+  "real_qa_cases_viewed": 10,
+  "research_training_performed": false,
+  "status": "DONE_WITH_REVIEW_FINDING",
+  "test_result": "68 passed",
+  "timestamp_utc": "2026-11-24T03:55:02.702847+00:00"
+}

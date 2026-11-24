@@ -1,0 +1,3 @@
+timestamp_utc: 2026-11-24T03:35:32.5319681Z
+command: .venv/Scripts/python.exe -m lungseg.cli acquire-msd --config configs/msd.yaml --download --extract
+exit_code: 0

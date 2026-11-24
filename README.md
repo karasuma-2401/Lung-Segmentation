@@ -2,7 +2,7 @@
 
 Dự án nghiên cứu mixed supervision Teacher–Student trên CT 3D. Phương án chính dùng MSD-Lung và NSCLC-Radiomics có mask, cùng Lung-PET-CT-Dx có axial bbox. Chạy Scarce trước Vast; Student cuối cùng nhận CT và xuất mask, không cần bbox.
 
-Hiện có công cụ **P0**: kiểm tra môi trường, synthetic smoke, kiểm thử và audit paper/source. Chưa có dataset, split thực, model nghiên cứu, pseudo masks hay kết quả thực nghiệm. Xem [tiến độ](docs/progress.md), [quyết định](docs/decisions.md) và [bảng paper–code](docs/paper_to_code_matrix.md).
+Hiện có công cụ **P0** (env/synthetic smoke/audit paper–code) và **P1.1/T04** (MSD acquisition/native NIfTI inventory/QA). Trạng thái dữ liệu thật và bằng chứng nằm trong [tiến độ](docs/progress.md); chưa có experiment splits, model nghiên cứu, pseudo masks hay kết quả training. Xem thêm [quyết định](docs/decisions.md) và [bảng paper–code](docs/paper_to_code_matrix.md).
 
 ## Cài đặt CPU trên Windows
 
@@ -48,8 +48,25 @@ Mỗi lần tạo `experiments/P0_smoke_<timestamp>_<id>/` với `config.json`, 
 - `configs/references/paper.yaml`: thông số bài báo, có đánh dấu chưa rõ.
 - `configs/references/upstream.yaml`: thông số source và pinned commit, không phải config training chạy được.
 - `configs/smoke.yaml`: config thực chạy cho P0. CLI từ chối config reference/protocol.
-- `src/lungseg/`: chỉ chứa chức năng P0 đã hiện thực. Chưa expose `train`, `split`, `preprocess`, `evaluate` hoặc `generate-pseudo`.
+- `src/lungseg/`: công cụ P0 và `data/` cho T04 MSD. Chưa expose `train`, `split`, `preprocess`, `evaluate` hoặc `generate-pseudo`.
 - `data/README.md`: quy tắc lưu dữ liệu. Raw/cache/pseudo/checkpoints/virtualenv/reference clone đều gitignored.
+
+## MSD-Lung — P1.1/T04
+
+[Hướng dẫn acquisition](docs/msd_acquisition.md), [schema manifest](docs/msd_manifest_schema.md), [data card](docs/data_cards/msd_lung.md), [QA report](docs/msd_qa_report.md).
+
+```powershell
+# Preflight: HEAD + disk check, không tải CT:
+.\.venv\Scripts\python.exe -m lungseg.cli acquire-msd --config configs/msd.yaml
+# Tải khoảng9.16 GB, giải nén khi đủ chỗ và giữ provenance:
+.\.venv\Scripts\python.exe -m lungseg.cli acquire-msd --config configs/msd.yaml --download --extract
+.\.venv\Scripts\python.exe -m lungseg.cli audit-msd --config configs/msd.yaml
+.\.venv\Scripts\python.exe -m lungseg.cli qa-msd --config configs/msd.yaml
+# Full P0+T04 checks, giữ riêng evidence P0:
+.\scripts\verify.ps1 -EvidenceDirectory docs/evidence/p1_1/verification
+```
+
+Manifest/summary/run metadata: `data/manifests/msd/`. Montage/index: `data/qa/msd/` (gitignored medical slices). Official test CT không có mask; `patient_id` để null nếu không có mapping nguồn, không suy luận từ case ID. Không chia experiment splits hoặc sửa expert annotations ở T04. Lượt này dừng sau P1.1, chưa triển khai NSCLC-Radiomics/T05.
 
 ## Tái tạo audit tham chiếu
 
@@ -91,4 +108,4 @@ Trước bước trên cần cài dependency còn thiếu từ `pyproject.toml` 
 
 ## Nguồn và quyền sử dụng
 
-[Fredriksen et al. (2022), PLOS ONE](https://doi.org/10.1371/journal.pone.0266147), CC BY; bảng đối chiếu và bảng số liệu tham chiếu có attribution, không phải số của nhóm. Source upstream giữ nguyên cùng LICENSE trong clone; P0 dùng MONAI API và code tooling viết mới, không copy thân model upstream. Chưa chọn license cho code mới của nhóm. License/quyền truy cập dataset và weights cần xác minh riêng ở P1. Không push, publish, train full hoặc mở P1 ở lượt P0.
+[Fredriksen et al. (2022), PLOS ONE](https://doi.org/10.1371/journal.pone.0266147), CC BY; bảng đối chiếu và bảng số liệu tham chiếu có attribution, không phải số của nhóm. Source upstream giữ nguyên cùng LICENSE trong clone; P0 dùng MONAI API và code tooling viết mới, không copy thân model upstream. Chưa chọn license cho code mới của nhóm. MSD được xác minh qua AWS Registry và metadata với CC-BY-SA4.0; xem acquisition guide. License/quyền truy cập hai nguồn còn lại và weights vẫn cần xác minh riêng. Không push/publish hoặc train nghiên cứu trong T04.

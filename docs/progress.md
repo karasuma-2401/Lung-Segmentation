@@ -1,4 +1,24 @@
-# Tiến độ P0 — 24/11/2026
+# Tiến độ hiện tại — P1.1 / T04 — 24/11/2026
+
+**T04 hoàn tất trong phạm vi acquisition/inventory/QA; dừng để người dùng review.** Có annotation finding OPEN ở lung_022, không tự sửa/loại mask. P0 CPU đã được người dùng chấp thuận trước lượt này. Phần P0 bên dưới là snapshot lịch sử, không mô tả trạng thái dataset hiện tại.
+
+| Hạng mục P1.1 | Trạng thái / evidence |
+|---|---|
+| Source/license/resource | PASS — AWS MSD public/no-account, CC-BY-SA4.0, archive9,163,696,640 bytes; disk checked trước tải/giải nén; [acquisition](evidence/p1_1/acquisition.json) |
+| Real inventory | PASS —95/95 CT,63/63 masks đọc hết voxel;95 unique case IDs;0 auto errors/warnings; [manifest](../data/manifests/msd/manifest_msd.csv), [summary](../data/manifests/msd/summary.json) |
+| GT/no GT / identity |63 strong_mask,32 official test không GT,95 patient_id null; không tạo experiment splits hoặc giả patient IDs |
+| Geometry/labels/volume |63/63 pairs aligned, LAS95/95, labels0/1, volume min/median/max0.738/5.220/370.384cm³; shape512×512×112–636 |
+| Visual QA |10 montage thật đã xem:8 volume-rank samples +lung_022 +lung_018. Lung_022 REVIEW_REQUIRED; không đổi data. [QA report](msd_qa_report.md), [visual review](evidence/p1_1/qa_visual_review.json) |
+| Regression/testing | **68 passed** (27 P0 +41 T04), CPU smoke/env/pip check pass; [verification](evidence/p1_1/verification/verification.json). GPU/Kaggle NOT RUN |
+| Scope | Chỉ T04; không T05–T08, preprocessing production, split hoặc research training; giữ ba dataset |
+
+Các CLI mới: `acquire-msd`, `audit-msd`, `qa-msd` với `configs/msd.yaml`. Source/hash, schema, guides, data card, changes, commands/exit status và acceptance checklist được tổng hợp trong [báo cáo đầy đủ P1.1](msd_qa_report.md). Raw9.16 GB + archive9.16 GB và medical montage gitignored; còn khoảng46.2 GB free lúc report. Không thêm dependency, commit hoặc push.
+
+Những việc OPEN trước giai đoạn sau: human/source adjudication lung_022, mapping MSD case→patient trước T07, nguồn/license/capacity/CT–RTSTRUCT UID cho NSCLC. **Đề xuất P1.2/T05, chưa thực hiện; chờ người dùng review P1.1.**
+
+---
+
+# Tiến độ P0 — 24/11/2026 (snapshot trước P1.1)
 
 Phạm vi: **P0 / T01–T03**. Dự án mới; chưa có dataset, split thực, run E01–E08 hoặc kết quả nghiên cứu. Dừng ở P0 theo phạm vi đã thống nhất; P1 chưa bắt đầu.
 

@@ -1,10 +1,14 @@
-param([string]$Python = '.venv\Scripts\python.exe')
+param(
+    [string]$Python = '.venv\Scripts\python.exe',
+    [string]$EvidenceDirectory = 'docs/evidence'
+)
 $ErrorActionPreference = 'Stop'
 if (-not (Test-Path -LiteralPath $Python)) { throw "Python not found: $Python. Follow README setup." }
-$evidenceDirectory = Join-Path $PSScriptRoot '../docs/evidence'
+$evidenceDirectory = $EvidenceDirectory
 New-Item -ItemType Directory -Path $evidenceDirectory -Force | Out-Null
+$environmentOutput = Join-Path $evidenceDirectory 'environment.json'
 $commands = @(
-    @('-m', 'lungseg.cli', 'env-check', '--output', 'docs/evidence/environment.json'),
+    @('-m', 'lungseg.cli', 'env-check', '--output', $environmentOutput),
     @('-m', 'lungseg.cli', 'smoke-test', '--config', 'configs/smoke.yaml'),
     @('-m', 'pytest', '-q'),
     @('-m', 'pip', 'check')

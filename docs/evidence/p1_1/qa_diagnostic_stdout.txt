@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2026-11-24T03:46:05.360363+00:00",
+  "dataset": "MSD-Task06_Lung",
+  "config_sha256": "60c854c542c3d3e7e70d1858f6acc7591649011f87f490dc3712b8cd6b16e95e",
+  "manifest_sha256": "ecdb0c960d197a9ba4b4595209beaff199f669eba4912cdea1f8f95d3e84de5b",
+  "real_data": true,
+  "n_cases": 1,
+  "selection": "explicit_case_ids",
+  "source_labeled_cases": 63,
+  "cases": [
+    {
+      "case_id": "lung_022",
+      "tumor_volume_mm3": 59105.73309987931,
+      "canonical_slices_xyz": [
+        329,
+        173,
+        244
+      ],
+      "file": "lung_022_qa.png",
+      "image_sha256": "49de20e4aab49b0baea293c07f843fb4816b02028e8472587631b6edbe3f3e0e",
+      "mask_sha256": "a6df7b2137f61196336c7e65091e2d64d3152cfe31fcbe5fd3bd5621e8c0e664",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "attribution": "Medical Segmentation Decathlon / Simpson et al., https://medicaldecathlon.com/",
+  "modifications": "CT window, orthogonal slices, RAS axis permutation, red overlay and display-only zoom",
+  "spatial_resampling": false,
+  "original_data_modified": false,
+  "limitation": "Same NIfTI grid does not prove anatomical correctness. Oblique scans shown on closest canonical voxel planes."
+}

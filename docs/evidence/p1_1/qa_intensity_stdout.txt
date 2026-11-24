@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2026-11-24T03:48:40.545820+00:00",
+  "dataset": "MSD-Task06_Lung",
+  "config_sha256": "0b1bfb8f6360d60e1b936e801c75e23a16b885108b81f70e4110f48ca58961fa",
+  "manifest_sha256": "ecdb0c960d197a9ba4b4595209beaff199f669eba4912cdea1f8f95d3e84de5b",
+  "real_data": true,
+  "n_cases": 1,
+  "selection": "explicit_case_ids",
+  "source_labeled_cases": 63,
+  "cases": [
+    {
+      "case_id": "lung_018",
+      "tumor_volume_mm3": 8529.045104980469,
+      "canonical_slices_xyz": [
+        351,
+        344,
+        175
+      ],
+      "file": "lung_018_qa.png",
+      "image_sha256": "e13322a8d0f5ee0ee42c95d4be1400848efecda264b2cdf3be152fc30898db01",
+      "mask_sha256": "2d0688e2c024b4554dd1b0ed7d791e9ef2d0e95db7e4d40337a9ef67658cab50",
+      "automated_geometry_check": "pass",
+      "manual_review": "pending"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "attribution": "Medical Segmentation Decathlon / Simpson et al., https://medicaldecathlon.com/",
+  "modifications": "CT window, orthogonal slices, RAS axis permutation, red overlay and display-only zoom",
+  "spatial_resampling": false,
+  "original_data_modified": false,
+  "limitation": "Same NIfTI grid does not prove anatomical correctness. Oblique scans shown on closest canonical voxel planes."
+}

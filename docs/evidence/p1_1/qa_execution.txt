@@ -1,0 +1,3 @@
+timestamp_utc: 2026-11-24T03:45:51.6017930Z
+command: .venv/Scripts/python.exe -m lungseg.cli qa-msd --config configs/msd.yaml
+exit_code: 0

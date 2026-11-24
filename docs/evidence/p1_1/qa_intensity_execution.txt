@@ -1,0 +1,4 @@
+timestamp_utc: 2026-11-24T03:48:40.9084200Z
+command: generate_qa(replace(load_msd_config(configs/msd.yaml), qa_dir=data/qa/msd_intensity, qa_count=1), [lung_018])
+exit_code: 0
+selection_reason: CT intensity maximum 20349 observed in real inventory; no clipping or exclusion
