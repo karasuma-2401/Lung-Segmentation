@@ -1,0 +1,23 @@
+{
+  "all_PNG_bytes_equal": true,
+  "all_case_statuses_and_quarantine_reasons_unchanged": true,
+  "all_ct_mask_arrays_geometry_volumes_unchanged": true,
+  "conversion_fingerprint_sha256": "87bac7926b4ab377dbbd978ecdbac5bfa0e4497319f8ae9ed097abc1dd2847bb",
+  "disk_free_bytes": 46648860672,
+  "legacy_cache_refused": true,
+  "package_source_matches_verified_environment": true,
+  "package_source_sha256": "bd6a0f1d7e3b15a3003646848dcd104cdf28bf6f6a51670d2dba5325786f829b",
+  "paired_arrays_compared": 7,
+  "status": "PASS",
+  "storage": {
+    "new_converted": {
+      "bytes": 269534384,
+      "files": 21
+    },
+    "new_qa": {
+      "bytes": 2913826,
+      "files": 8
+    }
+  },
+  "timestamp_utc": "2026-11-24T05:58:49.025010+00:00"
+}

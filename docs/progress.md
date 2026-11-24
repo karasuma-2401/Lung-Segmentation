@@ -1,4 +1,24 @@
-# Tiến độ hiện tại — P1.2 / T05 — 24/11/2026
+# Tiến độ hiện tại — P1.2.1 technical hardening — 24/11/2026
+
+**P1.2.1 technical acceptance PASS; T05 vẫn PARTIAL / SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS, full corpus BLOCKED_STORAGE.** P1.2 được review có điều kiện tại dev commit `1429bb14996beded92cafa128e0d827787f55f5e`. Đã sửa hardening/revalidate sample, dừng sau P1.2.1 để review; không P1.3/T07/T08/training hoặc full download.
+
+| Hạng mục | Kết quả thực / evidence |
+|---|---|
+|Rasterizer |Reject polygon không có foreground sau rasterization, giữ reason/context; triangle bbox regression, union/XOR/keyhole pass; không đổi phương pháp để006pass |
+|Cache identity |`nsclc-native-v2` + SHA2567implementation modules + Python/NumPy/NiBabel/pydicom; legacy/stale/corrupt bị từ chối, không tự overwrite/delete. Real legacy probe PASS |
+|Tests |**126passed** =111cũ+15mới, targeted NSCLC58passed; env/CPU smoke/pip check exit0. [Logs](evidence/p1_2_1/verification/verification.json) |
+|Revalidation |10real patients,7pairs converted vào root mới,3quarantine006/014/128 giữ cùng reasons.7CT+7mask arrays **0voxels khác**, geometry và volumes giống baseline |
+|Integrity |Manifest repeat byte-identical; raw và toàn bộ artifacts P1.2 cũ1,189files hash trước/sau giống nhau; source package khớp env verified |
+|QA |7montage mới có PNG bytes giống baseline; không cấp approval mới.002 REVIEW_REQUIRED giữ nguyên, all strong_eligible=false |
+|Full-corpus plan |[Thiết kế](full_corpus_execution_plan.md): batch≤10patients/≤1GiB source, scratch10–12GiB, measured RAM gate, persistent NSCLC quota đề xuất≥120GiB. Cloud/Kaggle/restore chưa chạy; storage blocker vẫn còn |
+
+[Báo cáo P1.2.1](nsclc_hardening_report.md), [before/after](evidence/p1_2_1/before_after_comparison.json), [preservation](evidence/p1_2_1/preservation.json), [artifact audit](evidence/p1_2_1/artifact_audit.json). Output mới: `data/converted/nsclc_p1_2_1_v2`, `data/manifests/nsclc_p1_2_1`, `data/qa/nsclc_p1_2_1`; config `configs/nsclc_p1_2_1.yaml`. `configs/nsclc.yaml` và artifacts P1.2 gốc giữ làm baseline, không coi cache thiếu version là compatible.
+
+Giữ ba dataset, ROI/quarantine policy và Scarce/Vast protocol. OPEN002/006/014/128, MSD patient mapping/lung_022/lung_018 vẫn giữ nguyên. Không download thêm, không dọn dữ liệu, không commit/push. Trước mở rộng cần annotation review và storage/persistence pilot được duyệt; không tự triển khai giai đoạn sau.
+
+---
+
+# P1.2 / T05 — snapshot được review có điều kiện
 
 **T05 PARTIAL — SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS; FULL_CORPUS_NOT_VALIDATED / BLOCKED_STORAGE.** Người dùng đã duyệt T05 sau P1.1 tại commit `fef32f1932df3e6e0644b937fdd775f953cd3cae`. Người dùng xác nhận chỉ có khoảng45GiB trên C và không có ổ khác; không tải full corpus, không xóa MSD/archive. Giữ3dataset, không T06–T08/splits/preprocessing production/training. Dừng sau P1.2 để review.
 

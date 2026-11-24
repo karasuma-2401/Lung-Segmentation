@@ -365,3 +365,116 @@ def test_fixed_axis_spacing_affine_not_just_roundtrip(config):
     geometry = build_ct_geometry(ct_headers(), config)
     np.testing.assert_array_equal(geometry.affine_lps, [[1.5,0,0,10],[0,2,0,20],[0,0,3,30],[0,0,0,1]])
     np.testing.assert_array_equal(geometry.affine_ras, [[-1.5,0,0,-10],[0,-2,0,-20],[0,0,3,30],[0,0,0,1]])
+
+
+def test_polygon_bbox_contains_center_but_polygon_does_not():
+    # Bounding rectangle contains (1,1), but the triangle lies at x+y <= 1.2.
+    triangle = np.array([[.1,.1],[1.1,.1],[.1,1.1]])
+    assert (np.ceil(triangle.min(axis=0)) <= np.floor(triangle.max(axis=0))).all()
+    with pytest.raises(DataIssue, match="^contour_has_no_voxel_centers$"):
+        polygon_mask(triangle, (12,12))
+
+
+@pytest.mark.parametrize("kind", ["CLOSED_PLANAR", "CLOSEDPLANAR_XOR"])
+def test_empty_contour_quarantines_entire_case_with_context(config, kind):
+    headers = ct_headers()
+    geometry = build_ct_geometry(headers, config)
+    valid = np.array([[2.,2.],[4.,2.],[4.,4.],[2.,4.]])
+    tiny = np.array([[.1,.1],[1.1,.1],[.1,1.1]])
+    rt = rtstruct(geometry, [valid,tiny], kind)
+    with pytest.raises(DataIssue) as caught:
+        rasterize_roi(rt, geometry, roi_catalog(rt)[0], config)
+    assert caught.value.code == "contour_has_no_voxel_centers"
+    assert caught.value.context["contour_index"] == 1 and caught.value.context["slice_index"] == 1
+    write_sources(config, headers, rt)
+    report = convert_sample(config, synthetic=True)
+    failure = report["quarantine"][0]
+    assert report["converted_cases"] == 0
+    assert failure["context"]["reason"] == "contour_has_no_voxel_centers"
+    assert failure["context"]["contour_index"] == 1 and failure["context"]["slice_index"] == 1
+    assert failure["source_sha256"] and failure["rtstruct_sop_uid"] == "1.2.3.20.1"
+    assert failure["roi_number"] == 1
+    assert not list(Path(config.converted_root).rglob("*.nii.gz"))
+
+
+def prepared_conversion(config):
+    headers = ct_headers()
+    write_sources(config, headers, rtstruct(build_ct_geometry(headers, config)))
+    assert convert_sample(config, synthetic=True)["converted_cases"] == 1
+    destination = Path(config.converted_root) / "LUNG1-001"
+    return destination
+
+
+def snapshot(directory):
+    return {p.relative_to(directory).as_posix():file_sha256(p) for p in directory.rglob("*") if p.is_file()}
+
+
+def test_cache_hit_checks_version_and_avoids_pixel_decode(config, monkeypatch):
+    import lungseg.data.nsclc as module
+    from lungseg.data.nsclc_version import conversion_implementation
+    destination = prepared_conversion(config)
+    before = snapshot(destination)
+    provenance = json.loads((destination / "provenance.json").read_text())
+    assert provenance["conversion_implementation"] == conversion_implementation()
+    monkeypatch.setattr(module, "read_ct_pixels", lambda *a:pytest.fail("Valid cache hit must not decode CT again"))
+    assert convert_sample(config, synthetic=True)["converted_cases"] == 1
+    assert snapshot(destination) == before
+
+
+def test_implementation_change_refuses_cache_without_source_or_config_change(config, monkeypatch):
+    import lungseg.data.nsclc_version as version_module
+    destination = prepared_conversion(config)
+    before, config_sha = snapshot(destination), config.sha256
+    raw_before = snapshot(Path(config.raw_root))
+    monkeypatch.setattr(version_module, "ALGORITHM_VERSION", "nsclc-native-future-test")
+    result = convert_sample(config, synthetic=True)
+    assert result["converted_cases"] == 0 and "stale_conversion_cache" in result["quarantine"][0]["reasons"][0]
+    assert config.sha256 == config_sha and snapshot(Path(config.raw_root)) == raw_before
+    assert snapshot(destination) == before
+
+
+def test_legacy_cache_is_not_implicitly_compatible(config):
+    destination = prepared_conversion(config)
+    path = destination / "provenance.json"
+    old = json.loads(path.read_text())
+    old.pop("conversion_implementation")
+    write_json(path, old)
+    before = snapshot(destination)
+    result = convert_sample(config, synthetic=True)
+    assert result["converted_cases"] == 0 and "stale_conversion_cache" in result["quarantine"][0]["reasons"][0]
+    assert snapshot(destination) == before
+
+
+@pytest.mark.parametrize("corrupt", ["ct.nii.gz", "mask.nii.gz", "provenance.json", "missing_provenance"])
+def test_corrupted_versioned_cache_preserved_and_rejected(config, corrupt):
+    destination = prepared_conversion(config)
+    if corrupt == "missing_provenance": (destination / "provenance.json").unlink()
+    else: (destination / corrupt).write_bytes(b"synthetic deliberate corruption")
+    before = snapshot(destination)
+    result = convert_sample(config, synthetic=True)
+    assert result["converted_cases"] == 0
+    expected = "provenance" if "provenance" in corrupt else "checksum_mismatch"
+    assert expected in result["quarantine"][0]["reasons"][0]
+    assert snapshot(destination) == before
+
+
+@pytest.mark.parametrize("module_name", ["data/dicom_geometry.py", "data/rtstruct.py", "data/nsclc.py", "data/nsclc_config.py"])
+def test_fingerprint_covers_implementation_modules(monkeypatch, module_name):
+    from lungseg.data.nsclc_version import conversion_implementation
+    before = conversion_implementation()
+    original = Path.read_text
+    def changed(path, *a, **kw):
+        value = original(path, *a, **kw)
+        return value + "\n# simulated implementation edit\n" if path.as_posix().endswith(module_name) else value
+    monkeypatch.setattr(Path, "read_text", changed)
+    after = conversion_implementation()
+    assert before["algorithm_version"] == after["algorithm_version"]
+    assert before["fingerprint_sha256"] != after["fingerprint_sha256"]
+
+
+def test_fingerprint_covers_dependency_versions(monkeypatch):
+    import lungseg.data.nsclc_version as module
+    before = module.conversion_implementation()
+    original = module.version
+    monkeypatch.setattr(module, "version", lambda name:"999.test" if name == "nibabel" else original(name))
+    assert module.conversion_implementation()["fingerprint_sha256"] != before["fingerprint_sha256"]

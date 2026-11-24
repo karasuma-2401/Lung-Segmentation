@@ -1,0 +1,57 @@
+{
+  "commands": [
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "survey-nsclc",
+        "--config",
+        "configs\\nsclc_p1_2_1.yaml"
+      ],
+      "exit_code": 0,
+      "log": "revalidate_00_survey-nsclc.txt",
+      "timestamp_utc": "2026-11-24T05:52:17.538038+00:00"
+    },
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "convert-nsclc",
+        "--config",
+        "configs\\nsclc_p1_2_1.yaml"
+      ],
+      "exit_code": 2,
+      "log": "revalidate_01_convert-nsclc.txt",
+      "timestamp_utc": "2026-11-24T05:53:08.865857+00:00"
+    },
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "convert-nsclc",
+        "--config",
+        "configs\\nsclc_p1_2_1.yaml"
+      ],
+      "exit_code": 2,
+      "log": "revalidate_02_convert-nsclc.txt",
+      "timestamp_utc": "2026-11-24T05:54:49.674907+00:00"
+    },
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "qa-nsclc",
+        "--config",
+        "configs\\nsclc_p1_2_1.yaml"
+      ],
+      "exit_code": 0,
+      "log": "revalidate_03_qa-nsclc.txt",
+      "timestamp_utc": "2026-11-24T05:56:23.123334+00:00"
+    }
+  ],
+  "status": "sample_revalidated_with_findings"
+}

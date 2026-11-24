@@ -12,9 +12,10 @@ from pydicom.uid import CTImageStorage
 class DataIssue(ValueError):
     """A review/quarantine reason code rather than an empty-mask fallback."""
 
-    def __init__(self, code: str, detail: str = ""):
+    def __init__(self, code: str, detail: str = "", *, context: dict | None = None):
         self.code = code
         self.detail = detail
+        self.context = context or {}
         super().__init__(code + (": " + detail if detail else ""))
 
 

@@ -1,0 +1,51 @@
+{
+  "after": {
+    "bytes": 868193002,
+    "files": 1189,
+    "tree_sha256": "340297822f2cc4268216ecb8fe482ce6c20cfc15e2a04da255268b7aeef43c9b"
+  },
+  "baseline_roots": {
+    "accepted_roi_interpreted_types": [
+      "GTV",
+      "ORGAN"
+    ],
+    "accepted_roi_names": [
+      "GTV-1"
+    ],
+    "affine_atol_mm": 0.001,
+    "contour_plane_tolerance_mm": 0.1,
+    "converted_root": "data/converted/nsclc",
+    "evidence_dir": "docs/evidence/p1_2",
+    "geometry_tolerance_mm": 0.05,
+    "kind": "nsclc_rtstruct_inventory",
+    "orientation_atol": 1e-05,
+    "output_dir": "data/manifests/nsclc",
+    "qa_dir": "data/qa/nsclc",
+    "raw_root": "data/raw/NSCLC-Radiomics",
+    "reserve_bytes": 4294967296,
+    "roi_number_overrides": {},
+    "rtstruct_sop_overrides": {},
+    "sample_patient_ids": [
+      "LUNG1-001",
+      "LUNG1-002",
+      "LUNG1-003",
+      "LUNG1-004",
+      "LUNG1-005",
+      "LUNG1-006",
+      "LUNG1-007",
+      "LUNG1-008",
+      "LUNG1-014",
+      "LUNG1-128"
+    ],
+    "schema_version": 1,
+    "slab_slices": 16,
+    "spacing_atol_mm": 0.01
+  },
+  "before": {
+    "bytes": 868193002,
+    "files": 1189,
+    "tree_sha256": "340297822f2cc4268216ecb8fe482ce6c20cfc15e2a04da255268b7aeef43c9b"
+  },
+  "raw_and_baseline_preserved": true,
+  "timestamp_utc": "2026-11-24T05:57:39.424839+00:00"
+}

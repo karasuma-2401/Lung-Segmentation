@@ -20,6 +20,7 @@ from lungseg.data.dicom_geometry import DataIssue, build_ct_geometry, read_ct_pi
 from lungseg.data.msd import FIELDS, inspect_nifti, statistics, write_manifest
 from lungseg.data.msd_acquire import file_sha256, require_space
 from lungseg.data.nsclc_acquire import LICENSE_URL
+from lungseg.data.nsclc_version import conversion_implementation
 from lungseg.data.rtstruct import (choose_referenced_series, choose_rtstruct, rasterize_roi,
                                   roi_catalog, rt_references, select_primary_roi)
 from lungseg.environment import git_state
@@ -27,7 +28,8 @@ from lungseg.runs import utc_now, write_json
 
 NSCLC_FIELDS = FIELDS + ("study_uid", "ct_series_uid", "rtstruct_series_uid", "rtstruct_sop_uid",
     "frame_of_reference_uid", "source_files", "source_sha256", "roi_number", "roi_name", "available_rois",
-    "native_geometry", "conversion_status", "provenance_path", "provenance_sha256", "config_sha256")
+    "native_geometry", "conversion_status", "provenance_path", "provenance_sha256", "config_sha256",
+    "conversion_algorithm_version", "conversion_fingerprint_sha256", "qc_failure_context")
 
 
 def scan_sample(config, *, synthetic=False) -> tuple[dict, dict]:
@@ -131,20 +133,50 @@ def source_digest(files):
     return hashlib.sha256(json.dumps(files, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
 
 
+def load_cached_conversion(destination, source_sha256, config_sha256, implementation, *, synthetic=False):
+    """Validate before using any old converted voxels; never migrate/overwrite."""
+    try:
+        provenance = json.loads((destination / "provenance.json").read_text(encoding="utf-8"))
+        if not isinstance(provenance, dict):
+            raise ValueError("Expected object")
+    except (OSError, ValueError) as exc:
+        raise DataIssue("invalid_conversion_cache_provenance", "Preserve artifacts; explicitly reconvert into a new converted_root") from exc
+    if provenance.get("conversion_implementation") != implementation:
+        raise DataIssue("stale_conversion_cache",
+                        "Legacy/mismatched implementation; explicitly reconvert into a new versioned converted_root; old artifacts preserved")
+    if (provenance.get("source_sha256") != source_sha256 or provenance.get("config_sha256") != config_sha256
+            or provenance.get("real_data") is not (not synthetic)):
+        raise DataIssue("existing_conversion_source_or_config_changed", "Use a separate converted root; never overwrite")
+    for key, filename in (("image_sha256", "ct.nii.gz"), ("mask_sha256", "mask.nii.gz")):
+        try:
+            actual = file_sha256(destination / filename)
+        except OSError as exc:
+            raise DataIssue("existing_conversion_checksum_mismatch", filename) from exc
+        if actual != provenance.get(key):
+            raise DataIssue("existing_conversion_checksum_mismatch", filename)
+    return provenance
+
+
 def convert_one(config, patient, items, *, synthetic=False):
+    implementation = conversion_implementation()
     row = {key: None for key in NSCLC_FIELDS}
     row.update(schema_version=1, dataset="NSCLC-Radiomics", source_version="TCIA_v4_UID_matched_IDC",
                case_id=patient, patient_id=patient, patient_id_source="synthetic_fixture" if synthetic else "TCIA_public_deidentified_PatientID_verified_against_DICOM",
                source_partition="acquisition_sample_not_experiment_split", strong_eligible=False,
                ground_truth_available=False, image_readable=False, mask_readable=False, geometry_aligned=False,
                qc_errors=[], qc_warnings=["anatomical_annotation_review_pending"], conversion_status="quarantined",
-               annotation_kind="unresolved_expert_RTSTRUCT", config_sha256=config.sha256)
+               annotation_kind="unresolved_expert_RTSTRUCT", config_sha256=config.sha256,
+               conversion_algorithm_version=implementation["algorithm_version"],
+               conversion_fingerprint_sha256=implementation["fingerprint_sha256"], qc_failure_context=None)
     raw_root, output_root = Path(config.raw_root), Path(config.converted_root)
     sources = [{"path": i["path"].relative_to(raw_root).as_posix(), "sha256": i["sha256"],
                 "source_marker_sha256": i["source_marker_sha256"]} for i in items]
     sources.sort(key=lambda item: item["path"])
     row.update(source_files=sources, source_sha256=source_digest(sources))
     try:
+        destination = output_root / patient
+        cached = (load_cached_conversion(destination, row["source_sha256"], config.sha256,
+                                         implementation, synthetic=synthetic) if destination.exists() else None)
         rt = choose_rtstruct([i["header"] for i in items if str(i["header"].Modality) == "RTSTRUCT"],
                              config.rtstruct_sop_overrides.get(patient))
         row.update(rtstruct_sop_uid=str(rt.SOPInstanceUID), rtstruct_series_uid=str(rt.SeriesInstanceUID),
@@ -166,14 +198,8 @@ def convert_one(config, patient, items, *, synthetic=False):
         row.update(roi_number=roi["number"], roi_name=roi["name"], annotation_kind="expert_RTSTRUCT_primary_tumor")
         mask, annotation = rasterize_roi(rt, geometry, roi, config)
         row["ground_truth_available"] = True
-        destination = output_root / patient
-        if destination.exists():
-            provenance = json.loads((destination / "provenance.json").read_text())
-            if provenance["source_sha256"] != row["source_sha256"] or provenance["config_sha256"] != config.sha256:
-                raise DataIssue("existing_conversion_source_or_config_changed", "Use a separate converted root; never overwrite")
-            for key, filename in (("image_sha256", "ct.nii.gz"), ("mask_sha256", "mask.nii.gz")):
-                if file_sha256(destination / filename) != provenance[key]:
-                    raise DataIssue("existing_conversion_checksum_mismatch")
+        if cached is not None:
+            provenance = cached
         else:
             # Array sizes are calculated from verified dimensions before allocation.
             require_space(output_root, int(np.prod(geometry.shape)) * 5 + config.reserve_bytes)
@@ -186,6 +212,7 @@ def convert_one(config, patient, items, *, synthetic=False):
             provenance = {"dataset": "NSCLC-Radiomics", "real_data": not synthetic,
                           "source_sha256": row["source_sha256"], "source_files": sources,
                           "config_sha256": config.sha256, "config": asdict(config), "native_geometry": geometry.to_dict(),
+                          "conversion_implementation": implementation,
                           "annotation": annotation, "intensity_transforms_in_spatial_order": transforms,
                           "coordinate_transform": "RAS = diag(-1,-1,1,1) @ LPS; native grid, no resampling",
                           "image_sha256": file_sha256(stage / "ct.nii.gz"), "mask_sha256": file_sha256(stage / "mask.nii.gz"),
@@ -209,6 +236,8 @@ def convert_one(config, patient, items, *, synthetic=False):
         row["tumor_volume_mm3"] = row["foreground_voxels"] * abs(float(np.linalg.det(geometry.affine_ras[:3, :3])))
     except Exception as exc:
         row["qc_errors"].append(str(exc) if isinstance(exc, DataIssue) else f"conversion_error:{type(exc).__name__}:{exc}")
+        if isinstance(exc, DataIssue) and exc.context:
+            row["qc_failure_context"] = {"reason": exc.code, **exc.context}
     row["qc_errors"] = sorted(set(row["qc_errors"]))
     row["qc_warnings"] = sorted(set(row["qc_warnings"]))
     row["qc_status"] = "fail" if row["qc_errors"] else "warn"
@@ -220,6 +249,7 @@ def convert_sample(config, *, synthetic=False):
     if not config.accepted_roi_names and not config.roi_number_overrides:
         raise ValueError("Survey real ROIs and document primary tumor policy before conversion")
     patients, acquisition_errors = scan_sample(config, synthetic=synthetic)
+    implementation = conversion_implementation()
     rows = []
     for patient, items in patients.items():
         row = convert_one(config, patient, items, synthetic=synthetic) if patient not in acquisition_errors else None
@@ -229,7 +259,9 @@ def convert_sample(config, *, synthetic=False):
                        patient_id_source="synthetic_fixture" if synthetic else "TCIA_public_catalog_requested_ID",
                        ground_truth_available=False, strong_eligible=False, image_readable=False, mask_readable=False,
                        conversion_status="quarantined", qc_status="fail", qc_errors=[acquisition_errors[patient]],
-                       qc_warnings=[], config_sha256=config.sha256)
+                       qc_warnings=[], config_sha256=config.sha256,
+                       conversion_algorithm_version=implementation["algorithm_version"],
+                       conversion_fingerprint_sha256=implementation["fingerprint_sha256"])
         rows.append(row)
         print(f"NSCLC {patient}: {row['conversion_status']}", flush=True)
     output = Path(config.output_dir)
@@ -244,11 +276,15 @@ def convert_sample(config, *, synthetic=False):
                "full_corpus_status": "NOT_VALIDATED", "sample_patients": len(rows), "converted_cases": len(converted),
                "quarantined_cases": len(rows) - len(converted), "manifest_sha256": file_sha256(manifest),
                "config_sha256": config.sha256, "config": asdict(config), "git": git_state(),
+               "conversion_implementation": implementation,
                "shape_counts": dict(Counter(str(r["image_shape"]) for r in converted)),
                "spacing_counts": dict(Counter(str(r["image_spacing_mm"]) for r in converted)),
                "label_values_union": sorted({v for r in converted for v in r["label_values"]}),
                "tumor_volume_mm3": statistics([r["tumor_volume_mm3"] for r in converted]),
-               "quarantine": [{"case_id": r["case_id"], "reasons": r["qc_errors"]} for r in rows if r["qc_errors"]],
+               "quarantine": [{"case_id": r["case_id"], "reasons": r["qc_errors"],
+                               "context": r["qc_failure_context"], "source_sha256": r["source_sha256"],
+                               "rtstruct_sop_uid": r["rtstruct_sop_uid"], "roi_number": r["roi_number"]}
+                              for r in rows if r["qc_errors"]],
                "anatomical_annotation_correctness": "not established by geometry or montage alone",
                "timestamp_utc": utc_now()}
     write_json(output / "conversion_report.json", summary)
@@ -261,6 +297,8 @@ def generate_qa(config):
     run = json.loads((Path(config.output_dir) / "conversion_report.json").read_text())
     if run["manifest_sha256"] != file_sha256(manifest) or run["config_sha256"] != config.sha256:
         raise ValueError("Manifest/config changed; rerun conversion inventory")
+    if run.get("conversion_implementation") != conversion_implementation():
+        raise ValueError("Stale conversion implementation; reconvert into a new versioned converted_root before QA")
     rows = load_manifest(manifest)
     selected = [r for r in rows if r["conversion_status"] == "converted" and not r["qc_errors"]]
     if not selected:
@@ -271,5 +309,6 @@ def generate_qa(config):
     report = {"dataset": "NSCLC-Radiomics", "real_data": run["real_data"], "cases": cases, "n_cases": len(cases),
               "manifest_sha256": run["manifest_sha256"], "config_sha256": config.sha256, "license_url": LICENSE_URL,
               "manual_review": "pending; rendering is not visual acceptance", "timestamp_utc": utc_now()}
+    report["conversion_implementation"] = run["conversion_implementation"]
     write_json(Path(config.qa_dir) / "qa_index.json", report)
     return report

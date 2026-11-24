@@ -1,0 +1,26 @@
+[
+  {
+    "command": ".venv\\Scripts\\python.exe -m lungseg.cli env-check --output docs\\evidence\\p1_2_1\\verification\\environment.json",
+    "exit_code": 0,
+    "log": "verify_0.txt",
+    "timestamp_utc": "2026-11-24T05:51:28.3892657Z"
+  },
+  {
+    "command": ".venv\\Scripts\\python.exe -m lungseg.cli smoke-test --config configs/smoke.yaml",
+    "exit_code": 0,
+    "log": "verify_1.txt",
+    "timestamp_utc": "2026-11-24T05:52:10.9054262Z"
+  },
+  {
+    "command": ".venv\\Scripts\\python.exe -m pytest -q",
+    "exit_code": 0,
+    "log": "verify_2.txt",
+    "timestamp_utc": "2026-11-24T05:53:00.9309737Z"
+  },
+  {
+    "command": ".venv\\Scripts\\python.exe -m pip check",
+    "exit_code": 0,
+    "log": "verify_3.txt",
+    "timestamp_utc": "2026-11-24T05:53:51.9419957Z"
+  }
+]

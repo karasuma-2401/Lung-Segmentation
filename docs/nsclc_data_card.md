@@ -1,5 +1,7 @@
 # NSCLC-Radiomics data card — acquisition sample
 
+P1.2.1 technical revalidation: [hardening report](nsclc_hardening_report.md), output manifest mới ở `data/manifests/nsclc_p1_2_1/`.7pairs arrays/geometry/volume giữ nguyên,3quarantine/002review giữ nguyên; thêm empty-polygon guard và cache implementation identity. Baseline/card dưới đây không phải full-corpus hoặc expert approval.
+
 **Nguồn:** Aerts et al., NSCLC-Radiomics v4, [TCIA](https://www.cancerimagingarchive.net/collection/nsclc-radiomics/), [DOI](https://doi.org/10.7937/K9/TCIA.2015.PF0M9REI), bản sao [IDC](https://portal.imaging.datacommons.cancer.gov/collections/nsclc_radiomics/) cùng UID/DOI. **License:** [CC BY-NC3.0](https://creativecommons.org/licenses/by-nc/3.0/), attribution + noncommercial. Bản dẫn xuất phải ghi nguồn và thay đổi. Catalog công khai422 patients/422studies/1265series, CT/RTSTRUCT/SEG; không đồng nghĩa toàn bộ đã được đọc.
 
 **Lượt T05:** 10 public/deidentified patients001–008,014,128;10 CT series/1,101 slices và10 RTSTRUCT. Tải592,987,154 bytes CT+RT qua public IDC S3, ETag MD5+SHA256 và DICOM identity matching catalog TCIA. Không tải SEG, demographics/clinical CSV hoặc full corpus. Raw, converted medical volumes, overlays không đưa vào Git.

@@ -1,0 +1,19 @@
+{
+  "cloud_pilot_performed": false,
+  "ct_slices_max": 297,
+  "ct_slices_min": 75,
+  "full_download_performed": false,
+  "metadata_only": true,
+  "patient_ct_rt_bytes_max": 157970900,
+  "patient_ct_rt_bytes_mean": 65256948.507109,
+  "patient_ct_rt_bytes_min": 40507860,
+  "patients": 422,
+  "ram_snapshot_bytes": {
+    "available": 450142208,
+    "method": "CIM during hardening; not a peak RSS or pre-admission measurement",
+    "total": 8215101440
+  },
+  "source_catalog_sha256": "ac92031797940d214cd779fc90ef35725f89c4f5370887a9f9af44ccf4303e79",
+  "timestamp_utc": "2026-11-24T05:58:49.043923+00:00",
+  "total_ct_rt_bytes": 27538432270
+}

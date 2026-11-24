@@ -1,0 +1,155 @@
+timestamp_utc: 2026-11-24T05:53:08.865857+00:00
+command_argv: ["C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe", "-m", "lungseg.cli", "convert-nsclc", "--config", "configs\\nsclc_p1_2_1.yaml"]
+exit_code: 2
+NSCLC LUNG1-001: converted
+NSCLC LUNG1-002: converted
+NSCLC LUNG1-003: converted
+NSCLC LUNG1-004: converted
+NSCLC LUNG1-005: converted
+NSCLC LUNG1-006: quarantined
+NSCLC LUNG1-007: converted
+NSCLC LUNG1-008: converted
+NSCLC LUNG1-014: quarantined
+NSCLC LUNG1-128: quarantined
+{
+  "dataset": "NSCLC-Radiomics",
+  "real_data": true,
+  "verified_source_patients": 10,
+  "status": "SAMPLE_CONVERTED_QA_PENDING",
+  "full_corpus_status": "NOT_VALIDATED",
+  "sample_patients": 10,
+  "converted_cases": 7,
+  "quarantined_cases": 3,
+  "manifest_sha256": "1711192f59df62a90246a57e639b493d2ecdf031f2f8c7be6102fea3cf16e61f",
+  "config_sha256": "bc7178fb2c113e500ff18c9784fb86a5b3f901d8bd16cbc0b2850de54f613515",
+  "config": {
+    "schema_version": 1,
+    "kind": "nsclc_rtstruct_inventory",
+    "raw_root": "data/raw/NSCLC-Radiomics",
+    "converted_root": "data/converted/nsclc_p1_2_1_v2",
+    "output_dir": "data/manifests/nsclc_p1_2_1",
+    "qa_dir": "data/qa/nsclc_p1_2_1",
+    "evidence_dir": "docs/evidence/p1_2_1",
+    "sample_patient_ids": [
+      "LUNG1-001",
+      "LUNG1-002",
+      "LUNG1-003",
+      "LUNG1-004",
+      "LUNG1-005",
+      "LUNG1-006",
+      "LUNG1-007",
+      "LUNG1-008",
+      "LUNG1-014",
+      "LUNG1-128"
+    ],
+    "reserve_bytes": 4294967296,
+    "geometry_tolerance_mm": 0.05,
+    "orientation_atol": 1e-05,
+    "spacing_atol_mm": 0.01,
+    "contour_plane_tolerance_mm": 0.1,
+    "affine_atol_mm": 0.001,
+    "slab_slices": 16,
+    "accepted_roi_names": [
+      "GTV-1"
+    ],
+    "accepted_roi_interpreted_types": [
+      "GTV",
+      "ORGAN"
+    ],
+    "roi_number_overrides": {},
+    "rtstruct_sop_overrides": {}
+  },
+  "git": {
+    "revision": "1429bb14996beded92cafa128e0d827787f55f5e",
+    "status": "dirty"
+  },
+  "conversion_implementation": {
+    "identity_schema_version": 1,
+    "algorithm_version": "nsclc-native-v2",
+    "source_sha256": {
+      "data/dicom_geometry.py": "6a734600a0e144b41677f6752b75625f12b144ba5df66134340052d73bf5d2cf",
+      "data/rtstruct.py": "25cf89cb335a1bf7e92a182916e3ecd2ec5e5c659defc38bfd6093d2a1ea941f",
+      "data/nsclc.py": "057f8008fe86dc5b4c45c53a45ac3a758642ff394f840e33141c9a442ba44c9b",
+      "data/nsclc_config.py": "358e7a1b2b12df59159c8cf8a2ad42a99ecb208ec5f5b813d20372f8af04b934",
+      "data/msd.py": "48bfd74cd3f926ce6efc7429c74bed36744772a4023bdec3d8e8743c0de261c0",
+      "data/msd_acquire.py": "3aa7a9cc486dbc5587fc26467d8eca2b45dc72d58abaa2889722ce69af44a28b",
+      "data/nsclc_version.py": "ab9d764d17c85b804a3cef1636e81b4be9cfd9f879be30d6f472981539cb29ce"
+    },
+    "runtime": {
+      "python": "3.13.15",
+      "numpy": "2.5.5",
+      "nibabel": "5.5.0",
+      "pydicom": "3.0.2"
+    },
+    "fingerprint_sha256": "87bac7926b4ab377dbbd978ecdbac5bfa0e4497319f8ae9ed097abc1dd2847bb"
+  },
+  "shape_counts": {
+    "[512, 512, 134]": 1,
+    "[512, 512, 111]": 1,
+    "[512, 512, 107]": 1,
+    "[512, 512, 114]": 2,
+    "[512, 512, 91]": 1,
+    "[512, 512, 129]": 1
+  },
+  "spacing_counts": {
+    "[0.9765625, 0.9765625, 3.0]": 3,
+    "[0.9769999980926514, 0.9769999980926514, 3.0]": 4
+  },
+  "label_values_union": [
+    0.0,
+    1.0
+  ],
+  "tumor_volume_mm3": {
+    "n": 7,
+    "min": 12494.087219238283,
+    "median": 83548.014312,
+    "max": 359468.93969699997,
+    "q25": 37843.7339985,
+    "q75": 120391.84570312503
+  },
+  "quarantine": [
+    {
+      "case_id": "LUNG1-006",
+      "reasons": [
+        "contour_has_no_voxel_centers: contour_index=16; slice_index=65; "
+      ],
+      "context": {
+        "reason": "contour_has_no_voxel_centers",
+        "contour_index": 16,
+        "slice_index": 65,
+        "roi_number": 15,
+        "contour_type": "CLOSED_PLANAR",
+        "point_count": 4,
+        "referenced_sop_uids": [
+          "1.3.6.1.4.1.32722.99.99.9216687979303699314356230867289301496"
+        ],
+        "plane_error_mm": 0.0
+      },
+      "source_sha256": "33c86eb45fc594ab42e47cfc018c5012061f4fdd852fe5bef5bee1e4aee76e3a",
+      "rtstruct_sop_uid": "1.3.6.1.4.1.32722.99.99.113668461738953188634009852485322232254",
+      "roi_number": 15
+    },
+    {
+      "case_id": "LUNG1-014",
+      "reasons": [
+        "missing_slices_or_nonuniform_spacing: gaps_mm=[6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0]"
+      ],
+      "context": null,
+      "source_sha256": "bbb7e296dba60ac017c56404d46244fc23567d283da92d6f28e3a16ec6aa9fa0",
+      "rtstruct_sop_uid": "1.3.6.1.4.1.32722.99.99.317183731545147221076797958741444153052",
+      "roi_number": null
+    },
+    {
+      "case_id": "LUNG1-128",
+      "reasons": [
+        "primary_tumor_roi_not_identified: Keep annotation; do not create an empty mask"
+      ],
+      "context": null,
+      "source_sha256": "7d3c7ef4aeb7020cf7e8c832be15a512236f6e92c8ddc29f8ba690d63b8b8cdd",
+      "rtstruct_sop_uid": "1.3.6.1.4.1.32722.99.99.6610035468020912541018444043916500712",
+      "roi_number": null
+    }
+  ],
+  "anatomical_annotation_correctness": "not established by geometry or montage alone",
+  "timestamp_utc": "2026-11-24T05:54:49.222124+00:00"
+}

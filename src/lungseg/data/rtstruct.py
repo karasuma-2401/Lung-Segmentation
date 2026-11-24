@@ -127,6 +127,8 @@ def polygon_mask(vertices: np.ndarray, shape: tuple[int, int]) -> np.ndarray:
             crossing = ((start[1] > y) != (end[1] > y)) & (x < start[0] + (y - start[1])*dx/dy)
             inside ^= crossing
     output[low[0]:high[0]+1, low[1]:high[1]+1] = inside | boundary
+    if not output.any():
+        raise DataIssue("contour_has_no_voxel_centers")
     return output
 
 
@@ -172,7 +174,11 @@ def rasterize_roi(dataset, geometry, roi: dict, config) -> tuple[np.ndarray, dic
         try:
             polygon = polygon_mask(voxels[:, :2], geometry.shape[:2])
         except DataIssue as exc:
-            raise DataIssue(exc.code, f"contour_index={index}; slice_index={nearest}; {exc.detail}") from exc
+            raise DataIssue(exc.code, f"contour_index={index}; slice_index={nearest}; {exc.detail}",
+                            context={"contour_index": index, "slice_index": nearest,
+                                     "roi_number": roi["number"], "contour_type": str(contour.ContourGeometricType),
+                                     "point_count": count, "referenced_sop_uids": references,
+                                     "plane_error_mm": error}) from exc
         if "CLOSEDPLANAR_XOR" in types:
             mask[:, :, nearest] ^= polygon.astype(np.uint8)
         else:

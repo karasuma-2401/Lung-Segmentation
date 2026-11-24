@@ -1,0 +1,6 @@
+recorded_utc: 2026-11-24T06:10:16.2640229Z
+command: .venv\Scripts\python.exe -m pytest tests/test_nsclc.py -q
+exit_code: 0
+output:
+..........................................................               [100%]
+58 passed in 24.21s

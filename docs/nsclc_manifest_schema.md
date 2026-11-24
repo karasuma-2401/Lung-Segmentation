@@ -2,6 +2,10 @@
 
 Artifact: `data/manifests/nsclc/manifest_nsclc.csv`. Một row/public sample patient, sắp theo ID; nhiều RTSTRUCT/series/primary candidates phải resolve explicit hoặc quarantine, không chọn series lớn nhất. Public `LUNG1-###` xác minh từ catalog và DICOM PatientID, không phải danh tính thật. Không tái dùng case→patient assumption của MSD.
 
+P1.2.1 dùng schema v1 mở rộng tại `data/manifests/nsclc_p1_2_1/manifest_nsclc.csv`; giữ manifest P1.2 gốc làm baseline. Thêm `conversion_algorithm_version`, `conversion_fingerprint_sha256`, `qc_failure_context` (JSON reason/contour_index/slice_index/ROI/type/point_count/SOP references/plane error khi có). Quarantine row vẫn giữ source files/hashes và RT/ROI identity, không chứa fake/partial mask. Lỗi empty contour phát hiện cả trước và **sau** rasterization; không skip contour.
+
+Provenance per converted case thêm `conversion_implementation`: schema identity, algorithm version, source SHA256 của7modules (geometry, RT/ROI/rasterizer, orchestration/NIfTI writer, config validator, NIfTI validator, checksum helper và identity code), Python/NumPy/NiBabel/pydicom versions và fingerprint canonical SHA256. Source hashes normalize LF/CRLF. Hash cả module nên thay comment cũng có thể invalidate cache: chủ ý conservative. So full identity, source/config digests và CT/mask hashes trước reuse; missing/legacy/different identity là stale. Đổi môi trường/version cần output namespace mới, không tự migrate hoặc ghi đè. Conversion/QA reports cũng ghi identity; stale report bị từ chối QA. Không suy ra provenance là cryptographic signature/chống giả mạo local.
+
 CSV UTF-8, newline LF, bool/list/dict bằng JSON, scalar missing để ô rỗng. Paths POSIX tương đối, không chứa raw clinical metadata. `image_path`, `mask_path`, `provenance_path` tương đối `converted_root`; `source_files[].path` tương đối `raw_root`. Full roots nằm trong resolved config/run report, cho phép chuyển ổ bằng config.
 
 | Nhóm | Fields và ý nghĩa |

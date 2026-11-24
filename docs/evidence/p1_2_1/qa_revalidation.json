@@ -1,0 +1,53 @@
+{
+  "cases": [
+    {
+      "case_id": "LUNG1-001",
+      "png_bytes_equal": true,
+      "png_sha256_after": "def750fcae287a122af0e13562f59b0e398b7e3cb784068295371a534a8d4f7f",
+      "png_sha256_before": "def750fcae287a122af0e13562f59b0e398b7e3cb784068295371a534a8d4f7f"
+    },
+    {
+      "case_id": "LUNG1-002",
+      "png_bytes_equal": true,
+      "png_sha256_after": "d100139a57e4f0feffdd99d4914d3075a602a8c548b345895e6e9e9e86e8d5a2",
+      "png_sha256_before": "d100139a57e4f0feffdd99d4914d3075a602a8c548b345895e6e9e9e86e8d5a2"
+    },
+    {
+      "case_id": "LUNG1-003",
+      "png_bytes_equal": true,
+      "png_sha256_after": "bca74d4f2127b99a9342f5eee292f2f2ff7ea17291057959e4dbe96daa0800c4",
+      "png_sha256_before": "bca74d4f2127b99a9342f5eee292f2f2ff7ea17291057959e4dbe96daa0800c4"
+    },
+    {
+      "case_id": "LUNG1-004",
+      "png_bytes_equal": true,
+      "png_sha256_after": "f42160ef664dd8df53d19a3fd75bb7bb60e74d0fa8d32e1a465777292518ba1f",
+      "png_sha256_before": "f42160ef664dd8df53d19a3fd75bb7bb60e74d0fa8d32e1a465777292518ba1f"
+    },
+    {
+      "case_id": "LUNG1-005",
+      "png_bytes_equal": true,
+      "png_sha256_after": "12fa6342c7797d48797cd102f8c5083328aa476fb0015645a4b599455c89638d",
+      "png_sha256_before": "12fa6342c7797d48797cd102f8c5083328aa476fb0015645a4b599455c89638d"
+    },
+    {
+      "case_id": "LUNG1-007",
+      "png_bytes_equal": true,
+      "png_sha256_after": "6ff450a0deea4053ecf67f9013bfa0b7078af4c845f4179ed5f4356f6d19c75c",
+      "png_sha256_before": "6ff450a0deea4053ecf67f9013bfa0b7078af4c845f4179ed5f4356f6d19c75c"
+    },
+    {
+      "case_id": "LUNG1-008",
+      "png_bytes_equal": true,
+      "png_sha256_after": "6efc608f9b90423cedc033ab9b6fd60b1226576d91a1000542348445ba72dc47",
+      "png_sha256_before": "6efc608f9b90423cedc033ab9b6fd60b1226576d91a1000542348445ba72dc47"
+    }
+  ],
+  "expert_approval": false,
+  "manifest_sha256": "1711192f59df62a90246a57e639b493d2ecdf031f2f8c7be6102fea3cf16e61f",
+  "manual_review": "not newly performed/approved in P1.2.1",
+  "n_cases": 7,
+  "prior_finding": "LUNG1-002 REVIEW_REQUIRED persists; all strong_eligible=false",
+  "real_data": true,
+  "timestamp_utc": "2026-11-24T05:58:48.983964+00:00"
+}

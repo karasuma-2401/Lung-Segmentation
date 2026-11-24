@@ -1,5 +1,7 @@
 # NSCLC-Radiomics acquisition — T05
 
+> Snapshot acquisition P1.2. Raw sample đã có; P1.2.1 không download thêm. Các commands dùng `configs/nsclc.yaml` bên dưới mô tả phiên P1.2. Cache legacy thiếu implementation identity nay bị từ chối; để revalidate dùng `scripts/revalidate_nsclc_sample.py --baseline-config configs/nsclc.yaml --config configs/nsclc_p1_2_1.yaml`, giữ outputs cũ. Xem [hardening report](nsclc_hardening_report.md) và README hiện tại; không chạy lại verifier cũ để ghi đè evidence baseline.
+
 Nguồn chính thức: [TCIA NSCLC-Radiomics](https://www.cancerimagingarchive.net/collection/nsclc-radiomics/), [TCIA collection wiki/v4](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=16056854). Public/de-identified, license [CC BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/): attribution, noncommercial; giữ thông tin license/citation và mô tả các thay đổi khi chia sẻ bản dẫn xuất. Không coi là quyền dùng thương mại. Lượt này dùng cho nghiên cứu/môn học, không đăng dữ liệu lên Git.
 
 Citation dữ liệu: Aerts et al. (2014), *NSCLC-Radiomics*, version4, [DOI 10.7937/K9/TCIA.2015.PF0M9REI](https://doi.org/10.7937/K9/TCIA.2015.PF0M9REI). Bài nghiên cứu: [Aerts et al., Nature Communications 2014](https://doi.org/10.1038/ncomms5006). TCIA: [Clark et al., 2013](https://doi.org/10.1007/s10278-013-9622-7).

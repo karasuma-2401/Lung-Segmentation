@@ -1,0 +1,7 @@
+{
+  "case_id": "LUNG1-001",
+  "detail": "Legacy/mismatched implementation; explicitly reconvert into a new versioned converted_root; old artifacts preserved",
+  "old_artifacts_modified": false,
+  "reason": "stale_conversion_cache",
+  "source_and_config_same_as_legacy": true
+}

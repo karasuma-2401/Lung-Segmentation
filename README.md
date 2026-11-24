@@ -68,23 +68,23 @@ Mỗi lần tạo `experiments/P0_smoke_<timestamp>_<id>/` với `config.json`, 
 
 Manifest/summary/run metadata: `data/manifests/msd/`. Montage/index: `data/qa/msd/` (gitignored medical slices). Official test CT không có mask; `patient_id` để null nếu không có mapping nguồn, không suy luận từ case ID. Các findings MSD giữ nguyên khi triển khai T05.
 
-## NSCLC-Radiomics — P1.2/T05, sample only
+## NSCLC-Radiomics — P1.2.1 hardening, sample only
 
-Xem [acquisition guide](docs/nsclc_acquisition.md), [data card](docs/nsclc_data_card.md), [schema](docs/nsclc_manifest_schema.md) và [QA report](docs/nsclc_qa_report.md). Nguồn TCIA/IDC chính thức, **CC BY-NC 3.0**. Chỉ 10 ca mẫu; không gọi là full corpus validated. Không tự tạo mask cho ca thiếu/ambiguous primary ROI.
+Xem [acquisition guide](docs/nsclc_acquisition.md), [data card](docs/nsclc_data_card.md), [schema](docs/nsclc_manifest_schema.md), [P1.2 report](docs/nsclc_qa_report.md) và [P1.2.1 report](docs/nsclc_hardening_report.md). Nguồn TCIA/IDC chính thức, **CC BY-NC 3.0**. Chỉ10ca mẫu; full corpus vẫn BLOCKED_STORAGE. [Full-corpus execution plan](docs/full_corpus_execution_plan.md) chỉ là thiết kế, chưa thực thi.
 
 ```powershell
 # Kiểm metadata/capacity; chưa tải DICOM:
-.\.venv\Scripts\python.exe -m lungseg.cli acquire-nsclc --config configs/nsclc.yaml
+.\.venv\Scripts\python.exe -m lungseg.cli acquire-nsclc --config configs/nsclc_p1_2_1.yaml --catalog data/manifests/nsclc/public_catalog.json
 # Pipeline offline sau verified acquisition:
-.\.venv\Scripts\python.exe -m lungseg.cli survey-nsclc --config configs/nsclc.yaml
-.\.venv\Scripts\python.exe -m lungseg.cli convert-nsclc --config configs/nsclc.yaml
-.\.venv\Scripts\python.exe -m lungseg.cli qa-nsclc --config configs/nsclc.yaml
+.\.venv\Scripts\python.exe -m lungseg.cli survey-nsclc --config configs/nsclc_p1_2_1.yaml
+.\.venv\Scripts\python.exe -m lungseg.cli convert-nsclc --config configs/nsclc_p1_2_1.yaml
+.\.venv\Scripts\python.exe -m lungseg.cli qa-nsclc --config configs/nsclc_p1_2_1.yaml
 # Kiểm repeat manifest/raw hashes và regression, evidence riêng:
-.\.venv\Scripts\python.exe scripts/verify_nsclc_sample.py --config configs/nsclc.yaml --check-repeat
-.\scripts\verify.ps1 -EvidenceDirectory docs/evidence/p1_2/verification
+.\.venv\Scripts\python.exe scripts/revalidate_nsclc_sample.py --baseline-config configs/nsclc.yaml --config configs/nsclc_p1_2_1.yaml
+.\scripts\verify.ps1 -EvidenceDirectory docs/evidence/p1_2_1/verification
 ```
 
-`convert-nsclc` exit2 khi có quarantine findings, exit1 khi thao tác không chạy được; đọc report trước khi tiếp tục. Config cho phép absolute/external raw/converted roots; CLI có `--raw-root` và `--converted-root`. Dùng cùng cấu hình cho các bước để manifest/provenance khớp. Full download/conversion không được CLI này hỗ trợ; sample giới hạn1–20 public IDs. Raw, converted CT/masks và montage đều gitignored. Dừng sau P1.2 để review.
+`convert-nsclc` exit2 khi có quarantine findings, exit1 khi thao tác không chạy được; đọc report trước khi tiếp tục. P1.2 artifacts thiếu implementation identity là **legacy/stale**, không được tự reuse. `configs/nsclc.yaml` giữ làm baseline; dùng output mới trong `configs/nsclc_p1_2_1.yaml` cho explicit reconversion, không xóa/overwrite baseline. Đổi algorithm/modules/dependency versions làm fingerprint khác; đổi source/full config cũng từ chối cache. QA kiểm identity trước render. Config hỗ trợ external roots; dùng cùng cấu hình cho toàn pipeline. Full download/conversion không được CLI này hỗ trợ; sample giới hạn1–20IDs. Raw/converted/montage gitignored. Dừng sau P1.2.1 để review.
 
 ## Tái tạo audit tham chiếu
 

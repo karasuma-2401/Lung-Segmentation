@@ -1,0 +1,20 @@
+# Explicit reconversion to fresh versioned outputs; P1.2 artifacts preserved.
+schema_version: 1
+kind: nsclc_rtstruct_inventory
+raw_root: data/raw/NSCLC-Radiomics
+converted_root: data/converted/nsclc_p1_2_1_v2
+output_dir: data/manifests/nsclc_p1_2_1
+qa_dir: data/qa/nsclc_p1_2_1
+evidence_dir: docs/evidence/p1_2_1
+sample_patient_ids: [LUNG1-001, LUNG1-002, LUNG1-003, LUNG1-004, LUNG1-005, LUNG1-006, LUNG1-007, LUNG1-008, LUNG1-014, LUNG1-128]
+reserve_bytes: 4294967296
+geometry_tolerance_mm: 0.05
+orientation_atol: 0.00001
+spacing_atol_mm: 0.01
+contour_plane_tolerance_mm: 0.1
+affine_atol_mm: 0.001
+slab_slices: 16
+accepted_roi_names: [GTV-1]
+accepted_roi_interpreted_types: [GTV, ORGAN]
+roi_number_overrides: {}
+rtstruct_sop_overrides: {}
