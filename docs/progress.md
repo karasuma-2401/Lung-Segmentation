@@ -1,6 +1,8 @@
 # Tiến độ hiện tại — P1.3.1 — 24/11/2026
 
-**Technical hardening và sample revalidation PASS; vẫn SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS, XML equivalence OPEN/BLOCKED_SOURCE, full corpus BLOCKED_STORAGE.** Baseline P1.3 được review tại dev `ac21467351340bc58369eda76ac4977f0691ec11`; chỉ triển khai A–F, dừng để review.
+**Technical hardening và sample revalidation PASS; vẫn SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS, XML equivalence OPEN/REVIEW_REQUIRED, full corpus BLOCKED_STORAGE.** Baseline P1.3 được review tại dev `ac21467351340bc58369eda76ac4977f0691ec11`; chỉ triển khai A–F, dừng để review.
+
+**XML follow-up:** người dùng tải được sau đổi VPN. ZIP17,304,054bytes/CRC PASS;31,561parsed XML +1binary/unparseable `.xml`. So10ca thật: XML75boxes khớp75/77SRboxes;9/10cases raw records equal. A0003SR có thêm2boxes cần review. Source-access blocker đã gỡ; không xác nhận complete equivalence hoặc thay coordinate/training policy. [Báo cáo XML](weak_xml_comparison.md), [evidence](evidence/p1_3_1/xml_followup/comparison.json). Raw/current artifacts521files và implementation fingerprints giữ nguyên; không chạy lại pipeline/training.
 
 | Task | Kết quả thực |
 |---|---|
@@ -8,7 +10,7 @@
 |B — Exit codes|0scope success,2partial/actionable review,1fatal; error artifacts. Real survey0/audit2/QA2 đúng contract; regression tests đầy đủ|
 |C — Acquisition semantics|Weak-only wrapper, observed tags/missing counts/status trong manifest/provenance.10real unknown do thiếu temporal metadata; không biến missing thành verified. Mixed temporal quarantine; nhiều AcquisitionNumbers đơn lẻ chỉ review. NSCLC fingerprint không đổi|
 |D — Byte budget|Actual listing hoặc verified cache admission trước từng SR/CT payload; selected/cache/network riêng; failed stages giữ. Real cache221,804,220bytes, network0; actual>estimate/remaining/interrupt regressions pass|
-|E — XML|3official direct GET timeout20s/request; web fetch500.0XML đọc được, actual ZIP/link/size/hash/equivalence chưa verified; BLOCKED_SOURCE, không đổi parser|
+|E — XML|Initial network attempts timeout. Follow-up ZIP người dùng CRC pass,31,561parsed XML;10case XML/SR comparison75/77bounds match, A0003difference. ACCESS_RESOLVED / EQUIVALENCE_REVIEW_REQUIRED; không đổi parser|
 |F — Revalidation|10/10 CT/bbox arrays0different voxels, geometry/boxes/coverage/envelope measurements exact equal;77boxes/75positive/345unknown/0negative.570raw/baseline files492,231,485bytes hash preserved; manifest repeat identical|
 |Verification|**217passed =177prior+40new**, CPU smoke/env/pip check pass. Không research training hoặc expert clearance|
 

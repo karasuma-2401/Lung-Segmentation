@@ -1,0 +1,14 @@
+timestamp_utc: 2026-11-24T08:51:27.0495797Z
+command: .venv\Scripts\python.exe scripts/compare_weak_xml_sample.py --archive C:\Users\lemin\Downloads\Lung-PET-CT-Dx-Annotations-XML-Files-rev12222020.zip
+exit_code: 0
+{
+  "status": "XML_ACCESS_RESOLVED_SAMPLE_DIFFERENCE_REVIEW_REQUIRED",
+  "sample_case_count": 10,
+  "sr_boxes": 77,
+  "xml_boxes_on_sample_CT": 75,
+  "matching_raw_bounds": 75,
+  "exact_raw_record_case_count": 9,
+  "baseline_preserved": true,
+  "archive_unchanged": true,
+  "implementation_unchanged": true
+}

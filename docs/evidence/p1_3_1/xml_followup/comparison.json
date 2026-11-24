@@ -1,0 +1,1223 @@
+{
+  "archive": {
+    "browser_origin_without_query": {
+      "HostUrl": "https://www.cancerimagingarchive.net/wp-content/uploads/Lung-PET-CT-Dx-Annotations-XML-Files-rev12222020.zip\u0000",
+      "ReferrerUrl": "https://www.cancerimagingarchive.net/tcia-downloads/lung-pet-ct-dx-da-other/lung-pet-ct-dx-annotations-xml-files-rev12222020/"
+    },
+    "bytes": 17304054,
+    "members": 31921,
+    "name_matches_expected": true,
+    "official_page": "https://www.cancerimagingarchive.net/tcia-downloads/lung-pet-ct-dx-da-other/lung-pet-ct-dx-annotations-xml-files-rev12222020/",
+    "path": "C:\\Users\\lemin\\Downloads\\Lung-PET-CT-Dx-Annotations-XML-Files-rev12222020.zip",
+    "provenance": "user downloaded after VPN change from reported official TCIA page; no independent publisher checksum available",
+    "sha256": "74578564508a2c52c6046ef8065708c068b884711dd924d4eaf3db298914d377",
+    "uncompressed_bytes": 17997486,
+    "xml_members": 31562,
+    "zip_crc_pass": true
+  },
+  "archive_scan": {
+    "catalog_patients_without_parsed_xml": [
+      "Lung_Dx-A0058",
+      "Lung_Dx-A0251"
+    ],
+    "classes": {
+      "A": 13065,
+      "A0192": 9,
+      "B": 2244,
+      "E": 201,
+      "G": 5270,
+      "Q": 10,
+      "a": 7911,
+      "b": 860,
+      "g": 2089
+    },
+    "dimensions": [
+      {
+        "size": [
+          512,
+          512,
+          1
+        ],
+        "xml_files": 20969
+      },
+      {
+        "size": [
+          512,
+          512,
+          3
+        ],
+        "xml_files": 10592
+      }
+    ],
+    "object_count": 31659,
+    "objects_per_xml": {
+      "1": 31463,
+      "2": 98
+    },
+    "outside_catalog_patient_folders": [
+      "Lung_Dx-A0060",
+      "Lung_Dx-A0067",
+      "Lung_Dx-A0076",
+      "Lung_Dx-A0266"
+    ],
+    "parse_failures": [
+      {
+        "bytes": 4096,
+        "contains_Mac_OS_X_header": true,
+        "first_16_bytes_hex": "00051607000200004d6163204f532058",
+        "member": "Annotation/A0024/1.3.6.1.4.1.14519.5.2.1.6655.2359.148117780944430339778694852523.xml",
+        "reason": "ParseError:not well-formed (invalid token): line 1, column 0",
+        "sha256": "ce28617cbc3f2cc66f6934cb13ce72a69122c16cb88bae2938cc63605481ceac"
+      }
+    ],
+    "parsed_xml": 31561,
+    "patient_folders_with_parsed_xml": 357,
+    "verified_attribute_values": {
+      "no": 30943,
+      "yes": 618
+    }
+  },
+  "archive_unchanged": true,
+  "baseline_after": {
+    "files": 521,
+    "sha256": "d9e099dc8e9d09a4c67b48f0248248ce02d6570d01146cd99a8e41cd8a02d026"
+  },
+  "baseline_before": {
+    "files": 521,
+    "sha256": "d9e099dc8e9d09a4c67b48f0248248ce02d6570d01146cd99a8e41cd8a02d026"
+  },
+  "baseline_preserved": true,
+  "coordinate_convention_status": "Numeric bounds compared without offset; XML itself does not establish pixel-center/edge or inclusive semantics. No XML voxel rasterization asserted.",
+  "exact_raw_record_case_count": 9,
+  "full_XML_SR_equivalence_verified": false,
+  "implementation_after": {
+    "nsclc": "87bac7926b4ab377dbbd978ecdbac5bfa0e4497319f8ae9ed097abc1dd2847bb",
+    "weak": "9ab8f20775370cbbddcb86d38002c93d6c260f1fff56f7b36c946bc7735adb35"
+  },
+  "implementation_before": {
+    "nsclc": "87bac7926b4ab377dbbd978ecdbac5bfa0e4497319f8ae9ed097abc1dd2847bb",
+    "weak": "9ab8f20775370cbbddcb86d38002c93d6c260f1fff56f7b36c946bc7735adb35"
+  },
+  "implementation_unchanged": true,
+  "manual_expert_approval": false,
+  "matching_raw_bounds": 75,
+  "sample": [
+    {
+      "case_id": "Lung_Dx-A0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805",
+      "class_mapping_status": "observed associations only; no automatic normalization or adjudication",
+      "coverage_unknown_preserved": 53,
+      "ct_slices": 64,
+      "matching_raw_bounds": 11,
+      "observed_class_pairs": [
+        {
+          "matches": 11,
+          "sr_finding_code": [
+            "SCT",
+            "1187332001",
+            "Adenocarcinoma"
+          ],
+          "xml_name": "A"
+        }
+      ],
+      "outside_boxes_is_background": false,
+      "patient_id": "Lung_Dx-A0001",
+      "raw_bounds_multiset_equal": true,
+      "same_positive_sop_set": true,
+      "sr_boxes": 11,
+      "sr_only": [],
+      "sr_positive_sops": 11,
+      "xml_boxes": 11,
+      "xml_depth_metadata_values": [
+        1
+      ],
+      "xml_only": [],
+      "xml_positive_sops": 11,
+      "xml_sources": [
+        {
+          "member": "Annotation/A0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.136943255924913899762603730997.xml",
+          "sha256": "ec50177ce1ad5c6ab8f29d773a817c08e711de0d2711f20dbf739d8787422c26",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.136943255924913899762603730997"
+        },
+        {
+          "member": "Annotation/A0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.155870813347987660555133803380.xml",
+          "sha256": "fa86ebeb710534f09c06d9684483552a3de36a9b4c940523c7fac3ff9ff88210",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.155870813347987660555133803380"
+        },
+        {
+          "member": "Annotation/A0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.184131899543495374569818432657.xml",
+          "sha256": "8d536fd0533aa66555633dd86613b6938a2f509e9f0cbdf4d76b357ad1e6780a",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.184131899543495374569818432657"
+        },
+        {
+          "member": "Annotation/A0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.185555685346057091761687385642.xml",
+          "sha256": "dc8c875ea277117e2cad66cdf18eb6f885056139af95bf2b728e6294ca1d6bea",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.185555685346057091761687385642"
+        },
+        {
+          "member": "Annotation/A0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.187586942311847648079258238193.xml",
+          "sha256": "c48304dffd48caa48e288a18ec0798c170d5aa978209dac911c43b109693d1ff",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.187586942311847648079258238193"
+        },
+        {
+          "member": "Annotation/A0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.216515627058008697217695696166.xml",
+          "sha256": "00ec562eec40c59e364c6d764c12e6e3fc2561a8ea2b75e92c0b692d4d91efd0",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.216515627058008697217695696166"
+        },
+        {
+          "member": "Annotation/A0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.218387194706247505045205169130.xml",
+          "sha256": "c3c5b922399eaf606125ce789377e15570772df4f4a7b072a62652626a9a188c",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.218387194706247505045205169130"
+        },
+        {
+          "member": "Annotation/A0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.223280971440388131399634898721.xml",
+          "sha256": "22176208d72945c2e6ff148b0eec13c3a23c2317819c96c35f69ee2c9c0db9a4",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.223280971440388131399634898721"
+        },
+        {
+          "member": "Annotation/A0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.241073611031000247506142606387.xml",
+          "sha256": "c9ea7f917e9cab67c0800d87466f29a0a86fb90d89d20092e31017484138128d",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.241073611031000247506142606387"
+        },
+        {
+          "member": "Annotation/A0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.264364194296293440320787350583.xml",
+          "sha256": "4745c48abca884b4b34b8a228f437cb88af7c1a9b93967dcb5c3b145f8ac83fc",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.264364194296293440320787350583"
+        },
+        {
+          "member": "Annotation/A0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.301905642463494729146015070819.xml",
+          "sha256": "ac15a9e4d78b51ec80ebf207a6104cc4c515a2ce6588b1a34fe5cae851fee383",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.301905642463494729146015070819"
+        }
+      ],
+      "xml_width_height_match_CT": true
+    },
+    {
+      "case_id": "Lung_Dx-A0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983",
+      "class_mapping_status": "observed associations only; no automatic normalization or adjudication",
+      "coverage_unknown_preserved": 20,
+      "ct_slices": 30,
+      "matching_raw_bounds": 10,
+      "observed_class_pairs": [
+        {
+          "matches": 10,
+          "sr_finding_code": [
+            "SCT",
+            "1187332001",
+            "Adenocarcinoma"
+          ],
+          "xml_name": "A"
+        }
+      ],
+      "outside_boxes_is_background": false,
+      "patient_id": "Lung_Dx-A0002",
+      "raw_bounds_multiset_equal": true,
+      "same_positive_sop_set": true,
+      "sr_boxes": 10,
+      "sr_only": [],
+      "sr_positive_sops": 10,
+      "xml_boxes": 10,
+      "xml_depth_metadata_values": [
+        1
+      ],
+      "xml_only": [],
+      "xml_positive_sops": 10,
+      "xml_sources": [
+        {
+          "member": "Annotation/A0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.122259036515695905512549026864.xml",
+          "sha256": "e9bdaa552c689b375a7d355bb9e8d6f991be8dfe84ce0e3b9028e2c52374dc00",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.122259036515695905512549026864"
+        },
+        {
+          "member": "Annotation/A0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.143229220134004659147800817664.xml",
+          "sha256": "1662f85034e2df82da602b78df250ca0a9487dc20af9c4c52d2881b68b2036af",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.143229220134004659147800817664"
+        },
+        {
+          "member": "Annotation/A0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.145636676081119360296419944385.xml",
+          "sha256": "dcc9e3749218ecefd5ff92813840b76b00e10b71d04fcfe68c8925a5a42dde76",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.145636676081119360296419944385"
+        },
+        {
+          "member": "Annotation/A0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.174269535156304951625805754184.xml",
+          "sha256": "ca96dc7d8f017b197a8edf749a384c2af9e74d4cb390280c595fea892cefba17",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.174269535156304951625805754184"
+        },
+        {
+          "member": "Annotation/A0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.191960383852949572073542121650.xml",
+          "sha256": "8fd1fa393270b16678b3ce9514b384da552aeadf05389a86413727539ba1ade2",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.191960383852949572073542121650"
+        },
+        {
+          "member": "Annotation/A0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.225810647627448096790806208568.xml",
+          "sha256": "656da6f47282ae7d3ea78ffc3ba861ac6e29bf6fd38bdae82c50db974be3aecb",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.225810647627448096790806208568"
+        },
+        {
+          "member": "Annotation/A0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.234210370365936053269828907501.xml",
+          "sha256": "61b1e5b3ca347b615ea93fc907dc7eb59437af9d07d62ef0e6a10b2586cef382",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.234210370365936053269828907501"
+        },
+        {
+          "member": "Annotation/A0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.323570046735549256812896573959.xml",
+          "sha256": "da6960cc3d1d1e00a2932765fc40f0cdea349edad6751da57e84ee12083ba7fe",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.323570046735549256812896573959"
+        },
+        {
+          "member": "Annotation/A0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.326556466222007829265608175539.xml",
+          "sha256": "e9ef168ebf14fd527e4fc4ca582758aa140a6882cb493252bc88f3f16cc46088",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.326556466222007829265608175539"
+        },
+        {
+          "member": "Annotation/A0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.476982701137697438217958989680.xml",
+          "sha256": "460627c44bd8e0ee0d3b4328e1bc87284c55cacd24917fb56bfedbca67a88bdf",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.476982701137697438217958989680"
+        }
+      ],
+      "xml_width_height_match_CT": true
+    },
+    {
+      "case_id": "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728",
+      "class_mapping_status": "observed associations only; no automatic normalization or adjudication",
+      "coverage_unknown_preserved": 25,
+      "ct_slices": 27,
+      "matching_raw_bounds": 2,
+      "observed_class_pairs": [
+        {
+          "matches": 2,
+          "sr_finding_code": [
+            "SCT",
+            "1187332001",
+            "Adenocarcinoma"
+          ],
+          "xml_name": "A"
+        }
+      ],
+      "outside_boxes_is_background": false,
+      "patient_id": "Lung_Dx-A0003",
+      "raw_bounds_multiset_equal": false,
+      "same_positive_sop_set": true,
+      "sr_boxes": 4,
+      "sr_only": [
+        {
+          "bounds": [
+            366.0,
+            253.0,
+            405.0,
+            298.0
+          ],
+          "count": 1,
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.178836002044492899997583802620"
+        },
+        {
+          "bounds": [
+            353.0,
+            258.0,
+            408.0,
+            312.0
+          ],
+          "count": 1,
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.386936544335940634104504855125"
+        }
+      ],
+      "sr_positive_sops": 2,
+      "xml_boxes": 2,
+      "xml_depth_metadata_values": [
+        1
+      ],
+      "xml_only": [],
+      "xml_positive_sops": 2,
+      "xml_sources": [
+        {
+          "member": "Annotation/A0003/1.3.6.1.4.1.14519.5.2.1.6655.2359.178836002044492899997583802620.xml",
+          "sha256": "80d30d8f96d9f397faa9864d20413fd6acb20d8c4bb3e170c847c3c82f83f796",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.178836002044492899997583802620"
+        },
+        {
+          "member": "Annotation/A0003/1.3.6.1.4.1.14519.5.2.1.6655.2359.386936544335940634104504855125.xml",
+          "sha256": "27cccad5fc15af2080b7c0ddb98255ce20d378db7e21f63fceaf190c1ec5a7c4",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.386936544335940634104504855125"
+        }
+      ],
+      "xml_width_height_match_CT": true
+    },
+    {
+      "case_id": "Lung_Dx-A0004__1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719",
+      "class_mapping_status": "observed associations only; no automatic normalization or adjudication",
+      "coverage_unknown_preserved": 25,
+      "ct_slices": 29,
+      "matching_raw_bounds": 4,
+      "observed_class_pairs": [
+        {
+          "matches": 4,
+          "sr_finding_code": [
+            "SCT",
+            "1187332001",
+            "Adenocarcinoma"
+          ],
+          "xml_name": "A"
+        }
+      ],
+      "outside_boxes_is_background": false,
+      "patient_id": "Lung_Dx-A0004",
+      "raw_bounds_multiset_equal": true,
+      "same_positive_sop_set": true,
+      "sr_boxes": 4,
+      "sr_only": [],
+      "sr_positive_sops": 4,
+      "xml_boxes": 4,
+      "xml_depth_metadata_values": [
+        1
+      ],
+      "xml_only": [],
+      "xml_positive_sops": 4,
+      "xml_sources": [
+        {
+          "member": "Annotation/A0004/1.3.6.1.4.1.14519.5.2.1.6655.2359.134203532109248695362139266175.xml",
+          "sha256": "1877a1d6c1aa6575190d55234fe7321117db9c760ec48f54eac6448d19a0e2ad",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.134203532109248695362139266175"
+        },
+        {
+          "member": "Annotation/A0004/1.3.6.1.4.1.14519.5.2.1.6655.2359.272401537879904076182973338882.xml",
+          "sha256": "e9167d94de61ffdd081bdbeb8de5f8006cb81481b0948e367df10a346212474b",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.272401537879904076182973338882"
+        },
+        {
+          "member": "Annotation/A0004/1.3.6.1.4.1.14519.5.2.1.6655.2359.311118938126060898133803059306.xml",
+          "sha256": "3f46332ae2350438fc95f7ab589576d42d570fbf10c2198515c7d90870e670f9",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.311118938126060898133803059306"
+        },
+        {
+          "member": "Annotation/A0004/1.3.6.1.4.1.14519.5.2.1.6655.2359.323502784198967910489606362297.xml",
+          "sha256": "5d7a52fb2caed23e146f8ae8bc858be025f84f7b38666b3272540db87bcdf759",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.323502784198967910489606362297"
+        }
+      ],
+      "xml_width_height_match_CT": true
+    },
+    {
+      "case_id": "Lung_Dx-A0005__1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548",
+      "class_mapping_status": "observed associations only; no automatic normalization or adjudication",
+      "coverage_unknown_preserved": 28,
+      "ct_slices": 29,
+      "matching_raw_bounds": 1,
+      "observed_class_pairs": [
+        {
+          "matches": 1,
+          "sr_finding_code": [
+            "SCT",
+            "1187332001",
+            "Adenocarcinoma"
+          ],
+          "xml_name": "A"
+        }
+      ],
+      "outside_boxes_is_background": false,
+      "patient_id": "Lung_Dx-A0005",
+      "raw_bounds_multiset_equal": true,
+      "same_positive_sop_set": true,
+      "sr_boxes": 1,
+      "sr_only": [],
+      "sr_positive_sops": 1,
+      "xml_boxes": 1,
+      "xml_depth_metadata_values": [
+        1
+      ],
+      "xml_only": [],
+      "xml_positive_sops": 1,
+      "xml_sources": [
+        {
+          "member": "Annotation/A0005/1.3.6.1.4.1.14519.5.2.1.6655.2359.152110581248345766823620981864.xml",
+          "sha256": "5b89121a909c390f8c8cbaf0d33984b2e3f7fa17f153a40c105d364ac5335d06",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.152110581248345766823620981864"
+        }
+      ],
+      "xml_width_height_match_CT": true
+    },
+    {
+      "case_id": "Lung_Dx-A0006__1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676",
+      "class_mapping_status": "observed associations only; no automatic normalization or adjudication",
+      "coverage_unknown_preserved": 47,
+      "ct_slices": 54,
+      "matching_raw_bounds": 7,
+      "observed_class_pairs": [
+        {
+          "matches": 7,
+          "sr_finding_code": [
+            "SCT",
+            "1187332001",
+            "Adenocarcinoma"
+          ],
+          "xml_name": "A"
+        }
+      ],
+      "outside_boxes_is_background": false,
+      "patient_id": "Lung_Dx-A0006",
+      "raw_bounds_multiset_equal": true,
+      "same_positive_sop_set": true,
+      "sr_boxes": 7,
+      "sr_only": [],
+      "sr_positive_sops": 7,
+      "xml_boxes": 7,
+      "xml_depth_metadata_values": [
+        1
+      ],
+      "xml_only": [],
+      "xml_positive_sops": 7,
+      "xml_sources": [
+        {
+          "member": "Annotation/A0006/1.3.6.1.4.1.14519.5.2.1.6655.2359.103059767288794151375973568798.xml",
+          "sha256": "f371298cb6cbb435730a60fd949b430acf2c4c7eef836ad84550b60a4e9364b5",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.103059767288794151375973568798"
+        },
+        {
+          "member": "Annotation/A0006/1.3.6.1.4.1.14519.5.2.1.6655.2359.113187111441488501582438568696.xml",
+          "sha256": "6b2faf22277c0a6a43b4ea00bc2b895d17ca7d41717fb5e772b4c26d2494a40c",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.113187111441488501582438568696"
+        },
+        {
+          "member": "Annotation/A0006/1.3.6.1.4.1.14519.5.2.1.6655.2359.217260904284563579184991029992.xml",
+          "sha256": "8080dfe188a12318835782c9c85dcaea182357914b94ef4ae7d07e2163b7119f",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.217260904284563579184991029992"
+        },
+        {
+          "member": "Annotation/A0006/1.3.6.1.4.1.14519.5.2.1.6655.2359.241871942240862060566805385815.xml",
+          "sha256": "ca1b9697d0f892094f5930b82db6a6385c7daceee726f86c787a03556d4db1d4",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.241871942240862060566805385815"
+        },
+        {
+          "member": "Annotation/A0006/1.3.6.1.4.1.14519.5.2.1.6655.2359.296804952077100291409726199429.xml",
+          "sha256": "5cfffb3fcb0bd5a28075e3c8f5f0ac08bf186a6d3f7a90c38cc51b35a4d9bcea",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.296804952077100291409726199429"
+        },
+        {
+          "member": "Annotation/A0006/1.3.6.1.4.1.14519.5.2.1.6655.2359.565936525037204727781796204367.xml",
+          "sha256": "f3d6caf237a8b34811019c394c6949ad9ec8c35e39537aab034b27df73df7e3c",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.565936525037204727781796204367"
+        },
+        {
+          "member": "Annotation/A0006/1.3.6.1.4.1.14519.5.2.1.6655.2359.656663665103040328372846249517.xml",
+          "sha256": "cac2de9fb87b9cb1796f9822481a92bb156a41fcaf0e96ed4f633973096b0ced",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.656663665103040328372846249517"
+        }
+      ],
+      "xml_width_height_match_CT": true
+    },
+    {
+      "case_id": "Lung_Dx-B0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951",
+      "class_mapping_status": "observed associations only; no automatic normalization or adjudication",
+      "coverage_unknown_preserved": 40,
+      "ct_slices": 56,
+      "matching_raw_bounds": 16,
+      "observed_class_pairs": [
+        {
+          "matches": 16,
+          "sr_finding_code": [
+            "SCT",
+            "74364000",
+            "Small cell carcinoma"
+          ],
+          "xml_name": "B"
+        }
+      ],
+      "outside_boxes_is_background": false,
+      "patient_id": "Lung_Dx-B0001",
+      "raw_bounds_multiset_equal": true,
+      "same_positive_sop_set": true,
+      "sr_boxes": 16,
+      "sr_only": [],
+      "sr_positive_sops": 16,
+      "xml_boxes": 16,
+      "xml_depth_metadata_values": [
+        1
+      ],
+      "xml_only": [],
+      "xml_positive_sops": 16,
+      "xml_sources": [
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.180554489556473665306641851503.xml",
+          "sha256": "69bd0bee0dd0a8d3dcc81455bf9c03d77457ccc602877576e75ff2b97015abac",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.180554489556473665306641851503"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.190841483199021703703625642320.xml",
+          "sha256": "a81b3120c5874223257643bebc9f34c11cff6c46abe02f25150a175fd80d77f5",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.190841483199021703703625642320"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.248202825423643454650253204264.xml",
+          "sha256": "6d6cd7cc5548529967ff9d355544cfea4b2995d1951cdff9052c85cac436cebe",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.248202825423643454650253204264"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.255976267012219814734143656396.xml",
+          "sha256": "3d736a01d79f1ac6189bcf209fe07e06e0883a73c55e2c1dbc3cb8a678e13454",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.255976267012219814734143656396"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.289521797494822324266162686144.xml",
+          "sha256": "c48d1a073bc0c44d09cc0fe427edbbc72ad0d448682efddf531f5e03375b4d38",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.289521797494822324266162686144"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.299295739284208681161294024647.xml",
+          "sha256": "df6a0a54317df0bdfdd86cd8bf3ffa50baacbf63066d466f722bab00396370c1",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.299295739284208681161294024647"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.314225510290573514150951338589.xml",
+          "sha256": "718f35d802dc836aa76d327146516bc1d08c377dd616b5ae17db27358260cf9e",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.314225510290573514150951338589"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.317985349957788053367187822919.xml",
+          "sha256": "1640cdef4211f7f5efd6b583a77e8d17b0d0e9dccc3a58fa033966474b9b540d",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.317985349957788053367187822919"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.324414494332972014367878587350.xml",
+          "sha256": "7c6ff1f2cf54e0024e5f6af611965a8d9cd3b2562234825feb6b44164d6a1f10",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.324414494332972014367878587350"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.325573635830255261177575767187.xml",
+          "sha256": "7c38e8c597feedf459e08b961384dbef0c9fa913b4f7566e7398bf141bfeb07d",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.325573635830255261177575767187"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.330993901238319796335218998516.xml",
+          "sha256": "cb72a40eeb6aec294f352e9ea759bbd83f7d8596cdbe49b6edfc876922c42e99",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.330993901238319796335218998516"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.338204535576641323546927040861.xml",
+          "sha256": "078438c9b19cf7f96453a9e21665ac336c86b98e41a0e971c01f9731281b3f03",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.338204535576641323546927040861"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.404078170873707685978346083462.xml",
+          "sha256": "33d1497561b75ed036d4fa9bc47e0901ad50b8d94eafeab4dca1c3cce6cf0760",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.404078170873707685978346083462"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.428270470160533730832027581340.xml",
+          "sha256": "66acf38f2082a3b71ba9baadee5cb45eae6fd2c50c4e3f0be0b54d200062f21f",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.428270470160533730832027581340"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.588279961785653060443376048155.xml",
+          "sha256": "513ad7037c44b1dab511b15b6cb3b0a4f88da9010db6ad5c2bcc196398b84ac1",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.588279961785653060443376048155"
+        },
+        {
+          "member": "Annotation/B0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.898650277366406924898440737210.xml",
+          "sha256": "130e1f3cde69756e5b80dc43374c6a73bcc663f14cab614c7e0e58b71cbe75b9",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.898650277366406924898440737210"
+        }
+      ],
+      "xml_width_height_match_CT": true
+    },
+    {
+      "case_id": "Lung_Dx-E0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046",
+      "class_mapping_status": "observed associations only; no automatic normalization or adjudication",
+      "coverage_unknown_preserved": 43,
+      "ct_slices": 57,
+      "matching_raw_bounds": 14,
+      "observed_class_pairs": [
+        {
+          "matches": 14,
+          "sr_finding_code": [
+            "SCT",
+            "22687000",
+            "Large cell carcinoma"
+          ],
+          "xml_name": "E"
+        }
+      ],
+      "outside_boxes_is_background": false,
+      "patient_id": "Lung_Dx-E0001",
+      "raw_bounds_multiset_equal": true,
+      "same_positive_sop_set": true,
+      "sr_boxes": 14,
+      "sr_only": [],
+      "sr_positive_sops": 14,
+      "xml_boxes": 14,
+      "xml_depth_metadata_values": [
+        1
+      ],
+      "xml_only": [],
+      "xml_positive_sops": 14,
+      "xml_sources": [
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.109569532138952320255795193464.xml",
+          "sha256": "92adb041caac7de114a2670d6635e8e09c110dec79b95f180c1f7461a45ad362",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.109569532138952320255795193464"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.145226498505942521505660573360.xml",
+          "sha256": "17188c4b36e467397ddd82211214dffb015e30bcf9406636d90c2cf93c55fce5",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.145226498505942521505660573360"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.150613724430036032130388576267.xml",
+          "sha256": "fc985cb7d417fc7ae927623e7fbfc6c0891d383595f9dc37725aa4c2e21853e2",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.150613724430036032130388576267"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.154227952679189893488682855648.xml",
+          "sha256": "485ac2aa9b87895df1f0419afa7e0cab34eacf7eaef1dfe705b15f4e6a8efd43",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.154227952679189893488682855648"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.193202254147608799003485368379.xml",
+          "sha256": "b5e039b5391103655dd7345bc100557fb6a9ce07472f50bd97eaa18756194249",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.193202254147608799003485368379"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.193397157798841214449410390971.xml",
+          "sha256": "c7a115c799bf741ad5aec5a0895ddd63dc22fc97aafaccc697cc130113eb1756",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.193397157798841214449410390971"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.196443438030034430854653058151.xml",
+          "sha256": "8a2347d9dfcb12968989fc60672d21ad26de43f9cf78f0e9261469e7b1e47d28",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.196443438030034430854653058151"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.198842824714103678306588507530.xml",
+          "sha256": "b3ce7a8821d41e14b22a4feab5ffc9e0ac538f3a247a29bb1ae457ccf915317d",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.198842824714103678306588507530"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.222538044229792598561517307856.xml",
+          "sha256": "a9a3e2d5ff2f20f26767a2f54bea5b11b688600d3a8e10f7e3a1fc76765e29b5",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.222538044229792598561517307856"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.247898176397318630486244266958.xml",
+          "sha256": "2e857e6912ceb2dbd039c95005e69b8e7bdb8af5e5e77a4d4c2134ce162165f9",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.247898176397318630486244266958"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.260686488077952301522296984696.xml",
+          "sha256": "c38c5ac7e969029d4511e2d43a2e67c3aef6f2d20f4a1c0ce58f8729e26f0f3c",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.260686488077952301522296984696"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.319157848430526474691395244272.xml",
+          "sha256": "9ed5a5dc7261bf4a73ffe4984e29432246cbce4b6cc6db2af954e21e7320c8fa",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.319157848430526474691395244272"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.488597984701551378577816225362.xml",
+          "sha256": "be21e545433d21b9cbe33c96ff1890977cbad63cbae253d2747a2f3c1bba5baa",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.488597984701551378577816225362"
+        },
+        {
+          "member": "Annotation/E0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.796364081787491517247884316374.xml",
+          "sha256": "cb7e10685c850b8ca5dc461da228a08c929201b9d6e7498ba5dfc6c565a7c837",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.796364081787491517247884316374"
+        }
+      ],
+      "xml_width_height_match_CT": true
+    },
+    {
+      "case_id": "Lung_Dx-G0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648",
+      "class_mapping_status": "observed associations only; no automatic normalization or adjudication",
+      "coverage_unknown_preserved": 19,
+      "ct_slices": 23,
+      "matching_raw_bounds": 4,
+      "observed_class_pairs": [
+        {
+          "matches": 4,
+          "sr_finding_code": [
+            "SCT",
+            "1162767002",
+            "Squamous cell carcinoma"
+          ],
+          "xml_name": "G"
+        }
+      ],
+      "outside_boxes_is_background": false,
+      "patient_id": "Lung_Dx-G0001",
+      "raw_bounds_multiset_equal": true,
+      "same_positive_sop_set": true,
+      "sr_boxes": 4,
+      "sr_only": [],
+      "sr_positive_sops": 4,
+      "xml_boxes": 4,
+      "xml_depth_metadata_values": [
+        1
+      ],
+      "xml_only": [],
+      "xml_positive_sops": 4,
+      "xml_sources": [
+        {
+          "member": "Annotation/G0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.106722784649711734374698383322.xml",
+          "sha256": "c98f647a41cd1bf0bb4d9a77a0ddff7951e39450c4c036bf14d4b47d98eb214a",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.106722784649711734374698383322"
+        },
+        {
+          "member": "Annotation/G0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.198421860600941173627259058000.xml",
+          "sha256": "8df9c6c5168383338e1e42061eb712467b4ea84c45071ad8429caa981a13d18e",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.198421860600941173627259058000"
+        },
+        {
+          "member": "Annotation/G0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.203116119227644806463434174371.xml",
+          "sha256": "c7813b418d7d137de614cf4acb16446b81a63d7423551d6adb5ea70d0d53cc46",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.203116119227644806463434174371"
+        },
+        {
+          "member": "Annotation/G0001/1.3.6.1.4.1.14519.5.2.1.6655.2359.228721256514603627836824477691.xml",
+          "sha256": "f88a4bb590362513ad015732726046ccee49cd797b78acbeac26b7701c90fdbb",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.228721256514603627836824477691"
+        }
+      ],
+      "xml_width_height_match_CT": true
+    },
+    {
+      "case_id": "Lung_Dx-G0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402",
+      "class_mapping_status": "observed associations only; no automatic normalization or adjudication",
+      "coverage_unknown_preserved": 45,
+      "ct_slices": 51,
+      "matching_raw_bounds": 6,
+      "observed_class_pairs": [
+        {
+          "matches": 6,
+          "sr_finding_code": [
+            "SCT",
+            "1162767002",
+            "Squamous cell carcinoma"
+          ],
+          "xml_name": "G"
+        }
+      ],
+      "outside_boxes_is_background": false,
+      "patient_id": "Lung_Dx-G0002",
+      "raw_bounds_multiset_equal": true,
+      "same_positive_sop_set": true,
+      "sr_boxes": 6,
+      "sr_only": [],
+      "sr_positive_sops": 6,
+      "xml_boxes": 6,
+      "xml_depth_metadata_values": [
+        1
+      ],
+      "xml_only": [],
+      "xml_positive_sops": 6,
+      "xml_sources": [
+        {
+          "member": "Annotation/G0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.151714809769424050738135064675.xml",
+          "sha256": "246322f528075b05f01c70381be44734a2251fe8a6f83c470a1e8236bb569724",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.151714809769424050738135064675"
+        },
+        {
+          "member": "Annotation/G0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.225391113549292292388216443166.xml",
+          "sha256": "c9dafe14a7e2296e2922d48b15f178e42a964df7f34797c7a9b9d65a80852db1",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.225391113549292292388216443166"
+        },
+        {
+          "member": "Annotation/G0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.250157524168081247720689697171.xml",
+          "sha256": "2e052ccbc59f58bd36619a250d930bda2dedc0b06e5a941fcdb00c472d411b0c",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.250157524168081247720689697171"
+        },
+        {
+          "member": "Annotation/G0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.300410318658703636109737580911.xml",
+          "sha256": "09b32842209d0b4e9091fc921592c891254c9d06d432d6e375e18e7cf1aba2bc",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.300410318658703636109737580911"
+        },
+        {
+          "member": "Annotation/G0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.321591002090153370744964476602.xml",
+          "sha256": "6bbc72cc0197d5637dbcc48dba0c6c3fcce3487c53c7a02f8d3a58401b6d2441",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.321591002090153370744964476602"
+        },
+        {
+          "member": "Annotation/G0002/1.3.6.1.4.1.14519.5.2.1.6655.2359.982753558582965396404679262705.xml",
+          "sha256": "9f52090ee9029b1d9ef61d7ff5051670c9ea2fb9162fe2d985ac95419de52f05",
+          "size": [
+            512,
+            512,
+            1
+          ],
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.982753558582965396404679262705"
+        }
+      ],
+      "xml_width_height_match_CT": true
+    }
+  ],
+  "sample_case_count": 10,
+  "sr_boxes": 77,
+  "status": "XML_ACCESS_RESOLVED_SAMPLE_DIFFERENCE_REVIEW_REQUIRED",
+  "timestamp_utc": "2026-11-24T08:51:37.325227+00:00",
+  "weak_training_clearance": false,
+  "xml_boxes_on_sample_CT": 75
+}

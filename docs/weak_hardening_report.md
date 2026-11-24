@@ -1,6 +1,8 @@
 # P1.3.1 — Lung-PET-CT-Dx technical hardening
 
-Ngày24/11/2026. Baseline được review: dev `ac21467351340bc58369eda76ac4977f0691ec11`. **Hardening và real sample revalidation PASS; sample vẫn VALIDATED_WITH_REVIEW_FINDINGS, XML equivalence OPEN/BLOCKED_SOURCE, full corpus BLOCKED_STORAGE/NOT_VALIDATED.** Dừng sau P1.3.1. Không training clearance, không expert approval.
+Ngày24/11/2026. Baseline được review: dev `ac21467351340bc58369eda76ac4977f0691ec11`. **Hardening và real sample revalidation PASS; sample vẫn VALIDATED_WITH_REVIEW_FINDINGS, XML equivalence OPEN/REVIEW_REQUIRED, full corpus BLOCKED_STORAGE/NOT_VALIDATED.** Dừng sau P1.3.1. Không training clearance, không expert approval.
+
+**Follow-up sau khi người dùng đổi VPN:** XML ZIP đã đọc, CRC pass, source-access blocker RESOLVED. So10ca: XML75boxes khớp75/77SRboxes, A0003có2SR-only boxes; complete equivalence còn REVIEW_REQUIRED. [Báo cáo và evidence mới](weak_xml_comparison.md) cập nhật trạng thái Task E; các timeout/0XML bên dưới là snapshot run ban đầu, không ghi đè logs cũ. Production artifacts và policy giữ nguyên.
 
 ## Task A — Source completeness và đơn vị đếm
 
@@ -112,7 +114,7 @@ Targeted **91passed**. Full suite **217passed in23.42s =177prior+40new synthetic
 |B — Exit contracts và error artifacts|PASS — CLI regressions + actual0/2 execution|
 |C — verified/suspicious/unknown, findings persisted, không blanket reject AcquisitionNumber|PASS —10real unknown được giữ rõ|
 |D — Actual per-series admission trước payload, cache/network riêng|PASS — synthetic network guards + real cache-only validation|
-|E — Bounded official XML investigation|PASS investigation; equivalence **OPEN/BLOCKED_SOURCE**|
+|E — Bounded official XML investigation|PASS investigation; follow-up source-access RESOLVED, equivalence **OPEN/REVIEW_REQUIRED**, xem weak_xml_comparison.md|
 |F — Real revalidation / regressions / preservation|PASS —10pairs exact,217tests,570baseline files preserved|
 |Protocol và scope|PASS —3datasets, Scarce/Vast unchanged; không full download/cloud/splits/preprocessing/training/cleanup|
 
