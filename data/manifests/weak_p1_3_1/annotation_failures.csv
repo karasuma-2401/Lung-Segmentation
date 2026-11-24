@@ -1,0 +1,1 @@
+record_type,patient_id,observed_patient_id,sr_sop_uid,sr_series_uid,source_path,sha256,declared_sop_uid,declared_series_uid,ct_references,status,reason,ct_case_ids,ct_case_results

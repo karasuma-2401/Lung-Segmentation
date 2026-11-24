@@ -1,0 +1,7 @@
+{
+  "existing_verified_cache_bytes": 221804220,
+  "exit_code_contract": 0,
+  "network_payload_bytes_this_run": 0,
+  "operation": "acquire(download=True), network/listing explicitly disabled",
+  "status": "CT_SR_SAMPLE_ACQUIRED"
+}

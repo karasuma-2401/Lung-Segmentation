@@ -1,0 +1,35 @@
+{
+  "XML_SR_equivalence_verified": false,
+  "archive_byte_cap": 25165824,
+  "archive_identity_verified": false,
+  "attempts": [
+    {
+      "body_limit_bytes": 2097152,
+      "error": "<urlopen error timed out>",
+      "error_type": "URLError",
+      "method": "GET",
+      "timeout_seconds": 20,
+      "url": "https://www.cancerimagingarchive.net/tcia-downloads/lung-pet-ct-dx-da-other/lung-pet-ct-dx-annotations-xml-files-rev12222020/"
+    },
+    {
+      "body_limit_bytes": 2097152,
+      "error": "<urlopen error timed out>",
+      "error_type": "URLError",
+      "method": "GET",
+      "timeout_seconds": 20,
+      "url": "https://www.cancerimagingarchive.net/collection/lung-pet-ct-dx/"
+    },
+    {
+      "body_limit_bytes": 2097152,
+      "error": "<urlopen error timed out>",
+      "error_type": "URLError",
+      "method": "GET",
+      "timeout_seconds": 20,
+      "url": "https://www.cancerimagingarchive.net/wp-content/uploads/?C=M%3BO%3DA"
+    }
+  ],
+  "blocker": "No accessible verified official ZIP acquired in bounded attempts",
+  "requested_official_page": "https://www.cancerimagingarchive.net/tcia-downloads/lung-pet-ct-dx-da-other/lung-pet-ct-dx-annotations-xml-files-rev12222020/",
+  "status": "BLOCKED_SOURCE",
+  "timestamp_utc": "2026-11-24T08:27:07.887517+00:00"
+}

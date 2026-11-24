@@ -1,0 +1,116 @@
+{
+  "acquisition_failure_patients": 0,
+  "annotation_source_objects": 10,
+  "ct_case_records": 10,
+  "failed_annotation_objects": 0,
+  "failed_source_objects": 0,
+  "missing_source_objects": 0,
+  "observed_source_objects": 430,
+  "parsed_annotation_objects": 10,
+  "pass": true,
+  "patients": [
+    {
+      "acquisition_failure": null,
+      "annotation_failures": 0,
+      "annotation_objects": 1,
+      "ct_case_ids": [
+        "Lung_Dx-A0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805"
+      ],
+      "patient_id": "Lung_Dx-A0001",
+      "source_objects": 65
+    },
+    {
+      "acquisition_failure": null,
+      "annotation_failures": 0,
+      "annotation_objects": 1,
+      "ct_case_ids": [
+        "Lung_Dx-A0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983"
+      ],
+      "patient_id": "Lung_Dx-A0002",
+      "source_objects": 31
+    },
+    {
+      "acquisition_failure": null,
+      "annotation_failures": 0,
+      "annotation_objects": 1,
+      "ct_case_ids": [
+        "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728"
+      ],
+      "patient_id": "Lung_Dx-A0003",
+      "source_objects": 28
+    },
+    {
+      "acquisition_failure": null,
+      "annotation_failures": 0,
+      "annotation_objects": 1,
+      "ct_case_ids": [
+        "Lung_Dx-A0004__1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719"
+      ],
+      "patient_id": "Lung_Dx-A0004",
+      "source_objects": 30
+    },
+    {
+      "acquisition_failure": null,
+      "annotation_failures": 0,
+      "annotation_objects": 1,
+      "ct_case_ids": [
+        "Lung_Dx-A0005__1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548"
+      ],
+      "patient_id": "Lung_Dx-A0005",
+      "source_objects": 30
+    },
+    {
+      "acquisition_failure": null,
+      "annotation_failures": 0,
+      "annotation_objects": 1,
+      "ct_case_ids": [
+        "Lung_Dx-A0006__1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676"
+      ],
+      "patient_id": "Lung_Dx-A0006",
+      "source_objects": 55
+    },
+    {
+      "acquisition_failure": null,
+      "annotation_failures": 0,
+      "annotation_objects": 1,
+      "ct_case_ids": [
+        "Lung_Dx-B0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951"
+      ],
+      "patient_id": "Lung_Dx-B0001",
+      "source_objects": 57
+    },
+    {
+      "acquisition_failure": null,
+      "annotation_failures": 0,
+      "annotation_objects": 1,
+      "ct_case_ids": [
+        "Lung_Dx-E0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046"
+      ],
+      "patient_id": "Lung_Dx-E0001",
+      "source_objects": 58
+    },
+    {
+      "acquisition_failure": null,
+      "annotation_failures": 0,
+      "annotation_objects": 1,
+      "ct_case_ids": [
+        "Lung_Dx-G0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648"
+      ],
+      "patient_id": "Lung_Dx-G0001",
+      "source_objects": 24
+    },
+    {
+      "acquisition_failure": null,
+      "annotation_failures": 0,
+      "annotation_objects": 1,
+      "ct_case_ids": [
+        "Lung_Dx-G0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402"
+      ],
+      "patient_id": "Lung_Dx-G0002",
+      "source_objects": 52
+    }
+  ],
+  "requested_patients": 10,
+  "source_object_records": 430,
+  "verified_source_objects": 430
+}

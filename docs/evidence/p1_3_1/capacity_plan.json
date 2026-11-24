@@ -1,0 +1,36 @@
+{
+  "config_sha256": "bc2d676fec703d5346fdba2a54d62835e16d73f700dc7e5e2e2b5fc815e1fae9",
+  "converted_free_bytes": 52097179648,
+  "dataset": "Lung-PET-CT-Dx",
+  "estimate": "2.5x CT bytes conversion allowance, not a measured compressed size; PT not requested",
+  "full_ct_sr_conversion_plan_bytes": 436035934178,
+  "full_status": "BLOCKED_STORAGE",
+  "metadata_only": true,
+  "modality_counts": {
+    "CT": {
+      "bytes": 123339382584,
+      "objects": 205459,
+      "series": 1162
+    },
+    "PT": {
+      "bytes": 3845551812,
+      "objects": 45676,
+      "series": 133
+    },
+    "SR": {
+      "bytes": 53127838,
+      "objects": 1091,
+      "series": 1091
+    }
+  },
+  "original_patients": 355,
+  "original_series": 1295,
+  "original_studies": 436,
+  "raw_free_bytes": 52097179648,
+  "same_volume": true,
+  "sample_capacity_pass": true,
+  "sample_max_raw_bytes": 2147483648,
+  "sample_planning_bytes": 11811160064,
+  "sr_patients": 354,
+  "timestamp_utc": "2026-11-24T08:32:27.608148+00:00"
+}

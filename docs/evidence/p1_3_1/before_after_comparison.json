@@ -1,0 +1,869 @@
+{
+  "all_case_outputs_equivalent": true,
+  "baseline_after": {
+    "bytes": 492231485,
+    "files": 570,
+    "tree_sha256": "61798679aa24f7f90b37ad1de5790b55eed5262b0a8dc1fce5415d009c7be381"
+  },
+  "baseline_before": {
+    "bytes": 492231485,
+    "files": 570,
+    "tree_sha256": "61798679aa24f7f90b37ad1de5790b55eed5262b0a8dc1fce5415d009c7be381"
+  },
+  "baseline_preserved": true,
+  "case_count": 10,
+  "cases": [
+    {
+      "acquisition_semantics": {
+        "findings": [
+          "incomplete_acquisition_metadata"
+        ],
+        "missing_object_counts": {
+          "AcquisitionNumber": 64,
+          "ImageType": 0,
+          "NumberOfTemporalPositions": 64,
+          "TemporalPositionIdentifier": 64
+        },
+        "observed_values": {
+          "AcquisitionNumber": [],
+          "ImageType": [
+            [
+              "ORIGINAL",
+              "PRIMARY",
+              "AXIAL",
+              "HELIX"
+            ]
+          ],
+          "NumberOfTemporalPositions": [],
+          "TemporalPositionIdentifier": []
+        },
+        "reject_mixed_temporal": false,
+        "scope": "metadata consistency only; native geometry validated separately",
+        "status": "unknown"
+      },
+      "after_status": "converted",
+      "bbox_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "before_status": "converted",
+      "boxes_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "case_id": "Lung_Dx-A0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805",
+      "coverage_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "equivalent": true,
+      "image_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "provenance_sha256_changed": true,
+      "unchanged_manifest_fields": {
+        "annotated_slice_count": true,
+        "bbox_envelope_volume_mm3": true,
+        "bbox_foreground_voxels": true,
+        "box_count": true,
+        "explicit_negative_slice_count": true,
+        "missing_slice_count": true,
+        "source_sha256": true,
+        "weak_eligible": true
+      }
+    },
+    {
+      "acquisition_semantics": {
+        "findings": [
+          "incomplete_acquisition_metadata"
+        ],
+        "missing_object_counts": {
+          "AcquisitionNumber": 0,
+          "ImageType": 0,
+          "NumberOfTemporalPositions": 30,
+          "TemporalPositionIdentifier": 30
+        },
+        "observed_values": {
+          "AcquisitionNumber": [
+            "2"
+          ],
+          "ImageType": [
+            [
+              "ORIGINAL",
+              "PRIMARY",
+              "AXIAL",
+              "CT_SOM5 SPI"
+            ]
+          ],
+          "NumberOfTemporalPositions": [],
+          "TemporalPositionIdentifier": []
+        },
+        "reject_mixed_temporal": false,
+        "scope": "metadata consistency only; native geometry validated separately",
+        "status": "unknown"
+      },
+      "after_status": "converted",
+      "bbox_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "before_status": "converted",
+      "boxes_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "case_id": "Lung_Dx-A0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983",
+      "coverage_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "equivalent": true,
+      "image_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "provenance_sha256_changed": true,
+      "unchanged_manifest_fields": {
+        "annotated_slice_count": true,
+        "bbox_envelope_volume_mm3": true,
+        "bbox_foreground_voxels": true,
+        "box_count": true,
+        "explicit_negative_slice_count": true,
+        "missing_slice_count": true,
+        "source_sha256": true,
+        "weak_eligible": true
+      }
+    },
+    {
+      "acquisition_semantics": {
+        "findings": [
+          "incomplete_acquisition_metadata"
+        ],
+        "missing_object_counts": {
+          "AcquisitionNumber": 0,
+          "ImageType": 0,
+          "NumberOfTemporalPositions": 27,
+          "TemporalPositionIdentifier": 27
+        },
+        "observed_values": {
+          "AcquisitionNumber": [
+            "2"
+          ],
+          "ImageType": [
+            [
+              "ORIGINAL",
+              "PRIMARY",
+              "AXIAL",
+              "CT_SOM5 SPI"
+            ]
+          ],
+          "NumberOfTemporalPositions": [],
+          "TemporalPositionIdentifier": []
+        },
+        "reject_mixed_temporal": false,
+        "scope": "metadata consistency only; native geometry validated separately",
+        "status": "unknown"
+      },
+      "after_status": "converted",
+      "bbox_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "before_status": "converted",
+      "boxes_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "case_id": "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728",
+      "coverage_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "equivalent": true,
+      "image_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "provenance_sha256_changed": true,
+      "unchanged_manifest_fields": {
+        "annotated_slice_count": true,
+        "bbox_envelope_volume_mm3": true,
+        "bbox_foreground_voxels": true,
+        "box_count": true,
+        "explicit_negative_slice_count": true,
+        "missing_slice_count": true,
+        "source_sha256": true,
+        "weak_eligible": true
+      }
+    },
+    {
+      "acquisition_semantics": {
+        "findings": [
+          "incomplete_acquisition_metadata"
+        ],
+        "missing_object_counts": {
+          "AcquisitionNumber": 0,
+          "ImageType": 0,
+          "NumberOfTemporalPositions": 29,
+          "TemporalPositionIdentifier": 29
+        },
+        "observed_values": {
+          "AcquisitionNumber": [
+            "2"
+          ],
+          "ImageType": [
+            [
+              "ORIGINAL",
+              "PRIMARY",
+              "AXIAL",
+              "CT_SOM5 SPI"
+            ]
+          ],
+          "NumberOfTemporalPositions": [],
+          "TemporalPositionIdentifier": []
+        },
+        "reject_mixed_temporal": false,
+        "scope": "metadata consistency only; native geometry validated separately",
+        "status": "unknown"
+      },
+      "after_status": "converted",
+      "bbox_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "before_status": "converted",
+      "boxes_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "case_id": "Lung_Dx-A0004__1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719",
+      "coverage_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "equivalent": true,
+      "image_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "provenance_sha256_changed": true,
+      "unchanged_manifest_fields": {
+        "annotated_slice_count": true,
+        "bbox_envelope_volume_mm3": true,
+        "bbox_foreground_voxels": true,
+        "box_count": true,
+        "explicit_negative_slice_count": true,
+        "missing_slice_count": true,
+        "source_sha256": true,
+        "weak_eligible": true
+      }
+    },
+    {
+      "acquisition_semantics": {
+        "findings": [
+          "incomplete_acquisition_metadata"
+        ],
+        "missing_object_counts": {
+          "AcquisitionNumber": 0,
+          "ImageType": 0,
+          "NumberOfTemporalPositions": 29,
+          "TemporalPositionIdentifier": 29
+        },
+        "observed_values": {
+          "AcquisitionNumber": [
+            "2"
+          ],
+          "ImageType": [
+            [
+              "ORIGINAL",
+              "PRIMARY",
+              "AXIAL",
+              "CT_SOM5 SPI"
+            ]
+          ],
+          "NumberOfTemporalPositions": [],
+          "TemporalPositionIdentifier": []
+        },
+        "reject_mixed_temporal": false,
+        "scope": "metadata consistency only; native geometry validated separately",
+        "status": "unknown"
+      },
+      "after_status": "converted",
+      "bbox_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "before_status": "converted",
+      "boxes_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "case_id": "Lung_Dx-A0005__1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548",
+      "coverage_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "equivalent": true,
+      "image_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "provenance_sha256_changed": true,
+      "unchanged_manifest_fields": {
+        "annotated_slice_count": true,
+        "bbox_envelope_volume_mm3": true,
+        "bbox_foreground_voxels": true,
+        "box_count": true,
+        "explicit_negative_slice_count": true,
+        "missing_slice_count": true,
+        "source_sha256": true,
+        "weak_eligible": true
+      }
+    },
+    {
+      "acquisition_semantics": {
+        "findings": [
+          "incomplete_acquisition_metadata"
+        ],
+        "missing_object_counts": {
+          "AcquisitionNumber": 54,
+          "ImageType": 0,
+          "NumberOfTemporalPositions": 54,
+          "TemporalPositionIdentifier": 54
+        },
+        "observed_values": {
+          "AcquisitionNumber": [],
+          "ImageType": [
+            [
+              "ORIGINAL",
+              "PRIMARY",
+              "AXIAL",
+              "HELIX"
+            ]
+          ],
+          "NumberOfTemporalPositions": [],
+          "TemporalPositionIdentifier": []
+        },
+        "reject_mixed_temporal": false,
+        "scope": "metadata consistency only; native geometry validated separately",
+        "status": "unknown"
+      },
+      "after_status": "converted",
+      "bbox_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "before_status": "converted",
+      "boxes_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "case_id": "Lung_Dx-A0006__1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676",
+      "coverage_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "equivalent": true,
+      "image_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "provenance_sha256_changed": true,
+      "unchanged_manifest_fields": {
+        "annotated_slice_count": true,
+        "bbox_envelope_volume_mm3": true,
+        "bbox_foreground_voxels": true,
+        "box_count": true,
+        "explicit_negative_slice_count": true,
+        "missing_slice_count": true,
+        "source_sha256": true,
+        "weak_eligible": true
+      }
+    },
+    {
+      "acquisition_semantics": {
+        "findings": [
+          "incomplete_acquisition_metadata"
+        ],
+        "missing_object_counts": {
+          "AcquisitionNumber": 0,
+          "ImageType": 0,
+          "NumberOfTemporalPositions": 56,
+          "TemporalPositionIdentifier": 56
+        },
+        "observed_values": {
+          "AcquisitionNumber": [
+            "3"
+          ],
+          "ImageType": [
+            [
+              "ORIGINAL",
+              "PRIMARY",
+              "AXIAL"
+            ]
+          ],
+          "NumberOfTemporalPositions": [],
+          "TemporalPositionIdentifier": []
+        },
+        "reject_mixed_temporal": false,
+        "scope": "metadata consistency only; native geometry validated separately",
+        "status": "unknown"
+      },
+      "after_status": "converted",
+      "bbox_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "before_status": "converted",
+      "boxes_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "case_id": "Lung_Dx-B0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951",
+      "coverage_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "equivalent": true,
+      "image_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "provenance_sha256_changed": true,
+      "unchanged_manifest_fields": {
+        "annotated_slice_count": true,
+        "bbox_envelope_volume_mm3": true,
+        "bbox_foreground_voxels": true,
+        "box_count": true,
+        "explicit_negative_slice_count": true,
+        "missing_slice_count": true,
+        "source_sha256": true,
+        "weak_eligible": true
+      }
+    },
+    {
+      "acquisition_semantics": {
+        "findings": [
+          "incomplete_acquisition_metadata"
+        ],
+        "missing_object_counts": {
+          "AcquisitionNumber": 0,
+          "ImageType": 0,
+          "NumberOfTemporalPositions": 57,
+          "TemporalPositionIdentifier": 57
+        },
+        "observed_values": {
+          "AcquisitionNumber": [
+            "3"
+          ],
+          "ImageType": [
+            [
+              "ORIGINAL",
+              "PRIMARY",
+              "AXIAL"
+            ]
+          ],
+          "NumberOfTemporalPositions": [],
+          "TemporalPositionIdentifier": []
+        },
+        "reject_mixed_temporal": false,
+        "scope": "metadata consistency only; native geometry validated separately",
+        "status": "unknown"
+      },
+      "after_status": "converted",
+      "bbox_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "before_status": "converted",
+      "boxes_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "case_id": "Lung_Dx-E0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046",
+      "coverage_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "equivalent": true,
+      "image_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "provenance_sha256_changed": true,
+      "unchanged_manifest_fields": {
+        "annotated_slice_count": true,
+        "bbox_envelope_volume_mm3": true,
+        "bbox_foreground_voxels": true,
+        "box_count": true,
+        "explicit_negative_slice_count": true,
+        "missing_slice_count": true,
+        "source_sha256": true,
+        "weak_eligible": true
+      }
+    },
+    {
+      "acquisition_semantics": {
+        "findings": [
+          "incomplete_acquisition_metadata"
+        ],
+        "missing_object_counts": {
+          "AcquisitionNumber": 0,
+          "ImageType": 0,
+          "NumberOfTemporalPositions": 23,
+          "TemporalPositionIdentifier": 23
+        },
+        "observed_values": {
+          "AcquisitionNumber": [
+            "1"
+          ],
+          "ImageType": [
+            [
+              "ORIGINAL",
+              "PRIMARY",
+              "AXIAL"
+            ]
+          ],
+          "NumberOfTemporalPositions": [],
+          "TemporalPositionIdentifier": []
+        },
+        "reject_mixed_temporal": false,
+        "scope": "metadata consistency only; native geometry validated separately",
+        "status": "unknown"
+      },
+      "after_status": "converted",
+      "bbox_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "before_status": "converted",
+      "boxes_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "case_id": "Lung_Dx-G0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648",
+      "coverage_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "equivalent": true,
+      "image_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "provenance_sha256_changed": true,
+      "unchanged_manifest_fields": {
+        "annotated_slice_count": true,
+        "bbox_envelope_volume_mm3": true,
+        "bbox_foreground_voxels": true,
+        "box_count": true,
+        "explicit_negative_slice_count": true,
+        "missing_slice_count": true,
+        "source_sha256": true,
+        "weak_eligible": true
+      }
+    },
+    {
+      "acquisition_semantics": {
+        "findings": [
+          "incomplete_acquisition_metadata"
+        ],
+        "missing_object_counts": {
+          "AcquisitionNumber": 51,
+          "ImageType": 0,
+          "NumberOfTemporalPositions": 51,
+          "TemporalPositionIdentifier": 51
+        },
+        "observed_values": {
+          "AcquisitionNumber": [],
+          "ImageType": [
+            [
+              "ORIGINAL",
+              "PRIMARY",
+              "AXIAL",
+              "HELIX"
+            ]
+          ],
+          "NumberOfTemporalPositions": [],
+          "TemporalPositionIdentifier": []
+        },
+        "reject_mixed_temporal": false,
+        "scope": "metadata consistency only; native geometry validated separately",
+        "status": "unknown"
+      },
+      "after_status": "converted",
+      "bbox_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "before_status": "converted",
+      "boxes_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "case_id": "Lung_Dx-G0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402",
+      "coverage_path": {
+        "file_sha256_equal": true,
+        "records_equal": true
+      },
+      "equivalent": true,
+      "image_path": {
+        "affine_equal": true,
+        "different_voxels": 0,
+        "dtype_equal": true,
+        "file_sha256_equal": true,
+        "max_abs_voxel_difference": 0.0,
+        "qform_equal": true,
+        "sform_equal": true,
+        "shape_equal": true,
+        "spacing_equal": true,
+        "units_equal": true,
+        "voxel_arrays_equal": true
+      },
+      "provenance_sha256_changed": true,
+      "unchanged_manifest_fields": {
+        "annotated_slice_count": true,
+        "bbox_envelope_volume_mm3": true,
+        "bbox_foreground_voxels": true,
+        "box_count": true,
+        "explicit_negative_slice_count": true,
+        "missing_slice_count": true,
+        "source_sha256": true,
+        "weak_eligible": true
+      }
+    }
+  ],
+  "manifest_repeat_identical": true,
+  "manifest_sha256": "79195790d230febf50a5e6137c0c7981e6fe067b51b1b6445c0e9d95ad36adf7",
+  "manual_expert_approval": false,
+  "nsclc_fingerprint_after": "87bac7926b4ab377dbbd978ecdbac5bfa0e4497319f8ae9ed097abc1dd2847bb",
+  "nsclc_fingerprint_before": "87bac7926b4ab377dbbd978ecdbac5bfa0e4497319f8ae9ed097abc1dd2847bb",
+  "nsclc_unchanged": true,
+  "qa_comparison": [
+    {
+      "baseline_png_bytes_equal": true,
+      "case_id": "Lung_Dx-A0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805",
+      "new_png_hash_verified": true
+    },
+    {
+      "baseline_png_bytes_equal": true,
+      "case_id": "Lung_Dx-A0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983",
+      "new_png_hash_verified": true
+    },
+    {
+      "baseline_png_bytes_equal": true,
+      "case_id": "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728",
+      "new_png_hash_verified": true
+    },
+    {
+      "baseline_png_bytes_equal": true,
+      "case_id": "Lung_Dx-A0004__1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719",
+      "new_png_hash_verified": true
+    },
+    {
+      "baseline_png_bytes_equal": true,
+      "case_id": "Lung_Dx-A0005__1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548",
+      "new_png_hash_verified": true
+    },
+    {
+      "baseline_png_bytes_equal": true,
+      "case_id": "Lung_Dx-A0006__1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676",
+      "new_png_hash_verified": true
+    },
+    {
+      "baseline_png_bytes_equal": true,
+      "case_id": "Lung_Dx-B0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951",
+      "new_png_hash_verified": true
+    },
+    {
+      "baseline_png_bytes_equal": true,
+      "case_id": "Lung_Dx-E0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046",
+      "new_png_hash_verified": true
+    },
+    {
+      "baseline_png_bytes_equal": true,
+      "case_id": "Lung_Dx-G0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648",
+      "new_png_hash_verified": true
+    },
+    {
+      "baseline_png_bytes_equal": true,
+      "case_id": "Lung_Dx-G0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402",
+      "new_png_hash_verified": true
+    }
+  ],
+  "real_data": true,
+  "timestamp_utc": "2026-11-24T08:33:19.467299+00:00",
+  "weak_training_clearance": false
+}

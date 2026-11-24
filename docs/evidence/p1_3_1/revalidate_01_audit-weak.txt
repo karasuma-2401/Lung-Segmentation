@@ -1,0 +1,216 @@
+timestamp_utc: 2026-11-24T08:32:32.724782+00:00
+command_argv: ["C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe", "-m", "lungseg.cli", "audit-weak", "--config", "configs\\weak_p1_3_1.yaml"]
+exit_code: 2
+weak Lung_Dx-A0001 converted
+weak Lung_Dx-A0002 converted
+weak Lung_Dx-A0003 converted
+weak Lung_Dx-A0004 converted
+weak Lung_Dx-A0005 converted
+weak Lung_Dx-A0006 converted
+weak Lung_Dx-B0001 converted
+weak Lung_Dx-E0001 converted
+weak Lung_Dx-G0001 converted
+weak Lung_Dx-G0002 converted
+{
+  "timestamp_utc": "2026-11-24T08:32:43.772823+00:00",
+  "dataset": "Lung-PET-CT-Dx",
+  "real_data": true,
+  "cases": 10,
+  "patient_count": 10,
+  "ct_series": 10,
+  "source_dicom_objects": 430,
+  "annotation_SR_objects": 10,
+  "converted_cases": 10,
+  "excluded_cases": 0,
+  "quarantined_cases": 0,
+  "annotation_failure_count": 0,
+  "acquisition_failure_patient_count": 0,
+  "reconciliation": {
+    "requested_patients": 10,
+    "patients": [
+      {
+        "patient_id": "Lung_Dx-A0001",
+        "ct_case_ids": [
+          "Lung_Dx-A0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805"
+        ],
+        "source_objects": 65,
+        "annotation_objects": 1,
+        "annotation_failures": 0,
+        "acquisition_failure": null
+      },
+      {
+        "patient_id": "Lung_Dx-A0002",
+        "ct_case_ids": [
+          "Lung_Dx-A0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983"
+        ],
+        "source_objects": 31,
+        "annotation_objects": 1,
+        "annotation_failures": 0,
+        "acquisition_failure": null
+      },
+      {
+        "patient_id": "Lung_Dx-A0003",
+        "ct_case_ids": [
+          "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728"
+        ],
+        "source_objects": 28,
+        "annotation_objects": 1,
+        "annotation_failures": 0,
+        "acquisition_failure": null
+      },
+      {
+        "patient_id": "Lung_Dx-A0004",
+        "ct_case_ids": [
+          "Lung_Dx-A0004__1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719"
+        ],
+        "source_objects": 30,
+        "annotation_objects": 1,
+        "annotation_failures": 0,
+        "acquisition_failure": null
+      },
+      {
+        "patient_id": "Lung_Dx-A0005",
+        "ct_case_ids": [
+          "Lung_Dx-A0005__1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548"
+        ],
+        "source_objects": 30,
+        "annotation_objects": 1,
+        "annotation_failures": 0,
+        "acquisition_failure": null
+      },
+      {
+        "patient_id": "Lung_Dx-A0006",
+        "ct_case_ids": [
+          "Lung_Dx-A0006__1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676"
+        ],
+        "source_objects": 55,
+        "annotation_objects": 1,
+        "annotation_failures": 0,
+        "acquisition_failure": null
+      },
+      {
+        "patient_id": "Lung_Dx-B0001",
+        "ct_case_ids": [
+          "Lung_Dx-B0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951"
+        ],
+        "source_objects": 57,
+        "annotation_objects": 1,
+        "annotation_failures": 0,
+        "acquisition_failure": null
+      },
+      {
+        "patient_id": "Lung_Dx-E0001",
+        "ct_case_ids": [
+          "Lung_Dx-E0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046"
+        ],
+        "source_objects": 58,
+        "annotation_objects": 1,
+        "annotation_failures": 0,
+        "acquisition_failure": null
+      },
+      {
+        "patient_id": "Lung_Dx-G0001",
+        "ct_case_ids": [
+          "Lung_Dx-G0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648"
+        ],
+        "source_objects": 24,
+        "annotation_objects": 1,
+        "annotation_failures": 0,
+        "acquisition_failure": null
+      },
+      {
+        "patient_id": "Lung_Dx-G0002",
+        "ct_case_ids": [
+          "Lung_Dx-G0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402"
+        ],
+        "source_objects": 52,
+        "annotation_objects": 1,
+        "annotation_failures": 0,
+        "acquisition_failure": null
+      }
+    ],
+    "source_object_records": 430,
+    "observed_source_objects": 430,
+    "missing_source_objects": 0,
+    "verified_source_objects": 430,
+    "failed_source_objects": 0,
+    "annotation_source_objects": 10,
+    "parsed_annotation_objects": 10,
+    "failed_annotation_objects": 0,
+    "ct_case_records": 10,
+    "acquisition_failure_patients": 0,
+    "pass": true
+  },
+  "count_units": {
+    "cases": "unique patient/study/CT-series keys, including validated SR references to missing CT",
+    "annotation_failures": "one source SR object",
+    "acquisition_failures": "one requested patient; object details nested"
+  },
+  "actionable_findings": true,
+  "acquisition_errors": {},
+  "annotation_failures": [],
+  "config": {
+    "schema_version": 1,
+    "kind": "lung_pet_ct_dx_native_bbox",
+    "raw_root": "data/raw/Lung-PET-CT-Dx",
+    "converted_root": "data/converted/weak_p1_3_1_v2",
+    "output_dir": "data/manifests/weak_p1_3_1",
+    "qa_dir": "data/qa/weak_p1_3_1",
+    "evidence_dir": "docs/evidence/p1_3_1",
+    "sample_patient_ids": [
+      "Lung_Dx-A0001",
+      "Lung_Dx-A0002",
+      "Lung_Dx-A0003",
+      "Lung_Dx-A0004",
+      "Lung_Dx-A0005",
+      "Lung_Dx-A0006",
+      "Lung_Dx-B0001",
+      "Lung_Dx-E0001",
+      "Lung_Dx-G0001",
+      "Lung_Dx-G0002"
+    ],
+    "annotation_format": "dicom_sr_idc_2025",
+    "reserve_bytes": 4294967296,
+    "max_download_bytes": 2147483648,
+    "max_volume_voxels": 80000000,
+    "geometry_tolerance_mm": 0.05,
+    "orientation_atol": 1e-05,
+    "spacing_atol_mm": 0.01,
+    "affine_atol_mm": 0.001,
+    "slab_slices": 16,
+    "min_extent_mm": 160,
+    "max_extent_mm": 600
+  },
+  "config_sha256": "bc2d676fec703d5346fdba2a54d62835e16d73f700dc7e5e2e2b5fc815e1fae9",
+  "implementation": {
+    "version": "weak-sr-native-v2",
+    "sources": {
+      "data/weak.py": "451ad5682ebb07d4837575fa36932b518d7873d152c34a1f62bf1c85df7d87b2",
+      "data/weak_boxes.py": "8c27d1ea9f47cd6a82eb0d54c69dab0c80ae795082543cfe8c1ae81276024a29",
+      "data/weak_config.py": "6657496b62e894c8faf28e7b9b5dfb1fe66e3ff6b17c29703bf0d56cd99a65fa",
+      "data/weak_acquire.py": "fd28aba39f0a852c3b7dd52907c349d0cadad6ce866d18163e21ce99672b3b36",
+      "data/weak_qa.py": "4587f0a24b1a5f2a896fe02d02b44c8e7b9c9422053b9f2eeb950a4ad4b885b5",
+      "data/weak_sources.py": "fe492bfcd32f32d1963b666f90dd48ca53239bec864dba64c87de499ae2da152",
+      "data/dicom_geometry.py": "6a734600a0e144b41677f6752b75625f12b144ba5df66134340052d73bf5d2cf",
+      "data/nsclc.py": "057f8008fe86dc5b4c45c53a45ac3a758642ff394f840e33141c9a442ba44c9b",
+      "data/msd.py": "48bfd74cd3f926ce6efc7429c74bed36744772a4023bdec3d8e8743c0de261c0",
+      "data/msd_acquire.py": "3aa7a9cc486dbc5587fc26467d8eca2b45dc72d58abaa2889722ce69af44a28b",
+      "data/nsclc_idc.py": "d20f25317d3ac2954f07d8352704e52a826fef48752273f4c25e99f50456c305"
+    },
+    "runtime": {
+      "python": "3.13.15",
+      "numpy": "2.5.5",
+      "nibabel": "5.5.0",
+      "pydicom": "3.0.2"
+    },
+    "sha256": "9ab8f20775370cbbddcb86d38002c93d6c260f1fff56f7b36c946bc7735adb35"
+  },
+  "manifest_sha256": "79195790d230febf50a5e6137c0c7981e6fe067b51b1b6445c0e9d95ad36adf7",
+  "quarantine": [],
+  "bbox_count": 77,
+  "annotated_slice_count": 75,
+  "multiple_box_slice_count": 2,
+  "weak_eligible_count": 0,
+  "full_corpus_status": "NOT_VALIDATED",
+  "status": "SAMPLE_CONVERTED_QA_PENDING"
+}

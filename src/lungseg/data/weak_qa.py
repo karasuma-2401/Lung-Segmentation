@@ -63,8 +63,9 @@ def generate(config,identity):
         records.append({'case_id':row['case_id'],'file':destination.name,'png_sha256':file_sha256(destination),
                         'axial_raw_slice_index':k,'axial_box_count':len(selected),'source_image_sha256':row['image_sha256'],
                         'source_bbox_sha256':row['bbox_sha256'],'manual_review':'pending'})
-    if not records:raise ValueError('No converted valid bbox cases available for QA')
     output={'timestamp_utc':utc_now(),'real_data':report['real_data'],'cases':records,'n_cases':len(records),
+            'actionable_findings':bool(not records or report.get('actionable_findings')),
+            'status':'REVIEW_REQUIRED' if records else 'NO_CONVERTED_CASES',
             'manifest_sha256':report['manifest_sha256'],'implementation':identity,'manual_review':'pending; rendering is not anatomical approval'}
     write_json(Path(config.qa_dir)/'qa_index.json',output)
     return output

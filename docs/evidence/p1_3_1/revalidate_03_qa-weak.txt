@@ -1,0 +1,137 @@
+timestamp_utc: 2026-11-24T08:32:55.056218+00:00
+command_argv: ["C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe", "-m", "lungseg.cli", "qa-weak", "--config", "configs\\weak_p1_3_1.yaml"]
+exit_code: 2
+{
+  "timestamp_utc": "2026-11-24T08:33:10.167751+00:00",
+  "real_data": true,
+  "cases": [
+    {
+      "case_id": "Lung_Dx-A0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805",
+      "file": "Lung_Dx-A0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805_qa.png",
+      "png_sha256": "15ce9cb8bf0f788d11597f3669f797a4a9f06ae5049126dc3bca16569130c207",
+      "axial_raw_slice_index": 45,
+      "axial_box_count": 1,
+      "source_image_sha256": "08f2c17af594550b8edf6c9771e2d009315c09aa97aaa92acf6e058621bdfeac",
+      "source_bbox_sha256": "ca2c1b80b9085c2ee10274a11fe259215202774a3ad61cfd87764edab95b9f04",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "Lung_Dx-A0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983",
+      "file": "Lung_Dx-A0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983_qa.png",
+      "png_sha256": "c7ff77c713e933afd2f9bf59c13d7583ea5abe1aaeb9de5f904b2397493b6040",
+      "axial_raw_slice_index": 15,
+      "axial_box_count": 1,
+      "source_image_sha256": "0f93fd11e8676f2d02f76c30f583df85c9b78b7d2890ba6e17feb61be720ba7d",
+      "source_bbox_sha256": "3ef6cada8556420c51e32599aa15c3ff3900f1d64f750e2954c9292069316bed",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728",
+      "file": "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728_qa.png",
+      "png_sha256": "a48b425ba16437b7b62e887a69b11d9b58a188a509d62d79996e6c013730e6e9",
+      "axial_raw_slice_index": 14,
+      "axial_box_count": 2,
+      "source_image_sha256": "8e7bfef8924e4478945ac53b1a2b944d2f2e8cf44fa37b0ba0c30e2f2db2fb08",
+      "source_bbox_sha256": "fb9e8135f7125895753ff701e7d9fcd44de8632730e7839bbc2adccc30bcaf46",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "Lung_Dx-A0004__1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719",
+      "file": "Lung_Dx-A0004__1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719_qa.png",
+      "png_sha256": "2295899ad23c25a746ac66181c226f73112ba73c24d53b7a886801b401a4e1be",
+      "axial_raw_slice_index": 19,
+      "axial_box_count": 1,
+      "source_image_sha256": "c478efb53a7cb41e80296c2a01b13f3711c4112b0fbee00d0115143b9285242b",
+      "source_bbox_sha256": "53d0c91d9a15e1013f407559d0ef65c6574dc05b71be9553dae3e9ee409e87ed",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "Lung_Dx-A0005__1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548",
+      "file": "Lung_Dx-A0005__1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548_qa.png",
+      "png_sha256": "e20b78e4763fe2874ca5ec079676edfa43b02bddd4ca24cfcb3074dec0f5eefc",
+      "axial_raw_slice_index": 18,
+      "axial_box_count": 1,
+      "source_image_sha256": "71393da612640e36f748e883b2f602446c96b87910ccf72bea5d79414f0008fc",
+      "source_bbox_sha256": "a2a1716362048fce53e8e2267a23cc83a887c62b6b1255a255afeea67fe71e94",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "Lung_Dx-A0006__1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676",
+      "file": "Lung_Dx-A0006__1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676_qa.png",
+      "png_sha256": "7ce14ac59e26c264ec4ac0479185ce4a20a3a64afce5bdc33dc381db8ce1240c",
+      "axial_raw_slice_index": 30,
+      "axial_box_count": 1,
+      "source_image_sha256": "f2d083d91f4db56a5639c5454a7e99e70f6a0829215b3c41de9f7d662703c228",
+      "source_bbox_sha256": "065eaa9e9076554fbe232036acd494561e6d3eb77ee8f42e8524f116a6e92fa5",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "Lung_Dx-B0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951",
+      "file": "Lung_Dx-B0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951_qa.png",
+      "png_sha256": "a6fcec2bfccd590f204f208f553512ca53cae80431a0517bc34bd4879eb4c633",
+      "axial_raw_slice_index": 17,
+      "axial_box_count": 1,
+      "source_image_sha256": "1895f9ce0ef0fc0cd76c227c40c7cb3693ee23c5e2be211ba02449bf5abd45ed",
+      "source_bbox_sha256": "2d67ea855c1c0ac79e6583fbae101b7beacaf1a502b2c2d241153d0e1012a4c1",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "Lung_Dx-E0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046",
+      "file": "Lung_Dx-E0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046_qa.png",
+      "png_sha256": "021e997f74d70345584b38a042ef6cf289a0d4661daf8677da31fbbaa219a4c2",
+      "axial_raw_slice_index": 29,
+      "axial_box_count": 1,
+      "source_image_sha256": "deed40d41afc1c68d2fd5f7fc740c21ee14e07cfa32cc451ca40e30e6380d871",
+      "source_bbox_sha256": "ec6706bdcc8cda4d53f63eb807aa93d63730294fe4284f78ded4b8716fe165f6",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "Lung_Dx-G0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648",
+      "file": "Lung_Dx-G0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648_qa.png",
+      "png_sha256": "1d2f82eb21382c195c5aae8c14c83d33aec43e4ec2c9be1603ab0b7520463a52",
+      "axial_raw_slice_index": 4,
+      "axial_box_count": 1,
+      "source_image_sha256": "e4f45d5454794ea122af22c13b8585d85cf5feb3738932eaa436cd3f863a3e3a",
+      "source_bbox_sha256": "0ce5a4bef91ac7773dcecda0b6329a89e9add2c0900633402ad19f97e2db2972",
+      "manual_review": "pending"
+    },
+    {
+      "case_id": "Lung_Dx-G0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402",
+      "file": "Lung_Dx-G0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402_qa.png",
+      "png_sha256": "a0b8c3c6eba4abbc3500f635a2e6ed3b76a88815ae2cf540fa1bf4a882895456",
+      "axial_raw_slice_index": 24,
+      "axial_box_count": 1,
+      "source_image_sha256": "ba5cf705273a0077ada7a9283d15e9040a14f4bfee0c231bb9ac47bc4357b678",
+      "source_bbox_sha256": "5f74262de902f1071a4e7aaff3314924d5d4b91aca75bcfc84b07dc479c400d9",
+      "manual_review": "pending"
+    }
+  ],
+  "n_cases": 10,
+  "actionable_findings": true,
+  "status": "REVIEW_REQUIRED",
+  "manifest_sha256": "79195790d230febf50a5e6137c0c7981e6fe067b51b1b6445c0e9d95ad36adf7",
+  "implementation": {
+    "version": "weak-sr-native-v2",
+    "sources": {
+      "data/weak.py": "451ad5682ebb07d4837575fa36932b518d7873d152c34a1f62bf1c85df7d87b2",
+      "data/weak_boxes.py": "8c27d1ea9f47cd6a82eb0d54c69dab0c80ae795082543cfe8c1ae81276024a29",
+      "data/weak_config.py": "6657496b62e894c8faf28e7b9b5dfb1fe66e3ff6b17c29703bf0d56cd99a65fa",
+      "data/weak_acquire.py": "fd28aba39f0a852c3b7dd52907c349d0cadad6ce866d18163e21ce99672b3b36",
+      "data/weak_qa.py": "4587f0a24b1a5f2a896fe02d02b44c8e7b9c9422053b9f2eeb950a4ad4b885b5",
+      "data/weak_sources.py": "fe492bfcd32f32d1963b666f90dd48ca53239bec864dba64c87de499ae2da152",
+      "data/dicom_geometry.py": "6a734600a0e144b41677f6752b75625f12b144ba5df66134340052d73bf5d2cf",
+      "data/nsclc.py": "057f8008fe86dc5b4c45c53a45ac3a758642ff394f840e33141c9a442ba44c9b",
+      "data/msd.py": "48bfd74cd3f926ce6efc7429c74bed36744772a4023bdec3d8e8743c0de261c0",
+      "data/msd_acquire.py": "3aa7a9cc486dbc5587fc26467d8eca2b45dc72d58abaa2889722ce69af44a28b",
+      "data/nsclc_idc.py": "d20f25317d3ac2954f07d8352704e52a826fef48752273f4c25e99f50456c305"
+    },
+    "runtime": {
+      "python": "3.13.15",
+      "numpy": "2.5.5",
+      "nibabel": "5.5.0",
+      "pydicom": "3.0.2"
+    },
+    "sha256": "9ab8f20775370cbbddcb86d38002c93d6c260f1fff56f7b36c946bc7735adb35"
+  },
+  "manual_review": "pending; rendering is not anatomical approval"
+}

@@ -62,7 +62,8 @@ def main(argv: list[str] | None = None) -> int:
                 from lungseg.data.weak import survey,inventory,generate_qa
                 result={'survey-weak':survey,'audit-weak':inventory,'qa-weak':generate_qa}[args.command](config)
             print(json.dumps(result,indent=2))
-            return 2 if result.get('quarantined_cases') else 0
+            from lungseg.data.weak_sources import command_exit_code
+            return command_exit_code(args.command,result)
         if args.command.endswith("-nsclc"):
             from lungseg.data.nsclc_config import load_nsclc_config
             config = load_nsclc_config(args.config, raw_root=args.raw_root, converted_root=args.converted_root)
@@ -115,6 +116,9 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps({"run_directory": str(record.directory), **result}, indent=2))
         return 0
     except Exception as exc:
+        if args.command.endswith('-weak') and 'config' in locals():
+            write_json(Path(config.evidence_dir)/(args.command+'_fatal.json'),
+                       {'command':args.command,'exit_code':1,'error_type':type(exc).__name__,'error':str(exc)})
         if record is not None:
             record.finish("failed", error={"type": type(exc).__name__, "message": str(exc)})
         print(f"{type(exc).__name__}: {exc}", file=sys.stderr)

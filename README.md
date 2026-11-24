@@ -92,14 +92,13 @@ Xem [acquisition guide](docs/nsclc_acquisition.md), [data card](docs/nsclc_data_
 
 ```powershell
 # Metadata/capacity only:
-.venv\Scripts\python.exe -m lungseg.cli acquire-weak --config configs/weak.yaml
+.venv\Scripts\python.exe -m lungseg.cli acquire-weak --config configs/weak_p1_3_1.yaml
 # Sau bounded acquisition theo guide, chạy offline:
-.venv\Scripts\python.exe -m lungseg.cli survey-weak --config configs/weak.yaml
-.venv\Scripts\python.exe scripts/verify_weak_sample.py --config configs/weak.yaml
-.\scripts\verify.ps1 -EvidenceDirectory docs/evidence/p1_3/verification
+.venv\Scripts\python.exe scripts/revalidate_weak_sample.py
+.\scripts\verify.ps1 -EvidenceDirectory docs/evidence/p1_3_1/verification
 ```
 
-Final output `data/converted/weak_v1_1`, manifest `data/manifests/weak/manifest_weak.csv`, QA `data/qa/weak`. Raw/derived images/annotations/PNG gitignored. Same source/config/implementation mới được reuse cache; version mismatch cần explicit output mới. `weak_v1` là interrupted initial output, không merge/reuse ngầm. CLI không expose full-download flag. Full-storage kế hoạch cả3nguồn và blockers xem QA report; dừng sau P1.3 để review.
+P1.3.1 dùng `configs/weak_p1_3_1.yaml`, output `data/converted/weak_p1_3_1_v2`, manifest `data/manifests/weak_p1_3_1`, QA `data/qa/weak_p1_3_1`. [Hardening report](docs/weak_hardening_report.md) ghi reconciliation, exit contract và before/after. `configs/weak.yaml`, `weak_v1_1`, `data/manifests/weak`, `data/qa/weak` là baseline P1.3: giữ nguyên, không chạy audit mới vào đó. `weak_v1` là interrupted output giữ riêng. Raw/derived images/annotations/PNG gitignored. Same source/config/implementation mới reuse cache; mismatch cần versioned output mới. CLI exit0 = scope command thành công; exit2 = partial/actionable review; exit1 = fatal. Survey parse thành công chưa là training clearance. Offline revalidation khóa network và kiểm preservation. Giữ3datasets, dừng sau P1.3.1; không full download/training.
 
 ## Tái tạo audit tham chiếu
 

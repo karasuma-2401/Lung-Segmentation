@@ -1,4 +1,21 @@
-# Lung-PET-CT-Dx acquisition — P1.3/T06
+# Lung-PET-CT-Dx acquisition — P1.3/T06 và P1.3.1
+
+**Cập nhật P1.3.1:** dùng `configs/weak_p1_3_1.yaml` và output namespace mới. Các command `configs/weak.yaml` bên dưới là lịch sử P1.3; không chạy audit mới vào baseline. Tái kiểm offline bằng `.venv\Scripts\python.exe scripts/revalidate_weak_sample.py`; kết quả trong [hardening report](weak_hardening_report.md).
+
+Hard byte cap được áp trước từng SR/CT payload: actual S3 object listing hoặc verified cache bytes phải vừa remaining selected-byte budget. Catalog estimate chỉ để dự trù; không nới cap khi estimate thấp. Tổng selected raw = cache đã verify + payload mới được reserve. Report tách `existing_verified_cache_bytes`, `network_payload_bytes_this_run`, `selected_raw_bytes`, remaining và từng admission decision. Network counter tính cả bytes nhận trong transfer lỗi, không gồm HTTP/TLS/listing overhead. Read chunks có giới hạn bằng object bytes đã reserve; kiểm Content-Length nếu có, MD5/SHA256/header trước publish. Reserve thất bại không tạo/publish stage; transfer lỗi giữ stage, không tự xóa raw. Counter theo run, không cộng payload của failed stages phiên trước; disk free check vẫn tính chúng đang chiếm chỗ.
+
+Exit contract hiện tại (tests trong `test_weak_hardening.py`):
+
+| Command | Exit0 | Exit2 | Exit1 |
+|---|---|---|---|
+|acquire-weak|Plan chạy xong và sample capacity pass, hoặc toàn bộ requested acquisition scope pass; annotations-only là scope SR|Plan thiếu sample capacity hoặc acquisition partial/failure có report|Fatal config/catalog/preflight; không thể chạy operation|
+|survey-weak|Tất cả acquired SR sources parse được, không acquisition errors; coverage unverified vẫn được báo rõ|Annotation/source/acquisition errors có partial report|Không đọc được root hoặc fatal operation|
+|audit-weak|Inventory/reconciliation hoàn thành, không actionable warnings/errors|Quarantine/exclusion/source failures hoặc coverage/acquisition/XML findings cần review|Fatal operation, không tạo được inventory đáng tin cậy|
+|qa-weak|Rendering scope hoàn thành, upstream không actionable findings|QA có review findings hoặc không có converted cases; vẫn ghi index|Stale/corrupt inputs hoặc fatal rendering/operation|
+
+Exit0 của survey/acquisition không là clearance dữ liệu. Audit/QA sample hiện exit2 vì coverage, XML và acquisition semantics chưa verified. Các exceptions sau khi config hợp lệ ghi `<command>_fatal.json` trong evidence_dir; config không đọc được chỉ có stderr/exit1 vì chưa có output root đáng tin cậy. Partial acquisition giữ `acquisition.json`. Caller phải đọc report, không coi exit2 là fatal hoặc success sạch.
+
+Bounded XML investigation: `.venv\Scripts\python.exe scripts/investigate_weak_xml.py`; tối đa3official pages (2MiB/page,20s timeout), một archive link xác định từ trang (24MiB cap; không đoán ZIP URL). Archive chỉ lưu ignored `data/cache/weak_xml_investigation`, không đụng raw/baseline. Chưa tải được thì giữ BLOCKED_SOURCE và XML/SR equivalence OPEN, không đổi parser/policy.
 
 Nguồn: [TCIA collection](https://www.cancerimagingarchive.net/collection/lung-pet-ct-dx/), [collection wiki](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=70224216), Li et al.(2020), [DOI10.7937/TCIA.2020.NNC2-0461](https://doi.org/10.7937/TCIA.2020.NNC2-0461), v5 ngày22/12/2020. Images và XML được công bố với [CC BY4.0](https://creativecommons.org/licenses/by/4.0/): attribution, link license, nêu conversion/display modifications. Cite TCIA [Clark et al.2013](https://doi.org/10.1007/s10278-013-9622-7). Không tải clinical XLSX và không đưa medical images/annotations vào Git.
 

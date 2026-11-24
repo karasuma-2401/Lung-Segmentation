@@ -10,6 +10,7 @@ from pathlib import Path
 import re
 from urllib.request import urlopen
 from uuid import uuid4
+from threading import Lock
 import pydicom
 
 from lungseg.data.msd_acquire import file_sha256, require_space
@@ -65,7 +66,31 @@ def capacity_plan(config,rows):
     return report
 
 
-def download_series(record,raw_root):
+class DownloadBudget:
+    """Cap selected raw bytes (verified cache + new payload), not catalog estimates."""
+    def __init__(self,limit):
+        if type(limit) is not int or limit<0:raise ValueError('Budget must be nonnegative integer bytes')
+        self.limit=limit;self.selected_bytes=0;self.cache_bytes=0;self.network_bytes=0;self.decisions=[];self.lock=Lock()
+
+    def claim(self,uid,size,*,cached):
+        if type(size) is not int or size<=0:raise ValueError('Series listing/cache bytes must be positive integers')
+        remaining=self.limit-self.selected_bytes
+        self.decisions.append({'series_uid':uid,'actual_listing_or_verified_cache_bytes':size,
+                               'remaining_before':remaining,'cached':cached,'accepted':size<=remaining})
+        if size>remaining:raise OSError('Actual series bytes exceed remaining explicit sample budget; no payload requested or published')
+        self.selected_bytes+=size
+        if cached:self.cache_bytes+=size
+
+    def received(self,size):
+        with self.lock:self.network_bytes+=size
+
+    def report(self):
+        return {'sample_byte_cap':self.limit,'selected_raw_bytes':self.selected_bytes,
+                'existing_verified_cache_bytes':self.cache_bytes,'network_payload_bytes_this_run':self.network_bytes,
+                'remaining_selected_byte_budget':self.limit-self.selected_bytes,'budget_decisions':self.decisions}
+
+
+def download_series(record,raw_root,*,budget):
     uid=record['SeriesInstanceUID'];patient=record['PatientID']
     if not re.fullmatch(r'[0-9]+(?:\.[0-9]+)+',uid) or not re.fullmatch(r'Lung_Dx-[ABEG]\d{4}',patient):raise ValueError('Unsafe public identifiers')
     destination=raw_root/'dicom'/patient/uid
@@ -74,16 +99,35 @@ def download_series(record,raw_root):
         info=json.loads((destination/'source.json').read_text())
         if info.get('catalog_identity')!=expected or info.get('source_doi','').lower()!=record['source_DOI'].lower() or info.get('license_url')!=LICENSE_URL or len(info['objects'])!=record['instanceCount']:
             raise ValueError('Existing raw provenance disagrees; preserve it')
+        paths=[]
         for obj in info['objects']:
             if not re.fullmatch(r'[0-9]+(?:\.[0-9]+)+',obj['sop_uid']) or file_sha256(destination/(obj['sop_uid']+'.dcm'))!=obj['sha256']:raise ValueError('Raw checksum mismatch; no overwrite')
+            path=destination/(obj['sop_uid']+'.dcm');paths.append(path)
+            if path.stat().st_size!=obj['bytes']:raise ValueError('Raw object byte count mismatch')
+            ds=pydicom.dcmread(path,stop_before_pixels=True)
+            if any(str(getattr(ds,k,''))!=v for k,v in expected.items()) or str(ds.SOPInstanceUID)!=obj['sop_uid']:raise ValueError('Cached header identity mismatch')
+        total=sum(p.stat().st_size for p in paths)
+        if len(set(paths))!=len(paths) or set(destination.glob('*.dcm'))!=set(paths) or total!=info['bytes'] or info.get('transport')!='official_IDC_S3':raise ValueError('Raw cache incomplete/unlisted/byte mismatch')
+        budget.claim(uid,total,cached=True)
         return info
     base,objects=list_objects(record['series_aws_url'])
+    if any(type(o['bytes']) is not int or o['bytes']<=0 for o in objects):raise ValueError('Invalid object listing size')
     total=sum(o['bytes'] for o in objects)
     if len(objects)!=record['instanceCount'] or total>record['series_size_MB']*1e6*1.05+2*1024**2:raise ValueError('IDC size/count mismatch')
+    budget.claim(uid,total,cached=False)
     require_space(raw_root,total+4*1024**3)
     stage=raw_root/'staging'/(uid+'.partial-'+uuid4().hex[:8]);stage.mkdir(parents=True)
     def fetch(obj):
-        with urlopen(base+obj['key'],timeout=60) as response:raw=response.read(obj['bytes']+1)
+        with urlopen(base+obj['key'],timeout=60) as response:
+            length=response.headers.get('Content-Length')
+            if length is not None and int(length)!=obj['bytes']:raise ValueError('Payload Content-Length differs from listing')
+            # Bound every read by the reserved listing size, including failed transfers.
+            chunks=[];remaining=obj['bytes']
+            while remaining:
+                chunk=response.read(min(1024**2,remaining))
+                if not chunk:break
+                budget.received(len(chunk));chunks.append(chunk);remaining-=len(chunk)
+            raw=b''.join(chunks)
         if len(raw)!=obj['bytes'] or hashlib.md5(raw).hexdigest()!=obj['md5']:raise ValueError('IDC byte count/MD5 mismatch')
         ds=pydicom.dcmread(BytesIO(raw),stop_before_pixels=True)
         if any(str(getattr(ds,k,''))!=v for k,v in expected.items()):raise ValueError('Header/catalog identity mismatch')
@@ -110,12 +154,12 @@ def acquire(config,catalog_path,*,download=False,annotations_only=False):
         if not candidates:raise ValueError('Requested sample patient has no expert SR catalog entry')
         selected.append(sorted(candidates,key=lambda r:(r['StudyInstanceUID'],r['SeriesInstanceUID']))[0])
     results=[];mapping=[];target=Path(config.evidence_dir)/'acquisition.json'
-    existing={p.parent.name for p in (Path(config.raw_root)/'dicom').rglob('source.json')}
+    budget=DownloadBudget(config.max_download_bytes)
     plan.update(status='running',downloaded=results,selected_cases=mapping)
     write_json(target,plan)
     try:
         for sr_record in selected:
-            result=download_series(sr_record,Path(config.raw_root));results.append(result)
+            result=download_series(sr_record,Path(config.raw_root),budget=budget);results.append(result)
             source=Path(config.raw_root)/'dicom'/sr_record['PatientID']/sr_record['SeriesInstanceUID']
             files=list(source.glob('*.dcm'))
             if len(files)!=1:raise ValueError('Expected one SR instance per surveyed SR series')
@@ -126,16 +170,15 @@ def acquire(config,catalog_path,*,download=False,annotations_only=False):
                             'ct_series_uid':ref['series_uid'],'study_uid':ref['study_uid']})
         ct_records=[next(r for r in rows if r['SeriesInstanceUID']==m['ct_series_uid']) for m in mapping]
         planned=round(sum(r['series_size_MB']*1e6 for r in selected+ct_records))
-        if planned>config.max_download_bytes:raise OSError('Selected CT+SR exceeds explicit sample byte cap; no CT downloaded')
         if not annotations_only:
             for ct_record in ct_records:
-                results.append(download_series(ct_record,Path(config.raw_root)))
-                if sum(r['bytes'] for r in results)>config.max_download_bytes:raise OSError('Actual byte cap exceeded')
+                results.append(download_series(ct_record,Path(config.raw_root),budget=budget))
+                plan.update(budget.report())
                 write_json(target,plan)
         plan.update(status='ANNOTATION_SAMPLE_ACQUIRED' if annotations_only else 'CT_SR_SAMPLE_ACQUIRED',planned_sample_raw_bytes=planned,
                     actual_downloaded_bytes=sum(r['bytes'] for r in results),
-                    network_payload_bytes_this_run=sum(r['bytes'] for r in results if r['catalog_identity']['SeriesInstanceUID'] not in existing))
+                    **budget.report())
     except Exception as exc:
-        plan.update(status='PARTIAL_ACQUISITION_FAILURE',error=f'{type(exc).__name__}: {exc}');write_json(target,plan);raise
+        plan.update(status='PARTIAL_ACQUISITION_FAILURE',error=f'{type(exc).__name__}: {exc}',**budget.report())
     write_json(target,plan)
     return plan

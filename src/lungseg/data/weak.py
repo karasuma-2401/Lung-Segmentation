@@ -19,6 +19,7 @@ from lungseg.data.msd_acquire import file_sha256,require_space
 from lungseg.data.nsclc import save_nifti
 from lungseg.data.weak_acquire import LICENSE_URL,IMAGE_DOI,ANNOTATION_DOI
 from lungseg.data.weak_boxes import parse_sr,rasterize_boxes,evidence_reference
+from lungseg.data.weak_sources import scan_sources,annotation_records,acquisition_semantics,RECORD_FIELDS
 from lungseg.runs import utc_now,write_json
 
 FIELDS=('schema_version','dataset','case_id','patient_id','patient_id_source','study_uid','series_uid','sr_sop_uid','sr_series_uid',
@@ -29,14 +30,14 @@ FIELDS=('schema_version','dataset','case_id','patient_id','patient_id_source','s
  'anatomical_si_extent_mm','physical_extent_convention','image_path','bbox_path','coverage_path','boxes_path',
  'image_sha256','bbox_sha256','coverage_sha256','boxes_sha256','provenance_path','provenance_sha256',
  'label_values','bbox_foreground_voxels','bbox_envelope_volume_mm3','geometry_aligned','conversion_status','weak_eligible',
- 'weak_eligibility_status','qc_errors','qc_warnings','config_sha256','implementation_fingerprint_sha256')
+ 'weak_eligibility_status','qc_errors','qc_warnings','config_sha256','implementation_fingerprint_sha256','record_type','acquisition_semantics')
 
 
 def implementation():
     root=Path(__file__).resolve().parents[1]
     names=('data/weak.py','data/weak_boxes.py','data/weak_config.py','data/weak_acquire.py','data/weak_qa.py',
-           'data/dicom_geometry.py','data/nsclc.py','data/msd.py','data/msd_acquire.py','data/nsclc_idc.py')
-    value={'version':'weak-sr-native-v1','sources':{n:hashlib.sha256((root/n).read_text(encoding='utf-8').encode()).hexdigest() for n in names},
+           'data/weak_sources.py','data/dicom_geometry.py','data/nsclc.py','data/msd.py','data/msd_acquire.py','data/nsclc_idc.py')
+    value={'version':'weak-sr-native-v2','sources':{n:hashlib.sha256((root/n).read_text(encoding='utf-8').encode()).hexdigest() for n in names},
            'runtime':{'python':platform.python_version(),**{n:version(n) for n in ('numpy','nibabel','pydicom')}}}
     return {**value,'sha256':hashlib.sha256(json.dumps(value,sort_keys=True,separators=(',',':')).encode()).hexdigest()}
 
@@ -65,57 +66,20 @@ def extent_eligible(extent_mm,config):
     return bool(np.isfinite(extent_mm) and config.min_extent_mm<=extent_mm<=config.max_extent_mm)
 
 
-def scan(config,*,synthetic=False):
-    root=Path(config.raw_root)
-    if not root.is_dir():raise FileNotFoundError('Acquire bounded weak sample first')
-    items=[];errors={};seen={}
-    for patient in sorted(config.sample_patient_ids):
-        try:
-            folders=sorted((root/'dicom'/patient).iterdir())
-            if not folders:raise DataIssue('missing_patient_acquisition')
-            for folder in folders:
-                marker=folder/'source.json';source=json.loads(marker.read_text())
-                identity=source['catalog_identity'];modality=identity['Modality']
-                if identity['PatientID']!=patient or source.get('synthetic',False)!=synthetic or source.get('license_url')!=LICENSE_URL:
-                    raise DataIssue('unverified_origin_or_synthetic_fixture')
-                if not synthetic and (source.get('transport')!='official_IDC_S3' or source.get('source_doi','').lower()!=(ANNOTATION_DOI if modality=='SR' else IMAGE_DOI)):
-                    raise DataIssue('unverified_source_doi_transport')
-                expected=[]
-                for obj in source['objects']:
-                    sop=obj['sop_uid']
-                    import re
-                    if not re.fullmatch(r'[0-9]+(?:\.[0-9]+)+',sop):raise DataIssue('unsafe_sop_uid')
-                    path=folder/(sop+'.dcm');expected.append(path)
-                    sha=file_sha256(path)
-                    if sha!=obj['sha256']:raise DataIssue('raw_checksum_mismatch')
-                    ds=pydicom.dcmread(path,stop_before_pixels=True)
-                    if any(str(getattr(ds,k,''))!=v for k,v in identity.items()) or str(ds.SOPInstanceUID)!=sop:raise DataIssue('raw_header_identity_mismatch')
-                    if sop in seen:
-                        errors[seen[sop]]='duplicate_sop_instance_uid'
-                        raise DataIssue('duplicate_sop_instance_uid')
-                    seen[sop]=patient
-                    items.append({'path':path,'header':ds,'sha256':sha,'marker_sha256':file_sha256(marker)})
-                if not expected or set(folder.glob('*.dcm'))!=set(expected):raise DataIssue('missing_or_unlisted_raw_files')
-        except Exception as exc:
-            errors[patient]=str(exc) if isinstance(exc,DataIssue) else f'acquisition_read_error:{type(exc).__name__}'
-    return items,errors
-
-
 def survey(config,*,synthetic=False):
-    items,errors=scan(config,synthetic=synthetic);cases=[]
-    for item in items:
-        ds=item['header']
-        if ds.Modality!='SR':continue
-        try:
-            parsed=parse_sr(ds);counts=Counter(b['sop_uid'] for b in parsed['boxes'])
-            cases.append({k:parsed[k] for k in ('patient_id','sr_study_uid','sr_series_uid','sr_sop_uid','ct_reference','duplicate_box_geometry_count')}
-                         | {'box_count':len(parsed['boxes']),'annotated_slices':len(counts),'multiple_box_slices':sum(n>1 for n in counts.values()),
-                            'finding_codes':sorted({tuple(b['finding_code']) for b in parsed['boxes']}),
-                            'coordinate_convention':'DICOM SCOORD zero-based continuous pixel edges, x=column/y=row; center=i+.5',
-                            'missing_is_negative':False,'original_XML_equivalence_verified_locally':False})
-        except DataIssue as exc:errors[str(ds.PatientID)]=str(exc)
+    items,errors=scan_sources(config,synthetic=synthetic);cases=[]
+    records,parsed_sources=annotation_records(items,Path(config.raw_root))
+    for parsed in parsed_sources.values():
+        counts=Counter(b['sop_uid'] for b in parsed['boxes'])
+        cases.append({k:parsed[k] for k in ('patient_id','sr_study_uid','sr_series_uid','sr_sop_uid','ct_reference','duplicate_box_geometry_count')}
+                     | {'box_count':len(parsed['boxes']),'annotated_slices':len(counts),'multiple_box_slices':sum(n>1 for n in counts.values()),
+                        'finding_codes':sorted({tuple(b['finding_code']) for b in parsed['boxes']}),
+                        'coordinate_convention':'DICOM SCOORD zero-based continuous pixel edges, x=column/y=row; center=i+.5',
+                        'missing_is_negative':False,'original_XML_equivalence_verified_locally':False})
+    failures=[r for r in records if r['status']=='failed']
     report={'timestamp_utc':utc_now(),'dataset':'Lung-PET-CT-Dx','real_data':False if synthetic else True if cases else None,
             'format':'expert XML harmonized to DICOM SR by IDC, DOI10.5281/zenodo.16989819','cases':cases,'errors':errors,
+            'annotation_records':records,'annotation_failure_count':len(failures),
             'negative_coverage':'not established; COMPLETE SR is not exhaustive slice coverage','config_sha256':config.sha256}
     write_json(Path(config.output_dir)/'annotation_survey.json',report)
     return report
@@ -126,7 +90,7 @@ def validate_case(config,patient,study_uid,ct_uid,sr_items,ct_items,*,synthetic=
     sources=sorted([{'path':i['path'].relative_to(root).as_posix(),'sha256':i['sha256'],'marker_sha256':i['marker_sha256']} for i in sr_items+ct_items],key=lambda r:r['path'])
     source_sha=hashlib.sha256(json.dumps(sources,sort_keys=True,separators=(',',':')).encode()).hexdigest()
     row={k:None for k in FIELDS}
-    row.update(schema_version=1,dataset='Lung-PET-CT-Dx',case_id=destination.name,patient_id=patient,
+    row.update(schema_version=2,record_type='ct_case',dataset='Lung-PET-CT-Dx',case_id=destination.name,patient_id=patient,
       patient_id_source='synthetic_fixture' if synthetic else 'IDC_public_PatientID_verified_against_DICOM',study_uid=study_uid,series_uid=ct_uid,
       source_files=sources,source_sha256=source_sha,annotation_kind='weak_expert_bbox_SR_not_segmentation_GT',ground_truth_available=False,
       annotation_coverage_status='unknown',conversion_status='quarantined',ct_eligible=False,paper_filter_eligible=False,weak_eligible=False,
@@ -137,6 +101,9 @@ def validate_case(config,patient,study_uid,ct_uid,sr_items,ct_items,*,synthetic=
         if not ct_items:raise DataIssue('referenced_ct_series_unavailable')
         raw_type=getattr(ct_items[0]['header'],'ImageType',[])
         row.update(modality=str(ct_items[0]['header'].Modality),image_type=raw_type.split('\\') if isinstance(raw_type,str) else list(raw_type))
+        semantics=acquisition_semantics([i['header'] for i in ct_items]);row['acquisition_semantics']=semantics
+        row['qc_warnings']+=semantics['findings']
+        if semantics['reject_mixed_temporal']:raise DataIssue('mixed_or_multiple_temporal_positions')
         for i in ct_items:
             eligible,reason=ct_type_eligible(i['header'])
             if not eligible:
@@ -163,7 +130,7 @@ def validate_case(config,patient,study_uid,ct_uid,sr_items,ct_items,*,synthetic=
                    duplicate_box_geometry_count=parsed['duplicate_box_geometry_count'],finding_codes=sorted({tuple(b['finding_code']) for b in records}),
                    coordinate_convention='dicom_scoord_pixel_edges; voxel-center inclusion; integer edges give zero-based half-open indices',
                    annotation_coverage_status='partial_positive_only_unknown_elsewhere' if statuses['missing_unknown'] else 'positive_boxes_on_all_slices_exhaustiveness_unverified')
-        row['qc_warnings']=['coverage_exhaustiveness_and_negative_slices_unverified','bbox_is_not_segmentation_GT','original_XML_archive_not_locally_verified']
+        row['qc_warnings']+=['coverage_exhaustiveness_and_negative_slices_unverified','bbox_is_not_segmentation_GT','original_XML_archive_not_locally_verified']
         if parsed['duplicate_box_geometry_count']:row['qc_warnings'].append('duplicate_box_geometry_retained_for_review')
         if destination.exists():
             prov=json.loads((destination/'provenance.json').read_text())
@@ -182,6 +149,7 @@ def validate_case(config,patient,study_uid,ct_uid,sr_items,ct_items,*,synthetic=
             prov={'dataset':'Lung-PET-CT-Dx','real_data':not synthetic,'source_files':sources,'source_sha256':source_sha,
                   'config':asdict(config),'config_sha256':config.sha256,'implementation':ident,'native_geometry':geometry.to_dict(),
                   'annotation_reference':parsed['ct_reference'],'intensity_transforms':transforms,'source_annotation_changed':False,
+                  'acquisition_semantics':semantics,
                   'annotation_representation':'expert XML harmonized by IDC to SR; not AI SEG','timestamp_utc':utc_now(),
                   'output_sha256':{n:file_sha256(stage/n) for n in ('ct.nii.gz','bbox.nii.gz','boxes.json','coverage.json')}}
             write_json(stage/'provenance.json',prov);os.rename(stage,destination)
@@ -203,38 +171,80 @@ def validate_case(config,patient,study_uid,ct_uid,sr_items,ct_items,*,synthetic=
 
 
 def inventory(config,*,synthetic=False):
-    items,errors=scan(config,synthetic=synthetic);groups=defaultdict(list);sr_groups=defaultdict(list);failures=[]
+    items,errors=scan_sources(config,synthetic=synthetic);groups=defaultdict(list);sr_groups=defaultdict(list)
+    records,parsed=annotation_records(items,Path(config.raw_root))
+    failures=[r for r in records if r['status']=='failed']
     for i in items:
         ds=i['header']
+        if ds is None or i['source_error']:continue
         if ds.Modality!='SR':groups[(str(ds.PatientID),str(ds.StudyInstanceUID),str(ds.SeriesInstanceUID))].append(i)
         else:
             try:
                 ref=evidence_reference(ds)
                 sr_groups[(str(ds.PatientID),ref['study_uid'],ref['series_uid'])].append(i)
-            except DataIssue as exc:failures.append({'patient_id':str(ds.PatientID),'reason':str(exc),'source_path':i['path'].relative_to(Path(config.raw_root)).as_posix(),'sha256':i['sha256']})
+            except Exception:
+                source_path=i['path'].relative_to(Path(config.raw_root)).as_posix()
+                if not any(r['source_path']==source_path for r in failures):
+                    raise RuntimeError('Evidence failure missing from annotation ledger')
     rows=[]
     for key in sorted(groups.keys() | sr_groups.keys()):
-        if key[0] in errors:continue
-        rows.append(validate_case(config,*key,sr_groups[key],groups[key],synthetic=synthetic))
+        if key[0] not in errors:
+            rows.append(validate_case(config,*key,sr_groups[key],groups[key],synthetic=synthetic))
+        else:
+            row={k:None for k in FIELDS}
+            row.update(record_type='ct_case',schema_version=2,dataset='Lung-PET-CT-Dx',case_id=key[0]+'__'+key[2],
+                       patient_id=key[0],study_uid=key[1],series_uid=key[2],conversion_status='quarantined',
+                       weak_eligible=False,ground_truth_available=False,qc_errors=[errors[key[0]]],qc_warnings=[])
+            rows.append(row)
         print('weak',key[0],rows[-1]['conversion_status'],flush=True)
-    for patient,reason in sorted(errors.items()):
-        row={k:None for k in FIELDS}
-        row.update(schema_version=1,dataset='Lung-PET-CT-Dx',case_id=patient+'__unresolved_acquisition',patient_id=patient,
-                   patient_id_source='configured_public_ID_not_source_verified',annotation_kind='unresolved',ground_truth_available=False,
-                   conversion_status='quarantined',weak_eligible=False,weak_eligibility_status='not_cleared_for_training',
-                   annotation_coverage_status='unknown',qc_errors=[reason],qc_warnings=[],config_sha256=config.sha256,
-                   implementation_fingerprint_sha256=implementation()['sha256'])
-        rows.append(row)
+    acquisition_failures=[{'record_type':'acquisition_patient','patient_id':p,'reason':reason,
+                          'source_failures':[{'source_path':i['path'].relative_to(Path(config.raw_root)).as_posix(),
+                                              'sha256':i['sha256'],'reason':i['source_error']} for i in items if i['patient_id']==p and i['source_error']]}
+                         for p,reason in sorted(errors.items())]
+    for record in records:
+        linked=[r for r in rows if r['patient_id']==record['patient_id'] and
+                any(ref['series_uid']==r['series_uid'] and ref['study_uid']==r['study_uid'] for ref in record['ct_references'])]
+        record['ct_case_ids']=[r['case_id'] for r in linked]
+        record['ct_case_results']=[{'case_id':r['case_id'],'status':r['conversion_status'],'reasons':r['qc_errors']} for r in linked]
     output=Path(config.output_dir)
     write_manifest(output/'manifest_weak.csv',rows,fields=FIELDS)
     write_manifest(output/'exclusion_log.csv',[r for r in rows if r['conversion_status']=='excluded'],fields=FIELDS)
     write_manifest(output/'quarantine.csv',[r for r in rows if r['conversion_status']=='quarantined'],fields=FIELDS)
-    verified_patients={str(i['header'].PatientID) for i in items if str(i['header'].PatientID) not in errors}
+    write_manifest(output/'annotation_records.csv',records,fields=RECORD_FIELDS)
+    write_manifest(output/'annotation_failures.csv',failures,fields=RECORD_FIELDS)
+    write_manifest(output/'acquisition_failures.csv',acquisition_failures,fields=('record_type','patient_id','reason','source_failures'))
+    source_records=[{'record_type':'source_object','patient_id':i['patient_id'],
+                     'source_path':i['path'].relative_to(Path(config.raw_root)).as_posix(),'sha256':i['sha256'],
+                     'exists':i['exists'],'annotation_expected':i['annotation_expected'],
+                     'declared_identity':i['declared_identity'],'declared_sop_uid':i['declared_sop_uid'],
+                     'status':'failed' if i['source_error'] else 'verified','reason':i['source_error']} for i in items]
+    write_manifest(output/'source_objects.csv',source_records,fields=('record_type','patient_id','source_path','sha256','exists',
+                   'annotation_expected','declared_identity','declared_sop_uid','status','reason'))
+    patient_records=[{'patient_id':p,'ct_case_ids':[r['case_id'] for r in rows if r['patient_id']==p],
+                      'source_objects':sum(i['patient_id']==p for i in items),
+                      'annotation_objects':sum(r['patient_id']==p for r in records),
+                      'annotation_failures':sum(r['patient_id']==p for r in failures),
+                      'acquisition_failure':errors.get(p)} for p in sorted(config.sample_patient_ids)]
+    observed=sum(i['exists'] for i in items)
+    reconcile={'requested_patients':len(patient_records),'patients':patient_records,'source_object_records':len(items),
+               'observed_source_objects':observed,'missing_source_objects':len(items)-observed,
+               'verified_source_objects':sum(not i['source_error'] for i in items),
+               'failed_source_objects':sum(bool(i['source_error']) for i in items),
+               'annotation_source_objects':len(records),'parsed_annotation_objects':len(parsed),'failed_annotation_objects':len(failures),
+               'ct_case_records':len(rows),'acquisition_failure_patients':len(acquisition_failures)}
+    reconcile['pass']=(len(records)==len(parsed)+len(failures) and len(items)==reconcile['verified_source_objects']+reconcile['failed_source_objects']
+                       and all(p['ct_case_ids'] or p['annotation_objects'] or p['acquisition_failure'] for p in patient_records))
+    write_json(output/'reconciliation.json',reconcile)
+    verified_patients={i['patient_id'] for i in items if not i['source_error'] and i['patient_id'] not in errors}
     report={'timestamp_utc':utc_now(),'dataset':'Lung-PET-CT-Dx','real_data':False if synthetic else True if verified_patients else None,
             'cases':len(rows),'patient_count':len({r['patient_id'] for r in rows}),'ct_series':len(groups),
-            'source_dicom_objects':len(items),'annotation_SR_objects':sum(i['header'].Modality=='SR' for i in items),
+            'source_dicom_objects':observed,'annotation_SR_objects':len(records),
             'converted_cases':sum(r['conversion_status']=='converted' for r in rows),'excluded_cases':sum(r['conversion_status']=='excluded' for r in rows),
-            'quarantined_cases':sum(r['conversion_status']=='quarantined' for r in rows)+len(failures),
+            'quarantined_cases':sum(r['conversion_status']=='quarantined' for r in rows),
+            'annotation_failure_count':len(failures),'acquisition_failure_patient_count':len(acquisition_failures),
+            'reconciliation':reconcile,'count_units':{'cases':'unique patient/study/CT-series keys, including validated SR references to missing CT',
+                'annotation_failures':'one source SR object','acquisition_failures':'one requested patient; object details nested'},
+            'actionable_findings':bool(errors or failures or any(r['qc_errors'] or r.get('qc_warnings') for r in rows)),
             'acquisition_errors':errors,'annotation_failures':failures,'config':asdict(config),'config_sha256':config.sha256,
             'implementation':implementation(),'manifest_sha256':file_sha256(output/'manifest_weak.csv'),
             'quarantine':[{'case_id':r['case_id'],'reasons':r['qc_errors']} for r in rows if r['conversion_status']=='quarantined'],

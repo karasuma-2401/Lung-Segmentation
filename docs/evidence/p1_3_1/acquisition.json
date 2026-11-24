@@ -1,0 +1,3581 @@
+{
+  "actual_downloaded_bytes": 221804220,
+  "budget_decisions": [
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 21182,
+      "cached": true,
+      "remaining_before": 2147483648,
+      "series_uid": "1.2.826.0.1.3680043.8.498.8827825409582763733577354115210870156"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 19462,
+      "cached": true,
+      "remaining_before": 2147462466,
+      "series_uid": "1.2.826.0.1.3680043.8.498.66354842341919548382517239660830925467"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 9706,
+      "cached": true,
+      "remaining_before": 2147443004,
+      "series_uid": "1.2.826.0.1.3680043.8.498.28706379308217234692487377565384532800"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 9934,
+      "cached": true,
+      "remaining_before": 2147433298,
+      "series_uid": "1.2.826.0.1.3680043.8.498.88563291641876192341370756280027521038"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 5170,
+      "cached": true,
+      "remaining_before": 2147423364,
+      "series_uid": "1.2.826.0.1.3680043.8.498.74638846760148229001779575715190851103"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 14830,
+      "cached": true,
+      "remaining_before": 2147418194,
+      "series_uid": "1.2.826.0.1.3680043.8.498.81448451155934338877461134836801121386"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 29182,
+      "cached": true,
+      "remaining_before": 2147403364,
+      "series_uid": "1.2.826.0.1.3680043.8.498.34802386314129603859287129489166161025"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 25996,
+      "cached": true,
+      "remaining_before": 2147374182,
+      "series_uid": "1.2.826.0.1.3680043.8.498.15089379423386254202178805284929330008"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 9960,
+      "cached": true,
+      "remaining_before": 2147348186,
+      "series_uid": "1.2.826.0.1.3680043.8.498.20771309686491176224559126180080905739"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 13300,
+      "cached": true,
+      "remaining_before": 2147338226,
+      "series_uid": "1.2.826.0.1.3680043.8.498.34322729629264263555998794036538762354"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 33750912,
+      "cached": true,
+      "remaining_before": 2147324926,
+      "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 15818868,
+      "cached": true,
+      "remaining_before": 2113574014,
+      "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 14236560,
+      "cached": true,
+      "remaining_before": 2097755146,
+      "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 15290946,
+      "cached": true,
+      "remaining_before": 2083518586,
+      "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 15291178,
+      "cached": true,
+      "remaining_before": 2068227640,
+      "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 28476576,
+      "cached": true,
+      "remaining_before": 2052936462,
+      "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 29603704,
+      "cached": true,
+      "remaining_before": 2024459886,
+      "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 30132334,
+      "cached": true,
+      "remaining_before": 1994856182,
+      "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 12149978,
+      "cached": true,
+      "remaining_before": 1964723848,
+      "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648"
+    },
+    {
+      "accepted": true,
+      "actual_listing_or_verified_cache_bytes": 26894442,
+      "cached": true,
+      "remaining_before": 1952573870,
+      "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402"
+    }
+  ],
+  "catalog_sha256": "81a7f02035755b0b700efbc37e35237cf6bb43f709d49b8bc2137bb601771ba9",
+  "config_sha256": "bc2d676fec703d5346fdba2a54d62835e16d73f700dc7e5e2e2b5fc815e1fae9",
+  "converted_free_bytes": 52097179648,
+  "dataset": "Lung-PET-CT-Dx",
+  "downloaded": [
+    {
+      "bytes": 21182,
+      "catalog_identity": {
+        "Modality": "SR",
+        "PatientID": "Lung_Dx-A0001",
+        "SeriesInstanceUID": "1.2.826.0.1.3680043.8.498.8827825409582763733577354115210870156",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.165554066086145834377508507990"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 21182,
+          "key": "998f75c2-d4d1-4698-b430-7b64dd41aef9/b8ac3b10-ffb5-4c32-840c-c81c144f6529.dcm",
+          "md5": "e86cda583fef4d5a776310ecde2f3750",
+          "sha256": "cd9c6f89e5c792a1db737071126d8bd510a2cb8a0f4f8a62361f61a7c45939fe",
+          "sop_uid": "1.2.826.0.1.3680043.8.498.12387236436755589945374050289561027234"
+        }
+      ],
+      "source_doi": "10.5281/zenodo.16989819",
+      "source_url": "s3://idc-open-data/998f75c2-d4d1-4698-b430-7b64dd41aef9/*",
+      "timestamp_utc": "2026-11-24T07:32:08.542693+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 19462,
+      "catalog_identity": {
+        "Modality": "SR",
+        "PatientID": "Lung_Dx-A0002",
+        "SeriesInstanceUID": "1.2.826.0.1.3680043.8.498.66354842341919548382517239660830925467",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.104855313699639828167809534834"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 19462,
+          "key": "05b9b1d4-2462-4457-bb31-0e877639fa1d/d1661af7-96d1-4668-8dc9-154c04042a74.dcm",
+          "md5": "3c0fb7274887709f8828153a5fb7542b",
+          "sha256": "6c7609c8af38c00015db8a2258212869fbdcfc230f7588391ddf17bc855316be",
+          "sop_uid": "1.2.826.0.1.3680043.8.498.8013464737958922238719990129848072771"
+        }
+      ],
+      "source_doi": "10.5281/zenodo.16989819",
+      "source_url": "s3://idc-open-data/05b9b1d4-2462-4457-bb31-0e877639fa1d/*",
+      "timestamp_utc": "2026-11-24T07:32:10.333512+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 9706,
+      "catalog_identity": {
+        "Modality": "SR",
+        "PatientID": "Lung_Dx-A0003",
+        "SeriesInstanceUID": "1.2.826.0.1.3680043.8.498.28706379308217234692487377565384532800",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.179476503242496939309318824087"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 9706,
+          "key": "5a734228-cea4-4f2b-8bc5-c58bf2992a9f/9ccb3686-ec40-47da-82be-33f5bf4b066d.dcm",
+          "md5": "63edfd27aeafa458e1221b83c583f336",
+          "sha256": "29a78e153144184c5edd00da57b8b7ce7d23b0fe71fdcb70a042546be915fa80",
+          "sop_uid": "1.2.826.0.1.3680043.8.498.5410792556301624806266375595662882101"
+        }
+      ],
+      "source_doi": "10.5281/zenodo.16989819",
+      "source_url": "s3://idc-open-data/5a734228-cea4-4f2b-8bc5-c58bf2992a9f/*",
+      "timestamp_utc": "2026-11-24T07:32:12.427569+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 9934,
+      "catalog_identity": {
+        "Modality": "SR",
+        "PatientID": "Lung_Dx-A0004",
+        "SeriesInstanceUID": "1.2.826.0.1.3680043.8.498.88563291641876192341370756280027521038",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.180864777119636615712187661611"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 9934,
+          "key": "c9a4ac27-fc72-4f51-bfac-628faef24f81/c98a8dab-4ef9-4bc1-8e66-b95dccb59060.dcm",
+          "md5": "7e38ea784b8090df84b31aabc47066dd",
+          "sha256": "62835064ff7834e039552a5e2b700270d31e5706bb1d1ed32b9979902518c3fd",
+          "sop_uid": "1.2.826.0.1.3680043.8.498.7659758472378218951342568205459270580"
+        }
+      ],
+      "source_doi": "10.5281/zenodo.16989819",
+      "source_url": "s3://idc-open-data/c9a4ac27-fc72-4f51-bfac-628faef24f81/*",
+      "timestamp_utc": "2026-11-24T07:32:14.310929+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 5170,
+      "catalog_identity": {
+        "Modality": "SR",
+        "PatientID": "Lung_Dx-A0005",
+        "SeriesInstanceUID": "1.2.826.0.1.3680043.8.498.74638846760148229001779575715190851103",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.705620544303856566175354573190"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 5170,
+          "key": "3f3d5d3e-81c0-49dc-b8e4-6eb67d01fde3/eeb3a2f8-40d5-4397-976b-3b4d6dac799b.dcm",
+          "md5": "82761be7a9f9ea3bc08b3fba1544b63b",
+          "sha256": "9eac503f966676b02697e4d1417c72e6d9287bd42f35a50aa5eeef10f1abf7bf",
+          "sop_uid": "1.2.826.0.1.3680043.8.498.96327661068589019932348651833637927432"
+        }
+      ],
+      "source_doi": "10.5281/zenodo.16989819",
+      "source_url": "s3://idc-open-data/3f3d5d3e-81c0-49dc-b8e4-6eb67d01fde3/*",
+      "timestamp_utc": "2026-11-24T07:32:16.014183+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 14830,
+      "catalog_identity": {
+        "Modality": "SR",
+        "PatientID": "Lung_Dx-A0006",
+        "SeriesInstanceUID": "1.2.826.0.1.3680043.8.498.81448451155934338877461134836801121386",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.130455256828420458848095002074"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 14830,
+          "key": "4cfd5d32-44af-4cee-b9de-0229164fd293/7c476fe5-ea4b-47c7-820e-6cf4c6eb7418.dcm",
+          "md5": "1753fd555665d88c62d9ada9537bdf4a",
+          "sha256": "a9433d677d2660141a6a33bc87e35b49a47bfa8b219226d7cf71529b1726efde",
+          "sop_uid": "1.2.826.0.1.3680043.8.498.93717643699467848011532759026998993452"
+        }
+      ],
+      "source_doi": "10.5281/zenodo.16989819",
+      "source_url": "s3://idc-open-data/4cfd5d32-44af-4cee-b9de-0229164fd293/*",
+      "timestamp_utc": "2026-11-24T07:32:17.690666+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 29182,
+      "catalog_identity": {
+        "Modality": "SR",
+        "PatientID": "Lung_Dx-B0001",
+        "SeriesInstanceUID": "1.2.826.0.1.3680043.8.498.34802386314129603859287129489166161025",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.122096692095397563120420547122"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 29182,
+          "key": "0cac8d5d-78a8-4a24-bde8-cef251b93d6a/ee4c3472-0ff2-4a8c-a31f-28ad4610599d.dcm",
+          "md5": "197338ead0dc62025478940f585e43a9",
+          "sha256": "9be0886410c215e84f60920760d33089b0394b23ec99ffd73234f9252f993ec7",
+          "sop_uid": "1.2.826.0.1.3680043.8.498.92650688656074740350032579065990505134"
+        }
+      ],
+      "source_doi": "10.5281/zenodo.16989819",
+      "source_url": "s3://idc-open-data/0cac8d5d-78a8-4a24-bde8-cef251b93d6a/*",
+      "timestamp_utc": "2026-11-24T07:32:19.610183+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 25996,
+      "catalog_identity": {
+        "Modality": "SR",
+        "PatientID": "Lung_Dx-E0001",
+        "SeriesInstanceUID": "1.2.826.0.1.3680043.8.498.15089379423386254202178805284929330008",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.333873017200575786028180383596"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 25996,
+          "key": "0a2086ba-5074-4cb4-a063-c5ac464d5a0a/af4f5db3-14f4-44e2-8773-90c1a535125b.dcm",
+          "md5": "780e5b8618253bf3ebe4b2e79019537e",
+          "sha256": "bd524bbd6c65a4c5e7f32577e82924cdeae26512b373388e7c113ba2ec44c7d3",
+          "sop_uid": "1.2.826.0.1.3680043.8.498.87285047106928415037628763935182057868"
+        }
+      ],
+      "source_doi": "10.5281/zenodo.16989819",
+      "source_url": "s3://idc-open-data/0a2086ba-5074-4cb4-a063-c5ac464d5a0a/*",
+      "timestamp_utc": "2026-11-24T07:32:21.454348+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 9960,
+      "catalog_identity": {
+        "Modality": "SR",
+        "PatientID": "Lung_Dx-G0001",
+        "SeriesInstanceUID": "1.2.826.0.1.3680043.8.498.20771309686491176224559126180080905739",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.269197582919488905042618807715"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 9960,
+          "key": "4a8c67f9-7147-4769-98e9-d4c991b7b75c/1c628b7e-c612-4b3f-a18b-f81bf23a732e.dcm",
+          "md5": "8e397478d5992bc9ad169dc403a5dcca",
+          "sha256": "4c8eb911f10bafe04e4c31d8740ec45e5d1beb72a780bb03c99986a8c10bd1c5",
+          "sop_uid": "1.2.826.0.1.3680043.8.498.12310187435164041021954817330845252463"
+        }
+      ],
+      "source_doi": "10.5281/zenodo.16989819",
+      "source_url": "s3://idc-open-data/4a8c67f9-7147-4769-98e9-d4c991b7b75c/*",
+      "timestamp_utc": "2026-11-24T07:32:23.038186+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 13300,
+      "catalog_identity": {
+        "Modality": "SR",
+        "PatientID": "Lung_Dx-G0002",
+        "SeriesInstanceUID": "1.2.826.0.1.3680043.8.498.34322729629264263555998794036538762354",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.171919653996438009815936390693"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 13300,
+          "key": "36d40793-87df-431d-b562-98e98dda98ee/3734eca3-ba37-49e2-82cd-7ff4ecbad2c1.dcm",
+          "md5": "fe2aa0f902655a9c9af7986a86cef9e5",
+          "sha256": "269b4b1dade993ffe37feea19141d853d8a45d712a254e6305cf5f9d2362d10e",
+          "sop_uid": "1.2.826.0.1.3680043.8.498.77143631207705070816652245274958100940"
+        }
+      ],
+      "source_doi": "10.5281/zenodo.16989819",
+      "source_url": "s3://idc-open-data/36d40793-87df-431d-b562-98e98dda98ee/*",
+      "timestamp_utc": "2026-11-24T07:32:24.900785+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 33750912,
+      "catalog_identity": {
+        "Modality": "CT",
+        "PatientID": "Lung_Dx-A0001",
+        "SeriesInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.165554066086145834377508507990"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/71b5f554-e46a-4cea-ad6f-7551eb5f3a78.dcm",
+          "md5": "002446530779d13ac2b17e72d476af3a",
+          "sha256": "0012f815f27316a4b269b462ef9aa1360377ad39886732266fbaa2ecfebfb697",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.100845579759620513832028016190"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/331b18b5-a625-436d-97c9-7d8be78d36de.dcm",
+          "md5": "46bef5a7e77fa5487897d819f9caba1f",
+          "sha256": "e44e14f6826e82bc388afec320139e1522e37f26c6cb2877cf1c7aff44b04a53",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.101704852287266752011039394626"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/4d446736-1a13-4389-abb6-45e7395cc9c9.dcm",
+          "md5": "9c8c947f949bc260fd0e9fe7ec09281d",
+          "sha256": "171e473e3b66f33855a2a36cd861223a21057e76093858cbb4efd6fb6910ef01",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.102221954392558640015261408049"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/d2fe015c-33e9-45d3-bd1d-b5b74ba4596a.dcm",
+          "md5": "e9a52518cb3257597e0ada598d915b76",
+          "sha256": "0149ff3a02e438ef9face5f0a49f0cc0ff86f1d1ac65f191190f9f10b59d3eeb",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.109507238959325306787765320855"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/b851b363-257e-4c4d-87f5-dd241a993a57.dcm",
+          "md5": "e5827c0e1db194f26df9031b68d92148",
+          "sha256": "859a6da80ba8c83f85ccdd8185b29462a6c77aaefe6c9244068ccf566368a69a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.117426774784719213699636654267"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/6be4705c-142f-4886-bf92-6237166bafff.dcm",
+          "md5": "4d53bcd46ee962dcfc9b90d4df86b146",
+          "sha256": "18026bb60cc3bd3eb38004360609515738759336a8a0beecd3a89aa054b9fe15",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.129825828168936459398032993735"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/952bd7aa-eed1-4e33-adc2-f7a697706f71.dcm",
+          "md5": "30dd4a13839fede2d2ff27afbea02e96",
+          "sha256": "271d2dab05fc795fa68b4fe6c29426bd792e50401af59b257cb0145bae685811",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.136408899622532182604630327605"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/70b6e933-0221-4213-ba58-51b308d4cbd2.dcm",
+          "md5": "f58c51b8bac076a58845096929e7364a",
+          "sha256": "dc3e93671b614980c7b221a7f7f3b6121acc12ee9fa092ede4434ee9f7e20059",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.136943255924913899762603730997"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/7e296887-dd9b-4117-b2a1-1b1c1fb6ce7b.dcm",
+          "md5": "f76695876db0e54b9531695d99b2ff97",
+          "sha256": "ef224ee9e440366040f6e6b1f99d8d2cf7e70d98369ea41367cc08384e2561b0",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.141181895584761396393067137385"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/42d4577a-8aa5-47fb-bad6-1e793d002a1c.dcm",
+          "md5": "649a27f7213bdf4f62fd24f329cc6bfa",
+          "sha256": "0843d2581263031231f173b476cd55743e74b94118e0a0fb8eb50c8f3b29bb25",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.141801537253638936627246332705"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/75ff7694-87a4-4010-a3b1-d157c5785bb7.dcm",
+          "md5": "27b7068bf8ec40c3257ac3e4fcc19cb8",
+          "sha256": "ff7b9510b5a4eacfa173cd54a6202b1299e0ddab81422a225c24df295a5a4a3f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.147995027728672345689485008579"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/3e3cef60-6af1-4afe-8602-03b6c7b676fd.dcm",
+          "md5": "5acea8268f8048016dd85f4bed2c1ab5",
+          "sha256": "63dccad74faf1fc250a44def8ab77d0b16deb39592b16a5ce24d3b286f94024e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.148725232455151579951809681365"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/e687c3d1-97d7-4178-ad0f-277382b83417.dcm",
+          "md5": "319ba3b7548708f9f17e3ec4394e8af7",
+          "sha256": "a2d551aa540aa9fa188f22393a93d924f29ba7fae550f7d17503a390d5bde720",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.150972028878666799176010869489"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/67a57cf8-7620-469e-b7e0-b0e26c8a3cbb.dcm",
+          "md5": "7acfab6022186fbeaa87530c79376226",
+          "sha256": "46149ba0bce9245e3464f70f154e8c54461e97a8ff55231d6d33d8935af2d131",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.155870813347987660555133803380"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/ea26e83f-70fb-4b0c-b0a1-4d59cbf2312e.dcm",
+          "md5": "53c7b26d8b84d64696f8cf41f141a651",
+          "sha256": "26f0b2547ef3088130f4569ad91657bdda38b34fd97b368f3ea5a0195bea97f0",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.159947639183509163292862820289"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/355d2b72-588a-43eb-9d44-d8692560c39c.dcm",
+          "md5": "2d2177dc59338d93fad0358a1ecb3314",
+          "sha256": "662e683b9659da74776c0908f02b0b5be461a77d56ec0593d8baf7da00c73117",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.161858400694237888739752606118"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/e0edc673-c255-41e8-a356-5da5a9b1a44b.dcm",
+          "md5": "d206b77ae2bc5e574f36344f9df5d625",
+          "sha256": "5515bcf18b478a57833ace54121a2c46277734b12f14be56dd1ca50a9b192bdf",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.166905802407563409548713912706"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/821c3538-fd0b-454e-8864-f741e6d41772.dcm",
+          "md5": "891daef2db199dc30ead93acbc899b9e",
+          "sha256": "78228955c945dd29e7147a9847c02b81ab18ee858b2b933e786490b6f571f82c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.167611807246028207447556280990"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/d57f7108-c4e2-4fbb-a2ba-55e6225b22c1.dcm",
+          "md5": "892065989b3ce076912064e9f39dfb92",
+          "sha256": "a0a9f36e64c094691d9c6dbcdf7f26428503866f4e51c10f464578bdc256c948",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.169323985797980790526384238669"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/1331a0c4-af8c-4298-aa76-7486d58d131e.dcm",
+          "md5": "dd0388b518b22c2b5f6871598eb465c5",
+          "sha256": "381dc59f6aa37a1c19e63fbc9cc9bf73d809c437418e9d6aea42f6e9e4e54e03",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.171678398314873996612402073023"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/0c4196a1-1d0c-4d1a-a53a-6cbb4a8002b0.dcm",
+          "md5": "2e1611606726371d3bc42031aefea9eb",
+          "sha256": "280014fd842d93fe802df02e488d5bc57aefa730abf080193b71d3eddf98d8b3",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.173860839354169878446469826002"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/1b7b7f78-49b9-4610-b1d0-df67560f406c.dcm",
+          "md5": "c56b50c0b3beef32eed9e95660de1b04",
+          "sha256": "ca02dd16d104c412fc46caf5d5c4c8a149f78c8122c8a6acebd7fbd77a68dd72",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.176083915981068617474065542322"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/00ae05b3-c806-4a6b-a07b-b3ea2a4a4bb9.dcm",
+          "md5": "2c848e5705c0acad424447ab21ba9109",
+          "sha256": "7c7343480898d8411509dc9b7fe2d540bd1719914d18a94ec01f7bc272042a43",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.184131899543495374569818432657"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/5cbf9655-fdd4-406a-b262-fbbe931b33c9.dcm",
+          "md5": "07df9c57c1759fbb34d4dbb8a98929ad",
+          "sha256": "50c08ec62e30b008642a866955b6234a4ae6c7d9116161a461f4205fc95ebfe2",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.184801338381895107635381026857"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/ec3b5b43-b7fe-4e37-935a-63bffeb0ae3e.dcm",
+          "md5": "41a29b027de22738a680c64daeafc541",
+          "sha256": "b0f0ef87804a2d8130282d0a9c221aa640f72e344aa34aafbcca0d417b8daa78",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.185555685346057091761687385642"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/6003c46b-d7a7-4af8-ba53-c2f3a8009433.dcm",
+          "md5": "db5e76cdf00f280d87b41aa600330526",
+          "sha256": "e8547197559de6fb1a61489899502369b68df71dd1f2e351ef73f35ad2e1a8bc",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.186890609632606120260921456036"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/d950b7aa-af17-48c7-8021-7244cf25b1b2.dcm",
+          "md5": "def2fd8ea146a5d457510a01a356c42b",
+          "sha256": "182a8332d8b30543c84527ec1b4d965913285969e82e405ad64a41c9d92d9d73",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.187586942311847648079258238193"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/04a30b10-42ae-4e6a-93db-0bff7684c366.dcm",
+          "md5": "8eccd72cb61fcfaa8eaa01083056503f",
+          "sha256": "cc4889d587754d95272b5813a809578b33153b7bcd7d0b9081e8a564e34ba501",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.204716343021109697619551710230"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/1620b675-1078-4624-b312-8f35467fb303.dcm",
+          "md5": "1ab9d5a3c927157d3df0451ea377e0b2",
+          "sha256": "f44715c07a735949187b672b15de23e8f59b41552c65e840719643fb810fa475",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.210616673074470338920284866510"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/785c0100-f414-4852-9edf-95d46d7487f1.dcm",
+          "md5": "654743ee18d9f61e6d49e7bcf3002cd4",
+          "sha256": "8f6268e7382473fcb51d7844bf863fbf5055cde83a5d536006912a3590450284",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.211750170294872967291022770757"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/b693fbd5-fbce-43b4-8aa4-e6ad5a7a2455.dcm",
+          "md5": "53cceec64c3704e6367cb6a31db2ba40",
+          "sha256": "ebe6bf0f235bb4311d122e0a925530470539693e195d02d3960e460826113157",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.213571805963638066779076495854"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/72d296ee-e53c-4137-9df9-723b27d3806a.dcm",
+          "md5": "8c80697f04cdbbf13306a6b77ea9fb48",
+          "sha256": "98527e35fe9bcfdc1bb566a09444ac630ed01a25184ceeb5f7a2e7c329ceee51",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.216515627058008697217695696166"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/b29a73ef-b9e5-4abd-8a8b-e7f034054e27.dcm",
+          "md5": "abe62d10181fc3f198dab76dadec7a7d",
+          "sha256": "74100e89b33a1216a30281e06605cf35692e6c353a94f6b1a1b0b434c5bf9704",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.218387194706247505045205169130"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/d648640b-579e-488f-adf5-e2fb085bcaa0.dcm",
+          "md5": "cee1041c9d77ecbf34010b26be0f4640",
+          "sha256": "42ee5445560b7672fe0d9675c554177e106196a77732dc25b37fb051cb7b5190",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.223280971440388131399634898721"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/796bc66a-0986-44d1-baf3-0bdf0c48ebaf.dcm",
+          "md5": "9f054c4871557bca422cbb9759c1db7f",
+          "sha256": "bfe04ae530b4942e5cc0eee187fa9f54a7e0210517d555b940fd0ff7e115a616",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.223929646482684928931460527018"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/f2d790a2-5ab6-4f5c-8ac2-73b69b21077e.dcm",
+          "md5": "d2b0932b576a1665dcf3f3c1b94c6426",
+          "sha256": "6d5e89e88a96e5bd67ddfce818f7626033f6175e9ccb1d45f128c9293c1216f2",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.227252232966919521559290115017"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/b8f5e9c9-761a-4698-9db6-bed7b5d129a1.dcm",
+          "md5": "6d32b8f48cf158b61571c3852275db0c",
+          "sha256": "cf4b072b01a6d4340614bcc13dbbbc4d3846d0741b33087b75138243f9d48aaa",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.229714798082939952584616924944"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/8aa441eb-a752-4cc1-8910-67dad2577451.dcm",
+          "md5": "c44fa8ac07cfeea5f715d481c98be8cf",
+          "sha256": "8204d445cadf4c78c60261a87ed16131acb0619fee9de34ff1a1ea947de9ffd6",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.241073611031000247506142606387"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/6c314460-98e1-4da8-9494-655ba40d5a10.dcm",
+          "md5": "f2db550d67c4a6cc076450e7529161d0",
+          "sha256": "8e57240a869161e998b3473f6d9ef1d34b23a9ec4182a91a477431cd75de5264",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.254916896710732470846876971852"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/0ae503af-f76a-45f6-a6b6-abf69e2e70fe.dcm",
+          "md5": "0d799bab62430f501b5f73ef9fc09afe",
+          "sha256": "bce53a41cb2653c2f33172840e32b757488f18d43dbb196a3e5ddec399c24197",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.255571364135736589219701492950"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/bb05cb46-54cb-486d-86bf-0c21bd5136da.dcm",
+          "md5": "6b61a017d19779eb4ac5fd5381681931",
+          "sha256": "a34653c311a7f31dc5949a8e992261b54e78236c2e0b457db0bcb1197fcdc1b7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.255912996966178256047133446660"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/94291e0d-16d6-492d-a764-2e1c9822b871.dcm",
+          "md5": "173aadea4c8352c0970f46b450de7b10",
+          "sha256": "f245d6bc8ec380bf914cd2a0bb7455ba2fae4c96756f8f82c76d69a680041cf2",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.257818217999373739004369837259"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/819ee881-36dc-47b6-844f-89a56bf2061d.dcm",
+          "md5": "b5293177936c7998d9691e78af64d746",
+          "sha256": "4ae439be7d03bde0c0d2a4c5a8bab271eac5f68a48874528445ef85ed20f96e0",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.258723386371062059053666905147"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/c34c10de-3a13-4720-b5d6-efd3ee629ed8.dcm",
+          "md5": "747ac8b490ae984f479e7634ba13a1d5",
+          "sha256": "1333d5e65936dfc2941d0037a0dbb68be13e10884852a6a7add16f6293fd396d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.260631524815407571334991296130"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/e081e73e-c495-4e45-a17a-da4b988b0067.dcm",
+          "md5": "67114bff063df898a4cb8fd27759168f",
+          "sha256": "b9e8876865334e1c704bf8631aca6ee2016ab686b177f7468341262eb42ba0de",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.264364194296293440320787350583"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/96763803-5679-4260-9be5-21cc8363b3d8.dcm",
+          "md5": "1e37f0b58057faa1061bd6e609e801af",
+          "sha256": "c3182de79167c2170134e479341d407ab0b271360d97de7b53f63a0e15bf08f5",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.265810001860133482370384594630"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/601fd159-f378-4699-888b-6ae38a32dc9a.dcm",
+          "md5": "9287869ec50a7c8ff22bc18ffecd08c1",
+          "sha256": "685b070fa716f907f212120751bd85a1de29b06ffd8d98a8b0a94ee988fb6e61",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.266359214539919730088023297536"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/5f779219-9a73-4dc6-98f4-78d9fc2205e1.dcm",
+          "md5": "6021cac7be27e81206e14ba9daf0a887",
+          "sha256": "9bd46aaef9ba57d14c29be270b99966a84eb49a792493cacdcccb9db75c3f576",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.273139743737838297938492351479"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/6d7f9975-3bf5-4c0d-ae86-f7e4af6a3dbb.dcm",
+          "md5": "b97b82d9c89de5d3041fa6c8be1a9aec",
+          "sha256": "1d26a463e46bfce587126bd49238000f51b1de52cb72c65d3a79ed78957d5047",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.283914737330506508971730533367"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/50e72834-e699-4629-a34e-6be2e21a6ebc.dcm",
+          "md5": "6e7d069c3bd7e4cf58243a02a62c6151",
+          "sha256": "85a7ed17854de2221c30d0decde88410a7b2912ef16d742daba99096639aac81",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.284912392449121077878579312423"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/cfe79914-f5f4-44b6-a336-28166b957927.dcm",
+          "md5": "f5cdc516a5147e3aecfaf801e2d47b97",
+          "sha256": "083a0cdd3d14a8f41e1a2b5e5b11395fc1c36f8dc800787050c2c413e94049ea",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.298917237911742255150539122486"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/f9512e95-4a57-4386-8199-609e98bc2619.dcm",
+          "md5": "b6593d04539b54e51f02c8edc018842c",
+          "sha256": "07652973ada4fb68ebc2276e0836cbebe23fb4ae9709fd692546dac2f91d9cec",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.301905642463494729146015070819"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/46521c0c-cd39-459f-b2ac-cc111957eeec.dcm",
+          "md5": "24ee25feaa8af3347489cbaf69884065",
+          "sha256": "ceffcd1fe22498c033acba6a25b41c27d31e2b5fae0f1065eb6fdbeef706d1b4",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.303209019987758321825785230441"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/6d257b64-6a8a-421c-84c1-eca65cdf74cc.dcm",
+          "md5": "0880d4015f202db13f440614114c232d",
+          "sha256": "c14436d6348e13764a57d3964ad3a80080398df29ed9fdbbc34d31851281e5e6",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.305763411933569638615761005863"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/30c6731d-16bc-46cb-aa0e-cc028fa42370.dcm",
+          "md5": "75b9d503cf049cc752dc3375db894841",
+          "sha256": "5d77148af2d10d1db106f204c5d464667e71dcf2c7caceacbb19cf478be33110",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.305943070547142602431943635575"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/e97e2d09-fbf4-4e61-8266-a048a0937f74.dcm",
+          "md5": "8fbeefbf6901092f9a121727bbb5f2b9",
+          "sha256": "aee32e28156b43933f0c04bb491d2458399c1886c8a9ba2ff41a85562623e94a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.308998466994580007520425874686"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/1855afcb-dafe-414a-a2db-114636e3b684.dcm",
+          "md5": "b2a13a2760264ff98cd85b09c8c1156a",
+          "sha256": "cb2f8533d328da14ada6dd85326bfdcfac05f13d27d2dec5c47c3e0491a4508c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.323485135697660740998379357958"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/7efc9c0c-af76-4efd-b77d-c9b91c12ff8b.dcm",
+          "md5": "1e4270ff4d4a74b045ae5cc1524d15f3",
+          "sha256": "859bf000f53a3c1a39e70f76a26d530fa811ecd26bc4c16effc49894bc477e3a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.324392503037850889960784413945"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/813b15f5-a72d-438a-bdaa-ea3c0e0a64df.dcm",
+          "md5": "c01489d18cec85d7812a201fdc11a26d",
+          "sha256": "34f49bdffb7b584fbee68b68309e45020eeeead003bf8482ea938883e9bfc89f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.356449165601454691977049726127"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/b6922acd-a153-4fb9-8f2f-c8485ffdd6ed.dcm",
+          "md5": "27b585cbcf9bfea1cb1cac3317fbde05",
+          "sha256": "b82cbb6c32ee9dd4218c2a02f908dffc93e076c2997397f1366be6753019339a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.575992082983097219811849993939"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/b7bacb02-4b9c-46f5-a77f-21d01ee6a8a6.dcm",
+          "md5": "d8b9ffa6881afcc9dbc3e64fcb85c6cf",
+          "sha256": "d0c6ea069f524d1f456c42d0ae954bd45a54d078e78cee1de22f01734c85d342",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.803005695435575281017957859658"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/bb2ad47f-517e-4338-93ad-bb4259fc7773.dcm",
+          "md5": "d50bc5e69dcd659f72720ee28977cf59",
+          "sha256": "326a25cf472a5741b45c6e0e60adb67da84f935c494cac659e0c67d543bc798a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.873347547119358886179041089653"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/3f1d7a6a-ad6e-4959-83ae-897243111cca.dcm",
+          "md5": "b569b015dff44f5aa57292d85facc037",
+          "sha256": "4767288217907dbd3846b5a5ee2c6de6cb57e40d34b3a2e5ea961d0848ec0ed6",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.892649213333065045357131733969"
+        },
+        {
+          "bytes": 527358,
+          "key": "da373bfc-6c16-4955-8ac3-f4a51484b240/43cac523-c2b4-45ff-bf9e-3df616b4eabd.dcm",
+          "md5": "d4a3f5abee81da0e257eadc7de03a9d0",
+          "sha256": "054adefb919ec5e0154e6b6136155894abf0e442a8ea06fd1dbe366b0bddcedb",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.911257607240619696148712587012"
+        }
+      ],
+      "source_doi": "10.7937/tcia.2020.nnc2-0461",
+      "source_url": "s3://idc-open-data/da373bfc-6c16-4955-8ac3-f4a51484b240/*",
+      "timestamp_utc": "2026-11-24T07:32:58.293047+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 15818868,
+      "catalog_identity": {
+        "Modality": "CT",
+        "PatientID": "Lung_Dx-A0002",
+        "SeriesInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.104855313699639828167809534834"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 527292,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/af2a265a-f23f-47de-8b12-51a83f9dc065.dcm",
+          "md5": "5ddc54be1f4a24c6f8d83395b7b733dc",
+          "sha256": "3991b74d55cf2369fe36518e50185c697846deb5c55804e7ef4bb058413d201c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.100498483046310537667152054893"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/806eb191-86c3-4618-9f11-98237661ff3b.dcm",
+          "md5": "16c86cb71d0f89bcc500ec16d48a4699",
+          "sha256": "2651ecddb8593082efb24a562c1b5e0107392985b85c8dc652ab4f4fa097e8d7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.101887664051076773980939948191"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/a0f1ae4c-b865-45a3-8a7b-8526a13c1086.dcm",
+          "md5": "bbff9aedf11febbe8a7ef1cf57b726ad",
+          "sha256": "d7f06cf150e8e22e863d2105250bfc471555189bae158f14dfa9a1aabcd7d1d7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.107064465950265097504503253863"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/46f1bf56-721b-4d12-a301-6c7bd57de907.dcm",
+          "md5": "b3db872d04d800b425117897f0c3ad37",
+          "sha256": "d4a7e4786f4647025053d75258a452e66f7aa8f216cef87b574f64a7a70828e2",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.116287617097846696477293073879"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/883a8ba3-c8f6-4be0-b0d9-187f82cf50fc.dcm",
+          "md5": "866cebce6377685b1f51d50572b39e1c",
+          "sha256": "e9f9224352526b19442edd2ed36f9361c21f347d797b1502ab2a2057050a4970",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.122259036515695905512549026864"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/1c8ea72e-8cc6-4387-b118-331ae21c7ca3.dcm",
+          "md5": "084345866c863dba028dbfbe96c779a9",
+          "sha256": "f5c212d7a2c325dd2755f7dd99b2ebc40bdc9b1c06229f7b508e2594c4bae2b6",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.124580394363958631838637462642"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/f4577907-6f0a-4cf6-b57d-8d64fd5ad8e4.dcm",
+          "md5": "6f50e96a8aa3a63481a1c224ba9eeeba",
+          "sha256": "6d09572748f44152d9d142dd5ac77918c9ed7d40702450132146c301773d8976",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.143229220134004659147800817664"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/4e880b47-4dd8-4a98-8efa-73266c6c09c0.dcm",
+          "md5": "2466d17745ba45f31a249d6de90ca59a",
+          "sha256": "a530c1ebfcd77f042aa81919373f8b3dffa60ed54fea86228e9c3ed2d10a4113",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.145636676081119360296419944385"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/52af2904-72d7-484e-8bd9-28eb141b8133.dcm",
+          "md5": "1ca8a139767878991c2a14c85deaf264",
+          "sha256": "bd53ca65155716209aee40fec8c304ee9bda17ef41ed468882b89c1048ce1557",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.157419670166382421393033312488"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/059fedd7-8d81-48da-99d1-2e46e136297c.dcm",
+          "md5": "026497a0c8f324bd18dd48c91f68539d",
+          "sha256": "8907ada86e2e210a318cbd28232cc72ed04339e9f93a8fc6f6deb28f598e8c03",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.174269535156304951625805754184"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/d2f7b58f-a7a8-4f11-9713-4d3d68878128.dcm",
+          "md5": "de0307c36e739812822f72eba4b5b3f5",
+          "sha256": "275349aed8e01a9db9eb030614ab01140004f9736a9438ea6d90be92b357247e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.191960383852949572073542121650"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/2c034360-83dd-4504-9a32-e99d8c31144d.dcm",
+          "md5": "9f4757eab1aff72ea476843d77a43ddc",
+          "sha256": "6124de9094763594c1d9dd89413eaaad71aacb9a339c392be714a4f502571230",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.204360962170019123676122950548"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/408f9f9c-7d22-40b7-9cf1-a481c7c1fbc0.dcm",
+          "md5": "8da5b16fea22988402b1bf1a727f56c5",
+          "sha256": "773e885afd20c596bcb3225c97f05af358f6ff1e342df72fcfaa5ddf80c656f8",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.211911107142268334777355554572"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/9c76af6c-54b8-4a9b-ad31-a90874b64b7b.dcm",
+          "md5": "0f7af3bb3ad7ac1095295d5ea76ea775",
+          "sha256": "832b98b8d7615a17f7ad082af6ee1493c6185e86a07192a64282d40728a4e436",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.214908290286248432613889196988"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/c3cb5721-113c-4b04-9e13-37fc350f4730.dcm",
+          "md5": "219779d6ea5f8d20d9362fcc1b4d7401",
+          "sha256": "316c244b61e4870d3063f12f82efb9dde63e721e0301a7ffa65d6036e1321c92",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.225810647627448096790806208568"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/9f59b981-c446-4e58-8fe7-836ea4436f0f.dcm",
+          "md5": "8f2a0d82ad09b430afaf5c1cf5ba9a11",
+          "sha256": "e94f1a6e3c549b2800f6e6565e747e6663920c779f9d09c6c8a6e0f8bf9e5e07",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.226732898978982586686001447564"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/45f658f9-2405-4294-9e57-4e86f9a8af78.dcm",
+          "md5": "3216261b0bc7fde8858bb385406eca96",
+          "sha256": "6a4d56fce8f42e41d9c6b212eb4d3788114214473cbf4a622ba62b3b493f8b8b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.229598541937298848447352019907"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/e083d267-24d6-4994-ad91-2b331033a4be.dcm",
+          "md5": "930f48732f00e64fd4c486548e475f01",
+          "sha256": "98239cbdf125bb0d82aef051796b1e67eac7bfdc9f89669349bdfa17db101fb2",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.234210370365936053269828907501"
+        },
+        {
+          "bytes": 527292,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/fa3361dc-c108-49a6-8b47-3067b742ac6a.dcm",
+          "md5": "c1f048029d849b752f170b8f4c973d48",
+          "sha256": "80f6099ed4276bda817ad91a2380e6bf9704e76dc4a5aea3da9d41c9c14efe61",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.244251294947061426149946552832"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/c37997f3-2293-4024-961e-84046ba5b15b.dcm",
+          "md5": "c88bd53d1b38c6b9458a560ac41ec4d2",
+          "sha256": "730b5fd91fc969f70eae57a3b0b2f9670488ee43dfbc96cc2fc0a4924f7fba26",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.244350029092924746822807438909"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/64821cbb-3d13-4709-b359-3f32c4b1dac2.dcm",
+          "md5": "ee4ece673001579baa18654af63c795f",
+          "sha256": "dddbde77efd8f88d54727c676df2e4601d4d44c70cef45663a67338f5bd45160",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.256205760297756920196238256901"
+        },
+        {
+          "bytes": 527292,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/dadc3242-2335-4a71-90a6-7ea40929ed4a.dcm",
+          "md5": "bde72d434c6467c11f7d8306b224dcb2",
+          "sha256": "bd905322dc63b28dd7b2e6199522e10583b9204da9aec6b47d7355c1d7f27690",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.314450283460420385239439544304"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/2a8c49f8-6483-4ca7-af45-0559bce54dc3.dcm",
+          "md5": "5e52db2ff2bdb076266ebf262409b8a2",
+          "sha256": "797e4e7ff5a7af84c3919b6af7eba300317a7aed23aa75af6a58e2616f244271",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.323570046735549256812896573959"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/5702c0ac-ed23-4c5e-9668-fea66cb0c4f0.dcm",
+          "md5": "00ab445b3f95cd09bbf3a416b51f20f0",
+          "sha256": "184724df7001c9cc55becfcf5e9347dd6a52954de8e67abc50c683fb7a140a8e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.326556466222007829265608175539"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/37fe1579-e52d-457a-8b64-e358c0bc1a5d.dcm",
+          "md5": "158b253ceec59d3aa2df30a52457fb19",
+          "sha256": "c8dedcac603608d8f776f2522d3e0bd1814eea8cf70d40a79b155f2cb7dc62c3",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.331212800842966708683279530963"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/2b5d125f-c7e0-4a29-a069-1f9ef3f549bd.dcm",
+          "md5": "48d7bb52af411199d409186662e4a954",
+          "sha256": "b278ec92a2d5b10694fdc99ff687be1038b2fa20bbb83cfb4e8635101ca9b781",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.476982701137697438217958989680"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/7e79fa65-2578-437a-974a-cae24bba71f5.dcm",
+          "md5": "b2b57a994021dd302f95883ec86fd788",
+          "sha256": "bb93d2125a07d3a06637aac3aae0f379ad35e14d9319f4ebd2cbe42593c41738",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.509627696598509454015880826622"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/ea5290c3-c4bb-45c0-b353-adc54491c1ca.dcm",
+          "md5": "ba84be65776c08f284c74a029bc00f72",
+          "sha256": "c305a385a6eb821cbf98e22d30edfc57d510a068581de52c337bef1d892cdd40",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.562422901264389907295043087610"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/1b69de3e-4244-44e4-be7a-1bf7147188f8.dcm",
+          "md5": "63793a42421183d9145a5206b1fa1d74",
+          "sha256": "e7bc2bacee22ec2d38d2216df19c839d07d11ac1c8650efbf1b192dc0c89d69a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.590325270348311138328158885272"
+        },
+        {
+          "bytes": 527296,
+          "key": "e41234a9-239e-45f2-9606-7ca0ea3e7f81/f35b83aa-43a3-4fb8-8fe9-9192ebef0955.dcm",
+          "md5": "d5460988e70988cecbf2b53587fa1a89",
+          "sha256": "0a48c15b1721b09b5f855dd4342e3d192c1560fc88ebdb11af01f1755df201a4",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.901345726776808010120324495074"
+        }
+      ],
+      "source_doi": "10.7937/tcia.2020.nnc2-0461",
+      "source_url": "s3://idc-open-data/e41234a9-239e-45f2-9606-7ca0ea3e7f81/*",
+      "timestamp_utc": "2026-11-24T07:33:14.847160+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 14236560,
+      "catalog_identity": {
+        "Modality": "CT",
+        "PatientID": "Lung_Dx-A0003",
+        "SeriesInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.179476503242496939309318824087"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/27ea2918-a4a3-44a5-adc8-790a87e38560.dcm",
+          "md5": "aa5c4fdb53bba71f01e20e707f72b73b",
+          "sha256": "d36cbf1abc5a47214cc3ca6c65bcc42d9f0a50e069e5c6fe0d7f200af9d4bf78",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.101312907738448394130768942744"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/2f897cc5-177b-48ed-b597-677d5dc8bc6a.dcm",
+          "md5": "f4476f1f6ad4931619d7ae186ccab54f",
+          "sha256": "0afbed07b0d9edcc45f5d4036072da5a27870fbbd293c7a6e216ff396f6906dd",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.116389285591047419132152315912"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/a4d65b67-feff-4027-b2d9-c247e000488a.dcm",
+          "md5": "8fe28a25c2f0722466e23947a2a21693",
+          "sha256": "608d5e20d9b2953739c4e50fdc4fc1bdad4a82bb2a985437b2eed0345c85a17e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.118394615842239065130641332243"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/16fe4eac-3147-4982-9cf6-4c5b1ffced50.dcm",
+          "md5": "0a2bb149da6e1d427188b18b2051eff5",
+          "sha256": "88eebd470a1a53c66902cfd1aad49e0bccc3fde5ddfbd6662269a7ec803aa68b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.122816220816235466445530597213"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/b9b40212-918e-4788-83d1-07e8be6f031a.dcm",
+          "md5": "c341e9aeb099ebaadd127e94195c0c63",
+          "sha256": "ae3d5de365ab293952af2fa17ff93b2f56ec3e56f46ed874c606be39b7ab3a44",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.127737692023513216104942404987"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/b3c4eaec-a774-47f4-9b26-47c8ebd1056d.dcm",
+          "md5": "562f2f741c34a6ead764403f32012738",
+          "sha256": "26115710fc9549ab56c0ec67a4b67c85c4ab01aba6d4b990c0661ee28ca5c8de",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.128972754579400954471183748727"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/9ad0a6e9-ddc7-4be6-9254-e44e852022a4.dcm",
+          "md5": "0480d5cd160720a4477f941723d09c72",
+          "sha256": "d2ea65ade1848b00e06ba85f2c7cdb7ff461bdf964aaff1524ad0fc4675601a1",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.150064847774257453881271871850"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/1fd79d1a-0b18-4e76-90d2-3ab478660c66.dcm",
+          "md5": "b1963301f077a630eb6bf0a9b01774b8",
+          "sha256": "65b4c13396c02f36c4ead086503c340fb6c84139a29d7716e814e1318b00366f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.178836002044492899997583802620"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/15a84c48-a2ec-4468-b43c-ddb2bcc4756c.dcm",
+          "md5": "b953629710ef3f9e56145ad7ceab2e7e",
+          "sha256": "9ce60dcaa33232690e0eb74f9472ba9a17961be21f8a72d7516edc3695c7df4f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.189578052933695979527397164154"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/527b250a-cd53-42e8-ab71-071f2c406a8c.dcm",
+          "md5": "8ca67d23c8921f52372de6e70cb4090e",
+          "sha256": "e6d01345e4ae77fcc66de5a7f5e639431183847b1917f7e4153e171be2eacb69",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.193344214079695599915894758447"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/958af1b4-df36-45d6-b53b-55a73e2803b9.dcm",
+          "md5": "282d0431e5e779b2b0db0296381f63af",
+          "sha256": "cbd034d82d54404e53591de47f0cb76b2d54780963100ee92c7c775f809a6bfe",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.202871673384581919777648267787"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/4e17effd-131c-42b0-b82a-44a2d884d8e5.dcm",
+          "md5": "5f33f0b0ec94ee0d6c342acf8d84869c",
+          "sha256": "c4972fa5914caa017c141b003ede64d1a8aac1b153ea723639998d3997d57b99",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.233031277013186781860636166802"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/4efbf795-30d5-449e-be43-0ea76bdf5ea7.dcm",
+          "md5": "0da54e15b1282c065ad64d86a65ee608",
+          "sha256": "adad1e89358dc559786c231bc2022dd677119a3b91135a21b070b1d8b0055885",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.244498707341570860489368872822"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/730e4f76-daba-42de-b8ce-3e38c8acfd14.dcm",
+          "md5": "5b637e92df819cc87becf6d1e4042c2e",
+          "sha256": "72fb374fccddc52bd7b276bd4a500ddebde731d6eeffdf9a0e6dd15659753fa7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.247321332813598460344398603979"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/2698bea0-f918-4f9e-9e91-5b943828493c.dcm",
+          "md5": "4557caf798e4e58e0e3e09076a5730a5",
+          "sha256": "4003d8fb7246b8cc52bc9b543c955976c9a307a743f7251cadcd33e853c4c3ca",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.273037384915014620742914464345"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/00ba8c58-efe4-41f0-be83-ae135360ff48.dcm",
+          "md5": "1b8899f74c0878f48e74b265717a3355",
+          "sha256": "4e2c1f60f11350a2b39fc5f525f5ee41459c16cab945e6e47c2328d80b24dddb",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.276519328249771689544427058103"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/4ae1d905-f147-49ed-9410-b306342f6486.dcm",
+          "md5": "5d8b6236b2ac8a377a61afb9689a5564",
+          "sha256": "e0679750923676bef14e81fe7b0d162b40c3147fc3fb7452678feed470a72ea1",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.285779544942398794287334042083"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/3008682d-4671-4016-b3ab-1fe3df0bf029.dcm",
+          "md5": "0034cf7da768b79ba5716eba6a65f6c2",
+          "sha256": "27166e84e5cb28816b8eccbdbc4dfe09fecd325eb609fa0b1fbbc2aae22e4648",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.288787619309257020039910207684"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/645b546a-d933-43f5-a74a-acbe816c93e0.dcm",
+          "md5": "3bc6f744096d02b33a823b7c0808a674",
+          "sha256": "71edd6a4dcd50f8ecd5df7e50b254fd88abe617d414b6767667eb35454301af4",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.301457413091382517428720178067"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/a27c017d-9d20-429f-9681-d8d833d0644d.dcm",
+          "md5": "74103dfa1c7347aa42ce06bd4299da9e",
+          "sha256": "f48f502f36826c2ca4ab82bb8c419655bbbbbf271b2b1f8c710bd1cb7e8e5680",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.314631062382872746348898129304"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/1528bbd4-3bb9-420b-b469-25b6a41cf4fa.dcm",
+          "md5": "d5030a0e72887b1dc7d243376520b4bf",
+          "sha256": "39905ec7d38bea1ef509522015af2482342fa77f505633c1c6006d489146e905",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.332146400924932000691717015087"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/66f3bbf7-3fdb-435c-b2d0-8a354adee294.dcm",
+          "md5": "ae9e17e97102330b5324ec4f32604ea3",
+          "sha256": "d62ed015a12c5f642dbb29ab19d91e73b4ca987c658ca2c783022d569838683b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.386936544335940634104504855125"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/e090e64b-1221-4b72-bedf-498125d04167.dcm",
+          "md5": "48514b2260b5461f070b0d36f85505ea",
+          "sha256": "37c94aa8a21722465fce5fdc219b7071d6cd2b2b15027afed6606981b267ddd2",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.394924779408209055291859088755"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/db232232-51c2-4f94-a918-1e5b91b38c33.dcm",
+          "md5": "c2ba0aced3c5b4522a3559837e99a6d3",
+          "sha256": "9143c9743142570c5bd036511f967b9f48c4cb4f4645430c3fdafe7d3788119f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.461559004143850684773153208806"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/6a4e8fd3-0f5a-4e4e-b6d2-33f207c52953.dcm",
+          "md5": "f906fca97198625b83793080c57df5c1",
+          "sha256": "6262eb6988a8def0defa9ce3a262537715428f52e670e162eef22b0ed0afa08e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.640932794146555259784129087234"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/8ef637e6-54ab-422e-b773-ee4ae9bd0ad5.dcm",
+          "md5": "d2bb1052ebdb2155147684f5c3b3b652",
+          "sha256": "7804924c6fa89008fdbc63a55609250ae2b1da3c6bee457224f687d837c81cc0",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.926029751019559363816552260831"
+        },
+        {
+          "bytes": 527280,
+          "key": "229db430-c4cf-4ef7-987c-1f9b74ae476a/41ce7d15-8de8-4399-9949-731e9b294ef7.dcm",
+          "md5": "5ea05a89a4c7c895914f988d310c8ecc",
+          "sha256": "350706d19a72a40b713c1e309f72ea216eef127d37128c661bbaa0e972ac109e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.998707446257243062731144567910"
+        }
+      ],
+      "source_doi": "10.7937/tcia.2020.nnc2-0461",
+      "source_url": "s3://idc-open-data/229db430-c4cf-4ef7-987c-1f9b74ae476a/*",
+      "timestamp_utc": "2026-11-24T07:33:28.598908+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 15290946,
+      "catalog_identity": {
+        "Modality": "CT",
+        "PatientID": "Lung_Dx-A0004",
+        "SeriesInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.180864777119636615712187661611"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/d8ba7710-cb19-48a5-8f66-793604294bb6.dcm",
+          "md5": "0339900571c7ab4be0eef6f43215fac6",
+          "sha256": "c0a62c927881725c53560facc28f17d586956df9c7e53fbafb8deba4893800cc",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.134203532109248695362139266175"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/4a68effc-4021-4f12-9758-a0832956aa6b.dcm",
+          "md5": "9b21c737817a8e71c31b47f0c9166177",
+          "sha256": "1f2454378425c6b5832ece55e25b7784d42ca83de6b5ba3e81b38a0f44719f0c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.135596084977744527012371981906"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/57524f23-8e4e-472f-8f95-8478197301b9.dcm",
+          "md5": "b444d141722aed670ffd5c400a97e4b7",
+          "sha256": "07d6482c68264e1ffb4db1ed9705aa721bc64aebacf00eb9b74c07403f088bb4",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.137414650112790935978872190263"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/c723740c-4d51-40e6-95c9-10ac5fc85a22.dcm",
+          "md5": "4eb9d8e5aeedee4e9cd18ee2cdd7f2c6",
+          "sha256": "64b0a49fadc18f57a5348fbe04b1dfd254590f52448b42e1b651134d684e166c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.166100627496206186176778147692"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/af443260-a150-406c-a20b-5b29ef315d7a.dcm",
+          "md5": "defc36b93b3c4cea0d44b68c5c258414",
+          "sha256": "f6c9f91979823138d4ecb664cca9861989efd14c86ba76592f65c14d94657e92",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.167041301224551361846556424419"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/880fd2d4-2388-4444-a0d7-73f445d77615.dcm",
+          "md5": "f3e9f2137943edb584c079aa8537d74e",
+          "sha256": "51db33e5d55bbb8edb5cc94c5620f8fcc96cb7ae3b692bc4d547ef4911cc7184",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.177418797804404933022205946320"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/c9e275ec-2ed2-46ac-b7b9-33b6aa731762.dcm",
+          "md5": "5a1efb123aee83cbbd844367ba752446",
+          "sha256": "3ddefb03d7e39a5ee22b42d2b9c0aeb26e675c483d5807656801166cfc4acfad",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.179585922280840486887934909158"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/7581e324-bf97-409d-97bd-07fd8ddd7039.dcm",
+          "md5": "b64173c90e628bda2b099699c406802d",
+          "sha256": "4c8145829d4d1418a9502bcedab21b4a9cfb6d818fa20e730e9baa38236bb83d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.198775727717949223734030568025"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/1c3fc6ec-1d53-4226-beb8-9438d9411f13.dcm",
+          "md5": "6609521d8f9b12eef73d27d2999f6cab",
+          "sha256": "eb184f847011967923b7b9e5965aa4a9a767650f7fc7cb9173517bece848b92c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.204759739021798019137258080959"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/3beca643-06bc-4117-9faa-805231dc9e41.dcm",
+          "md5": "fe4b0658f76a28e15e0929301351890a",
+          "sha256": "6b947b4f412fe5573be2fd0f1c2c41e1538cb9e3902f759b7fb651441b0b63ad",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.226322891664887293996697468296"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/754597d3-9d9b-4fd9-b0ec-3725cbe768e7.dcm",
+          "md5": "f12c9c4b7c23a80df5b1ce58f4458b5b",
+          "sha256": "fe0b275e391dd9e4473c027196761f9d9c261ae0409c23166d62ac655087b966",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.238767209356779212113605184432"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/c48cb9f2-477f-4bf3-83c7-a124276ce586.dcm",
+          "md5": "18f72965a0611800d244bfd35bf37a27",
+          "sha256": "9a422d96fc1dd4099c1cc79e9cc775a50e5062492653e5dd6069ed575ce5dd73",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.240766702197765710612218171972"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/541e4722-ceca-4cb9-a7c5-d8794a23748d.dcm",
+          "md5": "c1784c6d30a6e8c408ed7d03e9bcc2a3",
+          "sha256": "255685ec95d48b512bb35e613baf9ea9d493a8a442611fe4e2b67e2969adaba4",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.244271453628710381988382961871"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/7442bbda-c64d-4bd0-8800-dff27995e37f.dcm",
+          "md5": "d04982194f8f8963edeb779728d98b10",
+          "sha256": "9b5b765c7710a93fe1c8d650dc35fb9fb78d1e0afda10f7977226892b3707a0d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.250557286923913833096869514672"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/e1f6a5e7-1074-484c-9678-10b2e6a46355.dcm",
+          "md5": "093a8e3bcd95d48d1ef7bb0e9e5eb2af",
+          "sha256": "d9ca5e20523189daf7a5e66354571d49b7c3753a7e141dc0013f012ba54d67ab",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.254544201029930826408338649224"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/25398e9d-eed9-4b5d-b790-472b85bc68a6.dcm",
+          "md5": "0e5d760387beecdf0094943b3c95c21e",
+          "sha256": "2baeb0d537deaf2fa977c540ae5fe683ad7ad1c3215574268f08a0a75a7665d2",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.256653038608949997590237440746"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/931bd377-c406-437a-866f-a4db1d2b4e7b.dcm",
+          "md5": "fcd83bc4597491b7a989ba2418c3cfc0",
+          "sha256": "d248a4ed0bb94812f7dfc4e44b47044db0e912a94ba8db1c25a55ef04dc6d9ae",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.272401537879904076182973338882"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/308a4d51-0716-4bcc-b67b-2ec213206827.dcm",
+          "md5": "fa0adca0edac2735e4879911932e9e92",
+          "sha256": "4fbcb6f31441f6d2fbc12c0f31360548a5167234bdd7c2491222cd2acc6b7597",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.273872584937781470216114954570"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/d3f065eb-f57d-4e66-8a59-cbd0543e707e.dcm",
+          "md5": "4f8b5d6d8a3e9cb5b4b00dddab715b54",
+          "sha256": "6d0966d4c482b0e49bb01d357b3f91a2716026540bc3514a137bec1d3ea7fbd4",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.299210261113606644360930891469"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/ca5f708e-c182-47cb-86a5-c7a4a822826c.dcm",
+          "md5": "1e7e4ded8f6d08df94aefa938617584d",
+          "sha256": "80646c17325cbbb855252720244c22377db498bbb2ab26f675495089b7dee3ef",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.306298465106949552477139517260"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/4c1742df-d814-4146-aab3-cf70f137c5a2.dcm",
+          "md5": "d5efe7fb88613bc15df557263244b4e2",
+          "sha256": "59f64a0a358a1531253659d04da024ee4aed6313b37ee15ffb0e9c8065438526",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.311118938126060898133803059306"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/c448aa69-5592-483e-afe7-b1de1552ffd5.dcm",
+          "md5": "6ba00370d2dc1a4b421f80c8da903950",
+          "sha256": "218c0d9cc733336e59d23292a83448f2067e2b9eddce57c3db01721ae898455e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.320961191810007798261860636038"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/db9ca67a-b394-4855-bb58-ea7cf93f5ae4.dcm",
+          "md5": "71e31a979ad2c9bb95ac8782f0bf841c",
+          "sha256": "0e05c4a0482719a79c8274a71e350bc1730c4458884a2166a1ba02c6f81cbd0f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.323502784198967910489606362297"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/0c6f4941-2281-4398-a0bc-4110f0eba785.dcm",
+          "md5": "37f7185dcae19bf75f82ca118f2d851d",
+          "sha256": "437794c9f0621c6f66c79350e1cdef2abd37e3c6adc0afbc3e5f8d35acb5188b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.332810079131614025874238863089"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/11a6e55d-cc51-4f7a-9edd-8695516bfb25.dcm",
+          "md5": "7579cd8b961d3a0553306d017afb0462",
+          "sha256": "54ef6f2f1bf8015693617bea660fd284f38fb27e202313570e92ea8fe0632682",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.333399652507459537660155739949"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/6d4819c8-6244-4f0e-a031-2f3c2cd719c4.dcm",
+          "md5": "3e32b36b3f4caf3a946bbe169c61a8de",
+          "sha256": "73498ab01080e359ec742540d6b381ecff86b506ac79d4201ace51ec8a1427cd",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.339566656760877877529450625699"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/71c80ca7-c2b7-4d19-9b9e-a0a94322b549.dcm",
+          "md5": "605168a9407f601093e7979920c9d14e",
+          "sha256": "b4cf412c9e0eece430d673f681d8a2d9c94f359baeac6a17152ac4e56511148a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.703173357114679718073093996322"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/bb87fde4-d578-45a6-8b3b-66820e5e75e3.dcm",
+          "md5": "a3ee49819fecab26ce1a9870fb18e7cb",
+          "sha256": "4fa13d3c32003d9b1b8ca628ad259d574759a381a6db72e40724610570fd60e7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.902140993095564555790742527862"
+        },
+        {
+          "bytes": 527274,
+          "key": "a1ac9ece-61f9-426c-8332-df74a8dd6b07/2562249f-45a5-4968-9649-a823cb27ee6c.dcm",
+          "md5": "100ee7a3126e506db6e7b8a6fdeb3bdd",
+          "sha256": "1a4a8d50cf484fe88e0aa348bc4ec7d227e18b51a57ddbfc0a3613557c6e0be0",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.939777517785846808534971627501"
+        }
+      ],
+      "source_doi": "10.7937/tcia.2020.nnc2-0461",
+      "source_url": "s3://idc-open-data/a1ac9ece-61f9-426c-8332-df74a8dd6b07/*",
+      "timestamp_utc": "2026-11-24T07:33:44.248622+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 15291178,
+      "catalog_identity": {
+        "Modality": "CT",
+        "PatientID": "Lung_Dx-A0005",
+        "SeriesInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.705620544303856566175354573190"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/076b35c2-552f-4fea-bbf8-98de432da12e.dcm",
+          "md5": "56324c12738efae0dc99334eca3f2bd6",
+          "sha256": "8cf070a1a5d5fe1880f7ab37d5938369d865d1203eb60897f64882b2fc737ec5",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.101375622622095702219871466616"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/e9289dd3-1ccc-45aa-a23a-40810562030a.dcm",
+          "md5": "3cc42147aa8eec17845b5e87bebe62f8",
+          "sha256": "1f7b0a7a1b23e6e7a2ce313226f06c2f51f869d0db3c8802226a7c1acdfa7725",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.106072221892033122699048009012"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/db5c9a44-9b5a-4131-bfc1-c20d33dab1d4.dcm",
+          "md5": "0186e26a05c24e3232c8e24c2ef6aee7",
+          "sha256": "c06b59f9170350b0a264537beb01d6177531d8c783e543e6a563cb5e7e8319d1",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.108938364978470588171036712028"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/df1ad9e6-c420-4ee8-9a3d-59e5db55d0e8.dcm",
+          "md5": "371e6ea261b8b9dedb4e0aabf0ab8871",
+          "sha256": "a2bce141cdb4e3dab68af536608a25cf3c9fceaf12c8cc91ee6644e66ecf0234",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.122010246952888101058027018115"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/ddba3c8a-9b29-4845-a264-7d1e681e1bbf.dcm",
+          "md5": "afad0b35bd4f2cdb517e7796169ef2d4",
+          "sha256": "ca0c86dac8cfec8e527b857b9113d4b380861187427ee4bcd1585d5d81d1400e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.139523695479290059893232436448"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/97732c16-1c71-414a-ad6f-b08d901f08d4.dcm",
+          "md5": "74a5b4fe8bbc6f911dbd547d9bc2275a",
+          "sha256": "2a3cc8bfeda3368b059f2aa4e67d55904c81dd0eab9278104a6cd0f6929a7687",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.140171326352969064431564120442"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/aad086a8-f919-4387-b704-20f5e77b5a49.dcm",
+          "md5": "d4a7abf7926c20c21b1b162e8bf7abfe",
+          "sha256": "904e26c8c6120115faed65bf8312917e924b4ece429424d5470d046dde8ffb81",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.148033287118555504741575918542"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/c5ec1ba4-2a67-4e43-91bf-2237c242fe6d.dcm",
+          "md5": "673ec4ff2536082de5f1995d36564936",
+          "sha256": "e150625389022cf5eab91aab03ab0f3a12951a179725ca73e6e157aceba6b78a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.152110581248345766823620981864"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/48dbe483-ca6d-4e56-8c03-217e42403f51.dcm",
+          "md5": "7e2b747f3bd38324c30a4eb4ff8aa592",
+          "sha256": "b4ebf3e250ca0fcd9f3eb4b5551ac4be961c06db2aeca5fdcfcd4f2bebf669e9",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.170407120010109963536575760969"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/6037ee5a-250c-4e83-8cdc-ba235362ac34.dcm",
+          "md5": "00425feabe680333d3eb0e5937a4637e",
+          "sha256": "869f422fe0877fae837534863d09a661f4c0458697f55d0c65878ddf6cce6d5c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.179237333799554054158787169165"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/e9901b3b-6d7e-4115-9b8d-a30b67b5b4e3.dcm",
+          "md5": "e98ab5f43d20ecd3899aa5caece4fd53",
+          "sha256": "739531e9c8cbdc997903e92a1d72e68b86c76712fda64f63aa70433c637d4aa7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.207881594788078614537460033555"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/7e9822eb-e875-4afb-8fd9-745813d59055.dcm",
+          "md5": "b2967ba8e329b0205ecc14878c6fa1bd",
+          "sha256": "c9cfd1b1c05fbcad88301628a179679a017e96773d70a7030c4d885cc67693a7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.211513184564457101331873641570"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/c7be60a2-6b22-42f7-9d86-cab832385de7.dcm",
+          "md5": "dd89355555876c4812c2e61f919a8df6",
+          "sha256": "cb9b9c02380320937b8bcb0313e8fffcb6de57751c9bf278c48183f68b09e44c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.216446419729907012382886246572"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/793fce43-fbcf-4820-8274-692d0b039062.dcm",
+          "md5": "54ce06a6dbc4db5c85fb5d3b23ab4860",
+          "sha256": "43bd3829547bb07d08f15b8408de534ed18996fe5574e40e7d21229ac8addf18",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.231851602571658481666246630862"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/8289c562-c188-4d7a-844e-412c9ca6a8e4.dcm",
+          "md5": "4a0ab191b749b499a8e833fdcb7ac417",
+          "sha256": "35518d469c7696fbcd85298606dc38c97a8f0d8f64cb8bb90781f1545a9b5ebf",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.254406799499115952006473655348"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/6776db6a-3ee8-46bb-b2b5-a305fccf665a.dcm",
+          "md5": "f79db287fd5701a6de3a07da38374565",
+          "sha256": "b22d64b30d1538f0505e0b5f46040367100fb21fbd354ab18959d389e7d51d68",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.262737518714435814804434441840"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/95688978-eafd-4b57-a07a-49633f35eaaa.dcm",
+          "md5": "5eea133c55dc6c97d29fe09a0c409be4",
+          "sha256": "9ea68a7b4451256ae343e61fa54b66d6ac91764d0dfcc6b36cffd8328360574d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.282722697102598460886779256642"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/bef4316f-9db4-4ff9-86cd-9994d8ee603c.dcm",
+          "md5": "3ff59f7d93b3701e0faf90e5667d7d21",
+          "sha256": "8803f4bb7584d258e5a676c90e4443574db59dbd3e25328b917c982e865dc0d7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.288215482082326060925983491354"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/24796f65-3e78-4a6d-a358-e4ad9cadf80b.dcm",
+          "md5": "091fc2776e463b634bfed5b713710fb0",
+          "sha256": "ec4940eeeaef5af28964dc07975b2046687ea7936f7a9f3b9affe3fe0abbbef3",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.306531686481067102288341135809"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/013a59f1-9fac-4877-b295-5dec26f72a1b.dcm",
+          "md5": "269277da23e61aedfa8e07e9df69a716",
+          "sha256": "35c04b01bd71955d4bf840cf33468e3e9cd2095a104b98bb34af38bad933944a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.320273095142378016226556660294"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/8ff53027-9ea5-44eb-80e9-f4b1d2729ae9.dcm",
+          "md5": "ee2c3fb8f60be1c351591023b856684a",
+          "sha256": "07076586b70f6a64c945ad23dcf9a3cd32ef641f559e184f9ad95aae06a9b575",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.335532462520554961271003673884"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/cc813ce3-5406-4f6c-be48-bccb4c8ed7ff.dcm",
+          "md5": "326a7ccb18fe7fbea1edf79ca7391bfc",
+          "sha256": "00c36bee246265165b76382073fdd33ae1eecf0436b8c565901c1eece9f360ba",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.335785628948298868273492296976"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/d3724cf0-5edc-40c0-8b52-1c63c5b3ca85.dcm",
+          "md5": "c581ee97cb8cf41eae5b7afa2715a4ba",
+          "sha256": "b778319054346c9972f76cd296e72ed27acebb42377411ffea101f338d148e74",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.533729232307970772729492596503"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/11d3b38f-48d4-4063-8de0-9271c71e2f00.dcm",
+          "md5": "bfd9b6644c5a514d9c3a3d66ac5788e3",
+          "sha256": "c4dfa9ade8a08cba66d58cadfb943ddb736cd5e8dd81994ee2d6193fd85dd708",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.546724858519085846709367365957"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/73fe04ad-f0a7-423f-96cd-964fde37862a.dcm",
+          "md5": "2f8d1e0de61b05333c3441659414fdd9",
+          "sha256": "efa6a80a698f5164ab827e0c5d34c79927f1a5f338b874cf5ae620a843d0568b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.652942856062325385900796919982"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/30cc5430-1a3f-4f8c-9903-672dbe86ef22.dcm",
+          "md5": "d3adc6c457bff9444d05c77f8827646d",
+          "sha256": "04afc9d4dc5e0237a923d6787d69878c298c782f0c57c5aac49e6096718302cf",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.676565039089606905952986134965"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/072d9b28-2b63-45bf-8aed-58b30c5ea3f5.dcm",
+          "md5": "6cbe78ab3632ffa256f8a4396b953c26",
+          "sha256": "eb4b5307ee4ceba6b092bd212a9fe4e0e608ad8187e83d8286c4a55a83bfbbdf",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.772229966121197865933746489529"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/513acc55-4759-4896-97ff-8e5f8fe911ad.dcm",
+          "md5": "c5f9e222fec68c0c21b6d0d7aa9b6406",
+          "sha256": "f4c81d48d3606e9b4a651eda10d830c4ed4cf5e0f2254dc97cce6b87a5ad392f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.920569357254540006103201093822"
+        },
+        {
+          "bytes": 527282,
+          "key": "f27334f8-d04f-4b45-83b0-923c09aca6cc/0240e8f0-8702-4417-8b3f-2e3354941538.dcm",
+          "md5": "cb77a28454ff80f8f9854ff6a6664dd5",
+          "sha256": "6280a1b3b68208bb08ea967c49b68b91cd05a88a64aef3df569087dba0a7ca04",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.983989507248824891552276043327"
+        }
+      ],
+      "source_doi": "10.7937/tcia.2020.nnc2-0461",
+      "source_url": "s3://idc-open-data/f27334f8-d04f-4b45-83b0-923c09aca6cc/*",
+      "timestamp_utc": "2026-11-24T07:33:59.992479+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 28476576,
+      "catalog_identity": {
+        "Modality": "CT",
+        "PatientID": "Lung_Dx-A0006",
+        "SeriesInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.130455256828420458848095002074"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/47e22388-f316-43e9-9c11-98cda3838d75.dcm",
+          "md5": "cd4e72511b173960f6226f57731ea0c9",
+          "sha256": "0492030f4febcbeaf32aa5868c922818dd62760a02b8ff0e39c9744a462bf908",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.103059767288794151375973568798"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/46299649-20ab-4184-811e-9a460559bf06.dcm",
+          "md5": "4550a3fea1bde40d049f7ad28ac34b75",
+          "sha256": "67e448ecb418d6ac2d06f1ba508d32d37acf9ad09d0a1e38be928f69f941ef90",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.104638712138901643634999257352"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/64c2d6b0-fef9-4491-9fda-4d126e78ef31.dcm",
+          "md5": "61bb89d34b3aa430f59013331d16d1a6",
+          "sha256": "bbbf21ae8b8ff0b08e65b79369d7bc52dba2a8d47ba8c274117239081c3d4ab6",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.113187111441488501582438568696"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/8d29c098-e765-48cc-b8ab-4d7acfa11dad.dcm",
+          "md5": "ebf4f87b4819d1c7caf5e95d4e8c3ec3",
+          "sha256": "726c1762ac1951e6ae509857c4684a46c717627fcd28a82b79d50695d86f459e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.123855197933173576675900062720"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/80b2c693-67fc-4efc-b5d7-a43e6b757148.dcm",
+          "md5": "ee9403525bdefd717223b978fb66e4a0",
+          "sha256": "61abd8e2dca09e18db62505e29716a18e803098f4b2e7b4546e88f6e73da178e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.124542809647826074826731552673"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/2bb5b2e2-f25c-4a4b-958c-b390a8622598.dcm",
+          "md5": "05651b444e4840a1f957ab00a89eb3fa",
+          "sha256": "255dd0e2ec947beb7cf6e7c69fdf89a0b586b8ae5010cfd41e9ebd31c07c9217",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.137063186376862724083958910678"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/310bbbe8-f963-4d68-8a9b-6a1143faf7b1.dcm",
+          "md5": "fb805f8f4e2c933b9dc8994c1063a19e",
+          "sha256": "e7209d67ce33cf44ba583d2e48381b66442acf592b51ed0502b9fddc7f095a58",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.143668713743963449861774738424"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/476cbcb8-fd83-4804-8578-0e1e7f23e18d.dcm",
+          "md5": "1cc684350456ee0a4e8a24fed867e5ac",
+          "sha256": "8b7a4e5811ab091f0cd56eb98a2789687cb7fa64325f7b27eb2649c65714acee",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.156755090878614593145586564829"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/21f7954a-4ac7-45a5-a463-d1aa497d2798.dcm",
+          "md5": "3840d902d15cbf1100c9d3356f7aa2bd",
+          "sha256": "e52a520ce57e61645368db51212f04237214f8f2c506955a673261a1a3ef3911",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.177817405478248407917890848520"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/4e412a4c-e8ce-4e2f-9a59-be1b3193ae44.dcm",
+          "md5": "1dad4b4d03c80017f8de911dcc78a108",
+          "sha256": "cc2ba0060c8b073d3cc2b6f51f06488f6cbf44e39ac6615468062df3ca49933e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.179609775103414589419478834759"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/fd9a3a9d-fb2a-4ef3-b426-1fdce7ffd1e2.dcm",
+          "md5": "5c978dbe09d30ddfa096385fbb7e0406",
+          "sha256": "06221ef188ea62174983f0c5516547cb15e5e39706666d514cef0ac24a8ff81d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.197512621432859616075551408876"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/49e9b171-d86e-4b4f-8069-85f31facfa17.dcm",
+          "md5": "70e15ce3b95c8ebbc8fe21e84b4534f6",
+          "sha256": "e5555aa98ec0cee084d1e941b0997ffc7f6991c4b78b56cfde90274dbfe63c2c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.207088218324604687659190410666"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/4f776ad8-4e40-478e-8467-cda33dc37719.dcm",
+          "md5": "fcba0545ad6ffa101fae936ef3de32c5",
+          "sha256": "260613d11ff948adac5c96f3475e87b047f31b95423c62ee7ef9fa57426d7a4e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.216357323101990634986806942358"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/eeda25fb-d312-4b86-8324-d53548e4fe18.dcm",
+          "md5": "26538510d43b263bc2f8c39038aa24da",
+          "sha256": "fba68be7fd97452f0569dd0cc76498fad58c13aceedc7e03db0b05ad901ab487",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.217260904284563579184991029992"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/eeb5836e-a4dc-4de8-b51e-8695cd3f1d95.dcm",
+          "md5": "3f8701a5b60541ce08db8227ceb1781e",
+          "sha256": "5d7c7cc057fc96258026d68ff89f8e7e64b121c97681a049f48b0ba5e12cd270",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.223256831588446194544962866256"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/1d18a6e8-10a1-41b3-b406-4a77119af096.dcm",
+          "md5": "74909b5d43ec85ac207e6a76e49ab62f",
+          "sha256": "6148f299d07e242333a8f7c3340fe5e55a8b1184e11995939918bad8c8ce7ffd",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.228703891472976357993922157450"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/94ba3946-ffa7-4c63-a743-14ccf41d494f.dcm",
+          "md5": "06dc301eb6bacb3fd3af68818f5e3d2c",
+          "sha256": "0bb5c6128dec1227450629eeb11551445cbb7c6c77701d286b90c0ae70e890fb",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.231545040970978765882031423913"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/33474766-b055-42f4-880c-a06f3c56d127.dcm",
+          "md5": "0b97e43f123d272fd35b82f68420f7d2",
+          "sha256": "782ffe79372d3d6a5198074389b2400307e0f05b54d69e3d7b7ea789c37098da",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.234088939481298777414463272095"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/37c95a00-2bba-4a33-906e-e0ad81f8eb28.dcm",
+          "md5": "debdd280ab2b3ab9bbaa8aea35e4f8e0",
+          "sha256": "11ac1ee876c21805a5221e4f1fa81af94aa194941893a6e60ff75d3460b5fec7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.234489415649988759419444781163"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/551b1cfc-ffd5-445e-bc7e-4835ffc109e9.dcm",
+          "md5": "9cf0ac12cc9c0ba253cecb608d0f6987",
+          "sha256": "cd8ac6898b95b86816e261fac60383dc7bd4f8394ed68fd02550a966be7c28af",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.237672515186342319425797081632"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/29514923-7d04-46ae-806e-d14f8517873f.dcm",
+          "md5": "250237c2d95c7e364e4291b025ee92db",
+          "sha256": "7602f82b739b4be5c10737651d2f008648e5a9a4b00ddefce4f354e981c5532a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.237738379167745946048701765745"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/f036ac6f-c2f1-42a0-9f96-3c5bd242b816.dcm",
+          "md5": "b812e0006d288cf526859d8b94173b3f",
+          "sha256": "265928b14b6e6cf3f15ef09a25e2c9abf1018f83ee8912da62b99392d18c7370",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.241871942240862060566805385815"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/64bc2354-a7d2-4d7f-8dc1-f42deed9bb82.dcm",
+          "md5": "350698320e8a595d183a20d8b9d8335d",
+          "sha256": "020d3e2c7b22d4ddbce9e005a4ace7d8855423f6dca63df85cbae7c129cec758",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.246993660824655655376504831313"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/3b5bb4d0-cfe1-455a-a994-5cd773e80cd8.dcm",
+          "md5": "3fe37c87a777d838f085aaa42c26194d",
+          "sha256": "5832ff337e231354a30c6dfa98511bf318eaa498185af05b1e13286ec0b1d1f4",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.247705914605316955303892900311"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/f639869b-a152-457c-8210-437926516b63.dcm",
+          "md5": "925e59b752c407445f9c1648f7cd27b0",
+          "sha256": "2c05f8acf10446e74e2ddf64cd85ede12df9876cbb1bcbda8f9d47f1b9bde812",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.253076187433799458290264186403"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/942c4dcc-e7c9-4e62-b501-491a05f7d230.dcm",
+          "md5": "8775c8d645d55b99c76b6fc4001e188b",
+          "sha256": "b003a478d16cbc1ba4498ce8915b42a7b9d59656871b220c15b60edf3b3baf2a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.262560390216040389292993991645"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/9d4ed11c-81f3-4c51-939c-f3a8e238118a.dcm",
+          "md5": "7c9f136134da519a7d3dd34cece4d8a9",
+          "sha256": "abd7530dc5ba63399fcca2eb1bf74490afc594ef983bf6aa29ebec49fbf4e7a4",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.280083079913298464008412876855"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/eb941f3c-70e0-4d36-8059-6dd7f3c55709.dcm",
+          "md5": "c5c9412ae955c3ffdba0fa91b96a269d",
+          "sha256": "a70998e8f42648be19373fab9f00ad202726794e3e019983dd5bf1a129dbc8eb",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.286094169771212608007077335977"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/d440814a-0bdc-4131-b053-5750f5dbf351.dcm",
+          "md5": "efea544f7556c13a72a96aed3fe41f9c",
+          "sha256": "5582fd5a30bb801985e50c936cf19b015adf85e25f55ecfe8902d37e4f2f2863",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.286543945601309559697353741136"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/dbcf6c91-12a3-4333-9087-a24e048dfd14.dcm",
+          "md5": "03cb35a7a52fba4f801091b7e97faf83",
+          "sha256": "18aca4e459670157659e763912d4c3f92f740eeb088f04061812f44216d4aaac",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.287963496380748732392554796804"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/ecb433f0-4284-4baf-a4e1-2e6bf9c6b4b7.dcm",
+          "md5": "13312ec83bda4c8dd937a1cc1d1c3c50",
+          "sha256": "4c0acefced3b2a28f081f65cb58074130d6dde99084c9b14bcf124cabd315fb0",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.296804952077100291409726199429"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/78107b56-0773-444b-ba56-ee6c348dd38b.dcm",
+          "md5": "f193157d19b8b1e7433addf7ead0bca6",
+          "sha256": "4e8be881e87011993bcadcfd6b542d12028ef710256aa17b3f436d2982d04865",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.299624330684744834805461620261"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/e936ea6e-e777-479c-a11b-709212024b7d.dcm",
+          "md5": "533586b02c7e9bf6fd08fd102da50f97",
+          "sha256": "e9971e6f101487aafaf989995d43ad53c0baaad4f472677e1e7e11b6cc42cf42",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.299904933650839862036005260369"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/b62afd40-0f45-40dd-bbbe-6ecef8c323db.dcm",
+          "md5": "74cd7763a8c2a6221a998cd986d77d7c",
+          "sha256": "0df5afdc2a13aeabf9dcecf6bbd7b1c162d4cf30731cc25efa609ced65987c3f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.301147045577288903705881302929"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/b68221be-349c-4c81-9273-405868a06ad1.dcm",
+          "md5": "bf351f8736c5c5211a9d46ba309f9eea",
+          "sha256": "dfe64aafa3e5133b793b6c9156aa5a6784df1cab172b12ae4c1136e6fc797016",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.311874856367419371268655396579"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/b2c299c0-cc1b-407b-bd94-1b205985549f.dcm",
+          "md5": "f5ee832943c63f5996c12bb78e9ba0c5",
+          "sha256": "e6359bc4a11c09c8ca77b0e1f8368ca00c51788f38bccaecdd1566d641785d89",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.312055501770323329842779349339"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/85c30531-e63a-45e5-af27-99cc9e99c315.dcm",
+          "md5": "ccf525592c028badadbf194f7008c816",
+          "sha256": "f52a37a4823cb4cc3b0411f80ee4516e0d013db00e1863dfbc619b5549c5b2c7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.320160453808694847032992083540"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/33471bce-2b4c-489a-a1b7-379ff4f9249e.dcm",
+          "md5": "141f76244fe052e35dccbfc3f0b6d748",
+          "sha256": "741b1433ab633a290875e65b0cc4e74dc0291f188c3f7beec5c867b645846a3b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.320233533490854402345304115434"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/def924bc-bc19-4138-b0ef-6a366bb40634.dcm",
+          "md5": "e5fbfab1b0a47700d3dfb68153144811",
+          "sha256": "ce328c0c4715f7253ca7f132401f88acfbd2ec09dd20dfed567ed4d32829664d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.325300452578412216085211846711"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/de7b05be-b261-4c9c-b1d2-405d82f7d5b3.dcm",
+          "md5": "00daf4e75705d4f7b3069bd1cfabc249",
+          "sha256": "8f889fe496e2e302f28b63fdaf087f338956520e41f356c4d481a613610ba33a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.328265836279143952948099925224"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/9e927e27-e050-4b37-9786-37ac3aada86a.dcm",
+          "md5": "f06b56fc6a6517951e4d408b8f83a1ff",
+          "sha256": "bf474e554ecf921e0a52cbe85384b91a949ba882b9c57c44265d1bba62db4ac1",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.332491359664739763320750970894"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/a95dd180-8039-4f70-9a77-4ec413c5083f.dcm",
+          "md5": "e8238a9318b5fef4c1e21de1a01bed02",
+          "sha256": "159e97a545a111fc416d55e1cd10b5ae1b55e385f9f8f452ceccdcf5d0d973a5",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.339317059291095601199363476716"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/38c0f9ea-39bd-4773-9711-4cd76131e430.dcm",
+          "md5": "3f2716b45773c9818fb8f6acaa425a2a",
+          "sha256": "7b2e45e2f557e11d46b0a6e3fb5d49662dd720417ab7f09d3e4df29d6a02f615",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.421853793598173128231504796197"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/8c843441-058e-48ed-8c74-e9720b46c311.dcm",
+          "md5": "01d47398799dd860f0e76d28fc97d887",
+          "sha256": "803b5dafaf562eaca85da64ca4b1fbf1c3dc08edd54985aab9bed9a7dddc2c9f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.525997857830681114411289494411"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/ff59b9b2-a28e-4330-98f7-baaf174f7089.dcm",
+          "md5": "312375fdc0cfb046fb2e58924a102289",
+          "sha256": "976fe51a98ede002dec7d8a8a32a40b5b031fbec405db946e00a3cfb8025271d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.533794605756545874948050727356"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/7815b888-4ce2-45fe-ad34-0c3422b2e11a.dcm",
+          "md5": "576c1925ebfa7c9837b8fd58fb2b47ca",
+          "sha256": "c51d28ec154c9701443300efe24c10fbaad847cea03a9b88802a105d9508ac48",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.565936525037204727781796204367"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/91470e90-43f6-43b8-91a0-7c24c5b3c13a.dcm",
+          "md5": "50467cf4017dca5a041244c938521aaa",
+          "sha256": "14a3a9b53346d4ae9f5242a1cd1b18c563db113a3474f370e5659824e011d26a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.606904860195882189581482476354"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/1954d543-05e7-49cc-b990-826fa91a1815.dcm",
+          "md5": "60898b793021aef8847166e23f09d1e8",
+          "sha256": "7228a7352d7f8447c6bead035c26f3e04b9c829f616306e560413b829f3f2981",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.615826442264897265691860442597"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/fbc31239-bd6a-4f7a-a48f-ea558c782ecb.dcm",
+          "md5": "1cb1828a7a227bff0785c7a913f33e2d",
+          "sha256": "579f46180a2ddd1259b68ca7893b36acb68f2151ea8f8ee39a6acc2186c55a54",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.656663665103040328372846249517"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/f8e9e376-20f1-4782-b08b-c6fdec9a0fd7.dcm",
+          "md5": "e769c47554972aadcb1178c7e1b18c04",
+          "sha256": "29ad74485a4b6f2c4d38e663b3128b53636394aea368d35108f22ba3be9a8ac7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.705742596226489977235169606511"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/36f8d2d1-3886-4048-98b7-8398f0e34ff5.dcm",
+          "md5": "e06b9009692ad8abb1de5112f1218744",
+          "sha256": "7639da507f86ef2309b424aeef6979136bc413e9e014cfe8a3b86e01ccbc1d8b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.842877631089803606192982712386"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/6945df10-36a7-4f7e-9ec6-12fbed84ee27.dcm",
+          "md5": "1672984adeb1d2d6ba38f5396ba41c84",
+          "sha256": "f24a40bed5f07054188dadf145cb4d185bb955173f24ea14a3f6863d186016af",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.869440139439107777251348293457"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/3a273d14-5620-4da4-932e-3959c0c029d9.dcm",
+          "md5": "d72ce414fa23de693b6cac87804c9ab6",
+          "sha256": "324f888a4447b8c505c7e8fa84fb0dad11276a56aace259d5543c15f631e471e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.885315704744316537018899764882"
+        },
+        {
+          "bytes": 527344,
+          "key": "977926f8-8968-4dc7-8c36-3839224d1ce5/c9cf7866-a2c2-447b-927c-7e650e927b83.dcm",
+          "md5": "d5b2313d5ddb6f69643731995ef968bf",
+          "sha256": "9f84e2336517a9ac3bf4bfce1875a085415eb2402821d9d401fdaba0e10cf820",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.966552516561067562698369649950"
+        }
+      ],
+      "source_doi": "10.7937/tcia.2020.nnc2-0461",
+      "source_url": "s3://idc-open-data/977926f8-8968-4dc7-8c36-3839224d1ce5/*",
+      "timestamp_utc": "2026-11-24T07:34:26.646577+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 29603704,
+      "catalog_identity": {
+        "Modality": "CT",
+        "PatientID": "Lung_Dx-B0001",
+        "SeriesInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.122096692095397563120420547122"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/442bac28-97ac-42f0-a871-80b73da09e9e.dcm",
+          "md5": "795cb9edaf1896eeac72b00b0dfdfaef",
+          "sha256": "028386706115431b94469d15a8967977a0c6d0d9832ee0e00687d6e8665a98dc",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.101979322956484608759541053434"
+        },
+        {
+          "bytes": 528634,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/34ab6572-2f49-428c-98d7-3c9a92438854.dcm",
+          "md5": "72696d316414460e7fa4650e8721d491",
+          "sha256": "89e99f860c3b7df0b746cce596ec16e6d2f795ec3453974f0768cf03d8941671",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.104145030393217944374879264753"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/2eead808-29ac-4105-99db-632a14b3b5d1.dcm",
+          "md5": "56cde13ed648b0ed37ad0b39075e4c4f",
+          "sha256": "4f533b5fd43ed9567ad4be21d7800c773842b8d3a50d84f838c12b792aa6bf56",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.105815254149374398359712099184"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/a4793824-0cb7-43aa-87f5-13580dd83363.dcm",
+          "md5": "e37dd0bf2571fd7bf5021962ec9d759b",
+          "sha256": "4fb57a82736bf9409327b84cfeb0afb4cc6141b745c96c23699266278046a452",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.116524195080346923080787267986"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/c4f6b343-4a3b-428f-a91e-6bbd735add97.dcm",
+          "md5": "7a747f6ffdb8c8fdd2e0fed5af94e280",
+          "sha256": "00a50cb88f8fda57de7a67edcdb16ff370dd9802b271f1d224d8f30bd58fa6df",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.119189515818284347236209894880"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/46037439-4f55-4f9f-a71c-42a1cca7b8b2.dcm",
+          "md5": "fdcdc34b75542a187e358cb88dbd46a3",
+          "sha256": "4f77b975ed3b728c125d6664e028d0444181795695a54271cb6a6e41a983a3a6",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.129913687377292754929418604625"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/29303cfb-5569-45bf-b7dc-69e2a104d52b.dcm",
+          "md5": "80626478975305b5b1cf88d29d40f106",
+          "sha256": "b2dcbdfb37d833873df787f2cd582014ca4148121f44500e5bce8c1a2bdc4e3b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.153223786420192487716866473766"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/88c41d77-68b4-4e8b-955d-5c48e3c1ea99.dcm",
+          "md5": "464ca05e8a2f0399d2864afe262d3112",
+          "sha256": "cf373cca1fc33ca1b2bb824bd7039a08ef7f575cecd46fff851827f99c8d1deb",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.156493092462640061261362191290"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/bd73bdac-4db8-4dda-bd82-6366e9ebfa63.dcm",
+          "md5": "2de1bf98858841a82974ce2e61016614",
+          "sha256": "ab5a7b16c6a8c2854bd6143a91d8364829e1f5b35aa609b724524d000ec6298a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.180554489556473665306641851503"
+        },
+        {
+          "bytes": 528634,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/f99a16a1-22a9-4889-b568-607b16182ae4.dcm",
+          "md5": "6c46b82b97c1512000c3b4f9e64b46f5",
+          "sha256": "2060fe081e8e321f0f8d5c88c755e3a15b43fa87e6e19ea849139479fa596c63",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.182003535111346378209231133496"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/4bf35b8c-4349-4f2d-9731-c146ed19c20b.dcm",
+          "md5": "5e7934762b08910131575dac0414cb00",
+          "sha256": "3367886a9042d5b7ce7b5e8c7bc7d658331eef5a78757ef11309434cf185f1b1",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.186293232784259886335148769978"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/2f6c8c2d-aa40-472e-881e-3888a8ee25ab.dcm",
+          "md5": "60a8beca49264f8627d3aef39b214f3f",
+          "sha256": "afe0f2862fcaca757fd221e6e768bb07f070b992625c1e7312d7573af44a80e8",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.187198042881939615623280520888"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/14a0b300-ceb8-4f3f-adde-2b2b88207f50.dcm",
+          "md5": "c3849cd1dbaea92346751c8626af431c",
+          "sha256": "e2c95fbb7d82e752bbac1355308b58e9a311609775d8993fc7c3b509f3741af5",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.190841483199021703703625642320"
+        },
+        {
+          "bytes": 528634,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/2f492c0c-a4db-4d59-acdb-411642d02706.dcm",
+          "md5": "92665c819ad580411fa11aba531dd693",
+          "sha256": "3605bd0b0e43192864cbf316711047987b9d08c4c16dbf67d14933970b3e55a1",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.192105901207812541256713691113"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/65705441-81be-4f91-9136-04b6f080a5b4.dcm",
+          "md5": "2b32aeeb6f3aada8230143956c95d6f0",
+          "sha256": "c2bb97c878aad6c19d33a581c4e479aee1cc3cf3396c6d9b362fc26cf1deab7c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.195019565995545939966293988270"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/09469e9f-34fd-4b01-8a2a-3993a210bb35.dcm",
+          "md5": "02942263f2391ecf7e7dda54ea467956",
+          "sha256": "c1e8b6c1bdfdc2357544ab4fbdac13bd32029a8bceb76380bde5c1d9dc9ed8f4",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.209531988594481346199326519232"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/ce0e4533-8594-4092-9d76-5764913ba083.dcm",
+          "md5": "35e37d77331311d7f66bbdf58bd32927",
+          "sha256": "a27c2b260e704a9f615c06df06fe14e920bb63ad17d3ecb50baab459be848f13",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.225629872874008223787103412155"
+        },
+        {
+          "bytes": 528634,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/ed5a583f-0833-4580-8594-d5349002e2fa.dcm",
+          "md5": "d0c0937e25a971cb3fd98dd55572eee1",
+          "sha256": "4ae5493962c0a9f94b1ad89d677485d13f031b7978af8c8964325d787bdf64bd",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.240618958084234613675365682343"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/c3b7d061-4845-497a-b17e-05f6a527f995.dcm",
+          "md5": "df1575e5cfb8c71657c652e027bfed47",
+          "sha256": "3809826a87e8ed9220d24afe934ccc7ada1db4ee9c1e867e02751d55c5aae620",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.248202825423643454650253204264"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/dd265822-8bbd-4688-bbb6-db95be207e12.dcm",
+          "md5": "caa6d8a650bd2f3bb3c42cd7d115c6f9",
+          "sha256": "fa727766008f6a4e683731dea1e925a6b7cb3e0ed2e2e60b7d3e815b67b7f8b0",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.255976267012219814734143656396"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/b95c68bf-1876-45b3-9121-32870e284cc4.dcm",
+          "md5": "fa5cace1e801aeb0d2698262c682087d",
+          "sha256": "09b8c799e25210878c02bf385a8be2d0183f5c38db0bd96b1eb28a1040bdf46e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.257001327396735965131919294977"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/6d38b41a-3aef-4f4b-89c2-8f1935b8ffec.dcm",
+          "md5": "1cda34597b4d565205179f659180e997",
+          "sha256": "b3380b6250dda1725265537616c90494140dce253328cd92956f5b887a98d3a3",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.266100492859259412999291402533"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/7cc82423-4262-478b-a4b2-2532dda3bbf6.dcm",
+          "md5": "94fc0b687568741dcd609e1d17b84c26",
+          "sha256": "dfa3f43769a7e8695c738a83ddb631a2b4dee3dd3069740bd4b5ebe08a422cdb",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.267076728806889540405063638080"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/36297464-700a-485b-83c3-af5da007fed0.dcm",
+          "md5": "5c8ca10fb3bc59235c97d16018fe7307",
+          "sha256": "2f7a803fac26b11ed3d27f06bb8690aa35a0ac10ac9c79ed188930c0b31fc2a5",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.269281310298396300069166840445"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/d6cb41d6-cb1f-4622-b79a-0ce90300c592.dcm",
+          "md5": "719a4a48bbbc31974030285f541cacca",
+          "sha256": "ea148d9f1b4cc8a652c5f4c129e8d3d2eb7984f28322cb519447a9d5e6c97a9b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.270525723344240937637739814436"
+        },
+        {
+          "bytes": 528634,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/6c05f0e8-b1c3-4338-bcf2-9a140ac52ef0.dcm",
+          "md5": "93c6430d61d224af2e20b77f44f9241d",
+          "sha256": "e96c01105f60046852d921e3d57da3a25367083e6ae472ffd509f24fd8ca421b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.278170243026697521697449371287"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/65e639ad-a1be-423c-a516-b2fb7873971e.dcm",
+          "md5": "b95e9073edf0009a97aa5b5e13946c8d",
+          "sha256": "da1223f8e4a309a4d984a72cdd5fd163385cdc7e7afaef4d6604af6cf12f61b8",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.284090889348161063899260062653"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/471852a8-3bfe-424d-823c-de17761175e6.dcm",
+          "md5": "00f9f3aad7809efc74f70b2c5c8d099f",
+          "sha256": "323f2885fcf9593c032cb8ba76bf9b064972bf88426eb16feca581621fa90035",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.284104843922305532468454219612"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/4bd00745-c40d-4dc2-a3e9-5a99e3c199b4.dcm",
+          "md5": "b3ae5a0cd520fd23f79c4bc1d0cdc780",
+          "sha256": "becfd15a66b28f72ccd2f87bd07e7442fad02ef7e639ea0ea02ca40a63817d8d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.289521797494822324266162686144"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/b9f496aa-36cb-4d9e-84a3-1a83ed0cf00b.dcm",
+          "md5": "2c85e9ac72685feb65ace5da7138f034",
+          "sha256": "e48e7ddedb345c7b36ff9de0c10bbf99ff947252ecdaa4cde9a7b4f139bff7d3",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.291136439207897141631670730318"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/5ac5c08b-a893-4c58-a723-6c179c65dadf.dcm",
+          "md5": "dc1210f575c53021b2ea40e07b2b80d5",
+          "sha256": "1d1df9e01e32f52dfdfc45f886cd6495c3e83af0854af4edbf07274f5579863e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.296739713678234452759629442589"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/acb7945b-957d-4b7c-b4c3-53fbe654a341.dcm",
+          "md5": "36f55de449b6453a3505aeb6c5a41bc8",
+          "sha256": "fa900d8cad72b7511ed4eea62669a274f6864de1b5a315fecb8f9cbe59de5725",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.299295739284208681161294024647"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/6e7f3661-fbc1-410f-8eaf-a39ed0909e10.dcm",
+          "md5": "0aea365503db62d74d600c49e8aca948",
+          "sha256": "0c8330a3e343ebe662766070774d8b071e50f6e0eec2790fd0eb65a762c0ad40",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.303625359455664743864881253931"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/2b148320-c756-4d3a-b889-945edc453fc7.dcm",
+          "md5": "66264684ca8d6b9b918afba2660d4adf",
+          "sha256": "a50df94f4f8d48123ef7375f0cf8d91f0d7a46c1d15f3275d3a1632e5474724a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.311243094994586916422558030399"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/38a52765-16b0-490d-8ca0-133cf5ee3b41.dcm",
+          "md5": "0d7a2238263f4a0e731b3df878552171",
+          "sha256": "6b96b7f22a152dee55025bc20a3a0c7575c630929ed6f66270cbdaf5db9ebc15",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.314225510290573514150951338589"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/e705f161-7312-4934-bc1b-e2e01567b646.dcm",
+          "md5": "4f8f60803250c7df0720edc7ac0cf51d",
+          "sha256": "939e776de3a173cb6f16c6caf4677303c211a8ebce351eebefd13018603875cc",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.315107794464796844997377892917"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/1ef10f6c-0f8e-4bde-a3a1-fd5ed5cac94a.dcm",
+          "md5": "4ecf10ddc27dcef8f2a2197d12c0a7fd",
+          "sha256": "826435769fd88eab89271b752f0a633e6b7cafb8299911b918f6fdd3efd6ddc4",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.317985349957788053367187822919"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/6397f1e6-12a5-451e-a527-718853fc7462.dcm",
+          "md5": "9a04457e743886ef9057d0f0fdace818",
+          "sha256": "c238c9f42ccdcfe30beaa087f2fcb3744716e1d2eaa3e57509052c2c94964ddb",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.324414494332972014367878587350"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/27d216fb-7639-437d-80a4-6a80b0667cad.dcm",
+          "md5": "3bd6f8084b7b05355f4e103153c7c3cd",
+          "sha256": "8f8662792ea47e3481c9cd6685e3e989659900683567b3e0fb50ac9fa5f90355",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.325573635830255261177575767187"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/9c399130-f625-4598-b224-d5639c3db40a.dcm",
+          "md5": "37dfbacf35527468f776b12dd4fc6957",
+          "sha256": "50b1386363616314349f9f9df3b76c750537cef540c1a92e68143f588e09424b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.330341072392726685538905236076"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/b16b3cee-7fbe-428b-ac40-92890a74f584.dcm",
+          "md5": "8954541c956f3874b162413f6bccc667",
+          "sha256": "52ebe30fa7da98264f2f25933678d8b6fed66c4b1a9afcb1b72ff85491fbea00",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.330444630344979224326447982804"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/fd11bb0e-4cf4-49a4-9e43-961faaa95569.dcm",
+          "md5": "2c982efce4ff21accbba62d78f43090f",
+          "sha256": "2fbd5838f42e063010215c0f8539a608674a4b78a8bf8a6a7bbb5d2e99d9409f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.330993901238319796335218998516"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/3e572aa9-835e-4135-8623-5ed8b23297b9.dcm",
+          "md5": "3f622c3dae6c28776ccd95859b48055e",
+          "sha256": "2f06f5dd23efb2ccb90a75944527867b9ab162b870162710c502027353ef30cf",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.331208763303960551141849067987"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/1aa01919-c278-42a9-8748-b6de5420e134.dcm",
+          "md5": "4c405411c30adefa2653a7ad7ca61749",
+          "sha256": "600cddd6b1d6c836a9a9c8cfc2aaf646476ef88ea6e9e1ac728f06628abf2d88",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.331396073558869676224711885641"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/c1b1ef40-2e09-490d-9356-776c1b1a217b.dcm",
+          "md5": "092bf71f55998b93e0fe322e95fa850e",
+          "sha256": "59b5a99e189cb12092e9a74d0ab5a243c06f448c1b8af8834348a866e9a9ae68",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.332960754412555887519627677847"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/127d6807-fb1c-4e29-863e-acff18636e5f.dcm",
+          "md5": "ff067bd39fbf28ffa0a4e68e3159b8af",
+          "sha256": "dd804bb623249ca234b8be43e21156d4c5a24ef40575ec4336c3c1ad84530c58",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.338204535576641323546927040861"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/81dd2ad4-c72a-4215-8ef4-8e9494bfd40b.dcm",
+          "md5": "03501be9e9da7a5c529dcccf3bfc40ad",
+          "sha256": "44779678db6e579b4f31a69dca2cac4cb5ecdf3efbbeeb60cb2a5eef60ef2bc0",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.404078170873707685978346083462"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/12a01e51-cb03-4149-9267-7eb2409d2304.dcm",
+          "md5": "df9ad7b017b1bcd955b5f67c015cd86a",
+          "sha256": "58070bd3ed331892874230f0bf85c5a8494e8386abcd6fbd60f15cd0f5c59e98",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.428270470160533730832027581340"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/a31420cf-006e-4d47-95a2-542372071b04.dcm",
+          "md5": "9d3b8d955e42f40fbd5ad7033286483e",
+          "sha256": "932d630446895e9952ee0e84ae1eefcd3373ffe5a2c3ae189c57b14769e273dd",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.588279961785653060443376048155"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/5e9d1abc-4c61-4f46-adfd-4e38641e29c5.dcm",
+          "md5": "6823a4c7dc4589463330df82952680c2",
+          "sha256": "78a1dc97029a9fc72112cd4edecfdd3af63d093278de92ce02b4f3edc6384bfe",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.624149364355678959832050590685"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/7be77241-798c-461e-8e10-12a52e2fe19a.dcm",
+          "md5": "53eb551a36e51a78f98dc2dcf9d61e9c",
+          "sha256": "33feb0ca5adc056569ceb748de90cea0afbbcb6dcb4ab2a065f30290c4f9fa6c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.642059089728747054455992850356"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/4946d290-fec1-41c7-8d9b-0f87d455c037.dcm",
+          "md5": "93001317ee4938e87b2f37da101c9838",
+          "sha256": "136ec3e74e72de309381971d80289ff287e045fe685dc161bcaf8d59bfc9c85f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.715390038374718619763518501128"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/9d0b7029-d11e-4a49-8d28-143a005aa59b.dcm",
+          "md5": "9e28402083cfdf6fbcd87b7d6e6b19bd",
+          "sha256": "8e96737e6a1f28822486b9a3b521e1cf07652397d7659f79266e29f6c39beca6",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.739560882090104534907497577385"
+        },
+        {
+          "bytes": 528634,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/98f320d1-26d4-4934-8471-fc35fa28619f.dcm",
+          "md5": "e32b42be154ca60462cae952e74d3e31",
+          "sha256": "6946fd7de76bd6c5916ddfbcaac8e054cfa6f8df00511553b73961b3856df1c9",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.806220131476665996513266690927"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/2435fe66-312e-4665-8bc8-357989b754e1.dcm",
+          "md5": "83fb039419bb5195beb58ff86025d25f",
+          "sha256": "b65ec953d44e8a01ecb333987c3b7075c0b41c77bb72395fda88450a41288fda",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.874447462208382182657481055447"
+        },
+        {
+          "bytes": 528638,
+          "key": "7bdd3df2-b765-4803-b6b6-233b5abc43b4/a99a5be0-c589-43dc-bdb4-7ec39c5facb4.dcm",
+          "md5": "f19c96e6956f92de678ed1354536bca6",
+          "sha256": "4a3715f6fb46c495958dc73af2575c6be9d994b0226474a8eff8b863ef55f895",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.898650277366406924898440737210"
+        }
+      ],
+      "source_doi": "10.7937/tcia.2020.nnc2-0461",
+      "source_url": "s3://idc-open-data/7bdd3df2-b765-4803-b6b6-233b5abc43b4/*",
+      "timestamp_utc": "2026-11-24T07:34:54.310770+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 30132334,
+      "catalog_identity": {
+        "Modality": "CT",
+        "PatientID": "Lung_Dx-E0001",
+        "SeriesInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.333873017200575786028180383596"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/9dad6673-588a-458b-9ec8-43e04703c9c2.dcm",
+          "md5": "aa683bb20fe6ff988c92ed55f620d2b3",
+          "sha256": "dfde9f7e9d0b711c823cf2df147fa80659954e69b87311cb03e3c095b2399eb1",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.109569532138952320255795193464"
+        },
+        {
+          "bytes": 528634,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/9cc7e4cc-aa2b-498a-9703-6b64487aed2b.dcm",
+          "md5": "f0613134f3bd291cf0cf1088d4e1f449",
+          "sha256": "b02b71b1ff627bef89c0790419f4d298f4cb34ac1abe67feb843cdccfef8a1b9",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.124151680907626563813082124131"
+        },
+        {
+          "bytes": 528634,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/5e0e11bb-a0ba-4c72-b201-d2469be43226.dcm",
+          "md5": "c1ff1a5ce6cab94330740f8306150dbc",
+          "sha256": "dd3ef367d97db1c82dcc485af800ab887f4b68d95d423563effa4dcccbd50d6d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.132937548550886099037488544602"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/4d4c3c8d-a154-4ba2-9e60-692115a34c03.dcm",
+          "md5": "bff1fd6ce270aa8333fdd26923d518aa",
+          "sha256": "728fc170c7a51faecbfabac20e8b9b276abf7f7dbd5a6b866c66b1f644c2cb0c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.136821692746895781899534254225"
+        },
+        {
+          "bytes": 528634,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/8419348e-e329-4694-b633-ea799316222d.dcm",
+          "md5": "97984d0358e7302fe143c18a45fc6a7c",
+          "sha256": "60a1fa5792b91bf7e889d5ab2f90814619ddaba373ae40e3e1252e9be66c1e94",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.136845432058213657171955799671"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/3daf0823-fc53-4f42-932e-0db7e049bb77.dcm",
+          "md5": "59ab55ed138c6d0cec811e54b5a7dbc7",
+          "sha256": "72feba38a80ffeaad63fcb4921725bd8d1c0051cbbdc8334ee43d39291f07d06",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.140212832265474831017393840720"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/05fc5621-3a7c-4a58-9144-9662b4e1c7f0.dcm",
+          "md5": "b5c3eb21e4019644529daa43caebf103",
+          "sha256": "1c5d514cdb080ddcd8154467946f8fc37ba40e31415d819a1ec56a644b8aee00",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.141627727447755484179222680230"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/4c425694-ff9f-4d73-a8cc-d6f57e3b2a33.dcm",
+          "md5": "067146e90bdc7f92f422195373df00db",
+          "sha256": "add449b0364ccac3bb6883a69cf65e8e2c0328532bebd6d97cdff8d2d5bfc236",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.142008058931966289745483182356"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/bcc32831-eebc-49d3-86de-28a52df0e73e.dcm",
+          "md5": "59991f5ce3f1e79176b28dddbbb77b30",
+          "sha256": "9403e897b4a9eec777a4fb1e7ee35e95274c388739261c232abcefb0df691b39",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.145226498505942521505660573360"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/27a7a8de-9823-48c4-9b36-03038984ce0f.dcm",
+          "md5": "abc8319c9b27d791bbc0a7147c2d0660",
+          "sha256": "11b857966d17859201231b366e5b057c461a061379aad276e63dbe5eb3b0b5d7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.150171626231755966736470766032"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/b02d6f5e-6a71-4433-b0aa-48fa92687768.dcm",
+          "md5": "a12a1d6e12fdb9adc232e6a3e8e340be",
+          "sha256": "d183d44a6b898a70aa75d2726a291beb641df8920e08c469933b29420b0b433a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.150613724430036032130388576267"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/1595f7ae-e2c2-4eba-8348-8ef7c9f46ac4.dcm",
+          "md5": "ad68d246cd5a0cc33af272276fbd6cd2",
+          "sha256": "063b7512be29ec20a7c740cd7f9944f4dc529b652f62f599b4224da488b47878",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.153984305022191800642195211598"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/6b9aad1d-5a58-4562-a625-504b54de6dbe.dcm",
+          "md5": "6298c88274065ad52645d2e992930e24",
+          "sha256": "6e6b6f62819208946081817cd2c453701bf76b5cf8a9a7c529b8b523db029048",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.154227952679189893488682855648"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/42ff999c-843d-4031-a750-0f2505b62b28.dcm",
+          "md5": "3a5899611a522259d4fea2530d562ed7",
+          "sha256": "140719593aadc79d0871bd6dd09af836931ca6fb8c4c3e2c57ada156ea786a9e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.170374274190984098564066065651"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/6c1cbbed-1551-4eb7-8989-6c790cd406c4.dcm",
+          "md5": "ea6a35cbbe9baccd7da72ae1e0f8aeb6",
+          "sha256": "41ccacd89958c97af8ae9bbad6f9032da0a87ca61d4ee442dc9858343851ea74",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.170977493072775402077816322456"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/72d1a5b8-6554-40e6-b912-93402c919113.dcm",
+          "md5": "81036921b9ff22abc8f34bd5667ed504",
+          "sha256": "8d11c76b5c8fb8cd05a5dbfc396f20a260f9f6725dbc773f57a411abbc2507ce",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.193202254147608799003485368379"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/f257c032-26c0-4294-a74b-eded2a53c6e0.dcm",
+          "md5": "7ca1e9f7315af29eba55fab4722c9b47",
+          "sha256": "a2a0fe21ae375abb21c939c8a456dac01a78c41cfe07d4276c075619f10e061f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.193397157798841214449410390971"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/0516b3d8-2ed6-41f2-8ae6-030f97c7ad1a.dcm",
+          "md5": "d21d5d88f494566ab40a1da59dbb1d46",
+          "sha256": "5d44da99cc2987dff549f445dd16d87e11cdf4f45368f756ea7d4811ede9f6f2",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.196443438030034430854653058151"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/84345f3c-2ca2-4c88-ab83-94a5619bd604.dcm",
+          "md5": "8eb2c2601e692d6a4449538e69f97219",
+          "sha256": "6fa1557e88cc38ea9971fb3197769301edd330bb11dcdca516ca69414b7ef426",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.198842824714103678306588507530"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/c90a3ebe-0716-415a-92e1-b109d164a286.dcm",
+          "md5": "b473880f816bb5c0fbd05d9c014e6917",
+          "sha256": "353cadd31a9956127dfef7e85e341a241a9da9cbdf85f81bb706115a939c7188",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.206527925862378962119468655846"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/6744ef7a-9455-4db1-99ef-822358b56fa9.dcm",
+          "md5": "a7d35e91c1061e5d0af83e021b3e758c",
+          "sha256": "c44937ecfa5bb105ce8dee7ad927171651312ba23a35ebf472d7461ba5fd9c25",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.211474691897769460324933016829"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/b506da50-15d3-44d2-88f0-ebb624783243.dcm",
+          "md5": "c432a173d7b01648f8db812cd5cf6312",
+          "sha256": "239ff2fc769e84c2d1e5f0b8a965fa0a50ebf0c6bfe89c4393464f663d3cfb63",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.214937219669389051665765135012"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/a57b4b24-b482-4ba0-bc7f-ddd912846f45.dcm",
+          "md5": "be080fa46a54b7136571bbf39d5fc827",
+          "sha256": "c829d2aecbc6eea6894df6c51fe1dbeec33b65f19b747da1aac1a2e2cf5bea27",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.222538044229792598561517307856"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/4c3407d1-d2bd-451f-9022-980f1d16f1af.dcm",
+          "md5": "b83822e530ffa15c8d8892cf7b79a4f9",
+          "sha256": "6d884859e9f871babc7008c9b92d7c16161caaf8f14ca2639a9323426a57e670",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.241825849953617394672977608336"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/e2371714-8f03-48a9-b13b-a2349445ffd4.dcm",
+          "md5": "142de4ae6de531eb1920aa7af88edbaf",
+          "sha256": "e0d4d30865940585bdc6a514556532ce2124a671b37c76821c0528819fa7cf3c",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.247898176397318630486244266958"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/c20cd391-2180-4641-a6ee-fc215aac085a.dcm",
+          "md5": "3bc1e2f2108e201d9ef089123e37252f",
+          "sha256": "98ccc07aac2d7df76fdb974940844b2dfbbaa74cfaf0b37d11b5d65015fa4b21",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.254691714045368109606194745253"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/e4a318b9-65ab-4fda-98f1-868502700a42.dcm",
+          "md5": "f6b65b09a2711e1a73e8938a6762aa46",
+          "sha256": "870661c9cb088c6309647dd52829926f203fb96453d4193e8fd0c08321b40447",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.260213937878550576411278873190"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/f3cccc57-a791-4b3d-99fc-7f79eb23ec33.dcm",
+          "md5": "bf49e06039060f8e937ddd52b7e2cd0e",
+          "sha256": "ad61843d6b089f689d8d5630185667d47e98c4cde0bf44f0530ab054af7ee158",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.260686488077952301522296984696"
+        },
+        {
+          "bytes": 528634,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/f355b171-79d6-4e6f-8ffb-5f3e050ebbc0.dcm",
+          "md5": "760a9e0ce96e4f9fd2d6de575b211a23",
+          "sha256": "13c7ab107b52d7af29091ce346442949da6813d1e4bfa0f1861d3a55f29fe347",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.270784535751711026735405146041"
+        },
+        {
+          "bytes": 528634,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/c0e1ef2c-8350-406b-aee2-1371ca350422.dcm",
+          "md5": "61fae4ad52bc62a0b9e11e8f9cdeccf5",
+          "sha256": "9acacf54b72d9be28fdf8206c56a321017dceb27a16df8f638feade388ca0eaa",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.275001314607857464609096708024"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/c1c86a89-7ded-421a-97a9-6a941321c29a.dcm",
+          "md5": "5be83938b23c3ab7113855bca786c694",
+          "sha256": "57515ea122856f52e83aff2af399df15bdd19d2b6bd31d1c9ccf18f807810020",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.283870172219867561899552163814"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/182f60b0-3a65-4ffc-8c9d-923877ba6bd7.dcm",
+          "md5": "3360dc955a4e9b6903a8e41b9cfcda25",
+          "sha256": "fc2cabfab9eb0012e1684f01d0d3fe432b13bff9c25a7d6fb8f5d2a10f7def42",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.294370326509254208733056244479"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/0d071528-93fa-44d5-a2f9-585d429b5140.dcm",
+          "md5": "a5c13531610adb7fdb4ffaff10da894e",
+          "sha256": "042da52941434b9029ffd3cda5290891fbea2f486e4bb27142e4fd7fc1e0cdf7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.296692623120465123472421925724"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/45a66adb-6924-41f3-b14f-659aef2580e3.dcm",
+          "md5": "eb835cc403b6dd67e462c94270938e64",
+          "sha256": "94b82aa458b0be88dee8a4073feeb98213677ac99d20f4d2885ef5ebad08c5bd",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.310113457800803069173540444515"
+        },
+        {
+          "bytes": 528634,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/57ac3880-68b6-44f1-8ffb-655c50ca35d7.dcm",
+          "md5": "dcfd5bd6fcc2cef107eaa063e319f215",
+          "sha256": "1b4922141e7e92d8fac3bf438b16423a884b5216843f89f14895fa73f52e60e7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.310300808197524220906776480435"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/588dce8b-72e3-41c4-9c7d-26820ad6a810.dcm",
+          "md5": "62e3bf3a13bf2cbcaed24eefd7f58391",
+          "sha256": "28145d0da7cc115492870fccbf81b534fab5043d83714624a3ce7139dd88869f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.319157848430526474691395244272"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/2ef9cb61-28bd-452c-b4ed-b8d121c42ea3.dcm",
+          "md5": "b36ed18bd2476b177223e47f5ca2a539",
+          "sha256": "16b3362d03625478ccf475fa38d97ee95b6ae51d7dddd74eddb2b1c77e91fcdf",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.323032822969013399034657619789"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/04249e72-6f5b-41ce-ac2a-630b33ac3c62.dcm",
+          "md5": "29f8fe75fd280633a163884130e6a75c",
+          "sha256": "35e35760d45d4145b1932b517c4d8a7aad9abcc2261ef209769dee12c550e938",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.323917740154047519526154019713"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/80302ed5-2e63-47dc-896f-d6e9cfd6bbfd.dcm",
+          "md5": "ac5062b7d4ed324390b03e026f7d42e3",
+          "sha256": "5471dd4bde4a217fe78d957ac54d3bc873ca23bab016d5270845446fe3d8b19e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.324078366200691500610887464591"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/01b137e9-4372-4aa6-9cb5-173a7d47bd34.dcm",
+          "md5": "7ac2b78dfd866ca734fbbb4eea080e80",
+          "sha256": "0465c0efecfd57211cb21edbd416863ea8501fd1781919e1b596b6fc4d4d1d84",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.325493370616575748922442288302"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/0dcfc917-6086-4b4c-abc4-ae6e027acc31.dcm",
+          "md5": "e41ef7455e3673c675f1a203dfdbc88a",
+          "sha256": "5244cfd6f5b914ac37e7aaf3815e954c2aba9950119355f339b59cf6c43753b0",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.377554315026651433049723024839"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/25b1b26b-0478-40df-8b95-435b9f357e96.dcm",
+          "md5": "1b4d4a00a70de3796afac2fb1918907a",
+          "sha256": "9aabd33d0f89e462434c294d88e928353710fbbe1928117c51c16c4e08928fd2",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.381431886274008057203775723532"
+        },
+        {
+          "bytes": 528634,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/4ddd697f-046c-40fc-8058-74fbde0ad966.dcm",
+          "md5": "4022f4a9aee796165c4a9c749cff8997",
+          "sha256": "f413aca6e542e386c9f44c95903032b636f8d61a107fceeb46eb5ba65bff6b02",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.407957258802144704467463632027"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/17c4bd85-3048-4d89-b67d-5b47de716c2d.dcm",
+          "md5": "bba76ebb05ad1c35c202a0a7803122d9",
+          "sha256": "42781e822005a587de3efae520f53b669ecb571e74a5907a2964135d9a738dff",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.462094119996604724744473713694"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/a501a877-abb6-41e3-9907-549fe91a9c88.dcm",
+          "md5": "cd508bff2f7ee690d3da2b7e74a3a55f",
+          "sha256": "198c0a67386f2fea6b20999072bf115efcaeb20b33d24c6d839ef52437d9110a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.471782073788890096787021379001"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/aaf11727-1ca3-4730-88d1-0c7f7f460425.dcm",
+          "md5": "85d094d26dc7c55e9177713090faebee",
+          "sha256": "1f979ed5fb2865af4ffc2594de8d49dff6ed3e940426f09f28bb8f96caa90a89",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.475903662057120751887180072315"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/fb57b8b3-67bb-46bb-abf9-6974903bf5b8.dcm",
+          "md5": "0da0bde758251110ef19bca6b4bf79c9",
+          "sha256": "6b59e798fdf3a713874c9f750fc508abf192f5753adc75482eaaa069409b99de",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.480292522055403215625429021144"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/13346dca-2c4a-4bb5-8a01-48a3055619f4.dcm",
+          "md5": "d96493aee417a2fe37329d8615812ff5",
+          "sha256": "8da938c0a02a8af2ebaa38e566154f04a7bdf674a8794afb89a60fd9b635c0c7",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.488597984701551378577816225362"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/630f8555-e2d5-4ee0-9972-616ccba5d3b6.dcm",
+          "md5": "b410b01ab799f37d01f926c1401a6bed",
+          "sha256": "83851cdaf27c91d262217dcdff850d0dea1e8e1725ff26b9ae92552f94ed24c8",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.510500357002403862465462383511"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/16bef239-067f-44c8-b9e7-4d6bc16915b4.dcm",
+          "md5": "b7809580f8b074e870f6ecf333eb4d07",
+          "sha256": "eb6d7a43c18b02e47202f418b5c18b9c194e5e005a5bed7840f4c272b41e4964",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.544667818493298675543597499955"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/a49d4f50-0ec4-49ab-9ed3-99ccebf931cd.dcm",
+          "md5": "1ba275d3263a407f239d2c55b31775ec",
+          "sha256": "9c00c319942de430a615e5d052386add66ff24c003a3b985cecc8bb52e20cf05",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.566193803276071334830100766369"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/f497058c-e1b3-4554-8b9a-7a706316eb63.dcm",
+          "md5": "c8ab557602940e4315e405aae0e9f77a",
+          "sha256": "971e9f316c8976e11970089fe21b5962c3cfabd93a6725cbfe9b52c1ce695c49",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.708531958739077279571356589663"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/67ab1e28-d07b-4c26-a6d5-f6fd48dc614b.dcm",
+          "md5": "92ebb06079bc1decd5fd4834e09ca583",
+          "sha256": "b2525c6b5f0022a55434922e6558cf7483f401f042cd77a37f209caa5f5d6433",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.786826598510234947937316361581"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/d33a5d7a-4ff2-4795-b284-7254c4ac9b91.dcm",
+          "md5": "fca5ea8bdac4db0751fd5fd721b966d6",
+          "sha256": "736a156307370222c95b6a3c46ae0e55e3da30074500ae443d204ad566a63fc9",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.791098433510966489142768387395"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/c564ef80-8f00-4ad9-8d94-8c93b6d025fc.dcm",
+          "md5": "e78762784b438c6f0b098433e3487ab2",
+          "sha256": "b00a65d41adbf2a8a49ed714dc69e9cf9a507b32299eed745b8d33c568d33e5b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.796364081787491517247884316374"
+        },
+        {
+          "bytes": 528638,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/a73d8a08-e212-433a-87d9-25a29af6a1f1.dcm",
+          "md5": "8bbea58ea038eb82131805e8729005c2",
+          "sha256": "ce078330b9e94a5c182d5cc44a5f1c9eccf08261ac11aa7d156cff8529cc5b43",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.910585253398718824787901536453"
+        },
+        {
+          "bytes": 528634,
+          "key": "5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/b2c5e107-65a4-4233-a036-e9e011c5ea42.dcm",
+          "md5": "aa11128e84154c3755ebb314d57f9ce0",
+          "sha256": "7d2b80c4dc3d807f48964fac526a693e3e78aebd2b0b50f142dce007e21c9f55",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.943052674140758721496132392565"
+        }
+      ],
+      "source_doi": "10.7937/tcia.2020.nnc2-0461",
+      "source_url": "s3://idc-open-data/5c3ca6ef-d222-4f01-a99e-03682f4cd5bc/*",
+      "timestamp_utc": "2026-11-24T07:35:24.473387+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 12149978,
+      "catalog_identity": {
+        "Modality": "CT",
+        "PatientID": "Lung_Dx-G0001",
+        "SeriesInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.269197582919488905042618807715"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 528262,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/afa695a9-92cc-4ffc-a3a1-c42b3bde5d98.dcm",
+          "md5": "f550e4a653bd3f3cbe6bc0468b751f2c",
+          "sha256": "07596a20d724a22aa1c49d12e924697a6d4c032ca6c3438d5cac63687d3bfc79",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.106722784649711734374698383322"
+        },
+        {
+          "bytes": 528262,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/43a9898e-a924-4a0d-bba7-6e801ab05fa8.dcm",
+          "md5": "b0e92e1c787b99441bd79954577f5f9c",
+          "sha256": "0db64e0884d2d39a1c837ab2cff33b28fe4ab0cea789f50df102ef9c1e71050e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.120813247739887165797192833783"
+        },
+        {
+          "bytes": 528258,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/80342b84-86a0-4d5b-ae95-10c8a57ccf28.dcm",
+          "md5": "f345406fbf0ce86007d87492e90aeec5",
+          "sha256": "deb9e31e77e27d1c7d8938a15382fe3dcde884d07d37f3d284bc6bc2e5de9da8",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.129647252825669060277880687687"
+        },
+        {
+          "bytes": 528262,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/e30dd360-e7b6-430c-bc43-5a936de83d4e.dcm",
+          "md5": "94ae22e2622ee32cc3524c34e17c984d",
+          "sha256": "b7950bd342e29e16eeaecfd222a4ac9c9847e4445aa760d8d7c87296bce764b3",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.186362337069428065591860163910"
+        },
+        {
+          "bytes": 528262,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/3b6ce524-8b02-4003-a1ce-e0419d0f8039.dcm",
+          "md5": "f2ca7740eca4a1a6887304dd95fc10ce",
+          "sha256": "f5d6282023935591ae1540212efefb3fa60392bc96e8f227b5af7cefb3689f57",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.198421860600941173627259058000"
+        },
+        {
+          "bytes": 528258,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/e329682c-8c71-4d63-9bc0-5d551e514942.dcm",
+          "md5": "5aeff94d1e25498a235de5f95dec9008",
+          "sha256": "1e401667d5c4faee6233c429323834c01b0dea3f6d51f5ad85da00bb1ca398a3",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.201583151019064859390657713554"
+        },
+        {
+          "bytes": 528258,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/baca82fd-f7b0-4162-926d-30332835f1d7.dcm",
+          "md5": "6f9b565cf45d5e9700b624b3a4c093d3",
+          "sha256": "2490d4c96daacd0183ad395140f885bfea19d0c11efd812ebe202fb2a4f4b0ae",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.202769092409543019791046906058"
+        },
+        {
+          "bytes": 528258,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/65a45e09-f537-4c00-87d1-1ee771306525.dcm",
+          "md5": "97a621979928a548c2081ed7c3326a72",
+          "sha256": "78a6bef0423c6841b46e0d044bcf29a80478c7a5d963081e6cc0bc490586c21e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.203116119227644806463434174371"
+        },
+        {
+          "bytes": 528262,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/b1687e4b-7124-4d87-ae2a-52d3723e283b.dcm",
+          "md5": "b855722f051f66b1950667dd5a30d3a9",
+          "sha256": "e14b80421632d08b7e469eb1434649587eee6f2ba53622297a7fa735adb941fe",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.209460620782471475697884042619"
+        },
+        {
+          "bytes": 528262,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/b27c0c5c-2224-49cd-b52a-31ad9d172a27.dcm",
+          "md5": "a5c647b9d2d6512eb404cb6a058eb35b",
+          "sha256": "3c0993bf42ddc76fa584c8563d470bce0473d6ce633d9ac924b35021dcb34eea",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.220348880766682775278578261618"
+        },
+        {
+          "bytes": 528262,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/c87aee3e-ee18-4b7e-afec-958b57cb4eef.dcm",
+          "md5": "8048af3f34d8c5f369c77bcb5ae6ae51",
+          "sha256": "f37b950079f1759c1a7d227a3441ea87521f74900bf12fbf738e1afc58dfa512",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.228721256514603627836824477691"
+        },
+        {
+          "bytes": 528258,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/730789c3-af88-4c08-84d0-0296cb97fcfc.dcm",
+          "md5": "50ea3330bd9479b53131428edc7e42be",
+          "sha256": "7b972ab590112ac9f8e1667063626b2ae2fe494e6fad60b2ef7626ebf8ebb631",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.253118404014178832184441491982"
+        },
+        {
+          "bytes": 528254,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/84ac51ba-8a7a-4f86-9c06-b978a0e224a5.dcm",
+          "md5": "a9e7ec74fb78a63bf309748701f28d91",
+          "sha256": "c8cb70508328a45f2ee3e0d1fa6a19a1586c37e36b3ac45512ad7337f4e4ac07",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.254286493101258809289281991079"
+        },
+        {
+          "bytes": 528262,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/218adc80-40cb-4c3d-a12f-ef3f3201d277.dcm",
+          "md5": "e0ffb8cf313b42c80d9d16bd1a269a45",
+          "sha256": "2f4da12b508d8480b257d34fa8f687b9870c06caf3dd84098753b2937e2f2340",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.255612301226457693515184037384"
+        },
+        {
+          "bytes": 528262,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/cd3b3e0e-3f89-4ea0-ae9b-7696730941e3.dcm",
+          "md5": "56f2b5d74aa519ea1e5b68a792618a6f",
+          "sha256": "b01e8d00ed6b93d3179b7d0078fd8b1b5ce71aa070a9ec90f1097b03d950dd79",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.259943672969458286488655177174"
+        },
+        {
+          "bytes": 528258,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/37015bd7-b622-4505-bd39-5641b09bd905.dcm",
+          "md5": "b2c628e755877e0b59d7cd1f051b5a0b",
+          "sha256": "220a2cb679fb9f05ea41fc30a8475c060e629196f143eb47bd3a00004e373fe8",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.266347657737610514900004632337"
+        },
+        {
+          "bytes": 528262,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/5789e143-212b-4f4c-b9e5-0f70178178f2.dcm",
+          "md5": "24512be79c86997cdcc1cefb513686ad",
+          "sha256": "87f875b8940f7467f8a7f555222bd275930ce4aa56ab802daf3c11014cf6879f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.291904839191289620195968658690"
+        },
+        {
+          "bytes": 528258,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/1c8d3cab-013c-4cab-8e2d-648bc76dcea2.dcm",
+          "md5": "46590cde6bddac7a2490a077aa15c2ef",
+          "sha256": "f2e56071a75aaaa6efd7e3cfd348a9fe60ca608220384c571408fdf010bcdc1d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.303420030002950783977589084596"
+        },
+        {
+          "bytes": 528262,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/cf127a33-38de-40d6-a26c-31bd2d37bba1.dcm",
+          "md5": "4d06bee11821cf66d2f413cc837e96b5",
+          "sha256": "76faea009c91f198151aa29c94e9bb176cd46d195bae93df2cb50d48e1890b99",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.438503712759359831255286481978"
+        },
+        {
+          "bytes": 528258,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/2c3a48b6-6492-41fd-88e3-f6cd7d44cece.dcm",
+          "md5": "a1ad8da9637be59e27fff998f635a11a",
+          "sha256": "fedfd6e37ee67f3ec33f37cde78294f34cf2433e8711066250d01846e115388d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.491536333030323629458225919495"
+        },
+        {
+          "bytes": 528258,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/35bb39a1-384f-47a4-908d-a468f2a8340d.dcm",
+          "md5": "3b388f9d1f0cda7bda1a9dc730949e04",
+          "sha256": "c290078103a55a12d66b34705b541acdb08d1d03873d583d04f3003207eebb18",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.639994390044077505817465535349"
+        },
+        {
+          "bytes": 528262,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/fe4b7946-4f99-4ca7-83ec-0d7bff04b969.dcm",
+          "md5": "7ce581a7bda83b3a223f5d77466e7537",
+          "sha256": "79d34c8bfd8d9d862578be68cab880d896e1e1ac6502c537f65d4b23720c3a57",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.696114074602122291383783205746"
+        },
+        {
+          "bytes": 528258,
+          "key": "b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/9cc3107f-b9b1-4bab-a948-eaf8ec003590.dcm",
+          "md5": "ed79c91129ba9e479bc818b8e53d9371",
+          "sha256": "d1be3dbae42cc1d4c61c46f34c6953892235bbc14c8f035a1c6e336c12f11f11",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.965200327238072827798451850556"
+        }
+      ],
+      "source_doi": "10.7937/tcia.2020.nnc2-0461",
+      "source_url": "s3://idc-open-data/b4cdcecf-7c6e-4ae7-9d1e-972ef736c3db/*",
+      "timestamp_utc": "2026-11-24T07:35:38.759727+00:00",
+      "transport": "official_IDC_S3"
+    },
+    {
+      "bytes": 26894442,
+      "catalog_identity": {
+        "Modality": "CT",
+        "PatientID": "Lung_Dx-G0002",
+        "SeriesInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402",
+        "StudyInstanceUID": "1.3.6.1.4.1.14519.5.2.1.6655.2359.171919653996438009815936390693"
+      },
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "objects": [
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/0ea8ff1c-2028-4fa9-92ed-6c1a7542b324.dcm",
+          "md5": "147ad49a18b7f7954a18732fe0d46f6e",
+          "sha256": "b8e0a12d479fcae46bcad027dc2ce47cca3e9187b29458c074ebbfef6510febb",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.106463347446267164092706287781"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/169ee454-2e60-4394-a4af-69dc37400de1.dcm",
+          "md5": "940ec5359babcdb3b78fa2b3c3062135",
+          "sha256": "174c73bac39065f539eadf681ea165018ce9a10d8102c9bbb6a70a862db34a74",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.107903551011123794402614866108"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/901b39ee-9443-489e-95e7-1f1f175097fc.dcm",
+          "md5": "414ec0d92b272852f3289c20c16ef12a",
+          "sha256": "51917983b76d656731fd059a89421298263fd6ad2fec03b679178e77fd9b0959",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.118416904931533399781205713294"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/7bf940f6-1d77-4ed7-8f8e-3acf5f37d5c3.dcm",
+          "md5": "b19288eca9202fad36e39447d7d474e6",
+          "sha256": "026bfdd3ebc6e26c9fad96090c42e18ab6731a24c360999232aa98a2a419d259",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.127919051868030212847681389851"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/22a2083f-1b71-4f14-a2b5-c15a51298cd3.dcm",
+          "md5": "6a55d7a4fa5783210173f82b2027d3ce",
+          "sha256": "3a1771dc1fa3b4e7f36712ab02c1e00755f3b0121e9376c4147dd70a8d965463",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.132940169200379722077655905273"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/0321afc6-373c-47b1-b05e-51f0867f4207.dcm",
+          "md5": "73c2f5d4f8e25636f11718bf92987499",
+          "sha256": "7c742b1ad5ab02fbd98b370d1ac1c72a09b619f0d30c30fba6bd81eb2d670c42",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.139343020049170238485420649400"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/b1a68e26-7381-4631-b65b-fc2e01601731.dcm",
+          "md5": "86b2626dfe0ae76bff088e93e747efea",
+          "sha256": "a1d95e2c26f7d1e67247c14c16ee4265947114a383da6c4fb29df93f069d4ee8",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.151714809769424050738135064675"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/8f5b6d1c-f48c-483c-b86c-60014176bd8c.dcm",
+          "md5": "da3504f02e5518b959410cacf53f322a",
+          "sha256": "366bbfdbc15847f75984ebe6c83be3b84c131ca0bc074b9a3593be18bfae00f6",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.154778508358260993249521979399"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/2145a6c8-d3ca-4d8b-8ce7-0a42032178f7.dcm",
+          "md5": "9b50c7c1fa97c1855c557ed09463d33f",
+          "sha256": "e986219696e35731522889f2f7cf44b5b5e51593365f30bce0f184f807bd0b03",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.164259412772385027727770243712"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/cf34bcc0-e1ad-457a-a3a3-589ce18df4e5.dcm",
+          "md5": "478b8d642f4ee566e22eb51ea9179693",
+          "sha256": "b714d50feef2475cc9432c4b1a68e2a83782736aadcac44d38c9c8a2133bac41",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.166879888637358107516903912073"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/b9365b6c-14a3-4bb1-8111-36d5d796050b.dcm",
+          "md5": "0868b80843e6fed62dcb494758f702e2",
+          "sha256": "dd5b051b9a743020d9a90681f667a17773a535c6c2f1e14c877af76333705b12",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.168956778919314794963021512882"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/6124a553-f24b-438b-b398-f0ff38261730.dcm",
+          "md5": "a79e90f916822e042422ae15e8d7b605",
+          "sha256": "686112e8d9c478dce4cfb6a6abc716d4d8495e4b0237a75a59be6c2e655ce68d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.184378549273777223237601593967"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/d0c1b1a1-6852-40bf-94d6-89e5745a2b42.dcm",
+          "md5": "98cf0c154ca92da8f4032c462153a0cd",
+          "sha256": "1b0307777697dbd6cc516cd2f6b0cfee72a8f1cf819d9383afc93732a64f5b96",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.186915572859772208110800215110"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/24536069-b89d-4d7d-a0d8-4edafa3ecc03.dcm",
+          "md5": "3abd2265b16067c88139d55b248a4286",
+          "sha256": "3ae03a58ce9ad9d90234785abcc3f3142fc3102734b41193230f7ecdb8aedf48",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.193900513522371198214980640958"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/d4b39f3c-647a-4bac-a90f-4e45ddbf8b81.dcm",
+          "md5": "119b4e7fa3a915260817efc78f74ecbc",
+          "sha256": "c7274e9c488975b9bb2cf1bbe55725a27a59f38b8c75fd76419a4a8e963f2666",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.209982838021826157802422370631"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/24612e3d-7d31-48d3-b3f1-e14b0b948c95.dcm",
+          "md5": "3a46440c3b223792928701b92296db30",
+          "sha256": "e2bf90f230e6fc26db4bc986bb60b80e4c46f2cc5092f1db2f979b1cb49fb755",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.225391113549292292388216443166"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/f589e50f-9bd6-4a6d-a1ce-4cc3c61733a2.dcm",
+          "md5": "e863a957dde0dc5ddf9bdd581bd72973",
+          "sha256": "999e82b8b70028fab521f289aa88a9c14968847f635a9b7837dd9134f5dee5c6",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.234507158379464844539759288080"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/099e8989-a443-4513-ab45-d02c01fa0d7e.dcm",
+          "md5": "fbc68c164e3cc7a604e8e92bcab6ca34",
+          "sha256": "a7461ff1401295945c8e06e10bf56f1797c8c3c8f2fbe9e610f139f28ff0daa6",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.236325486585113967762797097820"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/cfcbc27c-d742-438f-88bf-af78da201a4c.dcm",
+          "md5": "9596cee27d947227e81028e57d47bbdf",
+          "sha256": "4504b4bf1ad435b853eb38a4035dfad36683d49bbbce8a62ca43043e3f976949",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.240596227837869643079338916446"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/a494a866-2144-45e6-96d6-0e7d10009ef6.dcm",
+          "md5": "df133e77c1b4c54e6bd05833818bcc3c",
+          "sha256": "798519d4bf2ec3a9eb57cdf5e363e7bc62f94a22e597587673a8bafe34e59cf1",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.243591311702936082322020849704"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/2b7416ff-d361-48a0-b4b7-43fb518c5c32.dcm",
+          "md5": "7558230cf6558fa1bc5a33eb8640a2b9",
+          "sha256": "9ceffc4fd03d34920b795eb207a78c8e78c3092639641641b49f0258fb700021",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.250157524168081247720689697171"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/1ffcd18d-e666-4429-b2e4-6f0e60be9fec.dcm",
+          "md5": "f33f807d4788c4304e9b45ad412d04a9",
+          "sha256": "e3830eb8c9a92a9d4734938e89ef40b4ee3e4b3718f7c848e6f2089ef2212773",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.271997937233357500917130270765"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/8157eff2-1419-4c52-bc87-e5d5493b73fd.dcm",
+          "md5": "19221db08c2b7d48f7b0c1a4a3493154",
+          "sha256": "e5ca0cdafb5db44f046c171f3414f36c8f19394300e1db2acc751a76a31e0762",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.272562833035972118542521743951"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/32801fdd-4c3e-4167-8cd4-8fef66f20e10.dcm",
+          "md5": "2eece821a45fc722e92c666b7103bd36",
+          "sha256": "59f5552546f9cc9a2998a7d0d899b198eeaaa406c6e52ecf143d42a45c954a66",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.275395099794711333579281585120"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/f0fb8d2c-c2b3-4547-b369-92c3e7efc122.dcm",
+          "md5": "44cd6a71fad972f61a369fddaca05574",
+          "sha256": "76907996b3a013e1b09e967ceea8811d82208e450ade34fea0348b2a4d22a374",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.283937766425376397876450965554"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/7f91f1ae-0065-4097-b3cf-141b8024b924.dcm",
+          "md5": "ead79c22fbcca6f3f800eeb34a37200a",
+          "sha256": "9b9f812dec13192d7fdbde4b280edba5f0e01902a3cc62b4fe203f30b5d5515e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.288771946493548790832428714412"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/0fb28c7f-27e0-4892-b4a6-e9a91274f18f.dcm",
+          "md5": "947b01693d681961fe28bf35ebda9a66",
+          "sha256": "a2af1f8cf4b079efa4832153fa01dd22ce0aeb5003218d4f46d8f763de8a61ae",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.295245221753338824635184371903"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/74354850-a6ea-442e-8efe-8880ef2a072b.dcm",
+          "md5": "55a96dbfafec4e0415450a77ae192247",
+          "sha256": "d58a5df68d0eb54b1b24c20bb7c475fd5816b5cd74585c9561a4e97e1953127b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.297519986868645206195543155897"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/5f45f563-6d7f-4d56-99bc-3d451037c2eb.dcm",
+          "md5": "2650c16176a68fcffe5a3874323071eb",
+          "sha256": "19b30c244619ec79795e21660c0a2e102bdee1f492eff2e83d136c491c385135",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.300410318658703636109737580911"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/8488803b-e128-4b4e-bc25-7f9386046b45.dcm",
+          "md5": "79a63b08daf719ab3e63e4f83877bc2c",
+          "sha256": "627aab9083aa4f0110eecbcca60771ce1b634413affe3d700f7fef7145602a7b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.301381951617300584205920385392"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/07447b29-91fe-4194-b0de-7464c50c9009.dcm",
+          "md5": "496e228de93b6f32e301c86b2608e62b",
+          "sha256": "a17701eab19bb77c6257757b38f24f9dbcee3640542c5ebbd58159c7bf4c7929",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.301650722811962311893877453952"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/08b9f9d1-5bbf-4cca-87db-bf35e14f6d29.dcm",
+          "md5": "158356d37720f9e2f299961ec8e2a5f0",
+          "sha256": "e7f7cc63bd44cdfa87c07a0fda5be36caa34491434cc27a43e01b5afee7750f2",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.314125083181187955076378620939"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/1f833b94-80b9-4a90-b0f2-487920e4528b.dcm",
+          "md5": "5e81d2c5d3e9924ee00470bcb23919c9",
+          "sha256": "26ab2c1a385815bb58a0cbab052e00dbe7424fc1e8c8beffc47a002d3483e4fb",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.315607184009779473187682262314"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/9e08f891-caed-4b6c-9eaa-c892673cd795.dcm",
+          "md5": "cba79ef457e8d5d569a2619f621f7051",
+          "sha256": "c54d19de180a7605c8748d9e178e334c343da822a0f721d65496b2077aad4c79",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.321591002090153370744964476602"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/8e28a446-711d-4254-8422-0159ae430512.dcm",
+          "md5": "878b00ad8276f0ee447f9e3c67fb9ba5",
+          "sha256": "a332f44ddf2199a339a6915b014109b4a2a38c4234f85a9ae87e34b77c44279a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.329289701328383292151813152663"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/0ea4d26f-1017-42b3-ba8d-f6e03c35769f.dcm",
+          "md5": "13c1cf9670e79f20aa52cddc2017ab2c",
+          "sha256": "24fd76556929902f74f5b75a1e5953c02cb4f2b35c52463b97e0cbe1683bff8a",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.334905405411941271126738054978"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/a190819e-e239-4daf-8ef6-b16232ec000b.dcm",
+          "md5": "98b6b0d0abdb6eaba6b475b01abc5b70",
+          "sha256": "2e7e720c7fb40cb020f54964ca88582086418529fa655ee35132ac3a3f1e9d58",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.398407104640205028313368951014"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/386df06f-04e3-4d41-b260-1459345c0e5b.dcm",
+          "md5": "9d76d4f78db261609f6beec023c29055",
+          "sha256": "c4d0b40299771e171c5cdd76f4b8b7870cadf6cd1b88fdbc57da5dcc85b32b89",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.419996542668414086561128639067"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/69a532ea-8b04-4a75-9d7b-1ba6fb1ccc34.dcm",
+          "md5": "17bc3b8970cf795b44549a02731c9aa3",
+          "sha256": "57b6693128f8ecaa46077b6ed7f8b904420d46c091977a76963579e02649a53f",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.507078110443347418016217301033"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/ff3a2c10-5198-4a33-a090-2b994677ab34.dcm",
+          "md5": "62b0a279948a1662398bede37f529196",
+          "sha256": "2b430cf8587d09388e4d719c688208f2d0f174dcd6598f65a033fdeb90145399",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.627807861382433876629583656134"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/dd1bd867-5d5c-45ae-b942-64e1d7b237fd.dcm",
+          "md5": "855af39ac95ca4a76f5e45575b40adb2",
+          "sha256": "b222c847283128d9affe25d28f2f36b22a1a812680eeed96fd4f81df38eb9595",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.708506294690385839675966905632"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/3a0c025c-dcb3-4193-8377-5da79c19f97b.dcm",
+          "md5": "b18125f39ddc8a821e92adc28d7c41e9",
+          "sha256": "ceb7867108f68191cde2f58a715222b3ca0abd3e15eddc2c5f81b732ec7e290d",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.719166947973453289667782024424"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/ecda5256-0962-4e0f-96e2-97eaf27efcd9.dcm",
+          "md5": "b27b7327aeea5bff53ed6b353d6cfa84",
+          "sha256": "445bb3e7a7eb27cb8b5202a7278f286e61f278311078a74e9d31a54925965f89",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.752663738896154132046022066350"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/b5565ef3-1de1-42aa-8736-522d1c820a6e.dcm",
+          "md5": "1651da5c237bde8aef817c7a7485ce67",
+          "sha256": "ec034a3898d1163f025a5d7ac6edbccbe6134c62b39231d1cdbd5cd59f6ff9e8",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.769653728875529777008216734797"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/13e22620-11b3-4d59-b3d9-e8872c0d99dd.dcm",
+          "md5": "aa4327c87e069c9383152543a8996a22",
+          "sha256": "e533b03dbbd0434d17357132f937e665c8e127666750ac5c478e6e6d155aa96e",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.769686785413043589470004691747"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/30d36e8b-fb92-4a3a-9d2a-080bb5f16bb4.dcm",
+          "md5": "cf07b337ef988d4f2b5b27ccf1828cbf",
+          "sha256": "2e24c2ff71a494a37f767d002708661f85ae294851eb95ab3b13860b7284c19b",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.775167542777596384111651487823"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/a8fbe335-75d1-4177-9d1d-9398bbdb7880.dcm",
+          "md5": "3de6cf60e7cfec7fba4d425e7e87d807",
+          "sha256": "e6b63365d4cebea0c796d94f18d85af896b65b2a60eb14a61f8fc57fd8ed2bd9",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.864869872647544604950315013754"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/bb708d47-d0b4-452d-974d-02d5da251395.dcm",
+          "md5": "1f9478657e158128850ccd5e6a2c8c38",
+          "sha256": "edcd242bae9b342aa8670d300be0e362abd5d01ed4f579cdcfb62dad808de569",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.889195519546711541038671577541"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/c65fbbff-1ef8-44dc-be71-f7c5ba40abbb.dcm",
+          "md5": "cd75c8cc401753f2daa7072f1f79be07",
+          "sha256": "2322a2f19f16e69c0a4f674f5667951dea31ad65a1e1527b3848b39d4e6d8678",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.953465366065546943331129406425"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/4b46ef7f-81b1-43c0-aa0c-a1d19db5f9c1.dcm",
+          "md5": "38407e7c3231f7fa4d37737abf3665f9",
+          "sha256": "2663ee7054a130898f45fe011121d5196769cc3e37b52803e86af29c941e5254",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.982753558582965396404679262705"
+        },
+        {
+          "bytes": 527342,
+          "key": "7b8c8b67-e007-454f-8f5c-4afbf53901d8/2c17306c-c580-4910-a545-bc1f7d6ee056.dcm",
+          "md5": "45ee20630ba6f70c72ff0b0336546aa9",
+          "sha256": "9e4dacf287805843c9c95063d08f59e859602c62f7f54409374f0bf402fd8e64",
+          "sop_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.998195716690665810689647385457"
+        }
+      ],
+      "source_doi": "10.7937/tcia.2020.nnc2-0461",
+      "source_url": "s3://idc-open-data/7b8c8b67-e007-454f-8f5c-4afbf53901d8/*",
+      "timestamp_utc": "2026-11-24T07:36:13.230589+00:00",
+      "transport": "official_IDC_S3"
+    }
+  ],
+  "estimate": "2.5x CT bytes conversion allowance, not a measured compressed size; PT not requested",
+  "existing_verified_cache_bytes": 221804220,
+  "full_ct_sr_conversion_plan_bytes": 436035934178,
+  "full_status": "BLOCKED_STORAGE",
+  "metadata_only": true,
+  "modality_counts": {
+    "CT": {
+      "bytes": 123339382584,
+      "objects": 205459,
+      "series": 1162
+    },
+    "PT": {
+      "bytes": 3845551812,
+      "objects": 45676,
+      "series": 133
+    },
+    "SR": {
+      "bytes": 53127838,
+      "objects": 1091,
+      "series": 1091
+    }
+  },
+  "network_payload_bytes_this_run": 0,
+  "original_patients": 355,
+  "original_series": 1295,
+  "original_studies": 436,
+  "planned_sample_raw_bytes": 221804220,
+  "raw_free_bytes": 52097179648,
+  "remaining_selected_byte_budget": 1925679428,
+  "same_volume": true,
+  "sample_byte_cap": 2147483648,
+  "sample_capacity_pass": true,
+  "sample_max_raw_bytes": 2147483648,
+  "sample_planning_bytes": 11811160064,
+  "selected_cases": [
+    {
+      "ct_series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805",
+      "patient_id": "Lung_Dx-A0001",
+      "sr_series_uid": "1.2.826.0.1.3680043.8.498.8827825409582763733577354115210870156",
+      "study_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.165554066086145834377508507990"
+    },
+    {
+      "ct_series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983",
+      "patient_id": "Lung_Dx-A0002",
+      "sr_series_uid": "1.2.826.0.1.3680043.8.498.66354842341919548382517239660830925467",
+      "study_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.104855313699639828167809534834"
+    },
+    {
+      "ct_series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728",
+      "patient_id": "Lung_Dx-A0003",
+      "sr_series_uid": "1.2.826.0.1.3680043.8.498.28706379308217234692487377565384532800",
+      "study_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.179476503242496939309318824087"
+    },
+    {
+      "ct_series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719",
+      "patient_id": "Lung_Dx-A0004",
+      "sr_series_uid": "1.2.826.0.1.3680043.8.498.88563291641876192341370756280027521038",
+      "study_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.180864777119636615712187661611"
+    },
+    {
+      "ct_series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548",
+      "patient_id": "Lung_Dx-A0005",
+      "sr_series_uid": "1.2.826.0.1.3680043.8.498.74638846760148229001779575715190851103",
+      "study_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.705620544303856566175354573190"
+    },
+    {
+      "ct_series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676",
+      "patient_id": "Lung_Dx-A0006",
+      "sr_series_uid": "1.2.826.0.1.3680043.8.498.81448451155934338877461134836801121386",
+      "study_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.130455256828420458848095002074"
+    },
+    {
+      "ct_series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951",
+      "patient_id": "Lung_Dx-B0001",
+      "sr_series_uid": "1.2.826.0.1.3680043.8.498.34802386314129603859287129489166161025",
+      "study_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.122096692095397563120420547122"
+    },
+    {
+      "ct_series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046",
+      "patient_id": "Lung_Dx-E0001",
+      "sr_series_uid": "1.2.826.0.1.3680043.8.498.15089379423386254202178805284929330008",
+      "study_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.333873017200575786028180383596"
+    },
+    {
+      "ct_series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648",
+      "patient_id": "Lung_Dx-G0001",
+      "sr_series_uid": "1.2.826.0.1.3680043.8.498.20771309686491176224559126180080905739",
+      "study_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.269197582919488905042618807715"
+    },
+    {
+      "ct_series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402",
+      "patient_id": "Lung_Dx-G0002",
+      "sr_series_uid": "1.2.826.0.1.3680043.8.498.34322729629264263555998794036538762354",
+      "study_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.171919653996438009815936390693"
+    }
+  ],
+  "selected_raw_bytes": 221804220,
+  "sr_patients": 354,
+  "status": "CT_SR_SAMPLE_ACQUIRED",
+  "timestamp_utc": "2026-11-24T08:32:27.608148+00:00"
+}

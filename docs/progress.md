@@ -1,4 +1,24 @@
-# Tiến độ hiện tại — P1.3/T06 — 24/11/2026
+# Tiến độ hiện tại — P1.3.1 — 24/11/2026
+
+**Technical hardening và sample revalidation PASS; vẫn SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS, XML equivalence OPEN/BLOCKED_SOURCE, full corpus BLOCKED_STORAGE.** Baseline P1.3 được review tại dev `ac21467351340bc58369eda76ac4977f0691ec11`; chỉ triển khai A–F, dừng để review.
+
+| Task | Kết quả thực |
+|---|---|
+|A — Completeness|Ledger CT-case/annotation/acquisition/source objects riêng; trace malformed/unreadable/missing/unsupported sources.10requested patients/10cases/430verified objects/10SR reconcile;0real failures/quarantine/exclusions|
+|B — Exit codes|0scope success,2partial/actionable review,1fatal; error artifacts. Real survey0/audit2/QA2 đúng contract; regression tests đầy đủ|
+|C — Acquisition semantics|Weak-only wrapper, observed tags/missing counts/status trong manifest/provenance.10real unknown do thiếu temporal metadata; không biến missing thành verified. Mixed temporal quarantine; nhiều AcquisitionNumbers đơn lẻ chỉ review. NSCLC fingerprint không đổi|
+|D — Byte budget|Actual listing hoặc verified cache admission trước từng SR/CT payload; selected/cache/network riêng; failed stages giữ. Real cache221,804,220bytes, network0; actual>estimate/remaining/interrupt regressions pass|
+|E — XML|3official direct GET timeout20s/request; web fetch500.0XML đọc được, actual ZIP/link/size/hash/equivalence chưa verified; BLOCKED_SOURCE, không đổi parser|
+|F — Revalidation|10/10 CT/bbox arrays0different voxels, geometry/boxes/coverage/envelope measurements exact equal;77boxes/75positive/345unknown/0negative.570raw/baseline files492,231,485bytes hash preserved; manifest repeat identical|
+|Verification|**217passed =177prior+40new**, CPU smoke/env/pip check pass. Không research training hoặc expert clearance|
+
+[Hardening report](weak_hardening_report.md), [before/after](evidence/p1_3_1/before_after_comparison.json), [tests](evidence/p1_3_1/verification/verification.json), [reconciliation](../data/manifests/weak_p1_3_1/reconciliation.json). Config mới `configs/weak_p1_3_1.yaml`, outputs `data/converted/weak_p1_3_1_v2`, `data/manifests/weak_p1_3_1`, `data/qa/weak_p1_3_1`; raw và baseline P1.3 giữ nguyên. Weak version v2, legacy không reuse; không thêm dependencies, commit/push, cleanup hoặc tải full.
+
+Toàn bộ weak_eligible=false/GT=false, chưa training policy clearance. Giữ3datasets và Scarce/Vast; XML/coverage/acquisition semantics review, storage/persistence, MSD mapping/lung_022/lung_018 và NSCLC002/006/014/128 còn OPEN. Không tự triển khai P1-R/T07/T08/Teacher/pseudo/Baseline/Student.
+
+---
+
+# P1.3/T06 — snapshot được review có điều kiện
 
 **SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS cho official expert-SR representation; full corpus BLOCKED_STORAGE/NOT_VALIDATED.** XML gốc timeout, local equivalence chưa verified. User duyệt T06 sau P1.2.1 tại dev commit `a3712db3ecea5607b878c76f40de967004d3eee8`. Giữ3datasets, không full NSCLC/cloud/cleanup/splits/T08/Teacher/pseudo/Student/training; dừng sau P1.3 để review.
 

@@ -32,7 +32,7 @@ def main():
         log.write_text(f'timestamp_utc: {stamp}\ncommand_argv: {json.dumps(command)}\nexit_code: {proc.returncode}\n'+proc.stdout+proc.stderr,encoding='utf-8')
         commands.append({'command_argv':command,'timestamp_utc':stamp,'exit_code':proc.returncode,'log':log.name})
         write_json(evidence/'sample_execution.json',{'commands':commands,'status':'running'})
-        if proc.returncode not in ({0,2} if name=='audit-weak' else {0}):raise RuntimeError(f'{name}: inspect {log}')
+        if proc.returncode not in {0,2}:raise RuntimeError(f'{name}: inspect {log}')
         print(name,proc.returncode,flush=True)
     try:
         run('survey-weak');run('audit-weak')
@@ -43,7 +43,13 @@ def main():
             'raw_before':before,'raw_after':after,'raw_preserved':before==after,
             'manifest_sha256_first':first,'manifest_sha256_second':second,'repeat_identical':first==second})
         if before!=after or first!=second:raise RuntimeError('Raw preservation/manifest determinism failed')
+        report=json.loads((Path(config.output_dir)/'conversion_report.json').read_text())
+        if (not report.get('reconciliation',{}).get('pass') or report['converted_cases']!=len(config.sample_patient_ids)
+            or report['quarantined_cases'] or report['excluded_cases'] or report.get('annotation_failure_count') or report.get('acquisition_errors')):
+            raise RuntimeError('Partial sample; machine verification cannot claim complete sample validation')
         run('qa-weak')
+        if json.loads((Path(config.qa_dir)/'qa_index.json').read_text())['n_cases']!=report['converted_cases']:
+            raise RuntimeError('QA coverage incomplete')
         if args.baseline_snapshot:
             baseline=json.loads(args.baseline_snapshot.read_text());changed=[]
             for path,old in baseline.items():
