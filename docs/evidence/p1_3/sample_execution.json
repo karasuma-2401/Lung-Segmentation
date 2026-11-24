@@ -1,0 +1,57 @@
+{
+  "commands": [
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "survey-weak",
+        "--config",
+        "configs\\weak.yaml"
+      ],
+      "exit_code": 0,
+      "log": "sample_00_survey-weak.txt",
+      "timestamp_utc": "2026-11-24T07:42:09.633469+00:00"
+    },
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "audit-weak",
+        "--config",
+        "configs\\weak.yaml"
+      ],
+      "exit_code": 0,
+      "log": "sample_01_audit-weak.txt",
+      "timestamp_utc": "2026-11-24T07:42:18.741290+00:00"
+    },
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "audit-weak",
+        "--config",
+        "configs\\weak.yaml"
+      ],
+      "exit_code": 0,
+      "log": "sample_02_audit-weak.txt",
+      "timestamp_utc": "2026-11-24T07:43:22.985753+00:00"
+    },
+    {
+      "command_argv": [
+        "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "lungseg.cli",
+        "qa-weak",
+        "--config",
+        "configs\\weak.yaml"
+      ],
+      "exit_code": 0,
+      "log": "sample_03_qa-weak.txt",
+      "timestamp_utc": "2026-11-24T07:43:45.609652+00:00"
+    }
+  ],
+  "status": "SAMPLE_MACHINE_CHECKS_PASS_VISUAL_REVIEW_PENDING"
+}

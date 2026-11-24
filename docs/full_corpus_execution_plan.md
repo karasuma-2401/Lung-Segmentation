@@ -84,3 +84,7 @@ Cleanup phải có dry-run danh sách paths/bytes/hash/receipt, kiểm absolute 
 ## Việc cần triển khai sau khi được duyệt
 
 Hiện đã có sample acquisition/config giới hạn1–20IDs, conversion cache identity, integrity checks và revalidation script. **Chưa có** full scheduler, cross-batch merge/coverage validator, memory-aware admission, remote upload/receipts, distributed locks hoặc cleaner. Cần implement/tests failure recovery cho các thành phần này, rồi pilot được duyệt. Không lặp CLI sample422lần để lách full-download approval. Full corpus và cả3dataset vẫn giữ nguyên mục tiêu; blocker storage/RAM/cloud persistence chưa được giải quyết bằng tài liệu thiết kế.
+
+## Cập nhật metadata sau T06/P1.3
+
+Weak dataset nay đã khảo sát official catalog và10CT/SR sample: fullCT+expertSR+conversion allowance/reserve≈436.04GB, combined known planning3nguồn≈553.58GB trước margin/versions/checkpoints. Xem [T06 storage assessment](weak_qa_report.md). Phần NSCLC ở trên vẫn là snapshot DESIGN_ONLY, không là bằng chứng cloud/persistence đã triển khai; không tự mở rộng full corpus hoặc dọn data.

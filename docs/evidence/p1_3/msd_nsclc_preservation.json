@@ -1,0 +1,8 @@
+{
+  "all_preexisting_MSD_NSCLC_artifacts_preserved": true,
+  "baseline_snapshot_sha256": "535d1bd289343e7b0dc44f8bce0042ef5a720cb7a222c2e1575a193549708e22",
+  "bytes_checked": 19473696473,
+  "changed_files": [],
+  "files_checked": 1436,
+  "timestamp_utc": "2026-11-24T07:45:30.706793+00:00"
+}

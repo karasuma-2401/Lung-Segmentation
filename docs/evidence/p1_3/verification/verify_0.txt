@@ -1,0 +1,69 @@
+timestamp_utc: 2026-11-24T07:43:53.5319880Z
+command: .venv\Scripts\python.exe -m lungseg.cli env-check --output docs\evidence\p1_3\verification\environment.json
+exit_code: 0
+{
+  "timestamp_utc": "2026-11-24T07:44:07.925079+00:00",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "packages": {
+    "torch": {
+      "version": "2.15.0+cpu",
+      "import": "pass"
+    },
+    "monai": {
+      "version": "1.6.2",
+      "import": "pass"
+    },
+    "numpy": {
+      "version": "2.5.5",
+      "import": "pass"
+    },
+    "PyYAML": {
+      "version": "6.0.4",
+      "import": "pass"
+    },
+    "pytest": {
+      "version": "9.2.0",
+      "import": "pass"
+    },
+    "SimpleITK": {
+      "version": "2.5.8",
+      "import": "pass"
+    },
+    "nibabel": {
+      "version": "5.5.0",
+      "import": "pass"
+    },
+    "matplotlib": {
+      "version": "3.11.2",
+      "import": "pass"
+    },
+    "pydicom": {
+      "version": "3.0.2",
+      "import": "pass"
+    }
+  },
+  "required_imports_pass": true,
+  "cuda": {
+    "available": false,
+    "devices": [],
+    "status": "checked",
+    "compiled_cuda": null
+  },
+  "ram": {
+    "total_bytes": 8215101440,
+    "available_bytes": 891928576,
+    "status": "checked"
+  },
+  "disk": {
+    "total_bytes": 500865953792,
+    "free_bytes": 52537483264
+  },
+  "git": {
+    "revision": "a3712db3ecea5607b878c76f40de967004d3eee8",
+    "status": "dirty"
+  },
+  "package_source_sha256": "c2d2a118594e7823830ae25f768865d4e2b5405bfb8e55194915c9acb2d4b020",
+  "scope": "P0 environment; CUDA availability is not a GPU smoke pass"
+}

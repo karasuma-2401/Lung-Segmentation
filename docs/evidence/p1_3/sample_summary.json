@@ -1,0 +1,73 @@
+{
+  "CT_series": 10,
+  "CT_slices": 420,
+  "bbox_2d_area_mm2": {
+    "max": 7284.607682739501,
+    "median": 2858.723602294922,
+    "min": 115.57177734375,
+    "not_tumor_area_ground_truth": true
+  },
+  "box_count": 77,
+  "config_sha256": "a62764ee716fd1c6c3dced3509d980b4b30170e7b18f11cc7475c2951fb0b9ca",
+  "disk_current_free_bytes": 52526616576,
+  "explicit_negative_slices": 0,
+  "implementation": {
+    "runtime": {
+      "nibabel": "5.5.0",
+      "numpy": "2.5.5",
+      "pydicom": "3.0.2",
+      "python": "3.13.15"
+    },
+    "sha256": "5bc22447863ea3aaf1796249028048ee43acc4f7c610ce888ab6e2f0dd7f49b8",
+    "sources": {
+      "data/dicom_geometry.py": "6a734600a0e144b41677f6752b75625f12b144ba5df66134340052d73bf5d2cf",
+      "data/msd.py": "48bfd74cd3f926ce6efc7429c74bed36744772a4023bdec3d8e8743c0de261c0",
+      "data/msd_acquire.py": "3aa7a9cc486dbc5587fc26467d8eca2b45dc72d58abaa2889722ce69af44a28b",
+      "data/nsclc.py": "057f8008fe86dc5b4c45c53a45ac3a758642ff394f840e33141c9a442ba44c9b",
+      "data/nsclc_idc.py": "d20f25317d3ac2954f07d8352704e52a826fef48752273f4c25e99f50456c305",
+      "data/weak.py": "5167d6c415349e5fd1ecf8096c23551717ee11804f51cfb2b8838a82adfbbfe5",
+      "data/weak_acquire.py": "7098b862cf681dbe7bb14a6122685454a96e360fe5bd04815f2b4e0082406b86",
+      "data/weak_boxes.py": "8c27d1ea9f47cd6a82eb0d54c69dab0c80ae795082543cfe8c1ae81276024a29",
+      "data/weak_config.py": "6657496b62e894c8faf28e7b9b5dfb1fe66e3ff6b17c29703bf0d56cd99a65fa",
+      "data/weak_qa.py": "cb6d3dd046438971712319774f04fe6b32b2bf8e6b99fbf2bedee01086559e59"
+    },
+    "version": "weak-sr-native-v1"
+  },
+  "manifest_sha256": "b5bbb6dd1895511e23b7531cd60c7871796ea70cb16a33695391b3df58c9d76b",
+  "missing_unknown_slices": 345,
+  "multibox_slices": 2,
+  "native_shape_counts": {
+    "[512,512,23]": 1,
+    "[512,512,27]": 1,
+    "[512,512,29]": 2,
+    "[512,512,30]": 1,
+    "[512,512,51]": 1,
+    "[512,512,54]": 1,
+    "[512,512,56]": 1,
+    "[512,512,57]": 1,
+    "[512,512,64]": 1
+  },
+  "patients": 10,
+  "positive_slices": 75,
+  "real_data": true,
+  "storage": {
+    "QA": {
+      "bytes": 4354059,
+      "files": 11
+    },
+    "converted_final": {
+      "bytes": 166879618,
+      "files": 50
+    },
+    "raw": {
+      "bytes": 221968468,
+      "files": 450
+    },
+    "superseded_interrupted_output": {
+      "bytes": 97035420,
+      "files": 30
+    }
+  },
+  "studies": 10,
+  "timestamp_utc": "2026-11-24T07:48:13.161251+00:00"
+}

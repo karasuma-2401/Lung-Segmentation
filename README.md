@@ -2,7 +2,7 @@
 
 Dự án nghiên cứu mixed supervision Teacher–Student trên CT 3D. Phương án chính dùng MSD-Lung và NSCLC-Radiomics có mask, cùng Lung-PET-CT-Dx có axial bbox. Chạy Scarce trước Vast; Student cuối cùng nhận CT và xuất mask, không cần bbox.
 
-Hiện có công cụ **P0**, **P1.1/T04** (MSD acquisition/native NIfTI inventory/QA) và **P1.2/T05** (NSCLC DICOM/RTSTRUCT acquisition, conversion và QA tập mẫu). Full NSCLC bị chặn do storage; xem [báo cáo P1.2](docs/nsclc_qa_report.md). Chưa có experiment splits, model nghiên cứu, pseudo masks hay kết quả training. Xem [tiến độ](docs/progress.md), [quyết định](docs/decisions.md) và [bảng paper–code](docs/paper_to_code_matrix.md).
+Hiện có tooling P0, MSD T04, NSCLC T05/P1.2.1 và **Lung-PET-CT-Dx T06/P1.3**. Hai nguồn sau mới validated sample, full corpus bị chặn storage. T06 dùng expert bbox SR chính thức IDC; XML gốc chưa local-verified. Chưa có splits, production preprocessing hoặc research training. Xem [tiến độ](docs/progress.md), [quyết định](docs/decisions.md), [paper–code matrix](docs/paper_to_code_matrix.md).
 
 ## Cài đặt CPU trên Windows
 
@@ -48,7 +48,7 @@ Mỗi lần tạo `experiments/P0_smoke_<timestamp>_<id>/` với `config.json`, 
 - `configs/references/paper.yaml`: thông số bài báo, có đánh dấu chưa rõ.
 - `configs/references/upstream.yaml`: thông số source và pinned commit, không phải config training chạy được.
 - `configs/smoke.yaml`: config thực chạy cho P0. CLI từ chối config reference/protocol.
-- `src/lungseg/`: công cụ P0 và `data/` cho T04 MSD. Chưa expose `train`, `split`, `preprocess`, `evaluate` hoặc `generate-pseudo`.
+- `src/lungseg/`: công cụ P0 và data adapters T04–T06 cho native acquisition/inventory/QA. Chưa expose `train`, `split`, `preprocess`, `evaluate` hoặc `generate-pseudo`.
 - `data/README.md`: quy tắc lưu dữ liệu. Raw/cache/pseudo/checkpoints/virtualenv/reference clone đều gitignored.
 
 ## MSD-Lung — P1.1/T04
@@ -85,6 +85,21 @@ Xem [acquisition guide](docs/nsclc_acquisition.md), [data card](docs/nsclc_data_
 ```
 
 `convert-nsclc` exit2 khi có quarantine findings, exit1 khi thao tác không chạy được; đọc report trước khi tiếp tục. P1.2 artifacts thiếu implementation identity là **legacy/stale**, không được tự reuse. `configs/nsclc.yaml` giữ làm baseline; dùng output mới trong `configs/nsclc_p1_2_1.yaml` cho explicit reconversion, không xóa/overwrite baseline. Đổi algorithm/modules/dependency versions làm fingerprint khác; đổi source/full config cũng từ chối cache. QA kiểm identity trước render. Config hỗ trợ external roots; dùng cùng cấu hình cho toàn pipeline. Full download/conversion không được CLI này hỗ trợ; sample giới hạn1–20IDs. Raw/converted/montage gitignored. Dừng sau P1.2.1 để review.
+
+## Lung-PET-CT-Dx — P1.3/T06, sample only
+
+[Acquisition guide](docs/weak_acquisition.md), [data card](docs/weak_data_card.md), [annotation survey](docs/weak_annotation_survey.md), [manifest schema](docs/weak_manifest_schema.md), [QA report](docs/weak_qa_report.md). Official CT + expert XML harmonized to DICOM SR (IDC), CC BY4.0; không AI SEG.10sample CT/SR,77bbox/75positive slices;345missing/unknown không phải negative. Bbox volume không là segmentation GT/pseudo mask; không training clearance.
+
+```powershell
+# Metadata/capacity only:
+.venv\Scripts\python.exe -m lungseg.cli acquire-weak --config configs/weak.yaml
+# Sau bounded acquisition theo guide, chạy offline:
+.venv\Scripts\python.exe -m lungseg.cli survey-weak --config configs/weak.yaml
+.venv\Scripts\python.exe scripts/verify_weak_sample.py --config configs/weak.yaml
+.\scripts\verify.ps1 -EvidenceDirectory docs/evidence/p1_3/verification
+```
+
+Final output `data/converted/weak_v1_1`, manifest `data/manifests/weak/manifest_weak.csv`, QA `data/qa/weak`. Raw/derived images/annotations/PNG gitignored. Same source/config/implementation mới được reuse cache; version mismatch cần explicit output mới. `weak_v1` là interrupted initial output, không merge/reuse ngầm. CLI không expose full-download flag. Full-storage kế hoạch cả3nguồn và blockers xem QA report; dừng sau P1.3 để review.
 
 ## Tái tạo audit tham chiếu
 
@@ -126,4 +141,4 @@ Trước bước trên cần cài dependency còn thiếu từ `pyproject.toml` 
 
 ## Nguồn và quyền sử dụng
 
-[Fredriksen et al. (2022), PLOS ONE](https://doi.org/10.1371/journal.pone.0266147), CC BY; bảng đối chiếu và bảng số liệu tham chiếu có attribution, không phải số của nhóm. Source upstream giữ nguyên cùng LICENSE trong clone; P0 dùng MONAI API và code tooling viết mới, không copy thân model upstream. Chưa chọn license cho code mới của nhóm. MSD: CC BY-SA4.0; NSCLC-Radiomics: CC BY-NC3.0 qua TCIA/IDC, xem các acquisition guides. License/quyền truy cập Lung-PET-CT-Dx và weights vẫn cần xác minh riêng. Chưa push/publish hoặc train nghiên cứu.
+[Fredriksen et al. (2022), PLOS ONE](https://doi.org/10.1371/journal.pone.0266147), CC BY; số paper không phải kết quả nhóm. Source upstream giữ LICENSE riêng, không chạy/copy loader lỗi. Chưa chọn license cho code mới. MSD: CC BY-SA4.0; NSCLC: CC BY-NC3.0; Lung-PET-CT-Dx và expert SR: CC BY4.0, xem acquisition guides. Không relabel toàn project data theo license một nguồn. Weights chưa xác minh. Chưa push/publish hoặc train nghiên cứu.

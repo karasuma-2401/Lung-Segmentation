@@ -1,0 +1,91 @@
+timestamp_utc: 2026-11-24T07:42:18.741290+00:00
+command_argv: ["C:\\Projects\\Lung-Segementation\\.venv\\Scripts\\python.exe", "-m", "lungseg.cli", "audit-weak", "--config", "configs\\weak.yaml"]
+exit_code: 0
+weak Lung_Dx-A0001 converted
+weak Lung_Dx-A0002 converted
+weak Lung_Dx-A0003 converted
+weak Lung_Dx-A0004 converted
+weak Lung_Dx-A0005 converted
+weak Lung_Dx-A0006 converted
+weak Lung_Dx-B0001 converted
+weak Lung_Dx-E0001 converted
+weak Lung_Dx-G0001 converted
+weak Lung_Dx-G0002 converted
+{
+  "timestamp_utc": "2026-11-24T07:43:22.191360+00:00",
+  "dataset": "Lung-PET-CT-Dx",
+  "real_data": true,
+  "cases": 10,
+  "patient_count": 10,
+  "ct_series": 10,
+  "source_dicom_objects": 430,
+  "annotation_SR_objects": 10,
+  "converted_cases": 10,
+  "excluded_cases": 0,
+  "quarantined_cases": 0,
+  "acquisition_errors": {},
+  "annotation_failures": [],
+  "config": {
+    "schema_version": 1,
+    "kind": "lung_pet_ct_dx_native_bbox",
+    "raw_root": "data/raw/Lung-PET-CT-Dx",
+    "converted_root": "data/converted/weak_v1_1",
+    "output_dir": "data/manifests/weak",
+    "qa_dir": "data/qa/weak",
+    "evidence_dir": "docs/evidence/p1_3",
+    "sample_patient_ids": [
+      "Lung_Dx-A0001",
+      "Lung_Dx-A0002",
+      "Lung_Dx-A0003",
+      "Lung_Dx-A0004",
+      "Lung_Dx-A0005",
+      "Lung_Dx-A0006",
+      "Lung_Dx-B0001",
+      "Lung_Dx-E0001",
+      "Lung_Dx-G0001",
+      "Lung_Dx-G0002"
+    ],
+    "annotation_format": "dicom_sr_idc_2025",
+    "reserve_bytes": 4294967296,
+    "max_download_bytes": 2147483648,
+    "max_volume_voxels": 80000000,
+    "geometry_tolerance_mm": 0.05,
+    "orientation_atol": 1e-05,
+    "spacing_atol_mm": 0.01,
+    "affine_atol_mm": 0.001,
+    "slab_slices": 16,
+    "min_extent_mm": 160,
+    "max_extent_mm": 600
+  },
+  "config_sha256": "a62764ee716fd1c6c3dced3509d980b4b30170e7b18f11cc7475c2951fb0b9ca",
+  "implementation": {
+    "version": "weak-sr-native-v1",
+    "sources": {
+      "data/weak.py": "5167d6c415349e5fd1ecf8096c23551717ee11804f51cfb2b8838a82adfbbfe5",
+      "data/weak_boxes.py": "8c27d1ea9f47cd6a82eb0d54c69dab0c80ae795082543cfe8c1ae81276024a29",
+      "data/weak_config.py": "6657496b62e894c8faf28e7b9b5dfb1fe66e3ff6b17c29703bf0d56cd99a65fa",
+      "data/weak_acquire.py": "7098b862cf681dbe7bb14a6122685454a96e360fe5bd04815f2b4e0082406b86",
+      "data/weak_qa.py": "cb6d3dd046438971712319774f04fe6b32b2bf8e6b99fbf2bedee01086559e59",
+      "data/dicom_geometry.py": "6a734600a0e144b41677f6752b75625f12b144ba5df66134340052d73bf5d2cf",
+      "data/nsclc.py": "057f8008fe86dc5b4c45c53a45ac3a758642ff394f840e33141c9a442ba44c9b",
+      "data/msd.py": "48bfd74cd3f926ce6efc7429c74bed36744772a4023bdec3d8e8743c0de261c0",
+      "data/msd_acquire.py": "3aa7a9cc486dbc5587fc26467d8eca2b45dc72d58abaa2889722ce69af44a28b",
+      "data/nsclc_idc.py": "d20f25317d3ac2954f07d8352704e52a826fef48752273f4c25e99f50456c305"
+    },
+    "runtime": {
+      "python": "3.13.15",
+      "numpy": "2.5.5",
+      "nibabel": "5.5.0",
+      "pydicom": "3.0.2"
+    },
+    "sha256": "5bc22447863ea3aaf1796249028048ee43acc4f7c610ce888ab6e2f0dd7f49b8"
+  },
+  "manifest_sha256": "b5bbb6dd1895511e23b7531cd60c7871796ea70cb16a33695391b3df58c9d76b",
+  "quarantine": [],
+  "bbox_count": 77,
+  "annotated_slice_count": 75,
+  "multiple_box_slice_count": 2,
+  "weak_eligible_count": 0,
+  "full_corpus_status": "NOT_VALIDATED",
+  "status": "SAMPLE_CONVERTED_QA_PENDING"
+}

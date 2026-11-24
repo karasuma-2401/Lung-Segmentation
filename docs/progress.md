@@ -1,4 +1,25 @@
-# Tiến độ hiện tại — P1.2.1 technical hardening — 24/11/2026
+# Tiến độ hiện tại — P1.3/T06 — 24/11/2026
+
+**SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS cho official expert-SR representation; full corpus BLOCKED_STORAGE/NOT_VALIDATED.** XML gốc timeout, local equivalence chưa verified. User duyệt T06 sau P1.2.1 tại dev commit `a3712db3ecea5607b878c76f40de967004d3eee8`. Giữ3datasets, không full NSCLC/cloud/cleanup/splits/T08/Teacher/pseudo/Student/training; dừng sau P1.3 để review.
+
+| Hạng mục | Kết quả thực /evidence |
+|---|---|
+|Official source/license |Original TCIA v5/CC BY4.0, expert XML→SR harmonization IDC/Zenodo2025/CC BY4.0; không AI SEG. XML URL timeout, không giả parser XML đã verified |
+|Catalog |355patients/436studies/1,295original series=1,162CT+133PT;251,135objects. SR1,091series/354patients, không mặc định bằng annotated CT count |
+|Acquisition/sample |10patients/studies/CTseries,420CTslices+10SR,221,804,220bytes payload, UID/header/MD5/SHA256 checked. Final raw450files |
+|Bbox/coverage |77bbox/75positive slices,345missing/unknown,0explicit negatives;2multibox slices ởA0003 giữ đầy đủ. GT=false/weak_eligible=false toàn bộ |
+|Native conversion |10/10CT+bbox aligned, shape512²×23–64, spacingZ5/8/10mm; edge FOV230–320mm, closed[160,600]mm pass.0real exclusions/quarantine |
+|QA |10montage đã xem, A0003 overlaps/A0005single-slice/G0001separated positives/A0006central context cần review. Không expert approval hoặc source edits |
+|Verification |**177passed**=126cũ+51T06; CPU smoke/env/pip check pass. Manifest repeat byte-identical/raw unchanged;1,436oldMSD/NSCLC files19.47GB checked,0changes; NSCLC cache fingerprint unchanged |
+|Full/storage |Weak fullCT+SR/output allowance≈436.04GB, vượt~53GBfree. Combined known planning3datasets≈553.58GB trước margin/versions/checkpoints; storage/cloud pilot chưa thực hiện |
+
+[Report T06](weak_qa_report.md), [manifest](../data/manifests/weak/manifest_weak.csv), [survey](weak_annotation_survey.md), [tests](evidence/p1_3/verification/verification.json), [preservation](evidence/p1_3/msd_nsclc_preservation.json). Final roots `data/converted/weak_v1_1`, `data/manifests/weak`, `data/qa/weak`; initial interruptedweak_v1 giữ riêng, không merge hoặc xóa. Không thêm runtime dependencies, commit/push.
+
+OPEN trước giai đoạn tiếp: original XML access/equivalence, annotation completeness/multibox semantics, actual665paper subset chưa reproduce, full storage/persistence cho3nguồn. Giữ MSD patient mapping/lung_022/lung_018 và NSCLC002/006/014/128. Không tự chuyển P1-R/T07/T08/research training.
+
+---
+
+# P1.2.1 technical hardening — snapshot đã nghiệm thu
 
 **P1.2.1 technical acceptance PASS; T05 vẫn PARTIAL / SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS, full corpus BLOCKED_STORAGE.** P1.2 được review có điều kiện tại dev commit `1429bb14996beded92cafa128e0d827787f55f5e`. Đã sửa hardening/revalidate sample, dừng sau P1.2.1 để review; không P1.3/T07/T08/training hoặc full download.
 

@@ -1,0 +1,114 @@
+{
+  "annotation_exhaustiveness": "OPEN",
+  "cases": [
+    {
+      "bbox_sha256": "ca2c1b80b9085c2ee10274a11fe259215202774a3ad61cfd87764edab95b9f04",
+      "case_id": "Lung_Dx-A0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805",
+      "file": "Lung_Dx-A0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805_qa.png",
+      "finding": "Axial rectangle and native orthogonal envelope checked; no gross coordinate displacement seen. Coverage/exhaustiveness remains unverified.",
+      "image_sha256": "08f2c17af594550b8edf6c9771e2d009315c09aa97aaa92acf6e058621bdfeac",
+      "patient_id": "Lung_Dx-A0001",
+      "png_sha256": "15ce9cb8bf0f788d11597f3669f797a4a9f06ae5049126dc3bca16569130c207",
+      "status": "NO_GROSS_COORDINATE_MISMATCH_ON_SELECTED_PLANES"
+    },
+    {
+      "bbox_sha256": "3ef6cada8556420c51e32599aa15c3ff3900f1d64f750e2954c9292069316bed",
+      "case_id": "Lung_Dx-A0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983",
+      "file": "Lung_Dx-A0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983_qa.png",
+      "finding": "Axial rectangle and native orthogonal envelope checked; no gross coordinate displacement seen. Coverage/exhaustiveness remains unverified.",
+      "image_sha256": "0f93fd11e8676f2d02f76c30f583df85c9b78b7d2890ba6e17feb61be720ba7d",
+      "patient_id": "Lung_Dx-A0002",
+      "png_sha256": "c7ff77c713e933afd2f9bf59c13d7583ea5abe1aaeb9de5f904b2397493b6040",
+      "status": "NO_GROSS_COORDINATE_MISMATCH_ON_SELECTED_PLANES"
+    },
+    {
+      "bbox_sha256": "fb9e8135f7125895753ff701e7d9fcd44de8632730e7839bbc2adccc30bcaf46",
+      "case_id": "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728",
+      "file": "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728_qa.png",
+      "finding": "Two overlapping distinct source boxes on each of two slices; retained all four records; requires object/duplicate adjudication, no automatic merge.",
+      "image_sha256": "8e7bfef8924e4478945ac53b1a2b944d2f2e8cf44fa37b0ba0c30e2f2db2fb08",
+      "patient_id": "Lung_Dx-A0003",
+      "png_sha256": "a48b425ba16437b7b62e887a69b11d9b58a188a509d62d79996e6c013730e6e9",
+      "status": "REVIEW_REQUIRED"
+    },
+    {
+      "bbox_sha256": "53d0c91d9a15e1013f407559d0ef65c6574dc05b71be9553dae3e9ee409e87ed",
+      "case_id": "Lung_Dx-A0004__1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719",
+      "file": "Lung_Dx-A0004__1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719_qa.png",
+      "finding": "Axial rectangle and native orthogonal envelope checked; no gross coordinate displacement seen. Coverage/exhaustiveness remains unverified.",
+      "image_sha256": "c478efb53a7cb41e80296c2a01b13f3711c4112b0fbee00d0115143b9285242b",
+      "patient_id": "Lung_Dx-A0004",
+      "png_sha256": "2295899ad23c25a746ac66181c226f73112ba73c24d53b7a886801b401a4e1be",
+      "status": "NO_GROSS_COORDINATE_MISMATCH_ON_SELECTED_PLANES"
+    },
+    {
+      "bbox_sha256": "a2a1716362048fce53e8e2267a23cc83a887c62b6b1255a255afeea67fe71e94",
+      "case_id": "Lung_Dx-A0005__1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548",
+      "file": "Lung_Dx-A0005__1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548_qa.png",
+      "finding": "Only one positive slice of29; other28 unknown. Native10mm spacing produces thin bbox slab, no interpolation or negative inference.",
+      "image_sha256": "71393da612640e36f748e883b2f602446c96b87910ccf72bea5d79414f0008fc",
+      "patient_id": "Lung_Dx-A0005",
+      "png_sha256": "e20b78e4763fe2874ca5ec079676edfa43b02bddd4ca24cfcb3074dec0f5eefc",
+      "status": "REVIEW_REQUIRED"
+    },
+    {
+      "bbox_sha256": "065eaa9e9076554fbe232036acd494561e6d3eb77ee8f42e8524f116a6e92fa5",
+      "case_id": "Lung_Dx-A0006__1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676",
+      "file": "Lung_Dx-A0006__1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676_qa.png",
+      "finding": "Complex central/perimediastinal context; bbox is coarse weak localization, not lesion boundary.",
+      "image_sha256": "f2d083d91f4db56a5639c5454a7e99e70f6a0829215b3c41de9f7d662703c228",
+      "patient_id": "Lung_Dx-A0006",
+      "png_sha256": "7ce14ac59e26c264ec4ac0479185ce4a20a3a64afce5bdc33dc381db8ce1240c",
+      "status": "REVIEW_REQUIRED"
+    },
+    {
+      "bbox_sha256": "2d67ea855c1c0ac79e6583fbae101b7beacaf1a502b2c2d241153d0e1012a4c1",
+      "case_id": "Lung_Dx-B0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951",
+      "file": "Lung_Dx-B0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951_qa.png",
+      "finding": "Axial rectangle and native orthogonal envelope checked; no gross coordinate displacement seen. Coverage/exhaustiveness remains unverified.",
+      "image_sha256": "1895f9ce0ef0fc0cd76c227c40c7cb3693ee23c5e2be211ba02449bf5abd45ed",
+      "patient_id": "Lung_Dx-B0001",
+      "png_sha256": "a6fcec2bfccd590f204f208f553512ca53cae80431a0517bc34bd4879eb4c633",
+      "status": "NO_GROSS_COORDINATE_MISMATCH_ON_SELECTED_PLANES"
+    },
+    {
+      "bbox_sha256": "ec6706bdcc8cda4d53f63eb807aa93d63730294fe4284f78ded4b8716fe165f6",
+      "case_id": "Lung_Dx-E0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046",
+      "file": "Lung_Dx-E0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046_qa.png",
+      "finding": "Axial rectangle and native orthogonal envelope checked; no gross coordinate displacement seen. Coverage/exhaustiveness remains unverified.",
+      "image_sha256": "deed40d41afc1c68d2fd5f7fc740c21ee14e07cfa32cc451ca40e30e6380d871",
+      "patient_id": "Lung_Dx-E0001",
+      "png_sha256": "021e997f74d70345584b38a042ef6cf289a0d4661daf8677da31fbbaa219a4c2",
+      "status": "NO_GROSS_COORDINATE_MISMATCH_ON_SELECTED_PLANES"
+    },
+    {
+      "bbox_sha256": "0ce5a4bef91ac7773dcecda0b6329a89e9add2c0900633402ad19f97e2db2972",
+      "case_id": "Lung_Dx-G0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648",
+      "file": "Lung_Dx-G0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648_qa.png",
+      "finding": "Separated positive bbox locations along Z; intermediate unannotated slices remain unknown; review lesion/coverage semantics before training.",
+      "image_sha256": "e4f45d5454794ea122af22c13b8585d85cf5feb3738932eaa436cd3f863a3e3a",
+      "patient_id": "Lung_Dx-G0001",
+      "png_sha256": "1d2f82eb21382c195c5aae8c14c83d33aec43e4ec2c9be1603ab0b7520463a52",
+      "status": "REVIEW_REQUIRED"
+    },
+    {
+      "bbox_sha256": "5f74262de902f1071a4e7aaff3314924d5d4b91aca75bcfc84b07dc479c400d9",
+      "case_id": "Lung_Dx-G0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402",
+      "file": "Lung_Dx-G0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402_qa.png",
+      "finding": "Axial rectangle and native orthogonal envelope checked; no gross coordinate displacement seen. Coverage/exhaustiveness remains unverified.",
+      "image_sha256": "ba5cf705273a0077ada7a9283d15e9040a14f4bfee0c231bb9ac47bc4357b678",
+      "patient_id": "Lung_Dx-G0002",
+      "png_sha256": "a0b8c3c6eba4abbc3500f635a2e6ed3b76a88815ae2cf540fa1bf4a882895456",
+      "status": "NO_GROSS_COORDINATE_MISMATCH_ON_SELECTED_PLANES"
+    }
+  ],
+  "expert_approval": false,
+  "manifest_sha256": "b5bbb6dd1895511e23b7531cd60c7871796ea70cb16a33695391b3df58c9d76b",
+  "original_XML_validation": "BLOCKED_SOURCE_TIMEOUT",
+  "real_data": true,
+  "reviewer": "Codex visual inspection of all10three-plane PNGs",
+  "source_annotation_changed": false,
+  "status": "SAMPLE_VALIDATED_WITH_REVIEW_FINDINGS_SR_REPRESENTATION",
+  "timestamp_utc": "2026-11-24T07:48:13.070073+00:00",
+  "training_clearance": false
+}

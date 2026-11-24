@@ -42,9 +42,27 @@ def main(argv: list[str] | None = None) -> int:
             command.add_argument("--rt-only", action="store_true")
             command.add_argument("--catalog", type=Path)
             command.add_argument("--idc-catalog", type=Path)
+    for name in ('acquire-weak','survey-weak','audit-weak','qa-weak'):
+        command=commands.add_parser(name,help='T06 bounded expert bbox SR acquisition/native inventory/QA')
+        command.add_argument('--config',type=Path,required=True)
+        if name=='acquire-weak':
+            command.add_argument('--catalog',type=Path,default=Path('data/manifests/weak/public_catalog.json'))
+            command.add_argument('--download',action='store_true')
+            command.add_argument('--annotations-only',action='store_true')
     args = parser.parse_args(argv)
     record = None
     try:
+        if args.command.endswith('-weak'):
+            from lungseg.data.weak_config import load_weak_config
+            config=load_weak_config(args.config)
+            if args.command=='acquire-weak':
+                from lungseg.data.weak_acquire import acquire
+                result=acquire(config,args.catalog,download=args.download,annotations_only=args.annotations_only)
+            else:
+                from lungseg.data.weak import survey,inventory,generate_qa
+                result={'survey-weak':survey,'audit-weak':inventory,'qa-weak':generate_qa}[args.command](config)
+            print(json.dumps(result,indent=2))
+            return 2 if result.get('quarantined_cases') else 0
         if args.command.endswith("-nsclc"):
             from lungseg.data.nsclc_config import load_nsclc_config
             config = load_nsclc_config(args.config, raw_root=args.raw_root, converted_root=args.converted_root)

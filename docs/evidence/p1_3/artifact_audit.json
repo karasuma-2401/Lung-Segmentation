@@ -1,0 +1,9 @@
+{
+  "all10bbox_volumes_aligned": true,
+  "manifest_QA_config_implementation_match": true,
+  "no_segmentation_GT_or_training_clearance_claimed": true,
+  "package_source_matches_final_environment": true,
+  "package_source_sha256": "c2d2a118594e7823830ae25f768865d4e2b5405bfb8e55194915c9acb2d4b020",
+  "status": "PASS",
+  "timestamp_utc": "2026-11-24T07:48:13.294435+00:00"
+}

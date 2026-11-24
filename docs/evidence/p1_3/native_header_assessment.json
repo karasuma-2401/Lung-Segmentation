@@ -1,0 +1,215 @@
+{
+  "cases": [
+    {
+      "acquisition_numbers": [
+        "None"
+      ],
+      "case_id": "Lung_Dx-A0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.257508444832901632590301540805",
+      "duplicate_instance_number_count": 0,
+      "image_type_values": [
+        "['ORIGINAL', 'PRIMARY', 'AXIAL', 'HELIX']"
+      ],
+      "limitation": "Uniform concatenation without independent metadata cannot be disproved by geometry alone; no duplicate positions/nonuniform gaps seen in converted sample",
+      "position_derived_spacing_mm": 5.0,
+      "slice_thickness_mm": [
+        5.0
+      ],
+      "spacing_between_slices_mm": [
+        5.0
+      ],
+      "temporal_positions": [],
+      "transfer_syntax_uids": [
+        "1.2.840.10008.1.2"
+      ]
+    },
+    {
+      "acquisition_numbers": [
+        "2"
+      ],
+      "case_id": "Lung_Dx-A0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.207154000096236603057216610983",
+      "duplicate_instance_number_count": 0,
+      "image_type_values": [
+        "['ORIGINAL', 'PRIMARY', 'AXIAL', 'CT_SOM5 SPI']"
+      ],
+      "limitation": "Uniform concatenation without independent metadata cannot be disproved by geometry alone; no duplicate positions/nonuniform gaps seen in converted sample",
+      "position_derived_spacing_mm": 8.0,
+      "slice_thickness_mm": [
+        8.0
+      ],
+      "spacing_between_slices_mm": [],
+      "temporal_positions": [],
+      "transfer_syntax_uids": [
+        "1.2.840.10008.1.2.1"
+      ]
+    },
+    {
+      "acquisition_numbers": [
+        "2"
+      ],
+      "case_id": "Lung_Dx-A0003__1.3.6.1.4.1.14519.5.2.1.6655.2359.144797390935445988841819830728",
+      "duplicate_instance_number_count": 0,
+      "image_type_values": [
+        "['ORIGINAL', 'PRIMARY', 'AXIAL', 'CT_SOM5 SPI']"
+      ],
+      "limitation": "Uniform concatenation without independent metadata cannot be disproved by geometry alone; no duplicate positions/nonuniform gaps seen in converted sample",
+      "position_derived_spacing_mm": 10.0,
+      "slice_thickness_mm": [
+        10.0
+      ],
+      "spacing_between_slices_mm": [],
+      "temporal_positions": [],
+      "transfer_syntax_uids": [
+        "1.2.840.10008.1.2"
+      ]
+    },
+    {
+      "acquisition_numbers": [
+        "2"
+      ],
+      "case_id": "Lung_Dx-A0004__1.3.6.1.4.1.14519.5.2.1.6655.2359.128573427051718165079150282719",
+      "duplicate_instance_number_count": 0,
+      "image_type_values": [
+        "['ORIGINAL', 'PRIMARY', 'AXIAL', 'CT_SOM5 SPI']"
+      ],
+      "limitation": "Uniform concatenation without independent metadata cannot be disproved by geometry alone; no duplicate positions/nonuniform gaps seen in converted sample",
+      "position_derived_spacing_mm": 8.0,
+      "slice_thickness_mm": [
+        8.0
+      ],
+      "spacing_between_slices_mm": [],
+      "temporal_positions": [],
+      "transfer_syntax_uids": [
+        "1.2.840.10008.1.2"
+      ]
+    },
+    {
+      "acquisition_numbers": [
+        "2"
+      ],
+      "case_id": "Lung_Dx-A0005__1.3.6.1.4.1.14519.5.2.1.6655.2359.812751129188190113672239090548",
+      "duplicate_instance_number_count": 0,
+      "image_type_values": [
+        "['ORIGINAL', 'PRIMARY', 'AXIAL', 'CT_SOM5 SPI']"
+      ],
+      "limitation": "Uniform concatenation without independent metadata cannot be disproved by geometry alone; no duplicate positions/nonuniform gaps seen in converted sample",
+      "position_derived_spacing_mm": 10.0,
+      "slice_thickness_mm": [
+        10.0
+      ],
+      "spacing_between_slices_mm": [],
+      "temporal_positions": [],
+      "transfer_syntax_uids": [
+        "1.2.840.10008.1.2"
+      ]
+    },
+    {
+      "acquisition_numbers": [
+        "None"
+      ],
+      "case_id": "Lung_Dx-A0006__1.3.6.1.4.1.14519.5.2.1.6655.2359.988484198186426853571489323676",
+      "duplicate_instance_number_count": 0,
+      "image_type_values": [
+        "['ORIGINAL', 'PRIMARY', 'AXIAL', 'HELIX']"
+      ],
+      "limitation": "Uniform concatenation without independent metadata cannot be disproved by geometry alone; no duplicate positions/nonuniform gaps seen in converted sample",
+      "position_derived_spacing_mm": 5.0,
+      "slice_thickness_mm": [
+        5.0
+      ],
+      "spacing_between_slices_mm": [
+        5.0
+      ],
+      "temporal_positions": [],
+      "transfer_syntax_uids": [
+        "1.2.840.10008.1.2"
+      ]
+    },
+    {
+      "acquisition_numbers": [
+        "3"
+      ],
+      "case_id": "Lung_Dx-B0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.283177831525513287393838178951",
+      "duplicate_instance_number_count": 0,
+      "image_type_values": [
+        "['ORIGINAL', 'PRIMARY', 'AXIAL']"
+      ],
+      "limitation": "Uniform concatenation without independent metadata cannot be disproved by geometry alone; no duplicate positions/nonuniform gaps seen in converted sample",
+      "position_derived_spacing_mm": 5.0,
+      "slice_thickness_mm": [
+        5.0
+      ],
+      "spacing_between_slices_mm": [
+        5.0
+      ],
+      "temporal_positions": [],
+      "transfer_syntax_uids": [
+        "1.2.840.10008.1.2"
+      ]
+    },
+    {
+      "acquisition_numbers": [
+        "3"
+      ],
+      "case_id": "Lung_Dx-E0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.226508819510253702726378036046",
+      "duplicate_instance_number_count": 0,
+      "image_type_values": [
+        "['ORIGINAL', 'PRIMARY', 'AXIAL']"
+      ],
+      "limitation": "Uniform concatenation without independent metadata cannot be disproved by geometry alone; no duplicate positions/nonuniform gaps seen in converted sample",
+      "position_derived_spacing_mm": 5.0,
+      "slice_thickness_mm": [
+        5.0
+      ],
+      "spacing_between_slices_mm": [
+        5.0
+      ],
+      "temporal_positions": [],
+      "transfer_syntax_uids": [
+        "1.2.840.10008.1.2"
+      ]
+    },
+    {
+      "acquisition_numbers": [
+        "1"
+      ],
+      "case_id": "Lung_Dx-G0001__1.3.6.1.4.1.14519.5.2.1.6655.2359.481038456248779118703705119648",
+      "duplicate_instance_number_count": 0,
+      "image_type_values": [
+        "['ORIGINAL', 'PRIMARY', 'AXIAL']"
+      ],
+      "limitation": "Uniform concatenation without independent metadata cannot be disproved by geometry alone; no duplicate positions/nonuniform gaps seen in converted sample",
+      "position_derived_spacing_mm": 10.0,
+      "slice_thickness_mm": [
+        10.0
+      ],
+      "spacing_between_slices_mm": [],
+      "temporal_positions": [],
+      "transfer_syntax_uids": [
+        "1.2.840.10008.1.2"
+      ]
+    },
+    {
+      "acquisition_numbers": [
+        "None"
+      ],
+      "case_id": "Lung_Dx-G0002__1.3.6.1.4.1.14519.5.2.1.6655.2359.274175502344972272614683845402",
+      "duplicate_instance_number_count": 0,
+      "image_type_values": [
+        "['ORIGINAL', 'PRIMARY', 'AXIAL', 'HELIX']"
+      ],
+      "limitation": "Uniform concatenation without independent metadata cannot be disproved by geometry alone; no duplicate positions/nonuniform gaps seen in converted sample",
+      "position_derived_spacing_mm": 5.0,
+      "slice_thickness_mm": [
+        5.0
+      ],
+      "spacing_between_slices_mm": [
+        5.0
+      ],
+      "temporal_positions": [],
+      "transfer_syntax_uids": [
+        "1.2.840.10008.1.2"
+      ]
+    }
+  ],
+  "timestamp_utc": "2026-11-24T07:48:13.074925+00:00"
+}

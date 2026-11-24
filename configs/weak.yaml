@@ -1,0 +1,19 @@
+schema_version: 1
+kind: lung_pet_ct_dx_native_bbox
+raw_root: data/raw/Lung-PET-CT-Dx
+converted_root: data/converted/weak_v1_1
+output_dir: data/manifests/weak
+qa_dir: data/qa/weak
+evidence_dir: docs/evidence/p1_3
+sample_patient_ids: [Lung_Dx-A0001, Lung_Dx-A0002, Lung_Dx-A0003, Lung_Dx-A0004, Lung_Dx-A0005, Lung_Dx-A0006, Lung_Dx-B0001, Lung_Dx-E0001, Lung_Dx-G0001, Lung_Dx-G0002]
+annotation_format: dicom_sr_idc_2025
+reserve_bytes: 4294967296
+max_download_bytes: 2147483648
+max_volume_voxels: 80000000
+geometry_tolerance_mm: 0.05
+orientation_atol: 0.00001
+spacing_atol_mm: 0.01
+affine_atol_mm: 0.001
+slab_slices: 16
+min_extent_mm: 160
+max_extent_mm: 600
